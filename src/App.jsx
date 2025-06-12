@@ -1,0 +1,48 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import ContactUs from './pages/ContactUs';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPosts';
+import Layout from './components/Layout';
+import MarketingSolution from './pages/MarketingSolution';
+import WebsiteDesign from "./marketingSolutionsServices/WebsiteDesign";
+import Seo from "./pages/Seo";
+import AboutUs from './pages/AboutUs';
+import OnPageOffPageSeo from './pages/onPageOffPageSeo';
+import LocalSeo from './pages/LocalSeo';
+import EnterpriseSeo from './pages/EnterpriseSeo';
+import EcommerceSeo from './pages/EcommerceSeo';
+import MultilingualSeo from './pages/MultilingualSeo';
+import AISeo from './pages/AISeo';
+import FreeAudit from './pages/FreeAudit';
+import MeetTheTeam from './pages/MeetTheTeam';
+import Awards from "./pages/Awards"
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout><Home /></Layout>} />
+        <Route path="/contact-us" element={<Layout><ContactUs /></Layout>} />
+        <Route path="/blog" element={<Layout><Blog /></Layout>} />
+        <Route path="/blog/:id" element={<Layout><BlogPost /></Layout>} />
+        <Route path="/marketing-solution" element={<Layout><MarketingSolution /></Layout>} />
+        <Route path="/website-design" element={<Layout><WebsiteDesign /></Layout>} />
+        <Route path="/about-us" element={<Layout><AboutUs /></Layout>} />
+        <Route path="/seo" element={<Layout><Seo /></Layout>} />
+        <Route path="/onpage-offpage-seo" element={<Layout><OnPageOffPageSeo /></Layout>} />
+        <Route path="/local-seo" element={<Layout><LocalSeo /></Layout>} />
+        <Route path="/enterprise-seo" element={<Layout><EnterpriseSeo /></Layout>} />
+        <Route path="/ecommerce-seo" element={<Layout><EcommerceSeo/></Layout>} />
+        <Route path="/multilingual-seo" element={<Layout><MultilingualSeo/></Layout>} />
+        <Route path="/ai-seo" element={<Layout><AISeo/></Layout>} />
+        <Route path="/free-audit" element={<Layout><FreeAudit/></Layout>} />
+        <Route path="/meet-the-team" element={<Layout><MeetTheTeam/></Layout>} />
+        <Route path="/awards" element={<Layout><Awards/></Layout>} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;

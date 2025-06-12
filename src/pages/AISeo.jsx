@@ -1,0 +1,275 @@
+import React, { useState } from 'react';
+import AISeo from "../assets/aiSeo.jpg";
+import AISeo2 from "../assets/aiSeo2.jpg";
+import Badge0 from "../assets/clutch-badge.png";
+import Badge1 from "../assets/new-badge.png";
+import Badge2 from "../assets/new-badge2.png";
+import Badge3 from "../assets/new-badge3.png";
+import Badge4 from "../assets/logo_hubspot.png";
+// import rocket from "../assets/rocket.png";
+import { FaArrowRight, FaRocket, FaBullseye, FaSearch, FaEnvelope, FaCrown, FaCheckCircle  } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
+
+const AISeoPage = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+   const services = [
+      {
+        icon: (
+          <FaBullseye className="text-[#F89E1B] text-2xl hover:text-black" />
+        ),
+        title: (
+          <>
+            Paid search <br />
+            marketing
+          </>
+        ),
+        description:
+          "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
+      },
+      {
+        icon: (
+          <FaSearch className="text-[#F89E1B] text-2xl hover:text-black" />
+        ),
+        title: (
+          <>
+            Search engine
+            <br />
+            optimization
+          </>
+        ),
+        description:
+          "Maintain your best spot on the search results page, so you can find new customers and re–engage loyal ones.",
+      },
+      {
+        icon: (
+          <FaEnvelope className="text-[#F89E1B] text-2xl hover:text-black" />
+        ),
+        title: <>Email marketing</>,
+        description:
+          "When it comes to reaching your target audience, you can’t get much closer than direct to their inboxes.",
+      },
+      {
+        icon: (
+          <FaRocket className="text-[#F89E1B] text-2xl hover:text-black" />
+        ),
+        title: (
+          <>
+            Conversion rate
+            <br />
+            optimization
+          </>
+        ),
+        description:
+          "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
+      },
+    
+  ];
+
+  const faqs = [
+    {
+      question: "What is paid search management?",
+      answer: "Paid search management involves creating, managing, and optimizing pay-per-click (PPC) advertising campaigns on search engines like Google and Bing to drive targeted traffic to your website."
+    },
+    {
+      question: "How much does paid search management cost?",
+      answer: "The cost varies depending on your budget, industry, and campaign complexity. We offer flexible pricing models to suit different business needs and budgets."
+    },
+    {
+      question: "How long does it take to see results?",
+      answer: "You can start seeing traffic immediately once campaigns are live, but meaningful results and optimization typically occur within 2-4 weeks of continuous management."
+    },
+    {
+      question: "Do you provide reporting and analytics?",
+      answer: "Yes, we provide detailed monthly reports showing campaign performance, key metrics, and recommendations for improvement."
+    }
+  ];
+
+  return (
+    <main className='bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-15 lg:px-30'>
+      <div className="pt-4 md:pt-8 lg:pt-12 pb-4">
+        <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
+          <div>
+            <h5 className="text-sm md:text-base lg:text-md font-semibold text-black pt-4 md:pt-6 lg:pt-10">
+              A.I. SEO
+            </h5>
+            <h1 className='text-2xl md:text-4xl lg:text-6xl font-semibold pt-3 md:pt-8'>SEO with Artificial<br />Intelligence</h1>
+            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">Join us and become the trusted expert relied upon by the world's biggest brands, venues, and entertainers to solve their most complex challenges.</p>
+            <NavLink to="/" className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9]">VIEW OPEN POSITIONS <FaArrowRight /><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
+          </div>
+          <div className="flex lg:justify-end">
+            <img
+              src={AISeo}
+              alt="Marketing Visual"
+              className="w-full h-[250px] md:h-[440px] object-cover rounded-[30px] md:rounded-[60px]"
+            />
+          </div>
+        </div>
+      </div>
+<div className='py-8 md:py-16'>
+    <div className="bg-[#f7f7fa] rounded-2xl p-5 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+      <div className="items-start gap-4 max-w-xl">
+        <div className="text-[#f89e1b] text-3xl md:text-5xl">
+          <FaCrown />
+        </div>
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold pt-6 text-black">
+            Get $245 Worth of Premium Stock Images FREE with Your Package!
+          </h2>
+        </div>
+      </div>
+      <div className="max-w-sm">
+        <p className="font-bold text-black text-right">Premium<br /><span className="font-normal text-sm">Stock images</span></p>
+        <p className="text-sm text-black pt-10 text-left">All images shown on the demo website come with the demo content, and can be used in your next project, without the need to buy any additional licences.</p>
+      </div>
+    </div>
+</div>
+
+<div className=" pt-5">
+  <div className="max-w-7xl mx-auto rounded-[40px] overflow-hidden mb-8 md:mb-12">
+    <img src={AISeo2} alt="Team Collaboration" className="w-full object-cover" />
+  </div>  
+  <div className="max-w-2xl text-left">
+    <p className="text-sm font-semibold uppercase tracking-widest mb-3"> Our Capabilities</p>
+    <h2 className="text-2xl md:text-5xl font-semibold text-black mb-6 leading-tight">Data-driven, customer-centric digital services</h2>
+    <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
+      <span className="relative z-10 flex items-baseline gap-2">View All Solutions <FaArrowRight/>
+      <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
+      </span>
+    </button>
+  </div>
+</div>
+
+<div className="pt-5 md:pt-8 lg:pt-10 pb-4 md:pb-14 lg:pb-32">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {services.map((service, index) => (
+      <div key={index} className="bg-white rounded-3xl p-8 text-black flex flex-col justify-between h-full">
+         <div>
+            <div className="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-4">{service.icon}
+                </div>
+                <h3 className="text-xl font-semibold mb-6 text-left">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-[#57595b] mb-12 text-left">
+                  {service.description}
+                </p>
+              </div>
+
+              <div className="text-left mt-auto">
+                <a
+                  href="#"
+                  className="group inline-block text-sm font-semibold relative border-b-2 border-[#6754e9]"
+                >
+                  LEARN MORE
+                  <span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+</div>
+
+<div className="py-5 md:py-8 lg:py-10">
+  <h5 className="text-center font-semibold text-sm pb-3 md:pb-5">A.I. SEO</h5>
+  <h1 className="text-center font-bold text-2xl md:text-4xl lg:text-5xl leading-tight">
+    USP's of SEO with Artificial <br /> Intelligence
+  </h1>
+  <p className="text-center font-medium text-sm text-[#888] pt-3 md:pt-5">
+    Looking to learn more about SEO with AI for your business? Fill the Form:
+  </p>
+
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-15 lg:gap-40 pt-3 md:pt-8 lg:pt-16">
+    <div className="pt-5 md:pt-8">
+      <h3 className="text-left font-semibold text-md md:text-lg text-black pb-3 md:pb-7">
+        When you partner with Numerique, we take care of the heavy <br /> lifting, so
+        you can enjoy more website traffic, leads, and <br /> revenue.
+      </h3>
+
+      <hr className="border border-gray-200" />
+
+      {[
+        "Review your marketing goals: Begin by reviewing your marketing goals and objectives",
+        "Evaluate your target audience to see if they have changed or if you need to adjust your messaging to better reach them.",
+        "Analyze your website to ensure it is user-friendly, mobile-responsive, and optimized for search engines.",
+        "Review your content marketing efforts, including your blog posts, social media, and email marketing.",
+      ].map((text, index) => (
+        <div className="flex items-start gap-3 text-md text-[#444] pt-3 md:pt-7 lg:pt-10">
+           <FaCheckCircle className="text-[#FFA500] text-2xl mt-1 shrink-0" />
+           <p>{text}</p>
+        </div>
+      ))}
+    </div>
+    <div className="relative">
+      <div className="absolute -top-8 right-4 flex items-center gap-2">
+      </div>
+      
+      <div className='px-1'>
+      <div className="bg-white rounded-[32px] shadow-[12px_12px_0_0_black] px-4 md:px-6 pt-8 pb-10 w-full">
+        <h2 className="text-2xl font-semibold text-black pb-6">Get your Quotation</h2>
+
+        <form className="flex flex-col space-y-4 text-[#a4a4a4]">
+          <input
+            type="text"
+            placeholder="Name"
+            className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Company name"
+            className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+          />
+          <input
+            type="tel"
+            placeholder="Phone number"
+            className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+          />
+          <textarea
+            placeholder="What can we help you with?"
+            className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none resize-none h-28"
+          ></textarea>
+          <button
+            type="submit"
+            className="relative w-full bg-black text-white font-semibold py-3 rounded-2xl hover:bg-[#6754E9] transition duration-300 group"
+          >
+            <span className="relative inline-block">
+              SEND ME A PROPOSAL →
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </span>
+          </button>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="flex flex-col lg:flex-row items-center justify-center gap-8 py-8 md:py-10 lg:py-14 text-center lg:text-left">
+  <div className="w-full lg:w-1/3 flex justify-center">
+    <p className="text-xl font-semibold text-gray-800 leading-snug">
+      Credentials & <br className="hidden md:block" /> Recognition:
+    </p>
+  </div>
+  <div className="w-full lg:w-2/3 flex justify-center flex-wrap items-center gap-4 md:gap-6 py-2">
+    <img src={Badge0} alt="Badge 0" className="h-16 md:h-20 object-contain" />
+    <img src={Badge1} alt="Badge 1" className="h-16 md:h-20 object-contain" />
+    <img src={Badge2} alt="Badge 2" className="h-16 md:h-20 object-contain" />
+    <img src={Badge3} alt="Badge 3" className="h-16 md:h-20 object-contain" />
+    <img src={Badge4} alt="Badge 4" className="h-16 md:h-20 object-contain" />
+  </div>
+</div>
+    </main>
+  );
+};
+
+export default AISeoPage;
