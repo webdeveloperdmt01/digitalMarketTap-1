@@ -68,7 +68,7 @@ const Header = () => {
                 </div>
                 <div className="flex flex-col space-y-2">
                   <HoverService icon={<FaCommentDots />} text="Social Media Marketing" to="/social-media-marketing" />
-                  <HoverService icon={<FaHashtag />} text="Social Media Optimization" to="/social-media-optimization" />
+                  <HoverService icon={<FaHashtag />} text="Social Media Optimization" to="/social-media-optimisation" />
                   <HoverService icon={<FaKeyboard />} text="Content Writing Service" to="/content-writing-service" />
                   <HoverService icon={<FaStar />} text="Online Reputation Management" to="/online-reputation-management" />
                 </div>

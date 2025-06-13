@@ -11,17 +11,17 @@ import meta from '../assets/meta.png';
 import googlePartner from '../assets/google-partner.png';
 import shopify from '../assets/shopify.png';
 import tiktok from '../assets/tiktok.png';
+import { Link } from 'react-router-dom';
+
 import {
   FaLinkedinIn,
   FaTwitter,
   FaInstagram,
   FaFacebookF,
   FaYoutube,
-  FaPhoneAlt,
   FaMapMarkerAlt,
   FaStar,
 } from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
 
 const Footer = () => {
   return (
@@ -78,17 +78,17 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-t-[40px] shadow-md p-5 lg:p-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-  {/* Column 1 - Avatar + Phone */}
-  <div className="p-0 md:p-6 lg:p-0 flex flex-col items-start gap-4">
-    <img src={avatar} alt="Expert" className="w-16 h-16 rounded-full" />
-    <p className="text-lg font-medium text-black">Talk to a growth expert</p>
-    <p className="text-2xl font-bold text-black tracking-wider">+91-729-096-9680</p>
+  <div className="bg-white rounded-t-[40px] shadow-md p-5 lg:p-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+      <div className="p-0 md:p-6 lg:p-0 flex flex-col items-start gap-4">
+      <img src={avatar} alt="Expert" className="w-16 h-16 rounded-full" />
+      <p className="text-lg font-medium text-black">Talk to a growth expert</p>
+  <div className="w-fit relative group cursor-pointer">
+        <a href="mailto:info@digitalmarketingtap.com" className="inline-block text-gray-800 transition-colors duration-300 text-2xl font-bold tracking-wider">+91-729-096-9680</a>
+        <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
+      </div>
   </div>
 
-  {/* Column 2 - Address + Email */}
   <div className="flex flex-col gap-4">
-    {/* Location Icon Above */}
     <div className="w-16 h-16 bg-[#fff5ea] rounded-full flex items-center justify-center">
       <FaMapMarkerAlt className="text-2xl text-[#f89e1b]" />
     </div>
@@ -107,8 +107,8 @@ const Footer = () => {
     </div>
 
     <div className="w-fit relative group cursor-pointer">
-      <a href='/' className="inline-block text-base text-gray-800 transition-colors duration-300">View On Map</a>
-      <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
+      <a href='/' className="inline-block text-base text-gray-800 transition-colors border-b-2 border-[#f89e1b] duration-300">View On Map</a>
+      <span className="block absolute left-0 -bottom-.1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
     </div>
   </div>
 
@@ -140,40 +140,64 @@ const Footer = () => {
         <div className="bg-black text-white py-6 md:py-12 px-1 md:px-5 lg:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 md:gap-10">
           <div>
             <h3 className="text-lg md:text-sm font-bold mb-2 md:mb-4">SOLUTIONS</h3>
-            <ul className="space-y-1 md:space-y-2 text-sm md:text-md">
-              {['Content Writing Service', 'Search engine optimization', 'Email marketing', 'Social Media Optimization'].map((text, index) => (
-                <li key={index} className="w-fit relative group">
-                  <a href="#" className="inline-block text-white group-hover:text-white transition-colors duration-300">
-                    {text}
-                    <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
-                  </a>
-                </li>
-              ))}
-            </ul>
+           <ul className="space-y-1 md:space-y-2 text-sm md:text-md">
+  {[
+    'Content Writing Service',
+    'Search engine optimization',
+    'Email marketing',
+    'Social Media Optimization',
+  ].map((text, index) => {
+    const path = '/' + text.toLowerCase().replace(/\s+/g, '-');
+    return (
+      <li key={index} className="w-fit relative group">
+        <Link
+          to={path}
+          className="inline-block text-white group-hover:text-white transition-colors duration-300"
+        >
+          {text}
+          <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
+        </Link>
+      </li>
+    );
+  })}
+</ul>
           </div>
           <div className='mt-0 md:mt-8'>
-            <ul className="space-y-1 md:space-y-2 text-sm md:text-md">
-              {['Social Media Marketing', 'Graphic Design', 'Online Reputation Management', 'Website Design'].map((text, index) => (
-                <li key={index} className="w-fit relative group">
-                  <a href="#" className="inline-block text-white group-hover:text-white transition-colors duration-300">
-                    {text}
-                    <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
-                  </a>
-                </li>
-              ))}
-            </ul>
+           <ul className="space-y-1 md:space-y-2 text-sm md:text-md">
+  <li className="w-fit relative group">
+    <Link to="/social-media-marketing" className="inline-block text-white group-hover:text-white transition-colors duration-300">
+      Social Media Marketing
+      <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
+    </Link>
+  </li>
+  <li className="w-fit relative group">
+    <Link to="/graphic-design" className="inline-block text-white group-hover:text-white transition-colors duration-300">
+      Graphic Design
+      <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
+    </Link>
+  </li>
+  <li className="w-fit relative group">
+    <Link to="/online-reputation-management" className="inline-block text-white group-hover:text-white transition-colors duration-300">
+      Online Reputation Management
+      <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
+    </Link>
+  </li>
+  <li className="w-fit relative group">
+    <Link to="/website-design" className="inline-block text-white group-hover:text-white transition-colors duration-300">
+      Website Design
+      <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
+    </Link>
+  </li>
+</ul>
           </div>
           <div>
             <h3 className="text-lg md:text-sm font-bold mb-2 md:mb-4">WHO WE ARE</h3>
             <ul className="space-y-1 md:space-y-2 text-sm md:text-md">
-              {['Awards', 'Contact'].map((text, index) => (
-                <li key={index} className="w-fit relative group">
-                  <a href="#" className="inline-block text-white group-hover:text-white transition-colors duration-300">
-                    {text}
-                    <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
-                  </a>
-                </li>
-              ))}
+               <li className="w-fit relative group">
+                <Link to="/awards" className="inline-block text-white group-hover:text-white transition-colors duration-300">Awards
+                     <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span></Link></li>
+                  <li className="w-fit relative group"><Link to="/contact-us" className="inline-block text-white group-hover:text-white transition-colors duration-300">Contact
+                     <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span></Link></li>
             </ul>
           </div>
           <div>
@@ -197,8 +221,8 @@ const Footer = () => {
     <p className="text-center md:text-left">© 2025 Digital Market Tap</p>
 
     <div className="flex gap-4">
-      <a href="#" className="hover:text-[#6754E9]">Terms & Conditions</a>
-      <a href="#" className="hover:text-[#6754E9]">Privacy Policy</a>
+      <a href="/terms-and-conditions" className="hover:text-[#6754E9]">Terms & Conditions</a>
+      <a href="privacy-policy" className="hover:text-[#6754E9]">Privacy Policy</a>
     </div>
   </div>
 

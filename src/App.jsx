@@ -18,6 +18,17 @@ import AISeo from './pages/AISeo';
 import FreeAudit from './pages/FreeAudit';
 import MeetTheTeam from './pages/MeetTheTeam';
 import Awards from "./pages/Awards"
+import TermsCondition from "./pages/TermsCondition";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import ContentWritingService from "./pages/ContentWritingService";
+import SocialMediaMarketing from "./pages/SocialMediaMarketing";
+import SocialMediaOptimisation from "./pages/SocialMediaOptimisation";
+import OnlineReputationManagement from "./pages/OnlineReputationManagement";
+import QuoraMarketing from "./pages/QuoraMarketing";
+import EmailMarketing from "./pages/EmailMarketing";
+
+
+
 
 function App() {
   return (
@@ -40,6 +51,17 @@ function App() {
         <Route path="/free-audit" element={<Layout><FreeAudit/></Layout>} />
         <Route path="/meet-the-team" element={<Layout><MeetTheTeam/></Layout>} />
         <Route path="/awards" element={<Layout><Awards/></Layout>} />
+        <Route path="/terms-and-conditions" element={<Layout><TermsCondition/></Layout>} />
+        <Route path="/privacy-policy" element={<Layout><PrivacyPolicy/></Layout>} />
+        <Route path="/content-writing-service" element={<Layout><ContentWritingService/></Layout>} />
+        <Route path="/social-media-marketing" element={<Layout><SocialMediaMarketing/></Layout>} />
+        <Route path="/social-media-optimisation" element={<Layout><SocialMediaOptimisation/></Layout>} />
+        <Route path="/online-reputation-management" element={<Layout><OnlineReputationManagement/></Layout>} />
+        <Route path="/quora-marketing" element={<Layout><QuoraMarketing/></Layout>} />
+        <Route path="/email-marketing" element={<Layout><EmailMarketing/></Layout>} />
+    
+        
+
       </Routes>
     </Router>
   );
