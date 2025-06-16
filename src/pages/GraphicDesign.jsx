@@ -7,35 +7,15 @@ import GraphicDesign1 from "../assets/GraphicDesign1.png";
 import GraphicDesign2 from "../assets/GraphicDesign2.png";
 import GraphicDesign3 from "../assets/GraphicDesign3.png";
 import { FaChessKnight, FaTags, FaPrint } from "react-icons/fa";
+import GraphicDesign4 from "../assets/GraphicDesign4.png";
+import GraphicDesign7 from "../assets/GraphicDesign7.png";
 
 const GraphicDesign = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
   });
-
-  const services = [
-  {
-    icon: <FaChessKnight className="text-black text-2xl" />,
-    title: "Logo Design",
-    description:
-      "Increasing conversions, repeat traffic, and online authority across your website is our top priority.",
-  },
-  {
-    icon: <FaTags className="text-white text-2xl" />,
-    title: "Branding",
-    description:
-      "In order for your funnel to be successful, you need to make it as smooth as possible.",
-    bgColor: "bg-[#f89e1b]",
-  },
-  {
-    icon: <FaPrint className="text-black text-2xl" />,
-    title: "Print Design",
-    description:
-      "Leads are nurtured through our email, SMS, and automation services, resulting in customer acquisition and retention.",
-  },
-];  
-
+ 
   const stats = [
     { value: 4800, suffix: "K", label: "JOBS COMPLETED" },
     { value: 15, suffix: "+", label: "INDUSTRY EXPERIENCE" },
@@ -140,46 +120,121 @@ const GraphicDesign = () => {
             ))}
       </div>
 
- <div className="relative py-20 px-4 sm:px-8 md:px-16">
+ <div className="relative py-20">
       <img
         src={StarImg}
         alt="star"
-        className="absolute top-[60px] left-1/2 transform -translate-x-1/2 w-[30px] h-[30px] object-contain z-10"
+        className="absolute top-[35%] left-[35%] transform -translate-x-1/2 w-[50px] h-[50px] object-contain z-10"
       />
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 text-left">
           Our services solve any <br /> business problem
         </h2>
-        <p className="text-gray-500 text-md md:text-lg">
+        <p className="text-gray-500 text-md md:text-lg text-right">
           Our team has a successful track record of helping brands scale
-          profitably based on high-performing strategies.
+          profitably based on <br /> high-performing strategies.
         </p>
       </div>
-      <div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl"
-          >
-            <div
-              className={`w-14 h-14 rounded-full flex items-center justify-center mb-5 ${
-                service.bgColor || "bg-gray-100"
-              }`}
-            >
-              {service.icon}
-            </div>
-            <h3 className="text-xl font-semibold text-black mb-2">
-              {service.title}
-            </h3>
-            <p className="text-gray-500 text-sm leading-relaxed">
-              {service.description}
-            </p>
-          </div>
-        ))}
-      </div>
+
+
+<div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto relative z-10">
+  <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl">
+    <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5 bg-gray-100">
+      <FaChessKnight className="text-black hover:text-[#f89e1b] text-2xl" />
+    </div>
+    <h3 className="text-xl font-semibold text-black mb-2">Logo Design</h3>
+    <p className="text-gray-500 text-sm leading-relaxed">
+      Increasing conversions, repeat traffic, and online authority across your website is our top priority.
+    </p>
+  </div>
+
+  <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl">
+    <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5 bg-[#f89e1b]">
+      <FaTags className="text-white hover:text-black text-2xl" />
+    </div>
+    <h3 className="text-xl font-semibold text-black mb-2">Branding</h3>
+    <p className="text-gray-500 text-sm leading-relaxed">
+      In order for your funnel to be successful, you need to make it as smooth as possible.
+    </p>
+  </div>
+
+  <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl">
+    <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5 bg-gray-100">
+      <FaPrint className="text-black hover:text-[#f89e1b] text-2xl" />
+    </div>
+    <h3 className="text-xl font-semibold text-black mb-2">Print Design</h3>
+    <p className="text-gray-500 text-sm leading-relaxed">
+      Leads are nurtured through our email, SMS, and automation services, resulting in customer acquisition and retention.
+    </p>
+  </div>
+</div>
+
     </div>
 
+  <div className="pt-12 md:pt-28 lg:pt-38 pb-20">
+        <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center">
+          <div className="flex lg:justify-end">
+            <img
+              src={GraphicDesign4}
+              alt="Marketing Visual"
+              className="w-full h-[250px] md:h-[470px] object-cover rounded-[30px] md:rounded-[60px]"
+            />
+          </div>
+          <div className="pl-2 md:pl-8 lg:pl-20">
+            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-14">Why you need graphic <br/> designing services</h3>
+            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-2 pb-6">
+             In order to scale new customer acquisition and retention for e-commerce brands, we work across the entire customer journey. Our team has a successful track record of helping brands scale profitably based on high-performing strategies.
+            </p>
+            <a href="#" className="group inline-block text-sm font-semibold relative border-b-2 border-[#4118d2]">LEARN MORE<span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span></a>
+          </div>
+        </div>
+      </div>
 
+
+
+
+<div className="pt-12 md:pt-28 lg:pt-38 pb-20">
+        <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center">
+          <div className="pl-2 md:pl-8 lg:pl-20">
+            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-14">24/7 Customers Support <br/> Service</h3>
+            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-2 pb-6">
+             In order to scale new customer acquisition and retention for e-commerce brands, we work across the entire customer journey. Our team has a successful track record of helping brands scale profitably based on high-performing strategies.
+            </p>
+            <a href="#" className="group inline-block text-sm font-semibold relative border-b-2 border-[#4118d2]">LEARN MORE<span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span></a>
+          </div>
+          <div className="flex lg:justify-end">
+            <img
+              src={GraphicDesign7}
+              alt="Marketing Visual"
+              className="w-full h-[250px] md:h-[470px] object-cover rounded-[30px] md:rounded-[60px]"
+            />
+          </div>
+        </div>
+      </div>
+      
+
+      <div className="w-full flex flex-col items-center justify-center text-center relative pt-20 pb-12">
+        <img
+          src={StarImg}
+          alt="star"
+          className="absolute top-[10%] right-[15%] w-[60px] object-contain"
+        />
+        <h1 className="text-6xl md:text-7xl font-bold text-black leading-tight pb-6">
+          Ready for your <br />digital success?
+        </h1>
+        <p className="text-lg md:text-xl text-black pb-10">
+         Our services solve any business problem.
+        </p>
+        <NavLink
+          to="/free-audit"
+          className="group bg-black text-white hover:text-black px-12 py-4 rounded-[10px] text-lg font-semibold border border-black hover:bg-transparent transition duration-300 relative overflow-hidden"
+        >
+          <span className="relative z-10">
+            GET STARTED
+            <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300" />
+          </span>
+        </NavLink>
+      </div>
 
     </main>
   );
