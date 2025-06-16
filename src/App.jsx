@@ -6,7 +6,6 @@ import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPosts';
 import Layout from './components/Layout';
 import MarketingSolution from './pages/MarketingSolution';
-import WebsiteDesign from "./marketingSolutionsServices/WebsiteDesign";
 import Seo from "./pages/Seo";
 import AboutUs from './pages/AboutUs';
 import OnPageOffPageSeo from './pages/onPageOffPageSeo';
@@ -26,7 +25,8 @@ import SocialMediaOptimisation from "./pages/SocialMediaOptimisation";
 import OnlineReputationManagement from "./pages/OnlineReputationManagement";
 import QuoraMarketing from "./pages/QuoraMarketing";
 import EmailMarketing from "./pages/EmailMarketing";
-
+import WebsiteDesign from './pages/WebsiteDesign';
+import GraphicDesign from './pages/GraphicDesign';
 
 
 
@@ -59,6 +59,7 @@ function App() {
         <Route path="/online-reputation-management" element={<Layout><OnlineReputationManagement/></Layout>} />
         <Route path="/quora-marketing" element={<Layout><QuoraMarketing/></Layout>} />
         <Route path="/email-marketing" element={<Layout><EmailMarketing/></Layout>} />
+        <Route path="/graphic-design" element={<Layout><GraphicDesign/></Layout>} />
     
         
 

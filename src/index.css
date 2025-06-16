@@ -2,3 +2,15 @@
 .custom-swiper .swiper-pagination {
   bottom: -2px !important;
 }
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slower {
+  animation: spin-slow 12s linear infinite;
+}
