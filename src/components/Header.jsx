@@ -10,7 +10,6 @@ import {
   FaCode,
   FaImage,
   FaEnvelope,
-  FaQuestionCircle,
   FaCommentDots,
   FaHashtag,
   FaKeyboard,
@@ -20,6 +19,7 @@ import {
   FaBuilding,
   FaShoppingCart,
   FaLanguage,
+  FaQuora
 } from 'react-icons/fa';
 import logo from '../assets/dmt-main-logo.png';
 import targetIcon from '../assets/rocket.png';
@@ -60,27 +60,28 @@ const Header = () => {
            <NavLink to="/marketing-solution" onMouseEnter={() => setMarketingSolutionsVisible(true)} className={({ isActive }) => `font-semibold text-sm border-b-2 flex items-center ${ isActive || marketingSolutionsVisible ? 'border-[#F89E1B]' : 'border-transparent'}`}> MARKETING SOLUTIONS</NavLink>
             {marketingSolutionsVisible && (
               <div className="absolute top-full justify-around left-[160px] -translate-x-1/2 mt-8 bg-white shadow-lg rounded-3xl z-50 px-5 py-6 flex space-x-10 w-[1260px]">
-                <div className="flex flex-col space-y-2">
-                  <HoverService icon={<FaCode />} text="Website Design" to="/website-design" />
-                  <HoverService icon={<FaImage />} text="Graphic Design" to="/graphic-design" />
-                  <HoverService icon={<FaEnvelope />} text="Email Marketing" to="/email-marketing" />
-                  <HoverService icon={<FaQuestionCircle />} text="Quora Marketing" to="/quora-marketing" />
+                <div className="flex flex-col space-y-1">
+                 <HoverService icon={<FaCode color="#000" />} text="Website Design" to="/website-design" />
+                  <HoverService icon={<FaImage  color="#097B11" />} text="Graphic Design" to="/graphic-design" />
+                  <HoverService icon={<FaEnvelope  />} text="Email Marketing" to="/email-marketing" />
+                  <HoverService icon={<FaQuora color="#D53716" />} text="Quora Marketing" to="/quora-marketing" />
                 </div>
-                <div className="flex flex-col space-y-2">
-                  <HoverService icon={<FaCommentDots />} text="Social Media Marketing" to="/social-media-marketing" />
-                  <HoverService icon={<FaHashtag />} text="Social Media Optimization" to="/social-media-optimisation" />
-                  <HoverService icon={<FaKeyboard />} text="Content Writing Service" to="/content-writing-service" />
-                  <HoverService icon={<FaStar />} text="Online Reputation Management" to="/online-reputation-management" />
+                <div className="flex flex-col space-y-1">
+                  <HoverService icon={<FaCommentDots color="#8e81fa" />} text="Social Media Marketing" to="/social-media-marketing" />
+                  <HoverService icon={<FaHashtag color="purple" />} text="Social Media Optimization" to="/social-media-optimisation" />
+                  <HoverService icon={<FaKeyboard color='black' />} text="Content Writing Service" to="/content-writing-service" />
+                  <HoverService icon={<FaStar color='yellow' />} text="Online Reputation Management" to="/online-reputation-management" />
                 </div>
-                <div className="bg-[#ffc187] rounded-3xl p-5 flex flex-col justify-center items-center text-center w-[200px]">
-                  <img src={targetIcon} alt="target" className="w-20 h-20 mb-4" />
-                  <p className="text-sm font-semibold mb-2">
-                    Explore all
-                    <br />
-                    solutions
-                  </p>
-                  <FaArrowRight className="bg-black text-white rounded-full p-1 text-xl" />
+                 
+                <div className="bg-[#ffc187] rounded-3xl px-5 pt-10 pb-6 flex flex-col items-center w-[240px] relative">
+                  <img src={targetIcon} alt="target" className="w-20 h-25 absolute -top-5 right-0 -translate-x-1/2"/>
+                    <div className="w-full flex items-center justify-between mt-auto">
+                      <p className="text-sm font-semibold hover:text-white"> Explore all <br/>solutions</p>
+                      <FaArrowRight className="bg-black text-white rounded-[12px] p-2 text-3xl hover:bg-white hover:text-[#8e81fa]"/>
+                    </div>
                 </div>
+
+
               </div>
             )}
           </div>
@@ -113,12 +114,18 @@ const Header = () => {
           </NavLink>
         </nav>
 
-        <NavLink
-          to="/free-audit"
-          className="hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
-        >
-          <span className="relative z-10">Free Audit →</span>
-        </NavLink>
+       <NavLink
+  to="/free-audit"
+  className="hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
+>
+  <span className="relative z-10 flex items-center gap-2">
+    <span className="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
+      Free Audit
+    </span>
+    <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+
+  </span>
+</NavLink>
       </header>
 
 <div className="fixed bottom-0 left-0 right-0 z-50 bg-white shadow-md border-t-2 border-yellow-400 xl:hidden">

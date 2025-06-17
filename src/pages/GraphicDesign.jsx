@@ -6,35 +6,48 @@ import StarImg from "../assets/star.png";
 import GraphicDesign1 from "../assets/GraphicDesign1.png";
 import GraphicDesign2 from "../assets/GraphicDesign2.png";
 import GraphicDesign3 from "../assets/GraphicDesign3.png";
-import { FaChessKnight, FaTags, FaPrint } from "react-icons/fa";
+import { FaChessKnight, FaTags, FaPrint , FaArrowRight } from "react-icons/fa";
 import GraphicDesign4 from "../assets/GraphicDesign4.png";
 import GraphicDesign7 from "../assets/GraphicDesign7.png";
+import HighlightedStrokes from "../assets/Highlight_strokes.png";
+import GraphicDesign8 from "../assets/GraphicDesign8.png";
+import GraphicDesign9 from "../assets/GraphicDesign9.png";
+import GraphicDesign10 from "../assets/GraphicDesign10.png";
+import GraphicDesign11 from "../assets/GraphicDesign11.png";
+import YellowStar from "../assets/Misc_star.png";
+import GraphicDesignSlider from "../components/GraphicDesignSlider";
 
 const GraphicDesign = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.3,
   });
- 
+
   const stats = [
     { value: 4800, suffix: "K", label: "JOBS COMPLETED" },
     { value: 15, suffix: "+", label: "INDUSTRY EXPERIENCE" },
     { value: 3600, suffix: "K+", label: "GLOBAL CLIENTS" },
-    { value: 130, suffix: "+", label: "AWARDS WINNED" }, 
+    { value: 130, suffix: "+", label: "AWARDS WINNED" },
   ];
 
   return (
-    <main className="bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-10 lg:px-30">
-      <div className="w-full flex flex-col items-center justify-center text-center relative pt-20 pb-12">
+    <main className="bg-gradient-to-b from-[#fdf1e7] to-white">
+      <div className="w-full flex flex-col items-center justify-center text-center relative pt-28 pb-12">
         <img
           src={StarImg}
           alt="star"
-          className="absolute top-[10%] right-[15%] w-[60px] object-contain"
+          className="absolute top-[45%] right-[18%] w-[30px] md:w-[40px] lg:w-[60px] object-contain"
         />
-        <h1 className="text-6xl md:text-7xl font-bold text-black leading-tight pb-6">
+        <img
+          src={HighlightedStrokes}
+          alt="star"
+          className="absolute top-[20%] md:top-[15%] left-[10%] md:left-[18%] lg:left-[26%] w-[30px] md:w-[40px] object-contain"
+        />
+        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-black leading-tight pb-6 z-10 relative">
+           <div className="absolute top-0 md:-top-[2%] lg:top-[2%] -left-[11%] w-[80px] h-[40px] md:w-[120px] lg:w-[180px] md:h-[70px] lg:h-[90px] bg-[#f89e1b] rounded-full -z-1"></div>
           Visual Motion <br /> Graphics
         </h1>
-        <p className="text-lg md:text-xl text-black pb-10">
+        <p className="text-lg md:text-xl text-black pb-15 lg:pb-10 px-5 md:px-0 lg:px-0">
           Improve your business by appearance.
         </p>
         <NavLink
@@ -48,8 +61,8 @@ const GraphicDesign = () => {
         </NavLink>
       </div>
 
-      <div className="w-full pb-12 pt-12 relative">
-        <div className="flex justify-center gap-8 relative z-10 px-4 flex-wrap">
+      <div className="w-full pb-6 lg:pb-12 pt-4 md:pt-8 lg:pt-12 relative px-5 md:px-10 lg:px-30">
+        <div className="flex justify-center gap-8 relative z-10 px-0 md:px-4 flex-wrap">
           <img
             src={GraphicDesign1}
             alt="Graphic 1"
@@ -106,72 +119,77 @@ const GraphicDesign = () => {
         </div>
       </div>
 
-      <div ref={ref} className="flex justify-around flex-wrap py-12 text-center">
+      <div
+        ref={ref}
+        className="flex justify-around flex-wrap px-5 md:px-10 lg:px-30 py-6 md:py-8 lg:py-12 text-center"
+      >
         {stats.map((stat, idx) => (
-          <div key={idx} className="w-1/2 md:w-1/4 mb-6">
-            <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-black">
+          <div key={idx} className="w-1/2 md:w-1/4 mb-8 md:mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black">
               {inView ? <CountUp end={stat.value} duration={2.5} /> : 0}
               {stat.suffix}
             </h2>
             <p className="text-gray-500 mt-2 font-bold uppercase tracking-wide text-sm">
               {stat.label}
             </p>
-            </div>
-            ))}
+          </div>
+        ))}
       </div>
 
- <div className="relative py-20">
-      <img
-        src={StarImg}
-        alt="star"
-        className="absolute top-[35%] left-[35%] transform -translate-x-1/2 w-[50px] h-[50px] object-contain z-10"
-      />
-      <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 text-left">
-          Our services solve any <br /> business problem
-        </h2>
-        <p className="text-gray-500 text-md md:text-lg text-right">
-          Our team has a successful track record of helping brands scale
-          profitably based on <br /> high-performing strategies.
-        </p>
-      </div>
+      <div className="relative py-4 md:py-12 lg:py-20 px-5 md:px-10 lg:px-30">
+        <img
+          src={StarImg}
+          alt="star"
+          className="absolute top-[35%] left-[35%] transform -translate-x-1/2 w-[50px] h-[50px] object-contain z-10"
+        />
+        <div className="text-center mb-8 md:mb-12 lg:mb-16">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-4 text-left">
+            Our services solve any <br /> business problem
+          </h2>
+          <p className="text-gray-500 text-sm md:text-lg text-right">
+            Our team has a successful track record of helping brands scale
+            profitably based on <br /> high-performing strategies.
+          </p>
+        </div>
 
-
-<div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto relative z-10">
-  <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto relative z-10">
+  <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl mt-[10px]">
     <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5 bg-gray-100">
       <FaChessKnight className="text-black hover:text-[#f89e1b] text-2xl" />
     </div>
     <h3 className="text-xl font-semibold text-black mb-2">Logo Design</h3>
     <p className="text-gray-500 text-sm leading-relaxed">
-      Increasing conversions, repeat traffic, and online authority across your website is our top priority.
+      Increasing conversions, repeat traffic, and online authority
+      across your website is our top priority.
     </p>
   </div>
 
-  <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl">
+  <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl mt-[30px]">
     <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5 bg-[#f89e1b]">
       <FaTags className="text-white hover:text-black text-2xl" />
     </div>
     <h3 className="text-xl font-semibold text-black mb-2">Branding</h3>
     <p className="text-gray-500 text-sm leading-relaxed">
-      In order for your funnel to be successful, you need to make it as smooth as possible.
+      In order for your funnel to be successful, you need to make it as
+      smooth as possible.
     </p>
   </div>
 
-  <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl">
+  <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl mt-[60px]">
     <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5 bg-gray-100">
       <FaPrint className="text-black hover:text-[#f89e1b] text-2xl" />
     </div>
     <h3 className="text-xl font-semibold text-black mb-2">Print Design</h3>
     <p className="text-gray-500 text-sm leading-relaxed">
-      Leads are nurtured through our email, SMS, and automation services, resulting in customer acquisition and retention.
+      Leads are nurtured through our email, SMS, and automation
+      services, resulting in customer acquisition and retention.
     </p>
   </div>
 </div>
 
-    </div>
+      </div>
 
-  <div className="pt-12 md:pt-28 lg:pt-38 pb-20">
+      <div className="pt-12 md:pt-14 pb-12 md:pb-14 lg:pb-18 px-5 md:px-10 lg:px-30">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center">
           <div className="flex lg:justify-end">
             <img
@@ -181,26 +199,150 @@ const GraphicDesign = () => {
             />
           </div>
           <div className="pl-2 md:pl-8 lg:pl-20">
-            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-14">Why you need graphic <br/> designing services</h3>
+            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-14">
+              Why you need graphic <br /> designing services
+            </h3>
             <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-2 pb-6">
-             In order to scale new customer acquisition and retention for e-commerce brands, we work across the entire customer journey. Our team has a successful track record of helping brands scale profitably based on high-performing strategies.
+              In order to scale new customer acquisition and retention for
+              e-commerce brands, we work across the entire customer journey. Our
+              team has a successful track record of helping brands scale
+              profitably based on high-performing strategies.
             </p>
-            <a href="#" className="group inline-block text-sm font-semibold relative border-b-2 border-[#4118d2]">LEARN MORE<span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span></a>
+          <NavLink to="/about-us" className="text-md border-b-2 border-[#f89e1b] font-semibold group relative inline-flex items-center gap-2  text-black transition duration-300">LEARN MORE <FaArrowRight /><span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-[calc(100%-0rem)]"></span></NavLink>
           </div>
         </div>
       </div>
 
+     <div className="bg-black text-white pt-15 md:pt-20 lg:pt-30 relative overflow-hidden">
+      <img src={YellowStar} alt="star" className="absolute top-[1%] md:top-[4%] lg:top-[6%] left-[9%] w-[30px] md:w-[40px] object-contain"/>
+      <svg className="absolute md:top-22 lg:top-28 md:-right-14 lg:right-28 hidden md:block rotate-75" width="250" height="200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d=" M10 150 C30 30, 90 30, 90 150 C90 220, 30 180, 80 100 C160 0, 250 250, 195 1000" stroke="#FFF" strokeWidth="1.5" strokeDasharray="5 6" strokeLinecap="round"/>
+      </svg>
+
+      <div className="px-5 md:px-10 lg:px-30 text-center">
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-8">
+          Make your Brand more <br /> effective
+        </h2>
+        <p className="text-gray-300 max-w-xl mx-auto mb-12">
+          E-commerce brands can acquire and retain new customers using solutions
+          that span the entire customer journey.
+        </p>
+
+  <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mt-12">
+  <div className="md:col-span-4 bg-[#F4DD86] text-black rounded-3xl px-8 pt-8 flex flex-col justify-between shadow-md">
+    <div>
+      <h3 className="text-2xl font-semibold mb-3 text-left">Appealing Logo</h3>
+      <p className="text-base leading-relaxed mb-6 text-black text-left">
+        Our team has a successful track record of helping brands.
+      </p>
+      <div className="w-full flex justify-start">
+        <NavLink
+          to="/about-us"
+          className="text-md font-semibold group relative inline-flex items-center gap-2 text-black transition duration-300 hover:text-white"
+        >
+          LEARN MORE <FaArrowRight />
+          <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
+        </NavLink>
+      </div>
+    </div>
+    <img
+      src={GraphicDesign8}
+      alt="Appealing Logo"
+      className="mt-8 w-full max-w-[280px] self-center"
+    />
+  </div>
+
+  <div className="md:col-span-8 bg-[#9E98F8] text-black rounded-3xl px-8 pt-8 flex flex-col justify-between shadow-md">
+    <div>
+      <h3 className="text-2xl font-semibold mb-3 text-left">Eye Catching Color Theory</h3>
+      <p className="text-sm mb-6 text-left">
+        Our team has a successful track record of helping brands scale profitably
+        based on high-performing strategies.
+      </p>
+      <div className="w-full flex justify-start">
+        <NavLink
+          to="/about-us"
+          className="text-md font-semibold group relative inline-flex items-center gap-2 text-black transition duration-300 hover:text-white"
+        >
+          LEARN MORE <FaArrowRight />
+          <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
+        </NavLink>
+      </div>
+    </div>
+    <img src={GraphicDesign9} alt="Color Theory" className="mt-4" />
+  </div>
+
+  <div className="md:col-span-12 bg-[#F1F1F1] text-black rounded-3xl px-8 pt-10 flex flex-col md:flex-row justify-between items-center shadow-md">
+    <div className="mb-4 md:mb-0 max-w-xl">
+      <h3 className="text-2xl font-semibold mb-4 text-left">Design Uniformity</h3>
+      <p className="text-sm mb-6 text-left">
+        Leads are nurtured through our email, SMS, and automation services, resulting in customer acquisition and retention.
+      </p>
+      <div className="w-full flex justify-start">
+        <NavLink
+          to="/about-us"
+          className="text-md font-semibold group relative inline-flex items-center gap-2 text-black transition duration-300 hover:text-white"
+        >
+          LEARN MORE <FaArrowRight />
+          <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
+        </NavLink>
+      </div>
+    </div>
+    <img src={GraphicDesign10} alt="Design Uniformity" className="w-full md:w-[50%] max-w-md" />
+  </div>
+</div>
 
 
+      <div className="pt-15 md:pt-28 lg:pt-38 pb-20">
+        <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center">
+          <div className="flex lg:justify-end">
+            <img
+              src={GraphicDesign11}
+              alt="Marketing Visual"
+              className="w-full h-[250px] md:h-[470px] object-cover rounded-[30px] md:rounded-[60px]"
+            />
+          </div>
+          <div className="pl-2 md:pl-8 lg:pl-20">
+            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-white mb-2 md:mb-4 lg:mb-8 text-left">Growth drives everything <br /> we do</h3>
+            <p className="text-sm lg:text-[16px] font-base text-gray-400 pt-2 pb-6 text-left">
+              In order to scale new customer acquisition and retention for
+              e-commerce brands, we work across the entire customer journey. Our
+              team has a successful track record of helping brands scale
+              profitably based on high-performing strategies.
+            </p>
+         
+          <div className="bg-black text-[#F4DD86] py-8 px-4 lg:px-0 flex flex-col md:flex-row items-center justify-start gap-12">
+            <div className="text-center">
+              <h2 className="text-4xl font-bold lg:text-6xl text-left">5K+</h2>
+              <p className="text-white font-semibold text-sm md:text-lg mt-2 text-left">Advertising Partners</p>
+            </div>
 
-<div className="pt-12 md:pt-28 lg:pt-38 pb-20">
+            <div className="text-center">
+              <h2 className="text-4xl font-bold lg:text-6xl text-left">90%</h2>
+              <p className="text-white font-semibold text-sm md:text-lg mt-2 text-left">Increase in ROAS</p>
+         </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+     <GraphicDesignSlider/>
+
+      <div className="pt-12 md:pt-20 lg:pt-38 md:pb-15 px-5 md:px-10 lg:px-30">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center">
           <div className="pl-2 md:pl-8 lg:pl-20">
-            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-14">24/7 Customers Support <br/> Service</h3>
+            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-14">
+              24/7 Customers Support <br /> Service
+            </h3>
             <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-2 pb-6">
-             In order to scale new customer acquisition and retention for e-commerce brands, we work across the entire customer journey. Our team has a successful track record of helping brands scale profitably based on high-performing strategies.
+              In order to scale new customer acquisition and retention for
+              e-commerce brands, we work across the entire customer journey. Our
+              team has a successful track record of helping brands scale
+              profitably based on high-performing strategies.
             </p>
-            <a href="#" className="group inline-block text-sm font-semibold relative border-b-2 border-[#4118d2]">LEARN MORE<span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span></a>
+            <NavLink to="/about-us" className="text-md border-b-2 border-[#f89e1b] font-semibold group relative inline-flex items-center gap-2  text-black transition duration-300">LEARN MORE <FaArrowRight /><span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-[calc(100%-0rem)]"></span></NavLink>
           </div>
           <div className="flex lg:justify-end">
             <img
@@ -211,19 +353,19 @@ const GraphicDesign = () => {
           </div>
         </div>
       </div>
-      
 
-      <div className="w-full flex flex-col items-center justify-center text-center relative pt-20 pb-12">
+      <div className="w-full flex flex-col items-center justify-center text-center relative pt-18 pb-12">
         <img
           src={StarImg}
           alt="star"
           className="absolute top-[10%] right-[15%] w-[60px] object-contain"
         />
-        <h1 className="text-6xl md:text-7xl font-bold text-black leading-tight pb-6">
-          Ready for your <br />digital success?
+        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-black leading-tight pb-6 z-2">
+          Ready for your <br />
+          digital success?
         </h1>
-        <p className="text-lg md:text-xl text-black pb-10">
-         Our services solve any business problem.
+        <p className="text-lg md:text-xl text-black pb-12 md:pb-20 lg:pb-30">
+          Our services solve any business problem.
         </p>
         <NavLink
           to="/free-audit"
@@ -234,8 +376,10 @@ const GraphicDesign = () => {
             <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300" />
           </span>
         </NavLink>
+        <img src={HighlightedStrokes} alt="highlight" className="absolute top-[62%] md:top-[65%] lg:top-[70%] left-[14%] md:left-[30%] lg:left-[40%] w-[30px] md:w-[40px]" />
+        <div className="absolute top-[19%] md:top-[17%] lg:top-[15%] left-[15%] md:left-[26%] lg:left-[31%] w-[90px] md:w-[120px] lg:w-[150px] h-[45px] md:h-[60px] lg:h-[80px] bg-[#f89e1b] rounded-full z-1"></div>
+        <img src={HighlightedStrokes} alt="highlight" className="absolute top-[84%] left-[78%] md:left-[66%] lg:left-[59%] w-[30px] md:w-[40px] rotate-160" />
       </div>
-
     </main>
   );
 };

@@ -30,7 +30,7 @@ const InfoTabs = () => {
   return (
    <div className="px-6 md:px-10 lg:px-30 py-8 md:py-16 bg-white w-full">
   <div className="flex justify-start mb-4 md:mb-8">
-    <div className="inline-flex rounded-full bg-orange-100 p-2 md:p-1">
+    <div className="inline-flex rounded-full p-2 md:p-1">
       {Object.keys(contentData).map((tab, idx) => (
         <button
           key={tab}

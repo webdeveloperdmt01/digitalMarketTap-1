@@ -25,7 +25,7 @@ import {
 
 const Footer = () => {
   return (
-    <section className="bg-black text-white rounded-t-[45px] md:rounded-t-[50px] pt-15   lg:px-0">
+    <section className="bg-black text-white rounded-t-[35px] md:rounded-t-[50px] pt-15   lg:px-0">
       <div className="px-5 md:px-10 lg:px-30 ">
         <div className="flex flex-col lg:flex-row gap-6 items-start justify-between">
           <div className="w-full lg:w-1/2 max-w-xl">
