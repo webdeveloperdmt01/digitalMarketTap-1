@@ -5,7 +5,6 @@ import {
   FaBullhorn,
   FaSearch,
   FaInfoCircle,
-  FaBlog,
   FaPhoneAlt,
   FaCode,
   FaImage,
@@ -51,7 +50,7 @@ const Header = () => {
         <NavLink to="/" className="bg-[#fff5ea]">
           <img src={logo} alt="Logo" className="h-19" />
         </NavLink>
-        <nav className="hidden xl:flex items-center space-x-6 font-semibold text-sm relative">
+        <nav className="font-semibold hidden xl:flex items-center space-x-6 text-sm relative">
           <NavLink to="/" className={({ isActive }) => (isActive ? 'border-b-2 border-[#F89E1B]' : 'border-b-2 border-transparent')}>
             HOME
           </NavLink>
@@ -119,8 +118,8 @@ const Header = () => {
   className="hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
 >
   <span className="relative z-10 flex items-center gap-2">
-    <span className="relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
-      Free Audit
+    <span className="font-mono relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
+      FREE AUDIT
     </span>
     <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
 

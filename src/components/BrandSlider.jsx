@@ -25,7 +25,7 @@ const logos = [
 const BrandSlider = () => {
   return (
     <div className=" sm:px-5 py-10 text-center">
-      <h2 className="text-xl sm:px-5 font-semibold mb-10 md:mb-12">The best brands choose Numerique</h2>
+      <h2 className="text-xl sm:px-5 font-bold mb-10 md:mb-12">Digital Market Tap is the choice of industry leaders.</h2>
 
       <Swiper
         slidesPerView={3}

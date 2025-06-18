@@ -64,13 +64,11 @@ const InfoTabs = () => {
     </div>
     <div className="max-w-xl order-2 md:order-2">
       <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-3 md:mb-6 text-left">
-        Why digital market <br /> tap is your top- <br /> choice
+       
+Discover Why Digital Market Tap is the Right Partner for You
       </h2>
-      <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-6 text-left">
-        We are a five-star rated holistic full-service digital marketing agency,
-        serving thousands of clients. Our digital agency covers all aspects of
-        internet marketing: SEO, social media, and PPC management, all the way
-        to email marketing, website design, and web development.
+      <p className="text-gray-700 text-sm md:text-base mb-6 text-left">
+       We are the best digital marketing agency delivering tailored strategies, transparent communication, and expert solutions that drive growth, increase brand visibility, and maximise ROI through Social Media Marketing, SEO and Paid Ads – Helping your business succeed in today’s competitive digital World.
       </p>
 
       <div className="flex justify-start">

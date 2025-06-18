@@ -1,4 +1,10 @@
 @import "tailwindcss";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+
 .custom-swiper .swiper-pagination {
   bottom: -2px !important;
 }
@@ -10,7 +16,26 @@
     transform: rotate(360deg);
   }
 }
-
 .spin-slower {
   animation: spin-slow 12s linear infinite;
 }
+@font-face {
+  font-family: 'Syne';
+  src: url('/digitalMarketTap/public/fonts/Syne-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Syne', sans-serif;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

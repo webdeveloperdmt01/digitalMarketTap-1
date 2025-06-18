@@ -4,7 +4,7 @@ import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const tabs = [
   {
-    title: "Search engine optimization",
+   title: <>Search engine<br />optimization</>,
     content: {
       heading: "Increase your organic traffic by ranking high on search engines and AI discovery tools like ChatGPT",
       features: [
@@ -19,7 +19,7 @@ const tabs = [
     },
   },
   {
-    title: "Paid search marketing",
+    title: <>Paid search <br /> marketing</>,
     content: {
       heading: "Struggling to find PPC experts who drive long term results? Our world-class marketers would love to help your business thrive!",
       features: [
@@ -34,7 +34,7 @@ const tabs = [
     },
   },
   {
-    title: "Conversion rate optimization",
+    title: <>Conversion rate <br /> optimization</>,
     content: {
       heading: "Unlock your website’s full potential and boost your revenue with Numerique’s top-notch conversion rate optimization services.",
       features: [
@@ -49,7 +49,7 @@ const tabs = [
     },
   },
   {
-    title: "Social media marketing",
+    title: <>Social media <br /> marketing</>,
     content: {
       heading: "Finding the balance between staying current and relying on proven strategies is essential for staying competitive in the ever-changing landscape of marketing.",
       features: [
@@ -73,7 +73,7 @@ export default function MarketingTabs() {
   };
 
   return (
-    <section className="max-w-7xl mx-auto pt-12 px-4">
+    <section className="max-w-7xl mx-auto pt-12 pb-8 px-4">
       <div className="hidden lg:flex rounded-[60px] overflow-hidden bg-black">
         <div className="w-1/3 p-12 flex flex-col gap-6 text-white relative">
           {tabs.map((tab, index) => {
@@ -82,12 +82,12 @@ export default function MarketingTabs() {
               <div
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className={` !w-[160%] relative cursor-pointer transition-all duration-300 pl-6 pr-16 py-5 text-left text-lg font-medium leading-tight -ml-8
+                className={` !w-[160%] relative cursor-pointer transition-all duration-300 pl-12 pr-16 py-4 text-left text-lg md:text-xl font-medium leading-tight -ml-8
                 ${isActive ? "bg-[#f89e1b] text-white rounded-full z-10" : "text-white hover:text-black hover:bg-white rounded-full z-0"}`}
               >
                 {tab.title}
                 {isActive && (
-                  <span className="absolute right-3 top-1/2 -translate-y-1/2 transform bg-black text-white rounded-full w-10 h-10 flex items-center justify-center">
+                  <span className="absolute right-3 top-1/2 -translate-y-1/2 transform bg-black text-white rounded-full w-15 h-15 flex items-center justify-center">
                     <FaArrowRight size={18} />
                   </span>
                 )}
@@ -95,12 +95,12 @@ export default function MarketingTabs() {
             );
           })}
         </div>
-        <div className="w-3/3 bg-[#f7f7fa] py-20 pl-32 pr-16 flex items-center justify-between gap-30 rounded-[60px]">
+        <div className="w-3/3 bg-[#f7f7fa] py-20 pl-36 pr-16 flex items-center justify-between gap-30 rounded-[60px]">
           <div className="flex-1">
             <h2 className="text-xl font-semibold mb-6 leading-snug text-left">
               {tabs[activeIndex]?.content.heading}
             </h2>
-            <ul className="space-y-4 text-sm text-black">
+            <ul className="space-y-4 text-md text-black">
               {tabs[activeIndex]?.content.features.map((item, index) => (
                 <li key={index} className="flex items-center gap-3">
                   <FaCheckCircle className="text-[#f89e1b] w-6 h-6" /> {item}

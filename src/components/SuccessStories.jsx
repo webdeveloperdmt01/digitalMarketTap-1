@@ -51,15 +51,15 @@ export default function SuccessStories() {
   };
 
   return (
-    <div className="w-full px-5 md:px-10 lg:px-30 py-10 lg:py-24 bg-white flex flex-col lg:flex-row items-start gap-12">
+    <div className="w-full px-5 md:px-10 lg:px-30 py-10 lg:py-20 bg-white flex flex-col lg:flex-row items-start gap-12">
       <div className="w-full lg:w-1/3 flex flex-col justify-start">
-        <h4 className="text-sm text-left font-semibold uppercase text-black tracking-wide">
-          SUCCESS STORIES
+        <h4 className="text-md text-left font-bold uppercase text-black tracking-wide">
+       Business Outcomes
         </h4>
-        <h2 className="text-left text-[38px] md:text-[54px] font-semibold leading-[1.1] text-black mt-6 md:mt-16 tracking-tight">
-          Our work drives <br /> businesses forward
+        <h2 className="text-left text-[38px] md:text-[48px] font-bold leading-[1.1] text-black mt-6 md:mt-16 tracking-tight">
+we create strategies that drive businesses forward and fuel lasting growth.
         </h2>
-        <button className="mt-6 md:mt-16 text-md font-semibold text-black border-b-3 border-orange-500 hover:opacity-80 w-fit">
+        <button className="mt-6 md:mt-16 text-sm font-semibold text-black border-b-3 border-orange-500 hover:opacity-80 w-fit">
           VIEW ALL
         </button>
       </div>

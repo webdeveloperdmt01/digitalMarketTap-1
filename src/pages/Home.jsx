@@ -70,14 +70,14 @@ const Home = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-[#fdf1e7] to-white pt-10 md:pt-20 text-center">
-      <h1 className="px-2 text-4xl md:text-4xl lg:text-6xl font-semibold text-black">
-        India's Leading Agency
+    <div className="bg-gradient-to-b from-[#fdf1e7] to-white pt-10 md:pt-16 lg:pt-24 text-center">
+      <h1 className="px-2 text-4xl md:text-4xl lg:text-6xl font-bold text-black">
+       India’s #1 Growth Partner
       </h1>
-      <p className="px-7 mt-3 md:mt-6 text-sm md:text-lg lg:text-xl text-gray-700 font-medium">
-        Searching for the <span className="font-bold">Best Digital Marketing Agency</span> to boost your online presence?
+      <p className="px-7 mt-3 md:mt-6 text-sm md:text-lg lg:text-xl text-gray-700 font-normal">
+        Searching for the <span className="font-bold text-lg">Best Digital Marketing Agency</span> to boost your online presence?
       </p>
-      <p className="text-lg sm:text-xl mt-0 md:mt-2 text-[#f89e1b] font-semibold">
+      <p className="text-lg sm:text-xl mt-0 md:mt-2 text-[#f89e1b] font-bold">
         Digital Market Tap <span className="text-gray-700 font-medium text-sm md:text-lg lg:text-xl">is here.</span>
       </p>
        <img src={HomeBanner} alt="homeBanner" className="w-full"/>
@@ -96,16 +96,19 @@ const Home = () => {
           <span className="relative group">
             <a
               href="./meet-the-team"
-              className="inline-block text-black group-hover:text-black transition-colors duration-300"
+              className="inline-block text-black group-hover:text-black transition-colors duration-300 font-medium"
             >
-              Connect our experts <span className="text-xl">&#8594;</span>
+              
+Let Our Experts Guide You
+<span className="text-xl">&#8594;</span>
               <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
             </a>
           </span>
         </div>
         <div className='flex'> 
-          <p className="text-3xl md:text-4xl font-bold text-black">2,120,240,368</p>
-          <p className="text-xs md:text-sm ml-1 md:ml-4 font-semibold">
+          <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-black">12,0240
+</p>
+          <p className="text-sm md:text-sm ml-1 md:ml-4 font-medium">
             Revenue driven<br/>for our clients
           </p>
         </div>
@@ -118,22 +121,20 @@ const Home = () => {
               </svg>
             ))}
           </div>
-          <p className="text-sm md:text-base font-semibold text-black pt-0 md:pt-4 lg:pt-0">5000+ Client reviews</p>
+          <p className="text-sm md:text-base font-medium text-black pt-0 md:pt-4 lg:pt-0">5000+ Client reviews</p>
         </div>
       </div>
 
 
       <section className="w-full px-5 md:px-10 py-10 lg:px-30 lg:py-14">
-        <div className="max-w-8xl mx-auto grid md:grid-cols-2 gap-3 md:gap-6 lg:gap-12 items-start">
+        <div className="max-w-8xl mx-auto grid md:grid-cols-2 gap-3 md:gap-6 items-start">
           <div>
-            <h5 className="text-left text-sm font-semibold tracking-widest text-gray-800 mb-3"> WHAT WE DO</h5>
-            <h2 className="text-left text-2xl md:text-4xl font-bold leading-tight"> We solve digital <br /> challenges</h2>
+            <h5 className="text-left text-sm font-bold tracking-widest text-gray-800 mb-3"> WHAT WE DO</h5>
+            <h2 className="font-syne text-left text-2xl md:text-4xl lg:text-5xl font-semibold">Turning Digital <br />Roadblocks Into Results</h2>
           </div>
-        <div className="text-gray-700 text-md space-y-4 text-justify md:px-6 lg:px-12 pt-2 md:pt-12">
+        <div className="text-gray-700 text-md space-y-4 text-justify md:px-6 lg:px-14 pt-2 md:pt-12">
             <p>
-              Digital Market Tap, we work with businesses to grow by fixing the actual problems keeping them stuck online. 
-              From establishing your presence in search engines to creating scroll–stopping social media campaigns, 
-              we concentrate on what actually moves the needle.
+           At Digital Market Tap, we work with businesses to grow by fixing the actual problems rather than keeping them stuck online. From establishing your presence in search engines to creating scroll-stopping social media campaigns, we concentrate on where actually moves the needle
             </p>
             <a href="/about-us" className="inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200">MORE ABOUT US</a>
           </div>
@@ -150,7 +151,7 @@ const Home = () => {
                 <FaBullhorn className="text-orange-500 text-2xl" />
               </div>
             </div>
-            <p className="text-[#5c5f61]">Our proprietary solution leverages an in-house database of 260M+ customers and 2,000+ custom variables to build custom predictive models to drive business growth — from only the best customers.</p>
+            <p className="text-[#5c5f61]">We identify and target the right audience through data-driven strategies, ensuring your brand reaches people who matter most boosting engagement, relevance, and customer loyalty.</p>
           </div>
 
           <div className="text-left px-8 py-10 border border-[#f1f1f1] rounded-[40px] bg-white">
@@ -160,7 +161,7 @@ const Home = () => {
                 <FaChartLine className="text-orange-500 text-2xl" />
               </div>
             </div>
-            <p className="text-[#5c5f61]">Our proprietary solution leverages an in-house database of 260M+ customers and 2,000+ custom variables to build custom predictive models to drive business growth — from only the best customers.</p>
+            <p className="text-[#5c5f61]">We track, measure, and analyse key performance metrics, giving you clear insights into campaign performance and empowering smarter, faster marketing decisions.</p>
           </div>
 
           <div className="text-left px-8 py-10 border border-[#f1f1f1] rounded-[40px] bg-white">
@@ -170,7 +171,7 @@ const Home = () => {
                 <FaRupeeSign className="text-orange-500 text-2xl" />
               </div>
             </div>
-            <p className="text-[#5c5f61]">Our proprietary solution leverages an in-house database of 260M+ customers and 2,000+ custom variables to build custom predictive models to drive business growth — from only the best customers.</p>
+            <p className="text-[#5c5f61]">We combine strategy, creativity, and technology to drive real business results that give more leads, higher conversions, and measurable growth across all your digital marketing efforts</p>
           </div>
         </div>
       </section>
@@ -181,12 +182,12 @@ const Home = () => {
           <img src={teamImage} alt="Team Collaboration" className="w-full object-cover" />
         </div>
 
-        <div className="max-w-2xl text-left px-0 md:px-5 lg:px-10">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3">
-            Our Capabilities
+        <div className="max-w-2xl text-left px-0 md:px-5 lg:px-2">
+          <p className="text-sm font-bold uppercase tracking-widest mb-3">
+            Our Best Services
           </p>
-          <h2 className="text-3xl md:text-5xl font-semibold text-black mb-6 leading-tight">
-            Data-driven, customer-centric digital services
+          <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 leading-tight">
+      Smart digital marketing Solutions centred on data and your audience
           </h2>
           <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
             <span className="relative z-10">View All Solutions →
@@ -206,11 +207,11 @@ const Home = () => {
         <div>
              <div className="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-4">{service.icon}</div>
             <h3 className="text-xl font-semibold mb-6 text-left">{service.title}</h3>
-            <p className="text-sm text-[#57595b] mb-12 text-left">{service.description}</p>
+            <p className="text-md text-[#57595b] mb-12 text-left">{service.description}</p>
         </div>
 
     <div className="text-left mt-auto">
-       <a href="#" className="group inline-block text-xs font-semibold relative border-b-2 border-[#fbc371]">LEARN MORE →<span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span></a>
+       <a href="#" className="group inline-block text-xs font-semibold relative border-b-2 border-[#fbc371]">GET STARTED<span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span></a>
     </div>
        </div>
 ))}
@@ -223,7 +224,7 @@ const Home = () => {
 
   <section className="py-8 lg:py-20 px-5 md:px-10 lg:px-30 text-center">
       <p className="text-sm font-bold tracking-widest mb-2">BLOG</p>
-      <h2 className="text-2xl lg:text-4xl font-bold mb-4 md:mb-8 max-w-3xl mx-auto">
+      <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-8 max-w-3xl mx-auto">
         Think further with our <br/> expert insights
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -231,8 +232,8 @@ const Home = () => {
           <div key={index} className="bg-white rounded-[30px] overflow-hidden border-1 border-[#ededed] text-left">
             <img src={blog.image} alt={blog.title} className="w-full h-60 object-cover" />
             <div className="p-8 hover:bg-[#F1F3F6]">
-              <p className="text-sm text-[#666666] mb-2">{blog.date}</p>
-              <h3 className="text-lg font-semibold leading-snug hover:text-[#8E81FA] ">{blog.title}</h3>
+              <p className="text-md text-[#666666] mb-2">{blog.date}</p>
+              <h3 className="text-xl font-bold hover:text-[#8E81FA] ">{blog.title}</h3>
             </div>
           </div>
         ))}
@@ -241,6 +242,7 @@ const Home = () => {
 
 <InfoTabs/>
 <TestimonialsPage/>
+
     {/* main div tag */}
     </div>
   );

@@ -11,6 +11,7 @@ import blogImg7 from '../assets/blogImg7.jpg';
 import blogImg8 from '../assets/blogImg8.jpg';
 import blogImg9 from '../assets/blogImg9.jpg';
 import blogImg10 from '../assets/blogImg10.jpg';
+import ThemeToggle from '../components/ThemeToggle';
 
 const blogsList = [
   {
@@ -77,8 +78,6 @@ const blogsList = [
 
 const Blog = () => {
   const navigate = useNavigate();
-
-  // Show 6 blogs initially, then load all 10 on button click (more manageable UX)
   const [visibleBlogsCount, setVisibleBlogsCount] = useState(6);
   const [loading, setLoading] = useState(false);
 
@@ -96,17 +95,18 @@ const Blog = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-b from-[#fdf5ed] to-white py-15 px-5 md:px-15 lg:px-30 flex items-center justify-center">
-        <div className="bg-[#ffaa4c] rounded-[50px] px-5 md:px-10 lg:px-20 py-10 flex max-w-7xl w-full shadow-lg flex-col md:flex-row gap-10 items-center">
+      <ThemeToggle />
+      <div className="bg-gradient-to-b from-[#fdf5ed] to-white dark:from-[#121212] dark:to-[#1a1a1a] py-15 px-5 md:px-15 lg:px-30 flex items-center justify-center">
+        <div className="bg-[#ffaa4c] dark:bg-[#ff944d] rounded-[50px] px-5 md:px-10 lg:px-20 py-10 flex max-w-7xl w-full shadow-lg flex-col md:flex-row gap-10 items-center">
           <div className="flex-1 text-left items-center">
             <p className="text-sm text-[#5c432d] mb-4 font-semibold">May 12, 2023</p>
-            <h1 className="text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight mb-6 text-black hover:text-[#6754E9]">
+            <h1 className="font-syne text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight mb-6 text-black dark:text-white hover:text-[#6754E9]">
               The evolution of live-stream content and short-form video: a look at the TikTok revolution
             </h1>
             <a
               href="#"
-              className="relative text-black font-semibold text-sm inline-block mt-0 md:mt-4 border-b-2 border-white
-                         after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:w-0 after:bg-black
+              className="relative text-black dark:text-white font-semibold text-sm inline-block mt-0 md:mt-4 border-b-2 border-white
+                         after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:w-0 after:bg-black dark:after:bg-white
                          after:transition-[width] after:duration-300 hover:after:w-full"
             >
               READ FULL STORY
@@ -122,21 +122,25 @@ const Blog = () => {
         </div>
       </div>
 
-      <section className="bg-white py-8 lg:py-20 px-5 md:px-10 lg:px-30 text-center">
+      <section className="bg-white dark:bg-[#1a1a1a] py-8 lg:py-20 px-5 md:px-10 lg:px-30 text-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
           {blogsList.slice(0, visibleBlogsCount).map((blog) => (
             <div
               key={blog.id}
-              className="bg-white rounded-[50px] overflow-hidden border border-[#ededed] text-left cursor-pointer"
+              className="bg-white dark:bg-[#2a2a2a] rounded-[50px] overflow-hidden border border-[#ededed] dark:border-[#333] text-left cursor-pointer"
               onClick={() => openBlogPost(blog.id)}
               role="button"
               tabIndex={0}
-              onKeyPress={(e) => { if (e.key === 'Enter') openBlogPost(blog.id); }}
+              onKeyPress={(e) => {
+                if (e.key === 'Enter') openBlogPost(blog.id);
+              }}
             >
               <img src={blog.image} alt={blog.title} className="w-full h-60 object-cover" />
-              <div className="p-8 hover:bg-[#F1F3F6] transition-colors">
-                <p className="text-sm font-semibold text-[#666666] mb-4 md:mb-6">{blog.date}</p>
-                <h3 className="text-xl font-semibold leading-snug hover:text-[#8E81FA] mb-2 md:mb-4">{blog.title}</h3>
+              <div className="p-8 hover:bg-[#F1F3F6] dark:hover:bg-[#333] transition-colors">
+                <p className="text-sm font-semibold text-[#666666] dark:text-[#cccccc] mb-4 md:mb-6">{blog.date}</p>
+                <h3 className="text-xl font-semibold leading-snug hover:text-[#8E81FA] text-black dark:text-white mb-2 md:mb-4">
+                  {blog.title}
+                </h3>
               </div>
             </div>
           ))}
@@ -146,24 +150,24 @@ const Blog = () => {
           <div className="mt-10">
             <button
               onClick={handleLoadMore}
-              className="bg-[#000] text-white font-semibold px-8 py-3 rounded-[20px] shadow-md hover:bg-[#8E81FA] transition"
+              className="bg-black dark:bg-white text-white dark:text-black font-semibold px-8 py-3 rounded-[20px] shadow-md hover:bg-[#8E81FA] dark:hover:bg-[#6754E9] transition"
               disabled={loading}
               aria-label="Load more blog posts"
             >
               {loading ? (
                 <span className="flex items-center gap-2">
                   <svg
-                    className="animate-spin h-5 w-5 text-white"
+                    className="animate-spin h-5 w-5 text-white dark:text-black"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                   >
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                     <path
                       className="opacity-75"
                       fill="currentColor"
                       d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8h4z"
-                    ></path>
+                    />
                   </svg>
                   Loading...
                 </span>

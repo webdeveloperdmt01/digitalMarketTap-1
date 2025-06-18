@@ -51,8 +51,8 @@ const Footer = () => {
           </div>
 
           <div className="w-full lg:w-1/2 flex flex-col items-center">
-            <div className="relative bg-white text-black rounded-[40px] p-8 w-full max-w-md">
-              <img src={rocket} alt="rocket" className="absolute top-0 right-0 h-28 -mt-8 mr-0 md:-mr-8 object-contain" />
+            <div className="relative bg-white text-black rounded-[40px] p-7 md:p-12 lg:p-15 w-full max-w-xl">
+              <img src={rocket} alt="rocket" className="absolute top-0 right-0 md:right-12 lg:right-20 h-34 -mt-8  md:-mt-10 lg:-mt-13 mr-0 md:-mr-8 lg:-mr-10 rotate-35 object-contain" />
               <h3 className="text-2xl font-bold mb-4">Get your free audit</h3>
               <div className="h-1 w-full bg-gray-200 rounded overflow-hidden mb-6">
                 <div className="h-full w-1/2 bg-[#F89E1B]" />
@@ -64,7 +64,7 @@ const Footer = () => {
               </form>
             </div>
 
-            <div className="mt-8 flex flex-col lg:flex-row items-center justify-center gap-6">
+            <div className="pt-12 flex flex-col lg:flex-row items-center justify-center gap-6">
               <div className="text-center lg:text-left">
                 <div className="text-white/80 text-sm font-semibold uppercase tracking-wide">Awarded</div>
                 <h3 className="text-xl font-bold tracking-wider text-white">Marketing Agency</h3>
@@ -95,7 +95,7 @@ const Footer = () => {
 
     <div className="flex items-start gap-2">
       <p className="text-base font-medium text-black">
-        Plot Number 32A, First Floor Main Najafgarh Road Opposite Metro Pillar 773, Dwarka Mor New Delhi, Delhi, 110059
+        Plot Number 32A, First Floor Main <br/> Najafgarh Road Opposite Metro Pillar 773, <br/> Dwarka Mor New Delhi, Delhi, 110059
       </p>
     </div>
 
