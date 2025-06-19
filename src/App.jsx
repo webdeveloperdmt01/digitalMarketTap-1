@@ -41,7 +41,7 @@ function App() {
         <Route path="/marketing-solution" element={<Layout><MarketingSolution /></Layout>} />
         <Route path="/website-design" element={<Layout><WebsiteDesign /></Layout>} />
         <Route path="/about-us" element={<Layout><AboutUs /></Layout>} />
-        <Route path="/seo" element={<Layout><Seo /></Layout>} />
+        <Route path="/search-engine-optimization" element={<Layout><Seo /></Layout>} />
         <Route path="/onpage-offpage-seo" element={<Layout><OnPageOffPageSeo /></Layout>} />
         <Route path="/local-seo" element={<Layout><LocalSeo /></Layout>} />
         <Route path="/enterprise-seo" element={<Layout><EnterpriseSeo /></Layout>} />

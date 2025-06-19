@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Bold, IndianRupee } from 'lucide-react';
 import {
   FaHome,
   FaBullhorn,
@@ -18,6 +19,7 @@ import {
   FaBuilding,
   FaShoppingCart,
   FaLanguage,
+  FaBlog,
   FaQuora
 } from 'react-icons/fa';
 import logo from '../assets/dmt-main-logo.png';
@@ -60,16 +62,19 @@ const Header = () => {
             {marketingSolutionsVisible && (
               <div className="absolute top-full justify-around left-[160px] -translate-x-1/2 mt-8 bg-white shadow-lg rounded-3xl z-50 px-5 py-6 flex space-x-10 w-[1260px]">
                 <div className="flex flex-col space-y-1">
-                 <HoverService icon={<FaCode color="#000" />} text="Website Design" to="/website-design" />
-                  <HoverService icon={<FaImage  color="#097B11" />} text="Graphic Design" to="/graphic-design" />
-                  <HoverService icon={<FaEnvelope  />} text="Email Marketing" to="/email-marketing" />
-                  <HoverService icon={<FaQuora color="#D53716" />} text="Quora Marketing" to="/quora-marketing" />
+                 <HoverService icon={<FaCode color="#000" />} text="Website Development" to="/website-design" />
+                  <HoverService icon={<FaSearch color='#E0E0E0' />} text="Search Engine Optimization" to="/search-engine-optimization" />
+                  {/* <HoverService icon={<FaEnvelope  />} text="Email Marketing" to="/email-marketing" /> */}
+                  {/* <HoverService icon={<FaQuora color="#D53716" />} text="Quora Marketing" to="/quora-marketing" /> */}
+                  <HoverService icon={<FaCommentDots color="#8e81fa" />} text="Social Media Marketing" to="/social-media-marketing" />
+                  <HoverService icon={<FaStar color='yellow' />} text="Online Reputation Management" to="/online-reputation-management" />
                 </div>
                 <div className="flex flex-col space-y-1">
-                  <HoverService icon={<FaCommentDots color="#8e81fa" />} text="Social Media Marketing" to="/social-media-marketing" />
+                  <HoverService icon={<FaImage  color="#097B11" />} text="Graphic Designing" to="/graphic-design" />
                   <HoverService icon={<FaHashtag color="purple" />} text="Social Media Optimization" to="/social-media-optimisation" />
-                  <HoverService icon={<FaKeyboard color='black' />} text="Content Writing Service" to="/content-writing-service" />
-                  <HoverService icon={<FaStar color='yellow' />} text="Online Reputation Management" to="/online-reputation-management" />
+                  {/* <HoverService icon={<FaKeyboard color='black' />} text="Content Writing Service" to="/content-writing-service" /> */}
+                  <HoverService icon={<IndianRupee size={18} color="black" strokeWidth={3} />}  text="Paid Marketing" to="/paid-marketing"/>
+                  <HoverService icon={<FaBullhorn color='blue' />} text="Marketing" to="/marketing" />
                 </div>
                  
                 <div className="bg-[#ffc187] rounded-3xl px-5 pt-10 pb-6 flex flex-col items-center w-[240px] relative">
@@ -85,7 +90,7 @@ const Header = () => {
             )}
           </div>
 
-          <div ref={seoRef} className="relative" onMouseEnter={() => setSeoDropdownVisible(true)}>
+          {/* <div ref={seoRef} className="relative" onMouseEnter={() => setSeoDropdownVisible(true)}>
           <NavLink to="/seo" onMouseEnter={() => setSeoDropdownVisible(true)} className={({ isActive }) => `font-semibold text-sm border-b-2 flex items-center ${ isActive || seoDropdownVisible ? 'border-[#F89E1B]' : 'border-transparent' }`}> SEO</NavLink>
             {seoDropdownVisible && (
               <div className="absolute top-full mt-8 bg-white rounded-3xl shadow-lg px-5 py-3 w-[300px] z-50 space-y-2">
@@ -97,7 +102,7 @@ const Header = () => {
                 <DropdownItem icon={<FaLanguage />} text="A.I. SEO" to="/ai-seo" />
               </div>
             )}
-          </div>
+          </div> */}
 
           <NavLink to="/about-us" className={({ isActive }) => (isActive ? 'border-b-2 border-[#F89E1B]' : 'border-b-2 border-transparent')}>
             ABOUT US
@@ -130,11 +135,11 @@ const Header = () => {
 <div className="fixed bottom-0 left-0 right-0 z-50 bg-white shadow-md border-t-2 border-yellow-400 xl:hidden">
   <div className="grid grid-cols-5 text-xs">
     {[
-      { to: "/about-us", icon: <FaInfoCircle />, label: "About" },
-      { to: "/seo", icon: <FaSearch />, label: "SEO" },
-      { to: "/", icon: <FaHome />, label: "Home" },
-      { to: "/marketing-solution", icon: <FaBullhorn />, label: "Marketing" },
-      { to: "/contact-us", icon: <FaPhoneAlt />, label: "Contact" },
+      { to: "/about-us", icon: <FaInfoCircle/>, label: "About" },
+      { to: "/blog", icon: <FaBlog/>, label: "Blogs" },
+      { to: "/", icon: <FaHome/>, label: "Home" },
+      { to: "/marketing-solution", icon: <FaBullhorn/>, label: "Marketing" },
+      { to: "/contact-us", icon: <FaPhoneAlt/>, label: "Contact" },
     ].map(({ to, icon, label }, index) => (
       <NavLink
         key={index}

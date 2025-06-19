@@ -40,10 +40,10 @@ const Testimonials = () => {
 
   return (
     <>
-      <div className="px-5 md:px-10 lg:px-30">
+      <div className="px-0 md:px-10 lg:px-30">
         <div className="rounded-t-[60px] bg-orange-100 pt-4">
         <section className="py-6 md:py-16 rounded-t-[60px] px-5 md:px-10 lg:px-20 mb-2 md:mb-16">
-          <h2 className="text-left text-xl md:text-3xl font-semibold mb-4">
+          <h2 className="text-center md:text-left text-2xl md:text-4xl font-semibold mb-4">
             The proof is in the numbers
           </h2>
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
@@ -76,7 +76,7 @@ const Testimonials = () => {
 
                     </div>
                   </div>
-                  <p className="mt-2 md:mt-4 text-sm md:text-md font-medium text-black">
+                  <p className="mt-2 md:mt-4 text-sm]] md:text-md font-medium text-black">
                     {stat.label}
                   </p>
                 </div>
@@ -131,7 +131,7 @@ const Testimonials = () => {
               className="hidden lg:block absolute -top-12 right-16 lg:w-[280px] w-40 h-auto pointer-events-none"
             />
             <div className="block md:flex items-center gap-6 mt-0 md:mt-4 lg:mt-52 ml-5 lg:ml-20 mb-2">
-              <div className="flex flex-col items-center mb-6 md:mb-0">
+              <div className="flex flex-col items-start md:items-center mb-6 md:mb-0">
                 <div className="flex text-yellow-500 text-xl">
                   {Array.from({ length: 5 }).map((_, idx) => (
                     <span key={idx}>★</span>

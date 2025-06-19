@@ -53,34 +53,18 @@ export default function SuccessStories() {
   return (
     <div className="w-full px-5 md:px-10 lg:px-30 py-10 lg:py-20 bg-white flex flex-col lg:flex-row items-start gap-12">
       <div className="w-full lg:w-1/3 flex flex-col justify-start">
-        <h4 className="text-md text-left font-bold uppercase text-black tracking-wide">
-       Business Outcomes
-        </h4>
-        <h2 className="text-left text-[38px] md:text-[48px] font-bold leading-[1.1] text-black mt-6 md:mt-16 tracking-tight">
-we create strategies that drive businesses forward and fuel lasting growth.
-        </h2>
-        <button className="mt-6 md:mt-16 text-sm font-semibold text-black border-b-3 border-orange-500 hover:opacity-80 w-fit">
-          VIEW ALL
-        </button>
+        <h4 className="text-md text-left font-bold uppercase text-black tracking-wide">Business Outcomes</h4>
+        <h2 className="text-left text- md:text-[38px] lg:text-[48px] font-bold leading-[1.1] text-black mt-6 md:mt-16 tracking-tight">we create strategies that drive businesses forward and fuel lasting growth.</h2>
+        <button className="mt-6 md:mt-16 text-sm font-semibold text-black border-b-3 border-orange-500 hover:opacity-80 w-fit">VIEW ALL </button>
       </div>
       <div className="w-full lg:w-2/3">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {visibleSlides.map((slide, idx) => {
             const imgSrc = showAltImage ? slide.imageHover : slide.image;
             return (
-              <div
-                key={idx}
-                className="rounded-[60px] overflow-hidden relative h-[420px] bg-black"
-              >
-                <div className="text-left absolute top-0 left-0 right-0 z-10 bg-opacity-50 text-orange-500 text-lg font-semibold px-6 py-4">
-                  {slide.brand}
-                </div>
-
-                <img
-                  src={imgSrc}
-                  alt={slide.brand}
-                  className="object-fit transition duration-500"
-                />
+              <div key={idx} className="rounded-[60px] overflow-hidden relative h-[420px] bg-black">
+                <div className="text-left absolute top-0 left-0 right-0 z-10 bg-opacity-50 text-orange-500 text-lg font-semibold px-6 py-4"> {slide.brand}</div>
+                <img src={imgSrc} alt={slide.brand} className="object-fit transition duration-500"/>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 z-10">
                   <span className="text-white text-4xl font-bold mt-2 block">{slide.stat}</span>
                   <span className="text-white text-xl font-medium mt-1 block">{slide.description}</span>
@@ -101,16 +85,7 @@ we create strategies that drive businesses forward and fuel lasting growth.
         </div>
 
         <div className="flex justify-center mt-6 gap-3">
-          {Array.from({ length: totalGroups }).map((_, index) => (
-            <button
-              key={index}
-              onClick={() => handleDotClick(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                current === index * slidesPerView ? "bg-black scale-110" : "bg-gray-300"
-              }`}
-              style={{ cursor: "pointer" }}
-            />
-          ))}
+          {Array.from({ length: totalGroups }).map((_, index) => (<button key={index} onClick={() => handleDotClick(index)} className={`w-2 h-2 rounded-full transition-all duration-300 ${ current === index * slidesPerView ? "bg-black scale-110" : "bg-gray-300" }`} style={{ cursor: "pointer" }} />))}
         </div>
       </div>
     </div>

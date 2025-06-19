@@ -11,7 +11,9 @@ import meta from '../assets/meta.png';
 import googlePartner from '../assets/google-partner.png';
 import shopify from '../assets/shopify.png';
 import tiktok from '../assets/tiktok.png';
+import SparklingStar from '../assets/SparklingStar.png';
 import { Link } from 'react-router-dom';
+import { FaCheckCircle } from 'react-icons/fa';
 
 import {
   FaLinkedinIn,
@@ -29,7 +31,7 @@ const Footer = () => {
       <div className="px-5 md:px-10 lg:px-30 ">
         <div className="flex flex-col lg:flex-row gap-6 items-start justify-between">
           <div className="w-full lg:w-1/2 max-w-xl">
-            <h2 className="text-3xl lg:text-5xl font-bold leading-tight mb-3 md:mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold leading-tight mb-3 md:mb-6">
               Get a Free <br /> consultation to <br /> boost your business
             </h2>
             <p className="text-white/90 mb-3 md:mb-6">
@@ -43,7 +45,7 @@ const Footer = () => {
                 "Review your content marketing efforts, including your blog posts, social media, and email marketing."
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2">
-                  <span className="text-[#F89E1B] text-xl">✔️</span>
+              <FaCheckCircle className="text-[#FFF] text-2xl mt-1 shrink-0" />
                   <p>{item}</p>
                 </li>
               ))}
@@ -52,8 +54,10 @@ const Footer = () => {
 
           <div className="w-full lg:w-1/2 flex flex-col items-center">
             <div className="relative bg-white text-black rounded-[40px] p-7 md:p-12 lg:p-15 w-full max-w-xl">
-              <img src={rocket} alt="rocket" className="absolute top-0 right-0 md:right-12 lg:right-20 h-34 -mt-8  md:-mt-10 lg:-mt-13 mr-0 md:-mr-8 lg:-mr-10 rotate-35 object-contain" />
-              <h3 className="text-2xl font-bold mb-4">Get your free audit</h3>
+              <img src={rocket} alt="rocket" className="absolute top-0 right-0 md:right-12 lg:right-20 h-20 md:h-34 -mt-8 md:-mt-10 lg:-mt-13 mr-0 md:-mr-8 lg:-mr-10 rotate-35 object-contain"/>
+              <img src={SparklingStar} alt="SparklingStar" className="absolute top-0 right-0 md:right-12 lg:right-50 h-10 md:h-14 -mt-4 md:-mt-6 lg:-mt-6 mr-15 md:mr-10 lg:-mr-10 rotate-[35deg] object-contain"/>
+
+              <h3 className="text-xl md:text-2xl font-bold mb-4">Get your free audit</h3>
               <div className="h-1 w-full bg-gray-200 rounded overflow-hidden mb-6">
                 <div className="h-full w-1/2 bg-[#F89E1B]" />
               </div>
@@ -115,7 +119,7 @@ const Footer = () => {
   <div className="flex justify-between gap-6 items-center">
     <div className="flex flex-col gap-2">
       <div className="flex items-center gap-3">
-        <p className="text-sm font-semibold text-black">REVIEWED ON</p>
+        <p className="text-xs md:text-sm font-semibold text-black">REVIEWED ON</p>
         <div className="flex items-center gap-1">
           {[...Array(5)].map((_, i) => <FaStar key={i} className="text-red-500" />)}
         </div>
@@ -216,7 +220,7 @@ const Footer = () => {
         </div>
       </div>
 
-     <div className="bg-white rounded-t-[35px] pb-18 md:pb-18 lg:pb-5 pt-5 px-5 md:px-5 lg:px-20 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-6">
+     <div className="bg-white rounded-t-[35px] pb-22 md:pb-18 lg:pb-5 pt-5 px-5 md:px-5 lg:px-20 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-6">
       <div className="flex flex-col md:flex-row items-center text-sm text-black gap-2 md:gap-8 w-full md:w-auto">
     <p className="text-center md:text-left">© 2025 Digital Market Tap</p>
 
