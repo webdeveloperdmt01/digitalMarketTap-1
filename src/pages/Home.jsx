@@ -118,7 +118,6 @@ const Home = () => {
           <img src={BorderBottom} alt="border-bottom-line" className="w-full absolute bottom-0 right-0 object-contain pb-6 px-5 md:px-10 lg:px-30"/>
       </div>
 
-
       <section className="w-full px-5 md:px-10 py-10 lg:px-30 lg:py-14">
         <div className="max-w-8xl mx-auto grid md:grid-cols-2 gap-3 md:gap-6 items-start">
           <div>

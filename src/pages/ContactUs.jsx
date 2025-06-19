@@ -84,7 +84,7 @@ function ContactUs() {
         <div className="flex lg:justify-end justify-center pt-2.5 pr-2.5 pb-2.5 pl-0 lg:p-0">
           <div className="bg-white rounded-4xl shadow-[12px_12px_0_0_black] px-2 lg:px-5 pt-14 lg:pt-20 pb-5 lg:pb-10 relative max-w-[490px] w-full">
             {showSuccess && (
-              <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-xl shadow-lg z-50 text-sm font-medium">
+              <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-[#6754E9] text-white px-6 py-3 rounded-xl shadow-lg z-50 text-sm font-medium">
               ContactUs Form Submitted!
               </div>
             )}
@@ -95,20 +95,20 @@ function ContactUs() {
               <input
                 type="text"
                 name="name"
-                placeholder="Name"
+                placeholder="Enter Full Name"
                 value={formData.name}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border ${errors.name ? 'border-red-500' : 'border-[#ababab]'} hover:border-[#6754E9] rounded-xl outline-none`}
+                className={`w-full px-3 py-2 md:px-4 md:py-3 border ${errors.name ? 'border-red-500' : 'border-[#ababab]'} hover:border-[#6754E9] rounded-[8px] outline-none`}
               />
               {errors.name && <p className="text-red-500 text-sm -mt-2">{errors.name}</p>}
 
               <input
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder="Enter Your Email"
                 value={formData.email}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border ${errors.email ? 'border-red-500' : 'border-[#ababab]'} hover:border-[#6754E9] rounded-xl outline-none`}
+                className={`w-full px-3 py-2 md:px-4 md:py-3 border ${errors.email ? 'border-red-500' : 'border-[#ababab]'} hover:border-[#6754E9] rounded-[8px] outline-none`}
               />
               {errors.email && <p className="text-red-500 text-sm -mt-2">{errors.email}</p>}
 
@@ -118,7 +118,7 @@ function ContactUs() {
                 placeholder="Company name"
                 value={formData.company}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border ${errors.company ? 'border-red-500' : 'border-[#ababab]'} hover:border-[#6754E9] rounded-xl outline-none`}
+                className={`w-full px-3 py-2 md:px-4 md:py-3 border ${errors.company ? 'border-red-500' : 'border-[#ababab]'} hover:border-[#6754E9] rounded-[8px] outline-none`}
               />
               {errors.company && <p className="text-red-500 text-sm -mt-2">{errors.company}</p>}
 
@@ -128,7 +128,7 @@ function ContactUs() {
                 placeholder="Phone number"
                 value={formData.phone}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border ${errors.phone ? 'border-red-500' : 'border-[#ababab]'} hover:border-[#6754E9] rounded-xl outline-none`}
+                className={`w-full px-3 py-2 md:px-4 md:py-3 border ${errors.phone ? 'border-red-500' : 'border-[#ababab]'} hover:border-[#6754E9] rounded-[8px] outline-none`}
               />
               {errors.phone && <p className="text-red-500 text-sm -mt-2">{errors.phone}</p>}
 
@@ -137,7 +137,7 @@ function ContactUs() {
                 placeholder="What can we help you with?"
                 value={formData.message}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border ${errors.message ? 'border-red-500' : 'border-[#ababab]'} hover:border-[#6754E9] rounded-xl outline-none resize-none h-28`}
+                className={`w-full px-4 py-3 border ${errors.message ? 'border-red-500' : 'border-[#ababab]'} hover:border-[#6754E9] rounded-[8px] outline-none resize-none h-28`}
               ></textarea>
               {errors.message && <p className="text-red-500 text-sm -mt-2">{errors.message}</p>}
 
