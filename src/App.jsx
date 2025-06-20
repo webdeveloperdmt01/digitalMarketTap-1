@@ -27,6 +27,11 @@ import QuoraMarketing from "./pages/QuoraMarketing";
 import EmailMarketing from "./pages/EmailMarketing";
 import WebsiteDesign from './pages/WebsiteDesign';
 import GraphicDesign from './pages/GraphicDesign';
+import SeoTag from './pages/SeoTag';
+import PaidSocialTag from './pages/PaidSocialTag';
+import PaidSearchTag from './pages/PaidSearchTag';
+import OrganicSocialMedia from './pages/OrganicSocialMedia';
+import ProjectDetailPage from "./pages/ProjectDetailPage";
 
 
 
@@ -38,6 +43,7 @@ function App() {
         <Route path="/contact-us" element={<Layout><ContactUs /></Layout>} />
         <Route path="/blog" element={<Layout><Blog /></Layout>} />
         <Route path="/blog/:id" element={<Layout><BlogPost /></Layout>} />
+        <Route path="/project/:id" element={<Layout><ProjectDetailPage /></Layout>} />
         <Route path="/marketing-solution" element={<Layout><MarketingSolution /></Layout>} />
         <Route path="/website-design" element={<Layout><WebsiteDesign /></Layout>} />
         <Route path="/about-us" element={<Layout><AboutUs /></Layout>} />
@@ -60,6 +66,10 @@ function App() {
         <Route path="/quora-marketing" element={<Layout><QuoraMarketing/></Layout>} />
         <Route path="/email-marketing" element={<Layout><EmailMarketing/></Layout>} />
         <Route path="/graphic-design" element={<Layout><GraphicDesign/></Layout>} />
+        <Route path="/seo-tag" element={<Layout><SeoTag/></Layout>} />
+        <Route path="/paid-social-tag" element={<Layout><PaidSocialTag/></Layout>} />
+        <Route path="/paid-search-tag" element={<Layout><PaidSearchTag/></Layout>} />
+        <Route path="/organic-social-media" element={<Layout><OrganicSocialMedia/></Layout>} />
     
         
 

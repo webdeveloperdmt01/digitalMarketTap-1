@@ -56,7 +56,6 @@ const Footer = () => {
             <div className="relative bg-white text-black rounded-[40px] p-7 md:p-12 lg:p-15 w-full max-w-xl">
               <img src={rocket} alt="rocket" className="absolute top-0 right-0 md:right-12 lg:right-20 h-20 md:h-34 -mt-8 md:-mt-10 lg:-mt-13 mr-0 md:-mr-8 lg:-mr-10 rotate-35 object-contain"/>
               <img src={SparklingStar} alt="SparklingStar" className="absolute top-0 right-0 md:right-12 lg:right-50 h-10 md:h-14 -mt-4 md:-mt-6 lg:-mt-6 mr-15 md:mr-10 lg:-mr-10 rotate-[35deg] object-contain"/>
-
               <h3 className="text-xl md:text-2xl font-bold mb-4">Get your free audit</h3>
               <div className="h-1 w-full bg-gray-200 rounded overflow-hidden mb-6">
                 <div className="h-full w-1/2 bg-[#F89E1B]" />
