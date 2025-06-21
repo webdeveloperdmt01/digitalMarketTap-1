@@ -73,8 +73,8 @@ const Header = () => {
                   <HoverService icon={<FaImage  color="#097B11" />} text="Graphic Designing" to="/graphic-design" />
                   <HoverService icon={<FaHashtag color="purple" />} text="Social Media Optimization" to="/social-media-optimisation" />
                   {/* <HoverService icon={<FaKeyboard color='black' />} text="Content Writing Service" to="/content-writing-service" /> */}
-                  <HoverService icon={<IndianRupee size={18} color="black" strokeWidth={3} />}  text="Paid Marketing" to="/paid-marketing"/>
                   <HoverService icon={<FaBullhorn color='blue' />} text="Marketing" to="/marketing" />
+                  <HoverService icon={<IndianRupee size={18} color="black" strokeWidth={3} />}  text="Paid Marketing" to="/paid-marketing"/>
                 </div>
                  
                 <div className="bg-[#ffc187] rounded-3xl px-5 pt-10 pb-6 flex flex-col items-center w-[240px] relative">

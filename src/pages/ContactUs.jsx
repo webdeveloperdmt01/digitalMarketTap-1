@@ -11,6 +11,7 @@ function ContactUs() {
     company: '',
     phone: '',
     message: '',
+    course: '',
   });
 
   const [errors, setErrors] = useState({});
@@ -36,6 +37,7 @@ function ContactUs() {
       newErrors.phone = 'Phone number must be 10 digits';
     }
     if (!formData.message.trim()) newErrors.message = 'Message is required';
+    if (!formData.course.trim()) newErrors.course = 'Please select a course';
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -45,7 +47,14 @@ function ContactUs() {
     e.preventDefault();
     if (validate()) {
       console.log('Form submitted:', formData);
-      setFormData({ name: '', email: '', company: '', phone: '', message: '' });
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        phone: '',
+        message: '',
+        services: '',
+      });
       setShowSuccess(true);
       setTimeout(() => setShowSuccess(false), 4000);
     }
@@ -85,7 +94,7 @@ function ContactUs() {
           <div className="bg-white rounded-4xl shadow-[12px_12px_0_0_black] px-2 lg:px-5 pt-14 lg:pt-20 pb-5 lg:pb-10 relative max-w-[490px] w-full">
             {showSuccess && (
               <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-[#6754E9] text-white px-6 py-3 rounded-xl shadow-lg z-50 text-sm font-medium">
-              ContactUs Form Submitted!
+                ContactUs Form Submitted!
               </div>
             )}
 
@@ -131,6 +140,24 @@ function ContactUs() {
                 className={`w-full px-3 py-2 md:px-4 md:py-3 border ${errors.phone ? 'border-red-500' : 'border-[#ababab]'} hover:border-[#6754E9] rounded-[8px] outline-none`}
               />
               {errors.phone && <p className="text-red-500 text-sm -mt-2">{errors.phone}</p>}
+
+              <select
+                name="Services"
+                value={formData.services}
+                onChange={handleChange}
+                className={`w-full px-3 py-2 md:px-4 md:py-3 border ${errors.course ? 'border-red-500' : 'border-[#ababab]'} hover:border-[#6754E9] rounded-[8px] outline-none`}
+              >
+                <option value="">Services We Provide</option>
+                <option value="Website Development" className='hover:bg-[#6754E9] hover:text-white'>Website Development</option>
+                <option value="Graphic Designing" className='hover:bg-[#6754E9] hover:text-white'>Graphic Designing</option>
+                <option value="Search Engine Optimization" className='hover:bg-[#6754E9] hover:text-white'>Search Engine Optimization</option>
+                <option value="Social Media Optimization" className='hover:bg-[#6754E9] hover:text-white'>Social Media Optimization</option>
+                <option value="Google Ads" className='hover:bg-[#6754E9] hover:text-white'>Marketing</option>
+                <option value="Marketing" className='hover:bg-[#6754E9] hover:text-white'>Social Media Marketing</option>
+                <option value="Paid Marketing" className='hover:bg-[#6754E9] hover:text-white'>Paid Marketing</option>
+                <option value="Online Reputation Management" className='hover:bg-[#6754E9] hover:text-white'>Online Reputation Management</option>
+              </select>
+              {errors.course && <p className="text-red-500 text-sm -mt-2">{errors.course}</p>}
 
               <textarea
                 name="message"

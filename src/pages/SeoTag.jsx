@@ -23,8 +23,8 @@ const blogsList = [
 const SeoTag = () => {
   const navigate = useNavigate();
 
-  const openProjectDetail = (id) => {
-    navigate(`/project/${id}`);
+  const openProjectDetail = (brandName) => {
+    navigate(`/brand/${brandName.toLowerCase()}`);
   };
 
   return (
@@ -37,11 +37,11 @@ const SeoTag = () => {
           <div
             key={blog.id}
             className="bg-white dark:bg-[#2a2a2a] rounded-[50px] overflow-hidden border border-[#ededed] dark:border-[#333] text-left cursor-pointer"
-            onClick={() => openProjectDetail(blog.id)}
+            onClick={() => openProjectDetail(blog.brandName)}
             role="button"
             tabIndex={0}
             onKeyPress={(e) => {
-              if (e.key === 'Enter') openProjectDetail(blog.id);
+              if (e.key === 'Enter') openProjectDetail(blog.brandName);
             }}
           >
             <img src={blog.image} alt={blog.brandName} className="w-full h-60 object-cover" />
@@ -57,5 +57,6 @@ const SeoTag = () => {
     </section>
   );
 };
+
 
 export default SeoTag;
