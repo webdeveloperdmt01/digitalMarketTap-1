@@ -2,9 +2,21 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import MarketingImg from "../assets/Marketing1.png";
 import MarketingImg2 from "../assets/Marketing2.png";
-import { FaArrowRight, FaCheckCircle } from "react-icons/fa";
+import { FaArrowRight, FaCheckCircle , FaArrowUp } from "react-icons/fa";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 import BorderBottom from '../assets/border.png';
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+import F7 from "../assets/F7.png";
+import Caridad from "../assets/caridad.png";
+import Petmania from "../assets/petmania.png";
+import Jolie from "../assets/jolie.png";
+import Scuola from "../assets/Scuola_Logo.png";
+import Technologia from "../assets/tecnologia.png";
+import RocketBlue from "../assets/rocket.png"
+import GooglePartner1 from "../assets/google-partner-1.png";
+
+
 
 const Marketing = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -76,16 +88,49 @@ const Marketing = () => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
+const { ref, inView } = useInView({
+  triggerOnce: false,
+  threshold: 0.3,
+});
+
+const logos = [
+  { src: F7 },
+  { src: Caridad },
+  { src: Petmania },
+  { src: Jolie },
+  { src: Scuola },
+  { src: Technologia },
+];
+
+const BrandStaticLine = () => {
+  return (
+    <div className="py-8 md:py-16 lg:py-20 text-center">
+      <h2 className="text-xl sm:px-5 font-bold mb-10 md:mb-12 text-center">The Best Brands Choose Numerique</h2>
+      <div className="flex justify-evenly flex-wrap gap-10 max-w-7xl mx-auto">
+        {logos.map((logo, index) => (
+          <div key={index} className="max-h-16 flex items-center">
+            <img
+              src={logo.src}
+              alt={`brand-logo-${index}`}
+              className="max-h-16 object-contain"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
   return (
     <>
       <main className="bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-10 lg:px-30 relative">
-        <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 py-14 items-center">
+        <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 py-6 md:py-8 lg:py-14 items-center">
           <div>
             <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">Marketing</h3>
-            <h2 className="text-4xl lg:text-6xl font-bold text-black mt-2 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-black mt-2 leading-tight">
               Marketing Solution in every Platform of Social Media
             </h2>
-            <p className="text-md text-black mt-5 mb-10 font-semibold">
+            <p className="text-sm md:text-md text-black mt-5 mb-10 font-semibold">
               Numerique Marketing is the intersection between creative and performance. Our team delivers the perfect combination of creative and paid media expertise to maximize results.
             </p>
             <NavLink
@@ -99,7 +144,7 @@ const Marketing = () => {
             </NavLink>
           </div>
 
-          <div className="flex lg:justify-end pt-2.5 pr-2.5 pb-2.5 pl-0 lg:p-0">
+          <div className="flex lg:justify-end">
             <img
               src={MarketingImg}
               alt="Marketing Visual"
@@ -109,9 +154,9 @@ const Marketing = () => {
         </div>
 
     
-        <section className="max-w-7xl mx-auto py-24">
-            <h1 className="text-2xl md:text-4xl lg:text-5xl max-w-4xl mx-auto text-center pb-6 font-semibold">We lead with customer-first strategies:</h1>
-            <h6 className="font-light text-md md:text-lg max-w-3xl mx-auto text-center pb-18 text-[#5a5a5a]">Driving growth through personalized experiences for truly end-to-end business building.</h6>
+        <section className="max-w-7xl mx-auto py-6 md:py-12 lg:py-24">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl max-w-4xl mx-auto text-center pb-6 font-medium md:font-semibold">We lead with customer-first strategies:</h1>
+            <h6 className="font-light text-md md:text-lg max-w-3xl mx-auto text-center pb-8 md:pb-10 lg:pb-18 text-[#5a5a5a]">Driving growth through personalized experiences for truly end-to-end business building.</h6>
           <div className="hidden lg:flex rounded-[60px] overflow-hidden bg-black">
             <div className="w-1/3 p-12 flex flex-col gap-6 text-white relative">
               {tabs.map((tab, index) => {
@@ -135,22 +180,9 @@ const Marketing = () => {
             </div>
             <div className="w-3/3 bg-[#f7f7fa] py-20 pl-36 pr-16 flex items-center justify-between gap-15 rounded-[60px]">
               <div className="flex-1">
-                <h2 className="text-xl font-semibold mb-6 leading-snug text-left">
-                  {tabs[activeIndex]?.content.heading}
-                </h2>
-                <ul className="space-y-4 text-md text-black">
-                  {tabs[activeIndex]?.content.features.map((item, index) => (
-                    <li key={index} className="flex items-center gap-3">
-                      <FaCheckCircle className="text-[#f89e1b] w-6 h-6" /> {item}
-                    </li>
-                  ))}
-                </ul>
-                <div className="text-left mt-8">
-                  <a href="#" className="group inline-block text-sm font-semibold relative border-b-2 border-[#fbc371]">
-                    LEARN MORE →
-                    <span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
-                  </a>
-                </div>
+                <h2 className="text-xl font-semibold mb-6 leading-snug text-left">{tabs[activeIndex]?.content.heading}</h2>
+                <ul className="space-y-4 text-md text-black">{tabs[activeIndex]?.content.features.map((item, index) => (<li key={index} className="flex items-center gap-3"><FaCheckCircle className="text-[#f89e1b] w-6 h-6" /> {item}</li> ))} </ul>
+                <div className="text-left mt-8"><a href="#" className="group inline-block text-sm font-semibold relative border-b-2 border-[#fbc371]"> LEARN MORE →<span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span></a></div>
               </div>
               <div className="flex flex-col items-center justify-center text-center bg-white rounded-[30px] p-6">
                 <div className="relative w-46 h-46 rounded-full border border-[#ededed] flex items-center justify-center">
@@ -215,12 +247,12 @@ const Marketing = () => {
               );
             })}
           </div>
-        {/* <img src={BorderBottom} alt="border-bottom-line" className="w-full absolute bottom-0 right-0 object-contain pt-22 px-5 md:px-10 lg:px-30"/> */}
         </section>
+        {/* <img src={BorderBottom} alt="border-bottom-line" className="w-full absolute bottom-0 right-0 object-contain pt-22 px-5 md:px-10 lg:px-30"/> */}
 
-         <div className="pt-8 md:pt-14 lg:pt-24 pb-10">
+         <div className="pt-6 md:pt-14 lg:pt-24 pb-10">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15">
-          <div className="flex lg:justify-end pt-2.5 pr-2.5 pb-2.5 pl-0 lg:p-0">
+          <div className="flex lg:justify-end">
             <img
               src={MarketingImg2}
               alt="Marketing Visual"
@@ -230,10 +262,88 @@ const Marketing = () => {
           <div className="pl-2 md:pl-8 lg:pl-20 content-center">
             <h3 className="text-xl md:text-3xl lg:text-5xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">We are committed to your strategy</h3>
             <p className="text-sm lg:text-[16px] font-base text-[#545e5b] mt-2"> We are committed to your strategy and intuitively understand how to deliver value in the digital economy. Through the most effective digital marketing options, Renaissance makes it happen seamlessly. Every day, we help brands think big, execute smart and deliver growth. We employ an intelligent digital marketing strategy to consistently unlock value from digital investments in a rapidly advancing world. From simple to the infinitely complex.</p>
-
+            <a href="#" className="group inline-block text-sm font-semibold relative border-b-2 border-[#fbc371] uppercase mt-8">more about our company<span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span></a>
           </div>
         </div>
      </div>
+
+<section ref={ref} className="bg-[#F7F7FA] py-6 md:py-16 rounded-[30px] md:rounded-[60px] px-5 md:px-10 lg:px-20 my-2 md:my-16">
+  <h2 className="text-center md:text-left text-2xl md:text-4xl font-semibold mb-4">Driving Real Results</h2>
+  <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 w-full lg:w-2/3 text-center">
+      {[
+        {
+          value: 3,
+          suffix: "%",
+          label: "Of Google advertisers",
+        },
+        {
+          value: 100,
+          suffix: "%",
+          label: "Growth clients",
+        },
+        {
+          value: 91,
+          suffix: "%",
+          label: "Results improved compared to previous agencies",
+        },
+      ].map((stat, i) => (
+        <div key={i} className="flex flex-col items-center">
+          <div className="relative w-44 h-44 rounded-full border border-[#D7DEE6] flex items-center justify-center">
+            <div className="relative w-32 h-32 flex items-center justify-center rounded-full border-2 border-orange-300">
+              <div className="text-3xl font-bold">
+                {inView && <CountUp end={stat.value} duration={4} />}
+                {stat.suffix}
+              </div>
+              <FaArrowUp className="absolute bottom-3 text-orange-500 text-xl" />
+            </div>
+          </div>
+          <p className="mt-4 text-sm md:text-md font-medium text-black">{stat.label}</p>
+        </div>
+      ))}
+    </div>
+
+    <div className="bg-orange-200 text-center px-10 py-10 md:px-20 md:py-15 rounded-[40px] lg:w-1/3 w-full">
+      <h3 className="text-4xl font-bold mb-2">
+        {inView && <CountUp end={282000} duration={3} separator="," />}+
+      </h3>
+      <p className="text-black font-semibold mb-6">Leads generated so far...</p>
+      <a
+        href="/contact"
+        className="text-sm group relative inline-flex items-center gap-2 rounded-full bg-black px-6 py-2 text-white transition duration-300 hover:bg-orange-400"
+      >
+        CONTACT US <FaArrowRight />
+        <span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<BrandStaticLine />
+{/* <img src={BorderBottom} alt="border-bottom-line" className="w-full absolute bottom-0 right-0 object-contain pt-22 px-5 md:px-10 lg:px-30"/> */}
+
+              <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 relative overflow-hidden max-w-7xl mx-auto my-8 md:my-12 lg:my-24 text-center shadow-sm">
+                <img src={RocketBlue} alt="Custom" className="hidden md:block w-14 md:w-18 absolute right-2 md:right-12 top-0 -rotate-20 origin-top z-10"/>
+                <div className="flex justify-center items-center mb-4">
+                  <img
+                    src={GooglePartner1}
+                    alt="Partner Logo"
+                    className="h-8 sm:h-10 w-auto"
+                  />
+                </div>
+                <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-snug text-black px-2 sm:px-0">
+                  Get started with a Free <br className="hidden md:block" /> consultation
+                </h2>
+                <NavLink
+                  to="/free-audit"
+                  className="group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#6754E9] transition duration-300 inline-block relative overflow-hidden"
+                >
+                <span className="relative z-10 flex items-center justify-center gap-1">
+                  GET A PROPOSAL <FaArrowRight />
+                  <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300" />
+                </span>
+              </NavLink>
+            </section>
 
       </main>
     </>
