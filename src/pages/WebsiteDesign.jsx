@@ -15,6 +15,41 @@ const iconList = [
   FaAmazon, FaGoogle,
 ];
 
+const tabs = [
+  {
+   title: <>Ecommerce<br />Website</>,
+    content: {
+      heading: "Ecommerce Website",
+      about: "One of the first things we'll do for your business is provide you with a full PPC audit. In the audit, we'll evaluate every significant element of your existing PPC campaign and compile a report of what's working and what isn't. The report will break down every aspect of your PPC strategy and determine what you could improve. In addition, we'll offer recommendations on how to improve them. In fact, if your business has over four employees and spends more than $1000 per month on PPC, you qualify for a free PPC audit! Just get in touch with us to get started."
+    },
+     link: "/e-commerce-website-development",
+  },
+  {
+   title: <>Blog News<br />Website</>,
+    content: {
+      heading: "Blog News Website",
+      about: "At Numerique, we specialize in helping you harness the full potential of remarketing, particularly through platforms like Google Ads. With Google Ads, you gain the ability to track the traffic to specific pages on your website and deliver targeted ads to those users who have visited those pages. Our team is dedicated to assisting you in setting up the necessary tracking mechanisms and creating captivating remarketing ads that effectively capture the attention and interest of your target audience."
+    },
+     link: "/blog-news-website",
+  },
+  {
+   title: <>Educational<br />Website</>,
+    content: {
+      heading: "Educational Website",
+      about: "Numerique is here to provide you with comprehensive support in harnessing the potential of geofencing, ensuring that your ad campaigns are optimized for maximum impact. Our team of experts will assist you in identifying the ideal outer limits for your geofences and seamlessly integrate them into your Google Ads strategy. Using this information, we will assist in setting up geofences that precisely align with your objectives, reaching the right people at the right time and maximizing the efficiency of your advertising efforts."
+    },
+     link: "/education-website",
+  },
+  {
+    title: <>Business<br />Website</>,
+    content: {
+      heading: "Buisness Website",
+      about: "While Google Ads is undoubtedly a powerful advertising platform, it's important to recognize that there are various other avenues to effectively display ads and engage with your target audience. Social media platforms, in particular, offer compelling paid advertising options that shouldn't be overlooked. With users spending approximately 28% of their Internet time on social media, these platforms present a fantastic opportunity to connect with your audience."
+    },
+     link: "/buisness-website",
+  },
+];
+
 const plugins = [
   { name: "WP101 Video Tutorials", img: "GroupLogo-Wd.png" },
   { name: "Elementor Page Builder", img: "ElementorLogo-WD.png" },
@@ -61,6 +96,11 @@ const WebsiteDesign = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const [offsetY, setOffsetY] = useState(0);
   const [isLaptopScreen, setIsLaptopScreen] = useState(false);
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
+  const handleAccordionToggle = (index) => {
+  setActiveTabIndex(activeTabIndex === index ? null : index);
+};
+
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -188,6 +228,7 @@ const WebsiteDesign = () => {
 </div>
 
 
+
         <div className="relative pb-4 pl-5 md:pl-10 lg:pl-30">
           <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
             <div className="relative pt-8 md:pt-12 lg:pt-32 min-h-[250px]">
@@ -250,6 +291,86 @@ const WebsiteDesign = () => {
             </div>
           </div>
         </div>
+
+        <div className="pb-4 pt-2 md:pt-8 lg:pt-18 px-5 md:px-10 lg:px-30">
+          <p className="text-center text-md font-semibold uppercase pb-4">what you get</p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">What is included in our paid search <br /> marketing services? </h1>
+          <p className="text-center text-md font-base text-gray-500 pb-4">When you partner with Numerique, you’ll gain access to our full range of paid SEM services. These services are designed to <br /> optimize every facet of your paid advertising, including:</p>
+  </div>
+<div className="px-5 md:px-10 lg:px-30">
+        <div className="max-w-7xl mx-auto pt-8 md:pt-12 px-0 md:px-4">
+  <div className="hidden lg:flex rounded-[60px] overflow-hidden bg-black">
+    <div className="w-1/3 p-12 flex flex-col gap-6 text-white relative">
+      {tabs.map((tab, index) => {
+        const isActive = index === activeTabIndex;
+        return (
+          <div
+            key={index}
+            onClick={() => setActiveTabIndex(index)}
+            className={`!w-[160%] relative cursor-pointer transition-all duration-300 pl-10 pr-16 py-5 text-left text-lg md:text-xl font-medium leading-tight -ml-8
+            ${isActive ? "bg-[#f89e1b] text-white rounded-full z-10" : "text-white hover:text-black hover:bg-white rounded-full z-0"}`}
+          >
+            {tab.title}
+            {isActive && (
+              <span className="absolute right-3 top-1/2 -translate-y-1/2 transform bg-black text-white rounded-full w-15 h-15 flex items-center justify-center">
+                <FaArrowRight size={18} />
+              </span>
+            )}
+          </div>
+        );
+      })}
+    </div>
+    <div className="w-3/3 bg-[#f7f7fa] py-20 pl-38 pr-22 flex items-center rounded-[60px]">
+      <div className="flex-1">
+        <h2 className="text-3xl font-bold mb-6 leading-snug text-left text-black">
+          {tabs[activeTabIndex]?.content.heading}
+        </h2>
+        <p className="text-gray-600 text-base mb-8 leading-relaxed">
+          {tabs[activeTabIndex]?.content.about}
+        </p>
+        <div className="text-left">
+        <NavLink to={tabs[activeTabIndex]?.link} className="mt-6 group text-black py-2 text-md font-semibold transition duration-300 relative overflow-hidden inline-flex items-center"><span className="relative z-10">LEARN MORE<span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span></span></NavLink>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div className="lg:hidden">
+    {tabs.map((tab, index) => {
+      const isOpen = activeTabIndex === index;
+      const { heading, about } = tab.content;
+
+      return (
+        <div key={index} className="mb-6 border border-gray-200 rounded-3xl overflow-hidden">
+          <button
+            onClick={() => handleAccordionToggle(index)}
+            className={`w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-white ${
+              isOpen ? "bg-[#f89e1b]" : "bg-black"
+            }`}
+          >
+            <span>{tab.title}</span>
+            <span>{isOpen ? <FaMinus /> : <FaPlus />}</span>
+          </button>
+          {isOpen && (
+            <div className="bg-[#f7f7fa] px-6 py-8">
+              <h2 className="text-2xl font-bold mb-4 text-black">{heading}</h2>
+              <p className="text-gray-600 text-sm mb-6 leading-relaxed">{about}</p>
+              <div className="text-left">
+                           <NavLink
+  to="/free-audit"
+  className="hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
+>
+  <span className="relative z-10 flex items-center gap-2">
+    Get A Free Audit <FaArrowRight />
+    <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-orange-400 group-hover:w-full transition-all duration-300"></span>
+  </span>
+</NavLink>
+        </div>
+      </div> )}
+    </div>); })}
+  </div>
+</div>
+</div>
 
         <div className="pb-4 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-30">
           <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>

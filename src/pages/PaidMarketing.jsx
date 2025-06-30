@@ -55,7 +55,7 @@ const PaidMarketing = () => {
        <div className="pb-4 pl-5 md:pl-10 lg:pl-30">
           <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
             <div>
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold pt-20 md:pt-25 lg:pt-48 pr-5 md:pr-0 lg:pr-0">Marketing that instant works</h1>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold pt-20 md:pt-25 lg:pt-48 pr-5 md:pr-0 lg:pr-0">Marketing that instant works</h1>
               <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
                This lovely niche theme is built and suitable for any business operating in the Digital Marketing industry.
               </p>
@@ -77,7 +77,7 @@ const PaidMarketing = () => {
           </div>
         </div>
 
-    <div className="bg-[#f6f6f6] relative py-16">
+    <div className="bg-[#f6f6f6] relative md:py-12 lg:py-16">
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
         {/* <svg
           className="relative block w-full"
@@ -92,7 +92,7 @@ const PaidMarketing = () => {
       </div>
 
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-12">Supported by over 5,000 companies</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 pt-6 md:mb-6 lg:mb-12">Supported by over 5,000 companies</h2>
         <div className="flex flex-wrap justify-center items-center gap-8">
           {brandLogos.map((logo) => (
             <div key={logo.id} className="w-26 h-26 grayscale opacity-70 hover:opacity-100 transition-opacity">
@@ -108,9 +108,9 @@ const PaidMarketing = () => {
     </div>
 
     <div className="py-16 px-4 bg-white text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-24">Here are our Major Paid <br /> Marketing Services</h2>
+      <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-18 md:mb-16 lg:mb-24">Here are our Major Paid <br /> Marketing Services</h2>
       <div className="flex flex-col md:flex-row justify-center items-start gap-30 max-w-6xl mx-auto">
-        <div className="bg-[#f5f5f5] pt-16 pb-8 px-8 text-left relative w-full md:w-1/2">
+        <div className="bg-[#f5f5f5] pt-16 pb-8 px-4 md:px-6 lg:px-8 text-left relative w-full md:w-1/2">
           <img
             src={GoogleAdImg}
             alt="Google Ads"
@@ -125,11 +125,11 @@ const PaidMarketing = () => {
           </div>
         </div>
 
-        <div className="bg-[#f5f5f5] pt-16 pb-8 px-8 text-left relative w-full md:w-1/2">
+        <div className="bg-[#f5f5f5] pt-16 pb-8 px-4 md:px-6 lg:px-8 text-left relative w-full md:w-1/2">
           <img
             src={AmazonAdImg}
             alt="Amazon Ads"
-            className="w-54 h-44 absolute -top-16 left-0"
+            className="w-44 h-44 absolute -top-16 left-0"
           />
           <div className="mt-16">
             <h3 className="text-2xl font-semibold text-gray-900 mb-3">
@@ -160,17 +160,13 @@ const PaidMarketing = () => {
       <div className="pb-4 px-5 md:px-10 lg:px-30">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
             <div>
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold pt-20 md:pt-25 lg:pt-48 pr-5 md:pr-0 lg:pr-0">You'll know how to schedule your social media campaigns</h2>
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold pt-5 md:pt-8 lg:pt-48 pr-5 md:pr-0 lg:pr-0">You'll know how to schedule your social media campaigns</h2>
               <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">Baza has developed an online course on creating and promoting a personal brand on social networks.</p>
               <NavLink to="/"className="text-lg font-semibold group relative inline-flex items-center gap-2 rounded-[15px] px-8 py-3 text-black transition duration-300 uppercase">Learn more <FaArrowRight/><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-[#F89E1B] transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
             </div>
-            <div className="flex lg:justify-end">
-              <img
-                src={PaidMarketing2}
-                alt="Marketing Visual"
-                className="w-full h-full object-cover"
-              />
-            </div>
+             <div className="flex lg:justify-end">
+                <img src={PaidMarketing2} alt="Marketing Visual" className="w-full h-[320px] md:h-[450px] lg:h-[520px] object-contain moveLeftAnimation"/>
+           </div>
           </div>
         </div>
         <div className="pb-4 px-5 md:px-10 lg:px-30">
@@ -179,20 +175,20 @@ const PaidMarketing = () => {
               <img
                 src={PaidMarketing3}
                 alt="Marketing Visual"
-                className="w-full h-full object-cover"
+                className="w-full h-[320px] md:h-[450px] lg:h-[520px] object-contain moveRightAnimation"
               />
             </div>
             <div>
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold pt-20 md:pt-25 lg:pt-48 pr-5 md:pr-0 lg:pr-0">Discover how to build relationships with your audience</h2>
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold pt-5 md:pt-8 lg:pt-48 pr-5 md:pr-0 lg:pr-0">Discover how to build relationships with your audience</h2>
               <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">Baza has developed an online course on creating and promoting a personal brand on social networks.</p>
               <NavLink to="/"className="text-lg font-semibold group relative inline-flex items-center gap-2 rounded-[15px] px-8 py-3 text-black transition duration-300 uppercase">Learn more <FaArrowRight/><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-[#F89E1B] transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
             </div>
           </div>
         </div>
-         <div className="pb-4 px-5 md:px-10 lg:px-30">
+         <div className="pb-14 px-5 md:px-10 lg:px-30">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
             <div>
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold pt-20 md:pt-25 lg:pt-48 pr-5 md:pr-0 lg:pr-0">You'll know how to schedule your social media campaigns</h2>
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold pt-5 md:pt-8 lg:pt-48 pr-5 md:pr-0 lg:pr-0">You'll know how to schedule your social media campaigns</h2>
               <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">Baza has developed an online course on creating and promoting a personal brand on social networks.</p>
               <NavLink to="/"className="text-lg font-semibold group relative inline-flex items-center gap-2 rounded-[15px] px-8 py-3 text-black transition duration-300 uppercase">Learn more <FaArrowRight/><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-[#F89E1B] transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
             </div>
@@ -200,28 +196,28 @@ const PaidMarketing = () => {
               <img
                 src={PaidMarketing4}
                 alt="Marketing Visual"
-                className="w-full h-full object-cover"
+                className="w-full h-[300px] md:h-[450px] lg:h-[500px] object-contain moveLeftAnimation"
               />
             </div>
           </div>
         </div>
   
    <section className="bg-cover bg-center py-24 px-6 text-center bg-[#ffeacd]" style={{ backgroundImage: `url(${PaidMarketingBgImage})` }}>
-      <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Join other 5000+ people who <br /> already have a bright future</h2>
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-6">Join other 5000+ people who already have a bright future</h2>
       <NavLink to="/"className="text-lg group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-10 py-3 text-white transition duration-300">JOIN NOW<span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-[#F89E1B] transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
-        <div className="mt-4 flex justify-center gap-6 text-sm text-black">
-          <p className="flex items-center gap-1">✔ No credit card required</p>
-          <p className="flex items-center gap-1">✔ Cancel any time</p>
+        <div className="mt-4 block md:flex justify-center gap-6 text-sm text-black">
+          <p className="flex items-center gap-1 justify-center pt-4 mb-4">✔ No credit card required</p>
+          <p className="flex items-center gap-1 justify-center text-left">✔ Cancel any time</p>
        </div>
     </section>
 
 
- <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+ <div className="pb-4 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-30">
         <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about paid search <br /> management</h1>
         <p className="text-center text-md font-base text-gray-500 pb-4">Looking to learn more about paid search management for your business? Browse our FAQs</p>
       </div>
-  <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
+  <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4 px-5 md:px-10 lg:px-30 pb-5">
         {faqs.map((faq, index) => (
           <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
             <button

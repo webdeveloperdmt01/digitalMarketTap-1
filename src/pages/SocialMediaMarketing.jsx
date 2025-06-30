@@ -129,7 +129,7 @@ const SocialMediaMarketing = () => {
         <div className="space-y-6">
           <h2
             id="seo-heading"
-            className="text-2xl md:text-4xl lg:text-6xl font-extrabold leading-tight text-black"
+            className="text-2xl md:text-4xl lg:text-6xl font-bold leading-tight text-black"
           >
            Social Media <br />
            Marketing <br />Service

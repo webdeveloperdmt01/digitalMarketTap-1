@@ -52,3 +52,32 @@ h1,h2,h3,h4,h5,p {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* ANIMATION FOR MARKEITNG */
+@keyframes moveLeftDown {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-20px, 20px);
+  }
+}
+
+.moveLeftAnimation {
+  animation: moveLeftDown 2s ease-in-out infinite alternate;
+}
+
+/* ANIMATION FOR MARKEITNG */
+@keyframes moveRightDown {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(20px, 30px);
+  }
+}
+
+.moveRightAnimation {
+  animation: moveRightDown 2s ease-in-out infinite alternate;
+}
+

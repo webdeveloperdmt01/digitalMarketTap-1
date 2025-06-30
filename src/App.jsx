@@ -34,6 +34,10 @@ import OrganicSocialMedia from './pages/OrganicSocialMedia';
 import ProjectDetailPage from "./pages/ProjectDetailPage";
 import PaidMarketing from "./pages/PaidMarketing";
 import Marketing from "./pages/Marketing";
+import EcommerceWebsiteDevelopment from "./pages/EcommerceWebsiteDevelopment";
+import BlogNewsWebsite from "./pages/BlogNewsWebsite";
+import EducationalWebsite from "./pages/EducationalWebsite";
+import BuisnessWebsite from "./pages/BuisnessWebsite";
 
 
 
@@ -74,6 +78,10 @@ function App() {
         <Route path="/organic-social-media" element={<Layout><OrganicSocialMedia/></Layout>} />
         <Route path="/paid-marketing" element={<Layout><PaidMarketing/></Layout>} />
         <Route path="/marketing" element={<Layout><Marketing/></Layout>} />
+        <Route path="/e-commerce-website-development" element={<Layout><EcommerceWebsiteDevelopment/></Layout>} />
+        <Route path="/blog-news-website" element={<Layout><BlogNewsWebsite/></Layout>} />
+        <Route path="/education-website" element={<Layout><EducationalWebsite/></Layout>} />
+        <Route path="/buisness-website" element={<Layout><BuisnessWebsite/></Layout>} />
     
         
 
