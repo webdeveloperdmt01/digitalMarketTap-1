@@ -3,6 +3,7 @@ import { useState } from "react";
 import ErrorImg from "../assets/errorImg.jpg";
 import CountUp from "react-countup";
 
+
 const Error = () => {
   const navigate = useNavigate();
   const [query, setQuery] = useState("");
@@ -58,7 +59,7 @@ const Error = () => {
     if (found) {
       navigate(found.path);
     } else {
-      alert("Page not found!");
+      alert("Oops. Not here. Never was");
     }
   };
 
@@ -80,7 +81,7 @@ const Error = () => {
             Try searching again or go back to the{" "}
             <span
               onClick={() => navigate("/")}
-              className="text-[#f89e1b] cursor-pointer underline"
+              className="text-[#f89e1b] cursor-pointer hover:underline"
             >
               Home Page
             </span>
@@ -97,12 +98,7 @@ const Error = () => {
               placeholder="Search pages..."
               className="flex-grow px-6 py-3 focus:outline-none text-black"
             />
-            <button
-              type="submit"
-              className="px-6 py-3 text-white bg-[#f89e1b]"
-            >
-              Search
-            </button>
+            <button type="submit" className="px-6 py-3 text-white bg-[#fcc87e] hover:bg-[#f89e1b]  transition-colors duration-500 ease-in-out">Search</button>
           </form>
         </div>
       </div>
