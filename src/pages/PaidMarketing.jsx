@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
 import { FaArrowRight , FaMinus , FaPlus } from "react-icons/fa";
 import PaidMarketing1 from '../assets/PaidMarketing1.png'; 
@@ -45,7 +46,7 @@ const brandLogos = [
 
 const PaidMarketing = () => {
   const [openIndex, setOpenIndex] = useState(null);
-
+  const navigate = useNavigate();
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
@@ -121,7 +122,7 @@ const PaidMarketing = () => {
               Google AD's
             </h3>
             <p className="text-gray-600 mb-6 text-left">Our team has developed an online course on creating and promoting a personal brand on social media. The Online Intensive is an amazing course for anyone looking to start making money on social media.</p>
-            <button className="relative bg-black text-white px-10 py-3 rounded-xl text-md  transition group cursor-pointer" style={{boxShadow: '0 8px 13px rgba(248, 158, 27, 0.5)',}}><span className="relative">KNOW MORE<span className="block h-0.5 bg-[#F89E1B] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span></span></button>
+           <button className="relative bg-black text-white px-10 py-3 rounded-xl text-md transition group cursor-pointer" style={{ boxShadow: '0 8px 13px rgba(248, 158, 27, 0.5)' }} onClick={() => navigate('/google-ads')}> <span className="relative">KNOW MORE <span className="block h-0.5 bg-[#F89E1B] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span> </span></button>
           </div>
         </div>
 
@@ -136,7 +137,7 @@ const PaidMarketing = () => {
               Amazon AD's
             </h3>
             <p className="text-gray-600 mb-6 text-left">Our team has developed an online course on creating and promoting a personal brand on social media. The Online Intensive is an amazing course for anyone looking to start making money on social media.</p>
-            <button className="relative bg-black text-white px-10 py-3 rounded-xl text-md  transition group cursor-pointer" style={{boxShadow: '0 8px 13px rgba(248, 158, 27, 0.5)',}}><span className="relative">KNOW MORE<span className="block h-0.5 bg-[#F89E1B] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span></span></button>
+          <button className="relative bg-black text-white px-10 py-3 rounded-xl text-md transition group cursor-pointer" style={{ boxShadow: '0 8px 13px rgba(248, 158, 27, 0.5)' }} onClick={() => navigate('/amazon-ads')}> <span className="relative"> KNOW MORE<span className="block h-0.5 bg-[#F89E1B] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span></span></button>
           </div>
         </div>
       </div>

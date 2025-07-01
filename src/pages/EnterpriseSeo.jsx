@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import EnterpriseSeo from "../assets/enterpriseSeo.jpg";
 import EnterpriseSeo2 from "../assets/enterpriseSeo2.jpg";
 import EnterpriseSeo3 from "../assets/enterpriseSeo3.jpg";
-import { FaArrowRight, FaPlus, FaMinus, FaGamepad, FaHeartbeat, FaPiggyBank, FaBalanceScale, FaHome, FaBus } from "react-icons/fa";
+import { FaArrowRight, FaCheckCircle , FaPlus, FaMinus, FaGamepad, FaHeartbeat, FaPiggyBank, FaBalanceScale, FaHome, FaBus } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
 const EnterpriseSeoPage = () => {
@@ -51,24 +51,7 @@ const EnterpriseSeoPage = () => {
     },
   ];
 
-  const faqs = [
-    {
-      question: "What is paid search management?",
-      answer: "Paid search management involves creating, managing, and optimizing pay-per-click (PPC) advertising campaigns on search engines like Google and Bing to drive targeted traffic to your website."
-    },
-    {
-      question: "How much does paid search management cost?",
-      answer: "The cost varies depending on your budget, industry, and campaign complexity. We offer flexible pricing models to suit different business needs and budgets."
-    },
-    {
-      question: "How long does it take to see results?",
-      answer: "You can start seeing traffic immediately once campaigns are live, but meaningful results and optimization typically occur within 2-4 weeks of continuous management."
-    },
-    {
-      question: "Do you provide reporting and analytics?",
-      answer: "Yes, we provide detailed monthly reports showing campaign performance, key metrics, and recommendations for improvement."
-    }
-  ];
+
   const headers = ["#", "TABLE HEADER 1", "TABLE HEADER 2", "TABLE HEADER 3", "TABLE HEADER 4"];
   const data = [
     ["Content 1", "Content 2", "Content 3", "Content 4"],
@@ -248,33 +231,82 @@ const EnterpriseSeoPage = () => {
         </div>
       </div>
 
-      <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
-        <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about paid search <br /> management</h1>
-        <p className="text-center text-md font-base text-gray-500 pb-4">Looking to learn more about paid search management for your business? Browse our FAQs</p>
-        <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
-              <button
-                onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#6754E9] focus:outline-none pt-5"
-              >
-                {faq.question}
-                {openIndex === index ? (
-                  <FaMinus className="text-[#000000]" />
-                ) : (
-                  <FaPlus className="text-[#f89e1b]" />
-                )}
-              </button>
-              {openIndex === index && (
-                <p className="mt-3 text-gray-500 text-xs font-semibold md:text-md">
-                  {faq.answer}
-                </p>
-              )}
+<div className="py-4 md:py-6 lg:py-8">
+  <h5 className='text-md font-medium pb-4 uppercase'>Enterprise SEO</h5>
+            <h1 className='font-bold text-2xl md:text-3xl lg:text-6xl pb-4 md:pb-8'>Elevating Enterprise SEO Services</h1>
+              <h3 className="text-left font-semibold text-md md:text-lg text-black pb-3 md:pb-7">
+                Looking to learn more about SEO with Ai for your business? Fill the Form: <br />When you partner with Numerique, we take care of the heavy lifting, so you can enjoy more website traffic, leads, and revenue.
+              </h3>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-15 lg:gap-40">
+            <div>
+
+              <hr className="border border-gray-200" />
+
+              {[
+                "Review your marketing goals: Begin by reviewing your marketing goals and objectives",
+                "Evaluate your target audience to see if they have changed or if you need to adjust your messaging to better reach them.",
+                "Analyze your website to ensure it is user-friendly, mobile-responsive, and optimized for search engines.",
+                "Review your content marketing efforts, including your blog posts, social media, and email marketing.",
+              ].map((text, index) => (
+                <div
+                  key={index}
+                  className="flex items-start gap-3 text-md text-[#444] pt-3 md:pt-6 lg:pt-8"
+                >
+                  <FaCheckCircle className="text-[#6754E9] text-2xl mt-1 shrink-0" />
+                  <p>{text}</p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </div>
+
+            <div className="relative">
+              <div className="absolute -top-8 right-4 flex items-center gap-2"></div>
+              <div className="px-1">
+                <div className="bg-white rounded-[32px] shadow-[12px_12px_0_0_black] px-4 md:px-6 pt-8 pb-10 w-full">
+                  <h2 className="text-2xl font-semibold text-black pb-6">Get your Quotation</h2>
+
+                  <form className="flex flex-col space-y-6 text-[#a4a4a4]">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      required
+                    />
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      required
+                    />
+                    <input
+                      type="text"
+                      placeholder="Company name"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                    />
+                    <input
+                      type="tel"
+                      placeholder="Phone number"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                    />
+                    <textarea
+                      placeholder="What can we help you with?"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none resize-none h-28"
+                    ></textarea>
+                    <button
+                      type="submit"
+                      className="relative w-full bg-black text-white font-semibold py-3 rounded-2xl hover:bg-[#6754E9] transition duration-300 group"
+                    >
+                      <span className="relative inline-block">
+                        SEND ME A PROPOSAL →
+                        <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                      </span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
     </main>
   );
 };

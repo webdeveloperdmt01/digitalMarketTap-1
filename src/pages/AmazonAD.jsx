@@ -13,35 +13,13 @@ import {
   FaGoogle,
 } from "react-icons/fa";
 
-import SocialMediaOptimisationImg from "../assets/SocialMediaOpt.jpg";
+import AmazonADImg from "../assets/amazonadBanner1.jpg";
 import ContentWritingServiceImg2 from "../assets/contentServiceMarketing2.jpg";
 import ContentWritingServiceImg3 from "../assets/contentServiceMarketing3.jpg";
 import ContentWritingServiceImg4 from "../assets/contentServiceMarketing4.jpg";
 import GooglePartner1 from "../assets/google-partner-1.png";
 import RocketBlue from "../assets/blueRocket.png";
 
-const faqs = [
-  {
-    question: "What is paid search?",
-    answer:
-      "Paid search is a digital marketing strategy that involves online ads that appear at the top of search engine results pages (SERPs). Paid search ads typically look similar to organic search listings but have a label that distinguishes them as ads.",
-  },
-  {
-    question: "What are paid search management services?",
-    answer:
-      "With paid search management services, you can expect a dedicated team of experts who will meticulously review and analyze your campaigns, ensuring that they align with your business objectives. Through continuous optimization, they will fine-tune your advertisements to maximize their effectiveness, reaching the right audience at the right time.",
-  },
-  {
-    question: "How does paid search work?",
-    answer:
-      "When it comes to paid search ads, Google Ads serves as a prime example of how the process works. Google Ads allows advertisers to bid on specific keywords they want their ads to appear for. When a user conducts a search on Google, the platform uses various factors such as keywords, ad settings, bids, and ad quality score to determine which ads to display.",
-  },
-  {
-    question: "When should you use paid search?",
-    answer:
-      "Paid search can indeed be a valuable addition to your marketing strategy for several reasons: Audience Research, Precise Targeting, Quick Results, Bottom-of-the-Funnel Leads, Supplementing Organic Search Results. By leveraging the advantages of paid search, businesses can effectively target their audience, generate qualified leads, achieve faster results, and enhance their overall online visibility and conversion rates",
-  },
-];
 
 const services = [
   {
@@ -96,7 +74,7 @@ const tabs = [
 ];
 
 
-const SocialMediaOptimisation = () => {
+const AmazonAD = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const [activeTab, setActiveTab] = useState("Transparency");
   const [activeTabIndex, setActiveTabIndex] = useState(0);
@@ -112,12 +90,12 @@ const SocialMediaOptimisation = () => {
   return (
     <section
       aria-labelledby="seo-heading"
-      className="bg-[#fdf1e7] pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-16 lg:px-30"
+      className="bg-gradient-to-b from-[#fdf1e7] to-white pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-16 lg:px-30"
     >
       <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
         <div>
           <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">Marketing solutions</h3>
-          <h2 className="text-4xl lg:text-6xl font-bold text-black mt-2 leading-tight"> Social Media <br />Optimization</h2>
+          <h2 className="text-4xl lg:text-6xl font-bold text-black mt-2 leading-tight"> Amazon ADs</h2>
           <p className="text-md text-black mt-5 mb-10 font-semibold">Struggling to find PPC experts who really understand your business and can actually drive long term results? Our world-class marketers would love to help your business thrive!</p>
           <NavLink
             to="/free-audit"
@@ -131,9 +109,9 @@ const SocialMediaOptimisation = () => {
         </div>
         <div className="flex lg:justify-end pt-2.5 pr-2.5 pb-2.5 pl-0 lg:p-0">
           <img
-            src={SocialMediaOptimisationImg}
+            src={AmazonADImg}
             alt="Marketing Visual"
-            className="w-full h-[250px] md:h-[470px] object-cover rounded-[30px] md:rounded-[60px]"
+            className="w-full h-[250px] md:h-[520px] object-cover rounded-[30px] md:rounded-[60px]"
           />
         </div>
       </div>
@@ -157,7 +135,7 @@ const SocialMediaOptimisation = () => {
         </div>
       </div>
 
-      <div className="bg-[#fdf1e7] pt-8 md:pt-14 lg:pt-24">
+      <div className="pt-8 md:pt-14 lg:pt-24">
         <p className="text-center text-md font-semibold uppercase pb-4">Numerique</p>
         <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-semibold pb-10 lg:pb-24">How our paid search marketing <br /> service can help grow your <br /> revenue</h1>
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15">
@@ -180,7 +158,7 @@ const SocialMediaOptimisation = () => {
         </div>
       </div>
 
-      <div className="bg-[#fdf1e7] pt-8 md:pt-14 lg:pt-24">
+      <div className="pt-8 md:pt-14 lg:pt-24">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
           <div>
             <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">
@@ -198,7 +176,7 @@ const SocialMediaOptimisation = () => {
         </div>
       </div>
 
-      <div className="bg-[#fdf1e7] pb-4 pt-2 md:pt-8 lg:pt-18">
+      <div className="pb-4 pt-2 md:pt-8 lg:pt-18">
         <p className="text-center text-md font-semibold uppercase pb-4">what you get</p>
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">What is included in our paid search <br /> marketing services? </h1>
         <p className="text-center text-md font-base text-gray-500 pb-4">When you partner with Numerique, you'll gain access to our full range of paid SEM services. These services are designed to <br /> optimize every facet of your paid advertising, including:</p>
@@ -286,7 +264,7 @@ const SocialMediaOptimisation = () => {
   </div>
 </div>
 
-      <div className="bg-[#fdf1e7] py-8">
+      <div className="py-8">
         <p className="text-center text-md font-semibold uppercase pb-3">Creating Success</p>
         <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">What makes our paid search <br /> management services so <br /> effective?</h1>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -335,7 +313,7 @@ const SocialMediaOptimisation = () => {
         </div>
       </div>
 
-      <div className="bg-[#fdf1e7] pb-4 pt-8 md:pt-12 lg:pt-18">
+      <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
         <p className="text-center text-md font-semibold uppercase pb-4">The proof is in the numbers</p>
         <h1 className="text-3xl lg:text-5xl text-center font-semibold pb-4">Why paid search Ads can bring in <br /> the numbers </h1>
         <div className="w-full">
@@ -371,44 +349,12 @@ const SocialMediaOptimisation = () => {
         </div>
       </div>
 
-      <div className="bg-[#fdf1e7] pb-4 pt-8 md:pt-12 lg:pt-18">
-        <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about paid search <br /> management</h1>
-        <p className="text-center text-md font-base text-gray-500 pb-4">Looking to learn more about paid search management for your business? Browse our FAQs</p>
-      </div>
 
-      <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
-        {faqs.map((faq, index) => (
-          <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#6754E9] focus:outline-none pt-5"
-            >
-              {faq.question}
-              {openIndex === index ? (
-                <FaMinus className="text-[#000000]" />
-              ) : (
-                <FaPlus className="text-[#f89e1b]" />
-              )}
-            </button>
-            {openIndex === index && (
-              <p className="mt-3 text-gray-500 text-xs font-semibold md:text-md">
-                {faq.answer}
-              </p>
-            )}
-          </div>
-        ))}
-      </div>
-
-      <div className="p-5 md:p-0 relative">
-        <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
-          <img src={RocketBlue} alt="Custom" className="hidden md:block w-14 md:w-18 absolute right-2 md:right-12 -top-8 -rotate-25 z-10"/>
+      <div className="relative">
+        <section className=" bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
           <div className="flex justify-center items-center mb-4">
-            <img
-              src={GooglePartner1}
-              alt="Partner Logo"
-              className="h-8 sm:h-10 w-auto"
-            />
+          <img src={RocketBlue} alt="Custom" className="hidden md:block w-14 md:w-18 absolute right-2 md:right-12 -top-8 -rotate-25 z-10"/>
+          <img src={GooglePartner1} alt="Partner Logo" className="h-8 sm:h-10 w-auto" />
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-snug text-black px-2 sm:px-0">
             Get started with a Free <br className="hidden md:block" /> consultation
@@ -429,4 +375,4 @@ const SocialMediaOptimisation = () => {
   );
 };
 
-export default SocialMediaOptimisation;
+export default AmazonAD;

@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import AISeo from "../assets/aiSeo.jpg";
-import AISeo2 from "../assets/aiSeo2.jpg";
+import AISeo from "../assets/hyperlocalImg.jpeg";
+import AISeo2 from "../assets/hyperlocalImg2.jpg";
+import rocket from "../assets/rocket.png";
 import Badge0 from "../assets/clutch-badge.png";
 import Badge1 from "../assets/new-badge.png";
 import Badge2 from "../assets/new-badge2.png";
 import Badge3 from "../assets/new-badge3.png";
 import Badge4 from "../assets/logo_hubspot.png";
-import rocket from "../assets/rocket.png";
-import SparklingStar from '../assets/sparklingStarBlack.png';;
+import SparklingStar from '../assets/sparklingStarBlack.png';
 import { FaArrowRight, FaRocket, FaBullseye, FaSearch, FaEnvelope, FaCrown, FaCheckCircle  } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
-const AISeoPage = () => {
+const HyperLocalSeo = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -69,25 +69,6 @@ const AISeoPage = () => {
           "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
       },
     
-  ];
-
-  const faqs = [
-    {
-      question: "What is paid search management?",
-      answer: "Paid search management involves creating, managing, and optimizing pay-per-click (PPC) advertising campaigns on search engines like Google and Bing to drive targeted traffic to your website."
-    },
-    {
-      question: "How much does paid search management cost?",
-      answer: "The cost varies depending on your budget, industry, and campaign complexity. We offer flexible pricing models to suit different business needs and budgets."
-    },
-    {
-      question: "How long does it take to see results?",
-      answer: "You can start seeing traffic immediately once campaigns are live, but meaningful results and optimization typically occur within 2-4 weeks of continuous management."
-    },
-    {
-      question: "Do you provide reporting and analytics?",
-      answer: "Yes, we provide detailed monthly reports showing campaign performance, key metrics, and recommendations for improvement."
-    }
   ];
 
   return (
@@ -207,7 +188,7 @@ const AISeoPage = () => {
               <div className="px-1">
                 <div className="bg-white rounded-[32px] shadow-[12px_12px_0_0_black] px-4 md:px-6 pt-8 pb-10 w-full">
                   <h2 className="text-2xl font-semibold text-black pb-6">Get your Quotation</h2>
-                   <img src={rocket} alt="rocket" className="absolute top-0 right-0 md:right-12 lg:right-20 h-20 md:h-34 -mt-8 md:-mt-10 lg:-mt-13 mr-0 md:-mr-8 lg:-mr-10 rotate-35 object-contain"/>
+                  <img src={rocket} alt="rocket" className="absolute top-0 right-0 md:right-12 lg:right-20 h-20 md:h-34 -mt-8 md:-mt-10 lg:-mt-13 mr-0 md:-mr-8 lg:-mr-10 rotate-35 object-contain"/>
                   <img src={SparklingStar} alt="SparklingStar" className="absolute top-0 right-0 md:right-12 lg:right-50 h-10 md:h-14 -mt-4 md:-mt-6 lg:-mt-6 mr-15 md:mr-10 lg:-mr-10 rotate-[35deg] object-contain"/>
                   <form className="flex flex-col space-y-6 text-[#a4a4a4]">
                     <input
@@ -251,20 +232,21 @@ const AISeoPage = () => {
             </div>
           </div>
     </div>
-    <div className="flex flex-col lg:flex-row items-center justify-center gap-8 pt-8 md:pt-12 pb-8 md:pb-10 lg:pt-16 text-center lg:text-left">
-        <div className="w-full lg:w-1/3 flex justify-end">
-          <p className="text-xl font-semibold text-gray-800 pr-10">Credentials & <br className="hidden md:block" /> Recognition:</p>
-        </div>
-        <div className="w-full lg:w-2/3 flex justify-center lg:justify-start flex-wrap items-center gap-4 md:gap-6 py-2">
-            <img src={Badge0} alt="Badge 0" className="h-16 md:h-20 object-contain" />
-            <img src={Badge1} alt="Badge 1" className="h-16 md:h-20 object-contain" />
-            <img src={Badge2} alt="Badge 2" className="h-16 md:h-20 object-contain" />
-            <img src={Badge3} alt="Badge 3" className="h-16 md:h-20 object-contain" />
-            <img src={Badge4} alt="Badge 4" className="h-16 md:h-20 object-contain" />
-        </div>
-      </div>
+
+         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 pt-8 md:pt-12 pb-8 md:pb-10 lg:pt-16 text-center lg:text-left">
+                <div className="w-full lg:w-1/3 flex justify-end">
+                  <p className="text-xl font-semibold text-gray-800 pr-10">Credentials & <br className="hidden md:block" /> Recognition:</p>
+                </div>
+                <div className="w-full lg:w-2/3 flex justify-center lg:justify-start flex-wrap items-center gap-4 md:gap-6 py-2">
+                    <img src={Badge0} alt="Badge 0" className="h-16 md:h-20 object-contain" />
+                    <img src={Badge1} alt="Badge 1" className="h-16 md:h-20 object-contain" />
+                    <img src={Badge2} alt="Badge 2" className="h-16 md:h-20 object-contain" />
+                    <img src={Badge3} alt="Badge 3" className="h-16 md:h-20 object-contain" />
+                    <img src={Badge4} alt="Badge 4" className="h-16 md:h-20 object-contain" />
+                </div>
+              </div>
     </main>
   );
 };
 
-export default AISeoPage;
+export default HyperLocalSeo;

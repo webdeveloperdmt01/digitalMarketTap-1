@@ -7,6 +7,7 @@ import Badge1 from "../assets/new-badge.png";
 import Badge2 from "../assets/new-badge2.png";
 import Badge3 from "../assets/new-badge3.png";
 import Badge4 from "../assets/logo_hubspot.png";
+import SnipetPreview2 from "../components/SnipetPreview2"
 import { FaArrowRight, FaCrown, FaEnvelope, FaRocket, FaBullseye, FaSearchengin ,FaCheckCircle } from "react-icons/fa";
 
 const services = [
@@ -118,6 +119,8 @@ const BuisnessWebsite = () => {
     ))}
   </div>
 </div>
+
+<SnipetPreview2/>
 
 <div className="py-4 md:py-6 lg:py-8">
   <h5 className='text-md font-medium pb-4'>A.I. SEO</h5>

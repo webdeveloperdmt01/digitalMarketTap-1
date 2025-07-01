@@ -81,3 +81,26 @@ h1,h2,h3,h4,h5,p {
   animation: moveRightDown 2s ease-in-out infinite alternate;
 }
 
+
+/* Custom Scroll Up and Down Animation */
+
+@keyframes scroll-y {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-scroll-y {
+  animation: scroll-y 15s ease-in-out infinite;
+}
+
+.group:hover .animate-scroll-y {
+  animation-play-state: paused;
+}
+

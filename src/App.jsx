@@ -38,6 +38,12 @@ import EcommerceWebsiteDevelopment from "./pages/EcommerceWebsiteDevelopment";
 import BlogNewsWebsite from "./pages/BlogNewsWebsite";
 import EducationalWebsite from "./pages/EducationalWebsite";
 import BuisnessWebsite from "./pages/BuisnessWebsite";
+import VernacularSeo from "./pages/VernacularSeo";
+import HyperLocalSeo from "./pages/HyperLocalSeo";
+import VoiceSeo from "./pages/VoiceSeo";
+import GoogleAD from "./pages/GoogleAD";
+import AmazonAD from "./pages/AmazonAD";
+import Error from "./pages/Error";
 
 
 
@@ -82,6 +88,12 @@ function App() {
         <Route path="/blog-news-website" element={<Layout><BlogNewsWebsite/></Layout>} />
         <Route path="/education-website" element={<Layout><EducationalWebsite/></Layout>} />
         <Route path="/buisness-website" element={<Layout><BuisnessWebsite/></Layout>} />
+        <Route path="/vernacular-seo" element={<Layout><VernacularSeo/></Layout>} />
+        <Route path="/hyperlocal-seo" element={<Layout><HyperLocalSeo/></Layout>} />
+        <Route path="/voice-seo" element={<Layout><VoiceSeo/></Layout>} />
+        <Route path="/google-ads" element={<Layout><GoogleAD/></Layout>} />
+        <Route path="/amazon-ads" element={<Layout><AmazonAD/></Layout>} />
+        <Route path="/404-error" element={<Layout><Error/></Layout>} />
     
         
 
