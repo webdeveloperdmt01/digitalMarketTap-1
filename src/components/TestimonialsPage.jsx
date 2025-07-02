@@ -6,21 +6,27 @@ import { FaArrowRight, FaArrowLeft ,FaArrowUp } from "react-icons/fa";
 
 const testimonials = [
   {
-    text: "Digital Market Tap’s SEO team completely revamped our website’s strategy. Our search rankings improved dramatically, and organic traffic doubled within months. Their data-driven approach and clear communication made all the difference",
-    name: "Akshay",
-    role: "LMS Portal",
+    text: "Our website was slow and had SEO issues. Their quick fixes improved load speed and dropped our bounce rate by 30%. Highly effective work.",
+    name: "Kareena Tanwar",
+    role: "Ecommerce Business Owner",
   },
   {
-    text: "The social media campaigns created by Digital Market Tap have brought our brand to life online. Engagement soared, and we connected with a whole new audience. Their creativity and responsiveness are unmatched",
+    text: "Partnering with Digital Market Tap boosted our organic traffic by 60% in 3 months. Their SEO strategies and communication are simply excellent.",
     name: "Reshmi Sharma",
-    role: "Director, Weaves by Weavers",
+    role: "Founder, Weaves by Weavers",
   },
   {
-    text: "Our Google Ads and Facebook campaigns managed by Digital Market Tap delivered consistent, high-quality leads. Their attention to detail and ROI focus helped us get the most out of every dollar spent",
-    name: "Michael S",
-    role: "Sales Director",
+    text: "Digital Market Tap’s SEO, Google Ads, and social media strategies grew my brand’s visibility and delivered high-quality leads within weeks.",
+    name: "Muskan Sangwan",
+    role: "Lifestyle Influencer",
+  },
+  {
+    text: "Their tailored social media strategy helped us 4x our followers and significantly increase leads. The team truly understands platform-specific marketing.",
+    name: "Manish Yadav",
+    role: "Sales Director, FinEdge Solutions",
   },
 ];
+
 
 const Testimonials = () => {
   const [index, setIndex] = useState(0);
@@ -41,12 +47,12 @@ const Testimonials = () => {
   return (
     <>
       <div className="px-0 md:px-10 lg:px-30">
-        <div className="rounded-t-[60px] bg-orange-100 pt-4">
-        <section className="py-6 md:py-16 rounded-t-[60px] px-5 md:px-10 lg:px-20 mb-2 md:mb-16">
-          <h2 className="text-center md:text-left text-2xl md:text-4xl font-semibold mb-4">
+        <div className="rounded-t-[30px] md:rounded-t-[60px] pt-4 bg-[#FFF5EB]">
+        <section className="pt-6 md:pt-16 rounded-t-[60px]">
+          <h2 className="text-center md:text-left text-2xl md:text-4xl font-semibold mb-4  px-5 md:px-10 lg:px-15">
             The proof is in the numbers
           </h2>
-          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 pb-20 px-5 md:px-10 lg:px-15">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 w-full lg:w-2/3 text-center">
               {[
                 {
@@ -83,8 +89,8 @@ const Testimonials = () => {
               ))}
             </div>
 
-            <div className="bg-orange-200 text-center px-10 py-10 md:px-20 md:py-15 rounded-[40px] lg:w-1/3 w-full">
-              <h3 className="text-4xl font-bold mb-2">
+            <div className="bg-orange-200 text-center px-4 py-10 md:px-6 md:py-12 rounded-[30px] md:rounded-[40px] lg:w-1/3 w-full">
+              <h3 className="text-5xl font-bold mb-2">
                 <CountUp end={92000} duration={3} separator="," />+
               </h3>
               <p className="text-black font-semibold mb-6"> 
@@ -99,15 +105,13 @@ const Testimonials = () => {
               </a>
             </div>
           </div>
-        </section>
-        </div>
+        {/* </section> */}
+        {/* </div> */}
 
-        <div className="bg-gray-100 rounded-t-[40px] overflow-hidden flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto mt-10 pt-5 md:pt-20 px-5 md:px-10 lg:px-10 pb-5 md:pb-15 relative gap-12">
+        <div className="bg-white rounded-t-[20px] md:rounded-t-[50px] overflow-hidden flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto  pt-5 md:pt-20 px-5 md:px-10 lg:px-10 pb-12 md:pb-24 relative gap-12">
           <div className="lg:w-1/2 w-full relative pt-5">
-            <div className="flex items-center mb-4">
-              <span className="text-orange-500 text-[60px] leading-none font-bold mr-2 font-sans">“</span>
-            </div>
-            <p className="text-xl md:text-2xl italic text-black leading-relaxed mb-6 text-left">
+            <p className="text-xl md:text-2xl italic text-black leading-relaxed mb-6 text-left ">
+              <span className="text-orange-500 text-[60px] leading-none font-bold mr-2 font-mono">“</span>
               “{text}”
             </p>
             <div className="mb-6">
@@ -165,6 +169,8 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
+         </section>
+         </div>
       </div>
     </>
   );

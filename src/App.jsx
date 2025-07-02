@@ -44,6 +44,7 @@ import VoiceSeo from "./pages/VoiceSeo";
 import GoogleAD from "./pages/GoogleAD";
 import AmazonAD from "./pages/AmazonAD";
 import Error from "./pages/Error";
+import DigitalMarketing from "./pages/DigitalMarketing";
 
 
 
@@ -94,6 +95,8 @@ function App() {
         <Route path="/google-ads" element={<Layout><GoogleAD/></Layout>} />
         <Route path="/amazon-ads" element={<Layout><AmazonAD/></Layout>} />
         <Route path="/404-error" element={<Layout><Error/></Layout>} />
+        <Route path="/digital-marketing" element={<Layout><DigitalMarketing/></Layout>} />
+        
     
         
 

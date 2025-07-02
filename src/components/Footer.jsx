@@ -14,6 +14,7 @@ import tiktok from '../assets/tiktok.png';
 import SparklingStar from '../assets/SparklingStar.png';
 import { Link } from 'react-router-dom';
 import { FaCheckCircle } from 'react-icons/fa';
+import { useState } from "react";
 
 import {
   FaLinkedinIn,
@@ -26,6 +27,78 @@ import {
 } from 'react-icons/fa';
 
 const Footer = () => {
+const [step, setStep] = useState(1);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    phone: "",
+    website: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    setErrors((prev) => ({ ...prev, [name]: "" })); // Clear error when user types
+  };
+
+  // ✅ Validation function
+  const validateStep = () => {
+    const newErrors = {};
+
+    if (step === 1) {
+      if (!formData.name.trim()) newErrors.name = "Name is required";
+      if (!formData.email.trim()) {
+        newErrors.email = "Email is required";
+      } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+        newErrors.email = "Email is invalid";
+      }
+    }
+
+    if (step === 2) {
+      if (!formData.company.trim()) newErrors.company = "Company name is required";
+      if (!formData.phone.trim()) {
+        newErrors.phone = "Phone number is required";
+      } else if (!/^\d{1,10}$/.test(formData.phone)) {
+        newErrors.phone = "Phone number must be 10 digits";
+      }
+    }
+
+    if (step === 3) {
+      if (!formData.message.trim()) newErrors.message = "Message is required";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const nextStep = () => {
+    if (validateStep()) {
+      setStep((prev) => prev + 1);
+    }
+  };
+
+  const prevStep = () => setStep((prev) => prev - 1);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validateStep()) {
+      console.log("Form Submitted:", formData);
+      alert("Your Proposal have been sent successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        phone: "",
+        website: "",
+        message: "",
+      });
+      setStep(1);
+    }
+  };
   return (
     <section className="bg-black text-white rounded-t-[35px] md:rounded-t-[50px] pt-15   lg:px-0">
       <div className="px-5 md:px-10 lg:px-30 ">
@@ -34,15 +107,16 @@ const Footer = () => {
             <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold leading-tight mb-3 md:mb-6">
               Get a Free <br /> consultation to <br /> boost your business
             </h2>
-            <p className="text-white/90 mb-3 md:mb-6">
-              A marketing audit is an evaluation of your company’s marketing efforts and their effectiveness. Here what you will get:
-            </p>
-            <div className="h-px bg-white/20 my-3 md:my-6" />
+            <h6 className="text-white/90 mb-3 md:mb-6 font-light text-sm md:text-base">Get a free audit of your website to check if your website has issues or not.
+Read below to know why you need to audit the website.
+</h6>
+            <div className="h-px bg-white/20 my-3 md:my-6 text-sm md:text-base" />
             <ul className="space-y-4">
               {[
-                "Evaluate your target audience to see if they have changed or if you need to adjust your messaging to better reach them.",
-                "Analyze your website to ensure it is user-friendly, mobile-responsive, and optimized for search engines.",
-                "Review your content marketing efforts, including your blog posts, social media, and email marketing."
+                " A website audit will show the results of your website's overall performance which we can help to fix.",
+                " We can analyze all the duplicate content which can risk your website spam score and help to fix it.",
+                " In the audit report, you can check overall traffic on your website and also check your keyword ranking, traffic, and volume.",
+                "In website audit report, you can check loading speed of the website and page and we can help to fix it to increase website performance"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2">
               <FaCheckCircle className="text-[#FFF] text-2xl mt-1 shrink-0" />
@@ -58,13 +132,142 @@ const Footer = () => {
               <img src={SparklingStar} alt="SparklingStar" className="absolute top-0 right-0 md:right-12 lg:right-50 h-10 md:h-14 -mt-4 md:-mt-6 lg:-mt-6 mr-15 md:mr-10 lg:-mr-10 rotate-[35deg] object-contain"/>
               <h3 className="text-xl md:text-2xl font-bold mb-4">Get your free audit</h3>
               <div className="h-1 w-full bg-gray-200 rounded overflow-hidden mb-6">
-                <div className="h-full w-1/2 bg-[#F89E1B]" />
-              </div>
-              <form className="space-y-4">
-                <input type="text" placeholder="Your name" className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none" />
-                <input type="email" placeholder="Email" className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none" />
-                <button type="submit" className="w-full bg-black text-white font-semibold py-3 rounded-xl hover:bg-[#6754E9] transition">NEXT</button>
-              </form>
+  <div
+    className="h-full bg-[#F89E1B] transition-all duration-500"
+    style={{
+      width:
+        step === 1 ? "33%" : step === 2 ? "66%" : "100%",
+    }}
+  />
+</div>
+
+  <form className="space-y-4" onSubmit={handleSubmit}>
+      {step === 1 && (
+        <>
+          <div>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Your Name"
+              className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-xl border ${
+                errors.name ? "border-red-500" : "border-gray-300"
+              } focus:outline-none`}
+            />
+            {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Email"
+              className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-xl border ${
+                errors.email ? "border-red-500" : "border-gray-300"
+              } focus:outline-none`}
+            />
+            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+          </div>
+          <button
+            type="button"
+            onClick={nextStep}
+            className="w-full bg-black text-white text-sm md:text-md font-semibold py-2 md:py-3 rounded-xl hover:bg-[#6754E9] transition"
+          >
+            NEXT
+          </button>
+        </>
+      )}
+      {step === 2 && (
+        <>
+          <div>
+            <input
+              type="text"
+              name="company"
+              value={formData.company}
+              onChange={handleChange}
+              placeholder="Company Name"
+              className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-xl border ${
+                errors.company ? "border-red-500" : "border-gray-300"
+              } focus:outline-none`}
+            />
+            {errors.company && <p className="text-red-500 text-sm mt-1">{errors.company}</p>}
+          </div>
+          <div>
+            <input
+              type="number"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="Phone Number"
+              className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-xl border ${
+                errors.phone ? "border-red-500" : "border-gray-300"
+              } focus:outline-none`}
+            />
+            {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
+          </div>
+          <div className="flex gap-4">
+            <button
+              type="button"
+              onClick={prevStep}
+              className="w-1/2 bg-gray-200 text-sm md:text-md text-black font-semibold py-2 md:py-3 rounded-xl hover:bg-[#F89E1B] hover:text-white transition"
+            >
+              PREVIOUS
+            </button>
+            <button
+              type="button"
+              onClick={nextStep}
+              className="w-1/2 bg-black text-white font-semibold py-2 md:py-3 rounded-xl hover:bg-[#6754E9] transition"
+            >
+              NEXT
+            </button>
+          </div>
+        </>
+      )}
+      {step === 3 && (
+        <>
+          <div>
+            <input
+              type="text"
+              name="website"
+              value={formData.website}
+              onChange={handleChange}
+              placeholder="Your Website (optional)"
+              className="w-full px-3 md:px-4 py-2 md:py-3 rounded-xl border border-gray-300 focus:outline-none"
+            />
+          </div>
+          <div>
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Tell us about your project or requirements..."
+              rows={4}
+              className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-xl border ${
+                errors.message ? "border-red-500" : "border-gray-300"
+              } focus:outline-none`}
+            />
+            {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+          </div>
+          <div className="flex gap-4">
+            <button
+              type="button"
+              onClick={prevStep}
+              className="w-1/2 bg-gray-200 text-sm md:text-md text-black font-semibold py-2 md:py-3 rounded-xl hover:bg-[#F89E1B] hover:text-white transition"
+            >
+              PREVIOUS
+            </button>
+            <button
+              type="submit"
+              className="w-1/2 bg-black text-sm md:text-md text-white font-semibold py-2 md:py-3 rounded-xl hover:bg-[#6754E9] transition"
+            >
+              SEND PROPOSAL
+            </button>
+          </div>
+        </>
+      )}
+    </form>
             </div>
 
             <div className="pt-12 flex flex-col lg:flex-row items-center justify-center gap-6">
@@ -81,7 +284,7 @@ const Footer = () => {
           </div>
         </div>
 
-  <div className="bg-white rounded-t-[40px] shadow-md p-5 lg:p-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+  <div className="bg-white rounded-t-[30px] md:rounded-t-[40px] shadow-md p-5 lg:p-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 md:mt-20">
       <div className="p-0 md:p-6 lg:p-0 flex flex-col items-start gap-4">
       <img src={avatar} alt="Expert" className="w-16 h-16 rounded-full" />
       <p className="text-lg font-medium text-black">Talk to a growth expert</p>
@@ -132,7 +335,7 @@ const Footer = () => {
   </div>
 </div>
 
-        <div className="bg-[#f7f7fa] rounded-b-[40px] col-span-3 py-6 px-4 flex flex-wrap justify-around items-center gap-4 text-gray-700 text-sm">
+        <div className="bg-[#f7f7fa] rounded-b-[30px] md:rounded-b-[40px] col-span-3 py-6 px-4 flex flex-wrap justify-around items-center gap-4 text-gray-700 text-sm">
           {[googleCloud, meta, googlePartner, shopify, tiktok].map((logo, idx) => (
             <div key={idx} className="flex items-center">
               <img src={logo} alt={`Partner ${idx}`} className="h-full w-full" />
@@ -219,7 +422,7 @@ const Footer = () => {
         </div>
       </div>
 
-     <div className="bg-white rounded-t-[35px] pb-22 md:pb-18 lg:pb-5 pt-5 px-5 md:px-5 lg:px-20 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-6">
+     <div className="bg-white rounded-t-[30px] md:rounded-t-[40px] pb-22 md:pb-18 lg:pb-5 pt-5 px-5 md:px-5 lg:px-20 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-6">
       <div className="flex flex-col md:flex-row items-center text-sm text-black gap-2 md:gap-8 w-full md:w-auto">
     <p className="text-center md:text-left">© 2025 Digital Market Tap</p>
 

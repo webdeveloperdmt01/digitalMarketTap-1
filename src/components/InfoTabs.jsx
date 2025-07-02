@@ -7,19 +7,19 @@ const contentData = {
   Transparency: {
     title: "100% Campaign transparency",
     description:
-      "We cultivate an environment of transparency and communication in all we do. You don’t have to wonder what is going on with your campaign – we will keep you in the loop and in control.",
+      "We believe in 100% transparency, that’s why we don’t charge any hidden fees, and by being accountable to our clients, because we believe in honesty and building trust, we are known for our honesty and delivering high-end results yet at an affordable price.",
     image: TransparencyImage,
   },
   "Team of Experts": {
-    title: "Team of Marketing Experts",
+    title: "Highly trained expert team",
     description:
-      "Our seasoned professionals bring years of industry experience and proven track records. From SEO wizards to social media strategists, our team is built to elevate your brand.",
+      "Our team consists of highly trained, experienced and dedicated team members who try their level best to deliver real results which satisfy your needs. We ensure that you get personalized support.",
     image: TeamOfExpertsImage,
   },
   Results: {
-    title: "Results that Matter",
+    title: "Choose a partner who delivers result",
     description:
-      "Our strategies drive measurable results. From traffic growth to conversion rates, we provide clear ROI on every campaign.",
+      "We focus on delivering measurable results; improve your business goals which satisfy your needs. That's why we can proudly say we are The Best Digital Marketing Agency in Delhi.",
     image: ResultsImage,
   },
 };
@@ -28,7 +28,7 @@ const InfoTabs = () => {
   const [activeTab, setActiveTab] = useState("Transparency");
 
   return (
-   <div className="px-5 md:px-10 lg:px-30 py-8 md:py-16 bg-white w-full">
+   <div className="px-5 md:px-10 lg:px-30 pt-8 md:pt-16 pb-12 md:pb-24 w-full">
   <div className="flex justify-start mb-4 md:mb-8">
     <div className="inline-flex rounded-full p-0 md:p-1">
       {Object.keys(contentData).map((tab, idx) => (
@@ -49,8 +49,8 @@ const InfoTabs = () => {
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-32 items-start">
     <div className="bg-[#ffdfbe] py-4 px-2 md:py-10 md:px-8 rounded-3xl w-full order-1 md:order-1">
-      <h2 className="text-xl md:text-2xl font-bold mb-2">{contentData[activeTab].title}</h2>
-      <p className="text-gray-700 mb-4 text-sm leading-relaxed">
+      <h2 className="text-xl md:text-2xl font-bold mb-2 text-left">{contentData[activeTab].title}</h2>
+      <p className="text-gray-700 mb-4 text-sm leading-relaxed text-left">
         {contentData[activeTab].description}
       </p>
 
@@ -63,9 +63,13 @@ const InfoTabs = () => {
       </div>
     </div>
     <div className="max-w-xl order-2 md:order-2">
-      <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold leading-tight mb-5 md:mb-6 text-left">Discover Why Digital Market Tap is the Right Partner for You</h2>
+      <h2 className="text-2xl md:text-3xl lg:text-[44px] font-bold leading-tight mb-5 md:mb-6 text-left">How we became The Best Digital Marketing Agency in Delhi.</h2>
       <h6 className="text-gray-700 text-sm md:text-base mb-8 md:mb-6 text-left font-light">
-       We are the best digital marketing agency delivering tailored strategies, transparent communication, and expert solutions that drive growth, increase brand visibility, and maximise ROI through Social Media Marketing, SEO and Paid Ads – Helping your business succeed in today’s competitive digital World.
+Our latest marketing strategies made us the best digital marketing
+agency in Delhi by delivering the most reliable services like SEO service,
+Paid ads, website design & development, and social media services across
+Delhi. We first analyze your issues and then provide services accordingly.
+We provide personalized service according to your needs.
       </h6>
 
       <div className="flex justify-start">
