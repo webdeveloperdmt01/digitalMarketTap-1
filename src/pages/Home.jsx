@@ -1,16 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import avatar from "../assets/avatar.png";
 import teamImage from "../assets/many-guys-discuss-on-laptop.jpg";
 import {
   FaSearch,
-  FaRocket,
+  FaLaptop,
   FaEnvelope,
   FaBullseye,
   FaBullhorn,
   FaChartLine,
   FaRupeeSign,
+  FaArrowRight,
 } from "react-icons/fa";
-import { FaCheckCircle, FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import SuccessStories from "../components/SuccessStories";
 import BrandSlider from "../components/BrandSlider";
 import blueBrain from "../assets/blueBrain.jpg";
@@ -24,29 +26,32 @@ import TestimonialsPage from "../components/TestimonialsPage";
 // import MarketingTabs from '../components/MarketingTabs';
 
 const Home = () => {
+  const navigate = useNavigate();
+
   const blogs = [
     {
       title: "The evolution of live-stream content and short-form video...",
       date: "May 2023",
       image: blueBrain,
+      link: "/blog/1",
     },
     {
       title: "The Metaverse boom: brands unite and Apple takes a rain check",
       date: "May 2023",
       image: manWithModernSpecs,
+      link: "/blog/2",
     },
     {
       title: "Verify your site is protecting your business",
       date: "May 2023",
       image: yellowTopGirl,
+      link: "/blog/3",
     },
   ];
 
   const services = [
     {
-      icon: (
-        <FaBullseye className="text-orange-500 text-2xl hover:text-black" />
-      ),
+      icon: <FaBullseye className="text-[#f89e1b] text-2xl hover:text-black" />,
       title: (
         <>
           Paid search <br /> marketing
@@ -54,9 +59,10 @@ const Home = () => {
       ),
       description:
         "Paid search marketing — also known as PPC (Pay-Per-Click) advertising — is one of the fastest ways to get traffic and leads. Get the best PPC service and maximize your ROI.",
+      link: "/paid-search-marketing",
     },
     {
-      icon: <FaSearch className="text-orange-500 text-2xl hover:text-black" />,
+      icon: <FaSearch className="text-[#f89e1b] text-2xl hover:text-black" />,
       title: (
         <>
           Search engine
@@ -66,11 +72,10 @@ const Home = () => {
       ),
       description:
         "Search engine optimization—also known as SEO is one of the best organic ways to get ranked in Google search engine. We will handle your on-page SEO, off-page SEO, and technical SEO so your website can rank in the most organic manner.",
+      link: "/search-engine-optimization",
     },
     {
-      icon: (
-        <FaEnvelope className="text-orange-500 text-2xl hover:text-black" />
-      ),
+      icon: <FaEnvelope className="text-[#f89e1b] text-2xl hover:text-black" />,
       title: (
         <>
           Social media <br /> marketing
@@ -78,9 +83,10 @@ const Home = () => {
       ),
       description:
         "Social Media Marketing is the best way to get brand awareness, drive engagement, and help to grow trust between you and your audience. Time to uplift your online presence. We will handle your social media by posting high-quality content and value.",
+      link: "/social-media-marketing",
     },
     {
-      icon: <FaRocket className="text-orange-500 text-2xl hover:text-black" />,
+      icon: <FaLaptop className="text-[#f89e1b] text-2xl hover:text-black" />,
       title: (
         <>
           Website Design & <br /> Development
@@ -88,11 +94,12 @@ const Home = () => {
       ),
       description:
         "Website design & development is the best way to present your business as it reflects your brand, drive engagement, and support business growth. We provide a high-performing website according to your niche.",
+      link: "/website-design",
     },
   ];
 
   return (
-    <div className="!bg-gradient-to-b from-[#fdf1e7] to-white pt-10 md:pt-16 lg:pt-24 text-center">
+    <div className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-16 lg:pt-24 text-center">
       <h1 className="px-8 text-3xl md:text-4xl lg:text-6xl font-bold text-black">
         India’s #1 Digital Growth Partner
       </h1>
@@ -109,8 +116,10 @@ const Home = () => {
           is here.
         </span>
       </p>
-      <img src={HomeBanner} alt="homeBanner" className="w-full" />
-      <div className="relative flex flex-col lg:flex-row items-center justify-between px-5 md:px-15 lg:px-30 pt-10 pb-10 md:pb-20 lg:pb-30 gap-8 md:gap-0 text-center">
+      <a href="/contact-us">
+        <img src={HomeBanner} alt="homeBanner" className="w-full" />
+      </a>
+      <div className="relative flex flex-col lg:flex-row items-center justify-between px-5 md:px-10 lg:px-15 xl:px-30 pt-10 pb-10 md:pb-20 lg:pb-30 gap-8 md:gap-0 text-center">
         <div className="block md:block lg:flex items-center gap-4 pb-0 md:pb-4 lg:pb-0">
           <div className="flex -space-x-6 justify-center">
             {[...Array(3)].map((_, i) => (
@@ -122,13 +131,14 @@ const Home = () => {
               />
             ))}
           </div>
-          <span className="relative group">
+          <span className="relative group inline-block">
             <a
               href="./meet-the-team"
-              className="inline-block text-black group-hover:text-black transition-colors duration-300 font-medium mt-2 md:mt-0 lg:mt-0"
+              className="inline-flex items-center gap-2 text-black group-hover:text-black transition-colors duration-300 font-medium mt-2 md:mt-0"
             >
-              Let Our Experts Guide You<span className="text-xl">&#8594;</span>
-              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>{" "}
+              Let Our Experts Guide You
+              <FaArrowRight className="font-medium transition-transform duration-300 group-hover:translate-x-1 hover:text-[#f89e1b]" />
+              <span className="absolute left-0 -bottom-1 h-[3px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
             </a>
           </span>
         </div>
@@ -151,7 +161,7 @@ const Home = () => {
                 <svg
                   key={i}
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5 text-yellow-400 fill-current"
+                  className="w-5 h-5 text-[#f89e1b] fill-current"
                   viewBox="0 0 20 20"
                 >
                   <path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.561-.954L10 0l2.951 5.956 6.561.954-4.756 4.635 1.122 6.545z" />
@@ -169,7 +179,7 @@ const Home = () => {
         />
       </div>
 
-      <section className="w-full px-5 md:px-10 py-10 lg:px-30 lg:py-14">
+      <section className="w-full px-5 md:px-10 py-10 lg:px-15 xl:px-30 lg:py-14">
         <div className="max-w-8xl mx-auto grid md:grid-cols-2 gap-3 md:gap-6 items-start">
           <div>
             <h5 className="text-left text-sm font-bold tracking-widest text-gray-800 mb-4">
@@ -208,7 +218,7 @@ const Home = () => {
                 Better <br /> audiences
               </h3>
               <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                <FaBullhorn className="text-orange-500 text-2xl" />
+                <FaBullhorn className="text-[#f89e1b] text-2xl" />
               </div>
             </div>
             <h6 className="text-[#5c5f61] font-light text-sm md:text-md">
@@ -225,7 +235,7 @@ const Home = () => {
                 Better <br /> analytics
               </h3>
               <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                <FaChartLine className="text-orange-500 text-2xl" />
+                <FaChartLine className="text-[#f89e1b] text-2xl" />
               </div>
             </div>
             <h6 className="text-[#5c5f61] font-light text-sm md:text-md">
@@ -241,7 +251,7 @@ const Home = () => {
                 Better <br /> outcomes
               </h3>
               <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                <FaRupeeSign className="text-orange-500 text-2xl" />
+                <FaRupeeSign className="text-[#f89e1b] text-2xl" />
               </div>
             </div>
             <h6 className="text-[#5c5f61] font-light text-sm md:text-md">
@@ -253,7 +263,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="px-5 md:px-10 lg:px-30 pt-5">
+      <section className="px-5 md:px-10 lg:px-15 xl:px-30 pt-5">
         <div className="max-w-7xl mx-auto rounded-[40px] overflow-hidden mb-8 md:mb-12">
           <img
             src={teamImage}
@@ -270,18 +280,20 @@ const Home = () => {
             {" "}
             Smart digital marketing Solutions centred on data and your audience
           </h2>
-          <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
-            <span className="relative z-10">
-              {" "}
-              View All Solutions
-              <FaArrowRight className="inline ml-2 items-center" />
-              <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
-            </span>
-          </button>
+          <a href="/digital-marketing">
+            <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
+              <span className="relative z-10">
+                {" "}
+                View All Solutions
+                <FaArrowRight className="inline ml-2 items-center" />
+                <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
+              </span>
+            </button>
+          </a>
         </div>
       </section>
 
-      <section className="py-8 md:py-12 px-5 md:px-10 lg:px-30">
+      <section className="py-8 md:py-12 px-5 md:px-10 lg:px-15 xl:px-30">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div
@@ -299,15 +311,14 @@ const Home = () => {
                   {service.description}
                 </h6>
               </div>
-
               <div className="text-left mt-auto">
-                <a
-                  href="#"
-                  className="group inline-block text-xs font-semibold relative border-b-2 border-[#fbc371]"
+                <button
+                  onClick={() => navigate(service.link)}
+                  className="group inline-block text-xs font-semibold relative border-b-2 border-[#FFCF92]"
                 >
                   GET STARTED
-                  <span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
-                </a>
+                  <span className="block absolute left-0 -bottom-0.5 h-0.5 w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
+                </button>
               </div>
             </div>
           ))}
@@ -318,7 +329,7 @@ const Home = () => {
       <SuccessStories />
       <BrandSlider />
 
-      <section className="py-8 lg:py-20 px-5 md:px-10 lg:px-30 text-center">
+      <section className="py-8 lg:py-20 px-5 md:px-10 lg:px-15 xl:px-30 text-center">
         <p className="text-sm font-bold tracking-widest mb-2">BLOG</p>
         <div className="w-2 h-2 bg-black rounded-full my-6 mx-auto"></div>
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-8 max-w-3xl mx-auto">
@@ -327,9 +338,10 @@ const Home = () => {
         <div className="w-2 h-2 bg-black rounded-full my-6 mx-auto"></div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {blogs.map((blog, index) => (
-            <div
+            <Link
+              to={blog.link}
               key={index}
-              className="bg-white rounded-[30px] overflow-hidden border-1 border-[#ededed] text-left"
+              className="bg-white rounded-[30px] overflow-hidden border border-[#ededed] text-left hover:shadow-lg transition-all duration-300"
             >
               <img
                 src={blog.image}
@@ -338,11 +350,11 @@ const Home = () => {
               />
               <div className="p-8 hover:bg-[#F1F3F6]">
                 <p className="text-md text-[#666666] mb-2">{blog.date}</p>
-                <h3 className="text-xl font-bold hover:text-[#8E81FA] ">
+                <h3 className="text-xl font-bold hover:text-[#8E81FA]">
                   {blog.title}
                 </h3>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

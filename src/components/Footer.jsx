@@ -101,7 +101,7 @@ const [step, setStep] = useState(1);
   };
   return (
     <section className="bg-black text-white rounded-t-[35px] md:rounded-t-[50px] pt-15   lg:px-0">
-      <div className="px-5 md:px-10 lg:px-30 ">
+      <div className="px-5 md:px-10 lg:px-15 xl:px-30 ">
         <div className="flex flex-col lg:flex-row gap-6 items-start justify-between">
           <div className="w-full lg:w-1/2 max-w-xl">
             <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold leading-tight mb-3 md:mb-6">
@@ -289,7 +289,7 @@ Read below to know why you need to audit the website.
       <img src={avatar} alt="Expert" className="w-16 h-16 rounded-full" />
       <p className="text-lg font-medium text-black">Talk to a growth expert</p>
   <div className="w-fit relative group cursor-pointer">
-        <a href="mailto:info@digitalmarketingtap.com" className="inline-block text-gray-800 transition-colors duration-300 text-2xl font-bold tracking-wider">+91-729-096-9680</a>
+        <a href="tel:+917290969680" className="inline-block text-gray-800 transition-colors duration-300 text-2xl font-bold tracking-wider">+91-729-096-9680</a>
         <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
       </div>
   </div>
@@ -313,8 +313,8 @@ Read below to know why you need to audit the website.
     </div>
 
     <div className="w-fit relative group cursor-pointer">
-      <a href='/' className="inline-block text-base text-gray-800 transition-colors border-b-2 border-[#f89e1b] duration-300">View On Map</a>
-      <span className="block absolute left-0 -bottom-.1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
+      <a href='https://www.google.com/maps/place/Digital+Market+Tap/@28.6193963,77.0314992,17z/data=!3m1!4b1!4m6!3m5!1s0x390d0537617778cd:0x766c783a3d1b2311!8m2!3d28.6193963!4d77.0340741!16s%2Fg%2F11mgq84k_y?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D' className="inline-block text-base text-gray-800 transition-colors border-b-2 border-[#FFCF92] duration-300">View On Map</a>
+      <span className="block absolute left-0 -bottom-[1px] h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
     </div>
   </div>
 

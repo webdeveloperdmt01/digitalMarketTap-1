@@ -48,7 +48,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-[#fdf1e7] flex items-center justify-between px-5 md:px-10 lg:px-10 xl:px-30">
+      <header className="bg-[#fff7ee] flex items-center justify-between px-5 md:px-10 lg:px-15 xl:px-30">
         <NavLink to="/" className="bg-[#fff5ea]">
           <img src={logo} alt="Logo" className="h-19" />
         </NavLink>

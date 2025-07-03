@@ -64,7 +64,7 @@ const BrandSlider = () => {
         {`
           .custom-swiper .swiper-button-prev,
           .custom-swiper .swiper-button-next {
-            color: black;
+            color: #f89e1b;
             top: 45%;
             transform: translateY(-50%);
             width: 24px;
@@ -82,6 +82,8 @@ const BrandSlider = () => {
             margin-top: 1rem;
             position: relative;
           }
+          .swiper-pagination-bullet {background-color: gray-300;}
+          .swiper-pagination-bullet-active {background-color: #f89e1b !important;}
         `}
       </style>
        <img src={BorderBottomCenter} alt="border-bottom-line" className="w-full absolute bottom-0 right-0 object-contain pb-3 md:pb-6 px-5 md:px-10 lg:px-30"/>

@@ -104,3 +104,55 @@ h1,h2,h3,h4,h5,p {
   animation-play-state: paused;
 }
 
+.infoTabsPadding {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+@media (min-width: 375px) {
+  .infoTabsPadding {
+    padding-left: 16.5px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width: 425px) {
+  .infoTabsPadding {
+    padding-left: 24.8px;
+    padding-right: 24.5px;
+    padding-top: 14px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .infoTabsPadding {
+    padding-left: 61.9px;
+    padding-right: 61.8px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .infoTabsPadding {
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 20px;
+    padding-bottom: 14px;
+  }
+}
+
+
+/* @media (min-width: 1440px) {
+  .infoTabsPadding {
+    padding-left: 30.5px;
+    padding-right: 44px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+} */
