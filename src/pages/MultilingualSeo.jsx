@@ -4,7 +4,7 @@ import Box1 from "../assets/seo-box1.png";
 import Box2 from "../assets/seo-box2.png";
 import Box3 from "../assets/seo-box3.png";
 import { NavLink } from 'react-router-dom';
-import SeoImg from "../assets/SeoImg.jpg";
+import SeoImg from "../assets/seoimg.jpg";
 import SeoGoogleExperts from "../assets/SeoGoogleExperts.jpg";
 import Stats from "../assets/Stats.png";
 import Stats2 from "../assets/Stats2.png";

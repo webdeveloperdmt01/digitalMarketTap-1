@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import marketingImg from "../assets/MarketingSolution.jpg";
+import marketingImg from "../assets/Marketing1.png";
 import BlueRocket from "../assets/blueRocket.png";
 import GooglePartner from "../assets/google-partner.png";
 import marketingStrategy from "../assets/MarketingSolutionStrategy.jpg";
