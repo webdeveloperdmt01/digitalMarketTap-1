@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowRight, FaCrown, FaPlus, FaMinus ,FaBullhorn, FaChartLine, FaBullseye, FaLightbulb, FaRocket, FaEnvelope, FaUserFriends, FaCertificate, FaChartBar, FaDollarSign, FaSearch, FaComments, FaQuoteRight, FaMapMarkerAlt, FaAmazon, FaGoogle  } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import WebsiteDesign1 from "../assets/WebsiteDesign1.png";
-import WebsiteDesign2 from "../assets/WebsiteDesign2.jpg";
+import WebsiteDesign1 from "../assets/websitedesign.png";
+import WebsiteDesign2 from "../assets/websitedesign2.png";
 import PowerEliteIcon from "../assets/vamtam-elite-WD.png";
 import ElementorIcon from "../assets/Elementor-Logo-Full-WD.png";
 import TabletPic from "../assets/Tablets-WD.png";
@@ -12,7 +12,7 @@ const iconList = [
   FaBullhorn, FaChartLine, FaBullseye, FaLightbulb, FaRocket,
   FaEnvelope, FaUserFriends, FaCertificate, FaChartBar, FaDollarSign,
   FaSearch, FaComments, FaUserFriends, FaQuoteRight, FaMapMarkerAlt,
-  FaAmazon, FaGoogle,
+  FaAmazon, FaGoogle , FaArrowRight,
 ];
 
 const tabs = [

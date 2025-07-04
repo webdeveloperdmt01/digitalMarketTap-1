@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import EcommerceWebsiteDevelopment1 from "../assets/e-commerceDevelopment1.png";
-import EcommerceWebsiteDevelopment2 from "../assets/e-commerceDevelopment2.png";
+import EcommerceWebsiteDevelopment1 from "../assets/ecommercedevelopment1.png";
+import EcommerceWebsiteDevelopment2 from "../assets/ecommercedevelopment2.png";
 import Badge0 from "../assets/clutch-badge.png";
 import Badge1 from "../assets/new-badge.png";
 import Badge2 from "../assets/new-badge2.png";
