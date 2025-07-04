@@ -81,24 +81,24 @@ const tabs = [
 
 const faqs = [
   {
-    question: "What is paid search?",
+    question: "Why is SEO service important?",
     answer:
-      "Paid search is a digital marketing strategy that involves online ads that appear at the top of search engine results pages (SERPs). Paid search ads typically look similar to organic search listings but have a label that distinguishes them as ads.",
+      "To get ranked in Google search engine, SEO service is the most organic and effective way. Without SEO service your website can't get ranked in Google. Paid services give quick results SEO provide long term organic results.",
   },
   {
-    question: "What are paid search management services?",
+    question: "Can I get traffic by getting an SEO service?",
     answer:
-      "With paid search management services, you can expect a dedicated team of experts who will meticulously review and analyze your campaigns, ensuring that they align with your business objectives. Through continuous optimization, they will fine-tune your advertisements to maximize their effectiveness, reaching the right audience at the right time.",
+      "SEO (Search Engine Optimization) is crucial for website traffic, SEO service increases website visibility by increasing website ranking. By correct content analyzing and keyword research you can get best results.",
   },
   {
-    question: "How does paid search work?",
+    question: "How many types of SEO services do you provide?",
     answer:
-      "When it comes to paid search ads, Google Ads serves as a prime example of how the process works. Google Ads allows advertisers to bid on specific keywords they want their ads to appear for. When a user conducts a search on Google, the platform uses various factors such as keywords, ad settings, bids, and ad quality score to determine which ads to display.",
+      "We provide all kinds of SEO services which includes SEO on-page, SEO off-page, and technical SEO so no need to get worried. Our SEO experts who have years of experience and strategies to get fast and effective results.",
   },
   {
-    question: "When should you use paid search?",
+    question: "How effective your off-page SEO services are?",
     answer:
-      "Paid search can indeed be a valuable addition to your marketing strategy for several reasons: Audience Research, Precise Targeting, Quick Results, Bottom-of-the-Funnel Leads, Supplementing Organic Search Results. By leveraging the advantages of paid search, businesses can effectively target their audience, generate qualified leads, achieve faster results, and enhance their overall online visibility and conversion rates",
+      "Our off-page service is very much effective as our SEO experts have years of experience in both on-page and off-page, we create high-quality backlinks to increase website DA (domain authority) and PA (page authority). So you can rely on us without getting worried.",
   },
 ];
 
@@ -160,7 +160,7 @@ const handleAccordionToggle = (index) => {
   };
 
   return (
-  <section aria-labelledby="seo-heading" className="bg-[#fdf1e7] pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-16 lg:px-30">
+  <section aria-labelledby="seo-heading" className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-16 md:pb-18 lg:pb-22 px-5 md:px-16 lg:px-30">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
         <div className="space-y-6">
           <h2
@@ -246,7 +246,7 @@ const handleAccordionToggle = (index) => {
        </div>
     </div>
 
-    <div className="bg-[#fdf1e7] pt-8 md:pt-14 lg:pt-24">
+    <div className="pt-8 md:pt-14 lg:pt-24">
           <p className="text-center text-md font-semibold uppercase pb-4">Digital Market tap</p>
           <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-semibold pb-10 lg:pb-24">How our paid search marketing <br /> service can help grow your <br /> revenue</h1>
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15">
@@ -269,7 +269,7 @@ const handleAccordionToggle = (index) => {
         </div>
      </div>
 
-    <div className="bg-[#fdf1e7] pt-8 md:pt-14 lg:pt-24">
+    <div className="pt-8 md:pt-14 lg:pt-24">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
           <div>
             <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">
@@ -362,7 +362,7 @@ const handleAccordionToggle = (index) => {
 </div>
 {/* </div> */}
 
-    <div className="bg-[#fdf1e7] py-8">
+    <div className="py-8">
           <p className="text-center text-md font-semibold uppercase pb-3">Creating Success</p>
           <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">What makes our paid search <br /> management services so <br /> effective?</h1>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -379,7 +379,7 @@ const handleAccordionToggle = (index) => {
     </div>
   </div>
 
-  <div className="bg-[#fdf1e7] pb-4 pt-2 md:pt-8 lg:pt-18">
+  <div className="pb-4 pt-2 md:pt-8 lg:pt-18">
           <p className="text-center text-md font-semibold uppercase pb-4">what you get</p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">What is included in our paid search <br /> marketing services? </h1>
           <p className="text-center text-md font-base text-gray-500 pb-4">When you partner with Numerique, you’ll gain access to our full range of paid SEM services. These services are designed to <br /> optimize every facet of your paid advertising, including:</p>
@@ -474,7 +474,7 @@ const handleAccordionToggle = (index) => {
     </div>
 </div>
 
-<div className="bg-[#fdf1e7] pb-4 pt-8 md:pt-12 lg:pt-18">
+<div className="pb-4 pt-8 md:pt-12 lg:pt-18">
           <p className="text-center text-md font-semibold uppercase pb-4">The proof is in the numbers</p>
           <h1 className="text-3xl lg:text-5xl text-center font-semibold pb-4">Why paid search Ads can bring in <br /> the numbers </h1>
       <div className="w-full">
@@ -510,17 +510,17 @@ const handleAccordionToggle = (index) => {
       </div>
 </div>
 
-<div className="bg-[#fdf1e7] pb-4 pt-8 md:pt-12 lg:pt-18">
+<div className="pb-4 pt-8 md:pt-12 lg:pt-18">
           <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about paid search <br /> management</h1>
-          <p className="text-center text-md font-base text-gray-500 pb-4">Looking to learn more about paid search management for your business? Browse our FAQs</p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about Search Engine <br /> Optimization</h1>
+          <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">Looking to learn more about search engine optimization for your business? Browse our FAQs</p>
   </div>
       <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+              className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
             >
               {faq.question}
               {openIndex === index ? (
@@ -530,7 +530,7 @@ const handleAccordionToggle = (index) => {
               )}
             </button>
             {openIndex === index && (
-              <p className="mt-3 text-gray-500 text-xs font-semibold md:text-md">
+              <p className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
                 {faq.answer}
               </p>
             )}

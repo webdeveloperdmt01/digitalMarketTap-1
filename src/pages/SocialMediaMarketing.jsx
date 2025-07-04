@@ -15,25 +15,28 @@ import { NavLink } from "react-router-dom";
 
 const faqs = [
   {
-    question: "What is paid search?",
+    question: "Do you also provide Social Media Marketing?",
     answer:
-      "Paid search is a digital marketing strategy that involves online ads that appear at the top of search engine results pages (SERPs). Paid search ads typically look similar to organic search listings but have a label that distinguishes them as ads.",
+      "Yes, Absolutely we do provide social media marketing services globally. We have years of experience in studying global trends and insta algorithms so you can rely on us. We will help you to connect globally.",
   },
   {
-    question: "What are paid search management services?",
+    question: "Why Social Media Marketing is important for my business?",
     answer:
-      "With paid search management services, you can expect a dedicated team of experts who will meticulously review and analyze your campaigns, ensuring that they align with your business objectives. Through continuous optimization, they will fine-tune your advertisements to maximize their effectiveness, reaching the right audience at the right time.",
+      "SMM (Social Media Marketing) is very important for any business as it grows your online presence more effectively it also helps you to reach more audience good for brand value and brand awareness. It grows the emotional relationship between you and customers.",
   },
-  {
-    question: "How does paid search work?",
-    answer:
-      "When it comes to paid search ads, Google Ads serves as a prime example of how the process works. Google Ads allows advertisers to bid on specific keywords they want their ads to appear for. When a user conducts a search on Google, the platform uses various factors such as keywords, ad settings, bids, and ad quality score to determine which ads to display.",
-  },
-  {
-    question: "When should you use paid search?",
-    answer:
-      "Paid search can indeed be a valuable addition to your marketing strategy for several reasons: Audience Research, Precise Targeting, Quick Results, Bottom-of-the-Funnel Leads, Supplementing Organic Search Results. By leveraging the advantages of paid search, businesses can effectively target their audience, generate qualified leads, achieve faster results, and enhance their overall online visibility and conversion rates",
-  },
+{
+  question: "Which platforms should my business use?",
+  answer: "The best platforms depend on your target audience and goals:",
+  answerPoints: [
+    "Instagram & Facebook: Great for B2C, lifestyle, and e-commerce",
+    "LinkedIn: Ideal for B2B and professional services",
+    "Twitter: Useful for real-time updates and brand voice",
+    "YouTube: Perfect for video content and tutorials",
+    "Pinterest: Best for visual and product-based businesses",
+  ],
+}
+
+
 ];
 
 
@@ -124,7 +127,7 @@ const SocialMediaMarketing = () => {
   };
 
   return (
-  <section aria-labelledby="seo-heading" className="bg-[#fdf1e7] pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-16 lg:px-30">
+  <section aria-labelledby="seo-heading" className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-16 md:pb-18 lg:pb-22 px-5 md:px-16 lg:px-30">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
         <div className="space-y-6">
           <h2
@@ -210,7 +213,7 @@ const SocialMediaMarketing = () => {
        </div>
     </div>
 
-    <div className="bg-[#fdf1e7] pt-8 md:pt-14 lg:pt-24">
+    <div className="pt-8 md:pt-14 lg:pt-24">
           <p className="text-center text-md font-semibold uppercase pb-4">Numerique</p>
           <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-semibold pb-10 lg:pb-24">How our paid search marketing <br /> service can help grow your <br /> revenue</h1>
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15">
@@ -232,7 +235,7 @@ const SocialMediaMarketing = () => {
         </div>
      </div>
 
-    <div className="bg-[#fdf1e7] pt-8 md:pt-14 lg:pt-24">
+    <div className="pt-8 md:pt-14 lg:pt-24">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
           <div>
             <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">
@@ -251,7 +254,7 @@ const SocialMediaMarketing = () => {
      </div>
 
 
-  <div className="bg-[#fdf1e7] pb-4 pt-2 md:pt-8 lg:pt-18">
+  <div className="pb-4 pt-2 md:pt-8 lg:pt-18">
           <p className="text-center text-md font-semibold uppercase pb-4">what you get</p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">What is included in our paid search <br /> marketing services? </h1>
           <p className="text-center text-md font-base text-gray-500 pb-4">When you partner with Numerique, you’ll gain access to our full range of paid SEM services. These services are designed to <br /> optimize every facet of your paid advertising, including:</p>
@@ -339,7 +342,7 @@ const SocialMediaMarketing = () => {
 </div>
 
 
-    <div className="bg-[#fdf1e7] py-8">
+    <div className="py-8">
           <p className="text-center text-md font-semibold uppercase pb-3">Creating Success</p>
           <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">What makes our paid search <br /> management services so <br /> effective?</h1>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -387,7 +390,7 @@ const SocialMediaMarketing = () => {
     </div>
 </div>
 
-<div className="bg-[#fdf1e7] pb-4 pt-8 md:pt-12 lg:pt-18">
+<div className="pb-4 pt-8 md:pt-12 lg:pt-18">
           <p className="text-center text-md font-semibold uppercase pb-4">The proof is in the numbers</p>
           <h1 className="text-3xl lg:text-5xl text-center font-semibold pb-4">Why paid search Ads can bring in <br /> the numbers </h1>
       <div className="w-full">
@@ -423,33 +426,45 @@ const SocialMediaMarketing = () => {
       </div>
 </div>
 
-<div className="bg-[#fdf1e7] pb-4 pt-8 md:pt-12 lg:pt-18">
+<div className="pb-4 pt-8 md:pt-12 lg:pt-18">
           <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about paid search <br /> management</h1>
-          <p className="text-center text-md font-base text-gray-500 pb-4">Looking to learn more about paid search management for your business? Browse our FAQs</p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about Social Media<br />Marketing</h1>
+          <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">Looking to learn more about social media marketing for your business? Browse our FAQs</p>
   </div>
-      <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
-        {faqs.map((faq, index) => (
-          <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#6754E9] focus:outline-none pt-5"
-            >
-              {faq.question}
-              {openIndex === index ? (
-                <FaMinus className="text-[#000000]" />
-              ) : (
-                <FaPlus className="text-[#f89e1b]" />
-              )}
-            </button>
-            {openIndex === index && (
-              <p className="mt-3 text-gray-500 text-xs font-semibold md:text-md">
-                {faq.answer}
-              </p>
-            )}
-          </div>
-        ))}
-      </div>
+      <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5">
+  {faqs.map((faq, index) => (
+    <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+      <button
+        onClick={() => toggleFAQ(index)}
+        className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+      >
+        <span className="flex-1">{faq.question}</span>
+        <span className="ml-3 flex items-center justify-center">
+          {openIndex === index ? (
+            <FaMinus className="text-[18px] text-black" />
+          ) : (
+            <FaPlus className="text-[18px] text-[#f89e1b]" />
+          )}
+        </span>
+      </button>
+
+      {openIndex === index && (
+        <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
+          <p>{faq.answer}</p>
+
+          {faq.answerPoints && Array.isArray(faq.answerPoints) && (
+            <ul className="list-disc ml-5 mt-2 space-y-1">
+              {faq.answerPoints.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
     </section>
   );
 };

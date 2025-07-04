@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";;
 import { NavLink } from "react-router-dom";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
@@ -6,7 +6,7 @@ import StarImg from "../assets/star.png";
 import GraphicDesign1 from "../assets/GraphicDesign1.png";
 import GraphicDesign2 from "../assets/GraphicDesign2.png";
 import GraphicDesign3 from "../assets/GraphicDesign3.png";
-import { FaChessKnight, FaTags, FaPrint , FaArrowRight } from "react-icons/fa";
+import { FaChessKnight, FaPlus, FaMinus, FaTags, FaPrint , FaArrowRight } from "react-icons/fa";
 import GraphicDesign4 from "../assets/GraphicDesign4.png";
 import GraphicDesign7 from "../assets/GraphicDesign7.png";
 import HighlightedStrokes from "../assets/Highlight_strokes.png";
@@ -18,10 +18,50 @@ import YellowStar from "../assets/Misc_star.png";
 import GraphicDesignSlider from "../components/GraphicDesignSlider";
 
 const GraphicDesign = () => {
+  const [openIndex, setOpenIndex] = useState(null);
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.3,
   });
+
+  const faqs = [
+  {
+    question: " What is graphic design and why is it important for my business?",
+    answer:
+      "Graphic design is the art of visually communicating messages through typography, images, colors, and layout. It plays a crucial role in branding,marketing, and communication. High-quality design builds trust, improves brand recognition, and makes your content more engaging and professional.",
+  },
+  {
+    question: "Do you also design logos for business?",
+    answer:
+      " Absolutely! We specialize in customized logo design tailored to your business. Our expert graphic design team brings years of experience in understanding brand vision and creating logos that truly represent your identity.",
+  },
+ {
+  question: "What types of graphic design services do you offer?",
+  answer: " We offer a wide range of design services, including:",
+  answerPoints: [
+    "Logo & brand identity design",
+    "Social media graphics",
+    "Business cards & brochures",
+    "Website and UI/UX design",
+    "Banners, flyers, and posters",
+    "Packaging and label design",
+    "Presentation & pitch deck design",
+  ],
+},
+ {
+  question: "What tools do you use for graphic design?",
+  answer: "Our designers have years of experience on work with industry-standard tools like:",
+  answerPoints: [
+    "Adobe Photoshop",
+    "Adobe Illustrator",
+    "Canva Pro",
+    "Figma (for UI/UX)",
+    "Adobe InDesign (for print design)",
+    "Corel draw",
+  ],
+}
+
+];
 
   const stats = [
     { value: 4800, suffix: "K", label: "JOBS COMPLETED" },
@@ -29,6 +69,10 @@ const GraphicDesign = () => {
     { value: 3600, suffix: "K+", label: "GLOBAL CLIENTS" },
     { value: 130, suffix: "+", label: "AWARDS WINNED" },
   ];
+
+   const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   return (
     <main className="bg-gradient-to-b from-[#fdf1e7] to-white">
@@ -380,6 +424,47 @@ const GraphicDesign = () => {
         <div className="absolute top-[19%] md:top-[17%] lg:top-[15%] left-[15%] md:left-[26%] lg:left-[31%] w-[90px] md:w-[120px] lg:w-[150px] h-[45px] md:h-[60px] lg:h-[80px] bg-[#f89e1b] rounded-full z-1"></div>
         <img src={HighlightedStrokes} alt="highlight" className="absolute top-[84%] left-[78%] md:left-[66%] lg:left-[59%] w-[30px] md:w-[40px] rotate-160" />
       </div>
+
+      <div className="pb-4 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
+                <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about Graphic <br />Designing</h1>
+                <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">Looking to learn more about Graphic Designing for your business? Browse our FAQs</p>
+        </div>
+
+     <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5">
+  {faqs.map((faq, index) => (
+    <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+      <button
+        onClick={() => toggleFAQ(index)}
+        className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+      >
+        <span className="flex-1">{faq.question}</span>
+        <span className="ml-3 flex items-center justify-center">
+          {openIndex === index ? (
+            <FaMinus className="text-[18px] text-black" />
+          ) : (
+            <FaPlus className="text-[18px] text-[#f89e1b]" />
+          )}
+        </span>
+      </button>
+
+      {openIndex === index && (
+        <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
+          <p>{faq.answer}</p>
+
+          {faq.answerPoints && Array.isArray(faq.answerPoints) && (
+            <ul className="list-disc ml-5 mt-2 space-y-1">
+              {faq.answerPoints.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
     </main>
   );
 };

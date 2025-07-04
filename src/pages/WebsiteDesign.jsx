@@ -12,7 +12,7 @@ const iconList = [
   FaBullhorn, FaChartLine, FaBullseye, FaLightbulb, FaRocket,
   FaEnvelope, FaUserFriends, FaCertificate, FaChartBar, FaDollarSign,
   FaSearch, FaComments, FaUserFriends, FaQuoteRight, FaMapMarkerAlt,
-  FaAmazon, FaGoogle , FaArrowRight,
+  FaAmazon, FaGoogle,
 ];
 
 const tabs = [
@@ -71,24 +71,19 @@ const plugins = [
 
 const faqs = [
   {
-    question: "What is paid search?",
+    question: "What does website development do?",
     answer:
-      "Paid search is a digital marketing strategy that involves online ads that appear at the top of search engine results pages (SERPs). Paid search ads typically look similar to organic search listings but have a label that distinguishes them as ads.",
+      "In website development, we create high-end websites according to your needs. Our task is to create, build, and maintain websites. Our expert web developers are trained to deliver the best website development service.",
   },
   {
-    question: "What are paid search management services?",
+    question: "Is your website SEO and mobile-friendly?",
     answer:
-      "With paid search management services, you can expect a dedicated team of experts who will meticulously review and analyze your campaigns, ensuring that they align with your business objectives. Through continuous optimization, they will fine-tune your advertisements to maximize their effectiveness, reaching the right audience at the right time.",
+      " Absolutely yes! Our websites are 100% SEO and mobile optimized because, as we know, 70% people use mobile more than laptops and computers. And our websites are totally SEO friendly, so they can rank in Google search engine.",
   },
   {
-    question: "How does paid search work?",
+    question: "How many types of websites do you create?",
     answer:
-      "When it comes to paid search ads, Google Ads serves as a prime example of how the process works. Google Ads allows advertisers to bid on specific keywords they want their ads to appear for. When a user conducts a search on Google, the platform uses various factors such as keywords, ad settings, bids, and ad quality score to determine which ads to display.",
-  },
-  {
-    question: "When should you use paid search?",
-    answer:
-      "Paid search can indeed be a valuable addition to your marketing strategy for several reasons: Audience Research, Precise Targeting, Quick Results, Bottom-of-the-Funnel Leads, Supplementing Organic Search Results. By leveraging the advantages of paid search, businesses can effectively target their audience, generate qualified leads, achieve faster results, and enhance their overall online visibility and conversion rates",
+      "We create almost all kinds of websites including e-commerce websites, business websites, blog websites, portfolio websites, social media websites, educational websites, and entertainment websites according to your niche.",
   },
 ];
 
@@ -140,11 +135,22 @@ const WebsiteDesign = () => {
           <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
             <div>
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold pt-20 md:pt-25 lg:pt-68 pr-5 md:pr-0 lg:pr-0">
-                Stay Ready for Future<br />of Your Website
+          Website development company in Delhi
+
               </h1>
-              <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
-                This lovely niche theme is built and suitable for any business operating in the Digital Marketing industry.
-              </p>
+              <h6 className="text-sm lg:text-[16px] font-light text-gray-500 pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
+  Searching for <span className="font-semibold text-gray-500">The Best Website Development Company In Delhi</span>, your search
+  ends here. Digital marketing tap provides the best website development
+  and designing services all across Delhi. With the help of your expert
+  website developers and graphic designers, we never fail to deliver
+  high-performing websites, we use the latest UI, UX designs to evaluate the
+  overall look of the website, our websites are 100% mobile optimized and
+  SEO friendly so don't have to be worried about website ranking and
+  performance, we use all the latest technologies, designs, and animations to
+  increase overall look and performance of our website. That's what makes
+  us the best website development agency in Delhi.
+</h6>
+
               <NavLink
                 to="/"
                 className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9]"
@@ -171,16 +177,24 @@ const WebsiteDesign = () => {
               </div>
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold pt-6 text-black">
-                  Get $245 Worth of Premium Stock Images FREE with Your Package!
+                High-performance tailored website— by The Best Website Development
+Company in Delhi
+
                 </h2>
               </div>
             </div>
-            <div className="max-w-sm">
+            <div className="max-w-lg">
               <p className="font-bold text-black text-right">
                 Premium<br /><span className="font-normal text-sm">Stock images</span>
               </p>
-              <p className="text-sm text-black pt-10 text-left">
-                All images shown on the demo website come with the demo content, and can be used in your next project, without the need to buy any additional licences.
+              <p className="text-md text-black pt-10 text-left">
+               We want to help you get the best tailored website according to your needs,
+which will be as unique as your brand value, as beautiful as your services
+and products, and as secure as your mindset. We allow 100%
+customization, we can turn your imagination into reality. With the help of our
+expert and experienced website developers and graphic designers we
+make sure the website turns out 100% secure, eye catchy visuals, 100%
+mobile optimized and seo friendly.
               </p>
             </div>
           </div>
@@ -372,17 +386,17 @@ const WebsiteDesign = () => {
 </div>
 </div>
 
-        <div className="pb-4 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-30">
+        <div className="pb-16 md:pb-18 lg:pb-22 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-30">
           <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about paid search <br /> management</h1>
-          <p className="text-center text-md font-base text-gray-500 pb-4">Looking to learn more about paid search management for your business? Browse our FAQs</p>
+          <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about Website <br />  Development</h1>
+          <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">Looking to learn more about website design & development for your business? Browse our FAQs</p>
           
           <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
             {faqs.map((faq, index) => (
               <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+                  className="w-full flex justify-between items-center text-left text-lg md:text-2xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
                 >
                   {faq.question}
                   {openIndex === index ? (
@@ -392,7 +406,7 @@ const WebsiteDesign = () => {
                   )}
                 </button>
                 {openIndex === index && (
-                  <p className="mt-3 text-gray-500 text-xs font-semibold md:text-md">
+                  <p className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
                     {faq.answer}
                   </p>
                 )}

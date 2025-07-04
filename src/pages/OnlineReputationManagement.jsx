@@ -16,24 +16,19 @@ import GooglePartner1 from "../assets/google-partner-1.png";
 
 const faqs = [
   {
-    question: "What is paid search?",
+    question: " Why is online Reputation Management Service is important ?",
     answer:
-      "Paid search is a digital marketing strategy that involves online ads that appear at the top of search engine results pages (SERPs). Paid search ads typically look similar to organic search listings but have a label that distinguishes them as ads.",
+      " Online Reputation Management is the practice promoting, improving, and balancing brand or an individual online reputation. It involves managing reviews, social media mentions, search engine results, and public perception to ensure a positive and trustworthy online image",
   },
   {
-    question: "What are paid search management services?",
+    question: " Do you provide Online Reputation Management services?",
     answer:
-      "With paid search management services, you can expect a dedicated team of experts who will meticulously review and analyze your campaigns, ensuring that they align with your business objectives. Through continuous optimization, they will fine-tune your advertisements to maximize their effectiveness, reaching the right audience at the right time.",
+      " Absolutely, yes we do provide online reputation service to improve, and monitor your online reputation. As we all know in today's digital world online reputation matters the most, as it increases marketing value, customer trust. Positive online reputation is very important for any business.",
   },
   {
-    question: "How does paid search work?",
+    question: " What services are included in ORM?",
     answer:
-      "When it comes to paid search ads, Google Ads serves as a prime example of how the process works. Google Ads allows advertisers to bid on specific keywords they want their ads to appear for. When a user conducts a search on Google, the platform uses various factors such as keywords, ad settings, bids, and ad quality score to determine which ads to display.",
-  },
-  {
-    question: "When should you use paid search?",
-    answer:
-      "Paid search can indeed be a valuable addition to your marketing strategy for several reasons: Audience Research, Precise Targeting, Quick Results, Bottom-of-the-Funnel Leads, Supplementing Organic Search Results. By leveraging the advantages of paid search, businesses can effectively target their audience, generate qualified leads, achieve faster results, and enhance their overall online visibility and conversion rates",
+      " Our ORM services typically include review monitoring and response, Google my business optimization which is very important for any business, Online listing management, press releases and positive content creation for positive brand values",
   },
 ];
 
@@ -321,34 +316,7 @@ const OnlineReputationManagement = () => {
       </div>
 </div>
 
-<div className="pb-4 pt-8 md:pt-12 lg:pt-18">
-          <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about paid search <br /> management</h1>
-          <p className="text-center text-md font-base text-gray-500 pb-4">Looking to learn more about paid search management for your business? Browse our FAQs</p>
-  </div>
-      <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
-        {faqs.map((faq, index) => (
-          <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#6754E9] focus:outline-none pt-5"
-            >
-              {faq.question}
-              {openIndex === index ? (
-                <FaMinus className="text-[#000000]" />
-              ) : (
-                <FaPlus className="text-[#f89e1b]" />
-              )}
-            </button>
-            {openIndex === index && (
-              <p className="mt-3 text-gray-500 text-xs font-semibold md:text-md">
-                {faq.answer}
-              </p>
-            )}
-          </div>
-        ))}
-      </div>
-       <div className="p-5 md:p-0">
+           <div className="p-5 md:p-0">
               <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 relative overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
                 <img src={RocketBlue} alt="Custom" className="hidden md:block w-14 md:w-18 absolute right-2 md:right-12 top-0 -rotate-20 origin-top z-10"/>
                 <div className="flex justify-center items-center mb-4">
@@ -372,6 +340,35 @@ const OnlineReputationManagement = () => {
               </NavLink>
             </section>
             </div>
+
+ <div className="pb-16 md:pb-18 lg:pb-22 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-30">
+                      <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
+                      <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about Online Reputation <br /> Management</h1>
+                      <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">Looking to learn more about Online Reputation Management for your business? Browse our FAQs</p>
+                      
+                      <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
+                        {faqs.map((faq, index) => (
+                          <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+                            <button
+                              onClick={() => toggleFAQ(index)}
+                              className="w-full flex justify-between items-center text-left text-lg md:text-2xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+                            >
+                              {faq.question}
+                              {openIndex === index ? (
+                                <FaMinus className="text-[#000000]" />
+                              ) : (
+                                <FaPlus className="text-[#f89e1b]" />
+                              )}
+                            </button>
+                            {openIndex === index && (
+                              <p className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
+                                {faq.answer}
+                              </p>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
     </section>
   );
 };

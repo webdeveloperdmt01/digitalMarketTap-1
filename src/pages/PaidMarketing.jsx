@@ -15,25 +15,27 @@ import PaidMarketingBgImage from '../assets/PaidMarketing5.png';
 
 const faqs = [
   {
-    question: "What is paid search?",
+    question: " What is paid marketing?",
     answer:
-      "Paid search is a digital marketing strategy that involves online ads that appear at the top of search engine results pages (SERPs). Paid search ads typically look similar to organic search listings but have a label that distinguishes them as ads.",
+      " Paid marketing refers to online advertising strategies where you pay to display their ads to a targeted audience. We provide paid marketing on platforms like Google Ads, Facebook & Instagram Ads, LinkedIn Ads, and more. It’s a fast way to drive traffic, generate leads, and boost conversions",
   },
   {
-    question: "What are paid search management services?",
+    question: " What type of paid marketing advertisement can you run?",
     answer:
-      "With paid search management services, you can expect a dedicated team of experts who will meticulously review and analyze your campaigns, ensuring that they align with your business objectives. Through continuous optimization, they will fine-tune your advertisements to maximize their effectiveness, reaching the right audience at the right time.",
+      "Our expert marketing team have years of experience in running lead generation, website traffic, brand awareness, Retargeting & remarketing ads and many more campaigns.",
   },
-  {
-    question: "How does paid search work?",
-    answer:
-      "When it comes to paid search ads, Google Ads serves as a prime example of how the process works. Google Ads allows advertisers to bid on specific keywords they want their ads to appear for. When a user conducts a search on Google, the platform uses various factors such as keywords, ad settings, bids, and ad quality score to determine which ads to display.",
-  },
-  {
-    question: "When should you use paid search?",
-    answer:
-      "Paid search can indeed be a valuable addition to your marketing strategy for several reasons: Audience Research, Precise Targeting, Quick Results, Bottom-of-the-Funnel Leads, Supplementing Organic Search Results. By leveraging the advantages of paid search, businesses can effectively target their audience, generate qualified leads, achieve faster results, and enhance their overall online visibility and conversion rates",
-  },
+ {
+  question: " Which platforms do you offer paid marketing services on?",
+  answer: "We manage ads across:",
+  answerPoints: [
+    "Google Search & Display Network",
+    "Facebook & Instagram (Meta Ads)",
+    "YouTube Ads",
+    "LinkedIn Ads",
+    "Twitter (X) Ads",
+    "Interest Ads",
+  ],
+},
 ];
 
 const brandLogos = [
@@ -215,31 +217,42 @@ const PaidMarketing = () => {
 
  <div className="pb-4 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-30">
         <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about paid search <br /> management</h1>
-        <p className="text-center text-md font-base text-gray-500 pb-4">Looking to learn more about paid search management for your business? Browse our FAQs</p>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about Paid  <br /> Marketing</h1>
+        <p className="text-center text-md font-base text-gray-500 pb-4">Looking to learn more about Paid Marketing for your business? Browse our FAQs</p>
       </div>
-  <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4 px-5 md:px-10 lg:px-30 pb-5">
-        {faqs.map((faq, index) => (
-          <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#6754E9] focus:outline-none pt-5"
-            >
-              {faq.question}
-              {openIndex === index ? (
-                <FaMinus className="text-[#000000]" />
-              ) : (
-                <FaPlus className="text-[#f89e1b]" />
-              )}
-            </button>
-            {openIndex === index && (
-              <p className="mt-3 text-gray-500 text-xs font-semibold md:text-md">
-                {faq.answer}
-              </p>
-            )}
-          </div>
-        ))}
-  </div>
+   <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5">
+   {faqs.map((faq, index) => (
+     <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+       <button
+         onClick={() => toggleFAQ(index)}
+         className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+       >
+         <span className="flex-1">{faq.question}</span>
+         <span className="ml-3 flex items-center justify-center">
+           {openIndex === index ? (
+             <FaMinus className="text-[18px] text-black" />
+           ) : (
+             <FaPlus className="text-[18px] text-[#f89e1b]" />
+           )}
+         </span>
+       </button>
+ 
+       {openIndex === index && (
+         <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
+           <p>{faq.answer}</p>
+ 
+           {faq.answerPoints && Array.isArray(faq.answerPoints) && (
+             <ul className="list-disc ml-5 mt-2 space-y-1">
+               {faq.answerPoints.map((point, idx) => (
+                 <li key={idx}>{point}</li>
+               ))}
+             </ul>
+           )}
+         </div>
+       )}
+     </div>
+   ))}
+ </div>
      </main>
     </>
   );

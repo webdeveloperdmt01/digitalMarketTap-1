@@ -17,8 +17,36 @@ import RocketBlue from "../assets/rocket.png"
 import GooglePartner1 from "../assets/google-partner-1.png";
 
 
+const faqs = [
+  {
+    question: "What types of marketing services do you offer?",
+    answer:
+      " we offer the best marketing service in every niche which includes digital marketing, email marketing, branding and graphic design, Website design & and development, facebook and Google ads, Google my business and many more according to your niche.",
+  },
+  {
+    question: "How do you determine which marketing strategy is right for my business?",
+    answer:
+      " We start with a detailed discovery session and market analysis to understand your goals, audience, competition, and industry trends. Based on that, we create a custom marketing plan that fits your budget, business type, and objectives.",
+  },
+  {
+    question: "Do I need a very expensive budget for marketing?",
+    answer:
+      " Absolutely, No you don't actually need a very big amount for marketing. Our packages are quite affordable for any small or big business. If u have any doubt feel free to contact us.",
+  },
+  {
+    question: "How do I get started with your marketing services?",
+    answer:
+      " You can contact us we are available 24/7 or you can visit us. We will offer a free consultation free of cost. We also have free website audit option so we can only work on flaws its also cost efficient.",
+  },
+];
+
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
 const Marketing = () => {
+   const [openIndex, setOpenIndex] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const tabs = [
@@ -344,6 +372,35 @@ const BrandStaticLine = () => {
                 </span>
               </NavLink>
             </section>
+
+            <div className="pb-16 md:pb-18 lg:pb-22 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-30">
+                      <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
+                      <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about Marketing</h1>
+                      <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">Looking to learn more about Marketing for your business? Browse our FAQs</p>
+                      
+                      <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
+                        {faqs.map((faq, index) => (
+                          <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+                            <button
+                              onClick={() => toggleFAQ(index)}
+                              className="w-full flex justify-between items-center text-left text-lg md:text-2xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+                            >
+                              {faq.question}
+                              {openIndex === index ? (
+                                <FaMinus className="text-[#000000]" />
+                              ) : (
+                                <FaPlus className="text-[#f89e1b]" />
+                              )}
+                            </button>
+                            {openIndex === index && (
+                              <p className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
+                                {faq.answer}
+                              </p>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
 
       </main>
     </>

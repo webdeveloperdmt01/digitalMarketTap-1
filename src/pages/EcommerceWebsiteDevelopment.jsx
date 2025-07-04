@@ -48,7 +48,12 @@ const EcommerceWebsiteDevelopment = () => {
               e-Commerce <br /> platform
               </h1>
               <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
-               Join us and become the trusted expert relied upon by the world’s biggest brands, venues, and entertainers to solve their most complex challenges.
+              We design your website very carefully, especially when it comes to
+Ecommerce websites. It took so much effort to create, design ideas, and
+creativity to deliver an Ecommerce website which is as unique as your
+business. Following are the key points which we add in Ecommerce
+website to increase its performance
+
               </p>
               <NavLink
                 to="/"

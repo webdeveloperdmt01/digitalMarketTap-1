@@ -22,25 +22,39 @@ import RocketBlue from "../assets/blueRocket.png";
 
 const faqs = [
   {
-    question: "What is paid search?",
+    question: " What will you do in social media optimization?",
     answer:
-      "Paid search is a digital marketing strategy that involves online ads that appear at the top of search engine results pages (SERPs). Paid search ads typically look similar to organic search listings but have a label that distinguishes them as ads.",
+      "Social Media Optimization (SMO) is a process in which we enhance your social media profile and content to prove your social media visibility,engagement, and traffic by optimizing Bio, keyword selection, and improve posting time.",
   },
   {
-    question: "What are paid search management services?",
+    question: "How is SMO different from SMM?",
     answer:
-      "With paid search management services, you can expect a dedicated team of experts who will meticulously review and analyze your campaigns, ensuring that they align with your business objectives. Through continuous optimization, they will fine-tune your advertisements to maximize their effectiveness, reaching the right audience at the right time.",
+      "SMO focuses on organic growth by optimizing profile and content quality. Meanwhile SMM includes paid promotions through campaigns .SMM is a quick way to increase visibility and traffic but if you want an organic way SMO is the best way.",
   },
-  {
-    question: "How does paid search work?",
-    answer:
-      "When it comes to paid search ads, Google Ads serves as a prime example of how the process works. Google Ads allows advertisers to bid on specific keywords they want their ads to appear for. When a user conducts a search on Google, the platform uses various factors such as keywords, ad settings, bids, and ad quality score to determine which ads to display.",
-  },
-  {
-    question: "When should you use paid search?",
-    answer:
-      "Paid search can indeed be a valuable addition to your marketing strategy for several reasons: Audience Research, Precise Targeting, Quick Results, Bottom-of-the-Funnel Leads, Supplementing Organic Search Results. By leveraging the advantages of paid search, businesses can effectively target their audience, generate qualified leads, achieve faster results, and enhance their overall online visibility and conversion rates",
-  },
+ {
+  question: "What platforms do you optimize for?",
+  answer: "We optimize all major platforms, including:",
+  answerPoints: [
+    "Pinterest",
+    "Instagram",
+    "LinkedIn",
+    "Twitter (X)",
+    "YouTube",
+    "Facebook",
+  ],
+},
+ {
+  question: "What’s included in your SMO service?",
+  answer: " Our SMO services typically include:",
+  answerPoints: [
+    "Profile setup or optimization",
+    "Bio and description refinement",
+    "Keyword and hashtag strategy",
+    "Visual consistency (logos, banners, etc.)",
+    "Content formatting and posting guidance",
+    "Engagement strategy and timing optimization",
+  ],
+}
 ];
 
 const services = [
@@ -371,35 +385,6 @@ const SocialMediaOptimisation = () => {
         </div>
       </div>
 
-      <div className="bg-[#fdf1e7] pb-4 pt-8 md:pt-12 lg:pt-18">
-        <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about paid search <br /> management</h1>
-        <p className="text-center text-md font-base text-gray-500 pb-4">Looking to learn more about paid search management for your business? Browse our FAQs</p>
-      </div>
-
-      <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
-        {faqs.map((faq, index) => (
-          <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#6754E9] focus:outline-none pt-5"
-            >
-              {faq.question}
-              {openIndex === index ? (
-                <FaMinus className="text-[#000000]" />
-              ) : (
-                <FaPlus className="text-[#f89e1b]" />
-              )}
-            </button>
-            {openIndex === index && (
-              <p className="mt-3 text-gray-500 text-xs font-semibold md:text-md">
-                {faq.answer}
-              </p>
-            )}
-          </div>
-        ))}
-      </div>
-
       <div className="p-5 md:p-0 relative">
         <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
           <img src={RocketBlue} alt="Custom" className="hidden md:block w-14 md:w-18 absolute right-2 md:right-12 -top-8 -rotate-25 z-10"/>
@@ -423,6 +408,46 @@ const SocialMediaOptimisation = () => {
           </span>
         </NavLink>
       </section>
+      </div>
+
+     <div className="pb-4 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
+                <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about Social Media <br />Optimization</h1>
+                <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">Looking to learn more about Social Media Optimization for your business? Browse our FAQs</p>
+        </div>
+
+        <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5">
+        {faqs.map((faq, index) => (
+          <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+            <button
+              onClick={() => toggleFAQ(index)}
+              className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+            >
+              <span className="flex-1">{faq.question}</span>
+              <span className="ml-3 flex items-center justify-center">
+                {openIndex === index ? (
+                  <FaMinus className="text-[18px] text-black" />
+                ) : (
+                  <FaPlus className="text-[18px] text-[#f89e1b]" />
+                )}
+              </span>
+            </button>
+      
+            {openIndex === index && (
+              <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
+                <p>{faq.answer}</p>
+      
+                {faq.answerPoints && Array.isArray(faq.answerPoints) && (
+                  <ul className="list-disc ml-5 mt-2 space-y-1">
+                    {faq.answerPoints.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
 
     </section>
