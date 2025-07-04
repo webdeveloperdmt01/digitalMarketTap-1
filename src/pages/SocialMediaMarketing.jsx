@@ -3,7 +3,7 @@ import { FaArrowRight, FaPlus, FaMinus, FaCheckCircle, FaSearchDollar, FaUserTie
 import Box1 from "../assets/seo-box1.png";
 import Box2 from "../assets/seo-box2.png";
 import Box3 from "../assets/seo-box3.png";
-import SeoImg from "../assets/SeoImg.jpg";
+import SeoImg from "../assets/seoimg.png";
 import SeoGoogleExperts from "../assets/SeoGoogleExperts.jpg";
 import Stats from "../assets/Stats.png";
 import Stats2 from "../assets/Stats2.png";

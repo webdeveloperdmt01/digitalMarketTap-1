@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowRight, FaPlus, FaMinus, FaCheckCircle, FaSearchDollar, FaUserTie, FaGoogle,  FaQuoteLeft, FaStar,FaChartLine  } from "react-icons/fa";
 import EmailMarketingImg from "../assets/email-mkt.jpg";
-import SeoImg from "../assets/SeoImg.jpg";
+import SeoImg from "../assets/seoimg.png";
 import SeoGoogleExperts from "../assets/SeoGoogleExperts.jpg";
 import Stats from "../assets/Stats.png";
 import Stats2 from "../assets/Stats2.png";
