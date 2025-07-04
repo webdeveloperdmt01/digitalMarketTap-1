@@ -60,7 +60,6 @@ const GraphicDesign = () => {
     "Corel draw",
   ],
 }
-
 ];
 
   const stats = [
@@ -75,7 +74,7 @@ const GraphicDesign = () => {
   };
 
   return (
-    <main className="bg-gradient-to-b from-[#fdf1e7] to-white">
+    <main className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF]">
       <div className="w-full flex flex-col items-center justify-center text-center relative pt-28 pb-12">
         <img
           src={StarImg}

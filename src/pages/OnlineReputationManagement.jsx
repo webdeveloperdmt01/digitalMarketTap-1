@@ -84,10 +84,10 @@ const OnlineReputationManagement = () => {
   };
 
   return (
-  <section aria-labelledby="seo-heading" className="bg-gradient-to-b from-[#fdf1e7] to-white pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-16 lg:px-30">
+  <section aria-labelledby="seo-heading" className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-16 lg:px-30">
        <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
         <div>
-          <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">Marketing solutions</h3>
+          <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">ONLINE REPUTAION MANAGEMENT</h3>
           <h2 className="text-4xl lg:text-6xl font-bold text-black mt-2 leading-tight"> Online Reputation <br />Management</h2>
           <p className="text-md text-black mt-5 mb-10 font-semibold">Struggling to find PPC experts who really understand your business and can actually drive long term results? Our world-class marketers would love to help your business thrive!</p>
           <NavLink

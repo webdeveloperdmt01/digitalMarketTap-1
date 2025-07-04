@@ -46,7 +46,7 @@ const faqs = [
   };
 
 const Marketing = () => {
-   const [openIndex, setOpenIndex] = useState(null);
+    const [openIndex, setOpenIndex] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const tabs = [
@@ -151,7 +151,7 @@ const BrandStaticLine = () => {
 
   return (
     <>
-      <main className="bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-10 lg:px-30 relative">
+      <main className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-30 relative">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 py-6 md:py-8 lg:py-14 items-center">
           <div>
             <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">Marketing</h3>
@@ -378,28 +378,39 @@ const BrandStaticLine = () => {
                       <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about Marketing</h1>
                       <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">Looking to learn more about Marketing for your business? Browse our FAQs</p>
                       
-                      <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
-                        {faqs.map((faq, index) => (
-                          <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
-                            <button
-                              onClick={() => toggleFAQ(index)}
-                              className="w-full flex justify-between items-center text-left text-lg md:text-2xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
-                            >
-                              {faq.question}
-                              {openIndex === index ? (
-                                <FaMinus className="text-[#000000]" />
-                              ) : (
-                                <FaPlus className="text-[#f89e1b]" />
-                              )}
-                            </button>
-                            {openIndex === index && (
-                              <p className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
-                                {faq.answer}
-                              </p>
-                            )}
-                          </div>
-                        ))}
-                      </div>
+                        <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5">
+                       {faqs.map((faq, index) => (
+                         <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+                           <button
+                             onClick={() => toggleFAQ(index)}
+                             className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+                           >
+                             <span className="flex-1">{faq.question}</span>
+                             <span className="ml-3 flex items-center justify-center">
+                               {openIndex === index ? (
+                                 <FaMinus className="text-[18px] text-black" />
+                               ) : (
+                                 <FaPlus className="text-[18px] text-[#f89e1b]" />
+                               )}
+                             </span>
+                           </button>
+                     
+                           {openIndex === index && (
+                             <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
+                               <p>{faq.answer}</p>
+                     
+                               {faq.answerPoints && Array.isArray(faq.answerPoints) && (
+                                 <ul className="list-disc ml-5 mt-2 space-y-1">
+                                   {faq.answerPoints.map((point, idx) => (
+                                     <li key={idx}>{point}</li>
+                                   ))}
+                                 </ul>
+                               )}
+                             </div>
+                           )}
+                         </div>
+                       ))}
+                     </div>
                     </div>
 
       </main>

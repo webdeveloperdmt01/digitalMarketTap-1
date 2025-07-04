@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowRight, FaCrown, FaPlus, FaMinus ,FaBullhorn, FaChartLine, FaBullseye, FaLightbulb, FaRocket, FaEnvelope, FaUserFriends, FaCertificate, FaChartBar, FaDollarSign, FaSearch, FaComments, FaQuoteRight, FaMapMarkerAlt, FaAmazon, FaGoogle  } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import WebsiteDesign1 from "../assets/websitedesign.png";
+import WebsiteDesign1 from "../assets/websiteDesign11.png";
 import WebsiteDesign2 from "../assets/websitedesign2.png";
 import PowerEliteIcon from "../assets/vamtam-elite-WD.png";
 import ElementorIcon from "../assets/Elementor-Logo-Full-WD.png";
@@ -130,7 +130,7 @@ const WebsiteDesign = () => {
 
   return (
     <>
-      <section className="bg-gradient-to-b from-[#fdf1e7] to-white relative overflow-hidden">
+      <section className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] relative overflow-hidden">
         <div className="pb-4 pl-5 md:pl-10 lg:pl-30">
           <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
             <div>

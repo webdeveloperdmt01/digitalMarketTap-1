@@ -167,7 +167,7 @@ function MarketingSolution() {
 
   return (
     <>
-      <section className="bg-[#fdf1e7] py-8 lg:py-20 px-5 md:px-10 lg:px-30">
+      <section className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] py-8 lg:py-20 px-5 md:px-10 lg:px-30">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           <div>
             <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">

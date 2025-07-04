@@ -126,11 +126,11 @@ const SocialMediaOptimisation = () => {
   return (
     <section
       aria-labelledby="seo-heading"
-      className="bg-[#fdf1e7] pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-16 lg:px-30"
+      className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-16 lg:px-30"
     >
       <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
         <div>
-          <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">Marketing solutions</h3>
+          <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">Social Media Optimization</h3>
           <h2 className="text-4xl lg:text-6xl font-bold text-black mt-2 leading-tight"> Social Media <br />Optimization</h2>
           <p className="text-md text-black mt-5 mb-10 font-semibold">Struggling to find PPC experts who really understand your business and can actually drive long term results? Our world-class marketers would love to help your business thrive!</p>
           <NavLink
@@ -171,7 +171,7 @@ const SocialMediaOptimisation = () => {
         </div>
       </div>
 
-      <div className="bg-[#fdf1e7] pt-8 md:pt-14 lg:pt-24">
+      <div className="pt-8 md:pt-14 lg:pt-24">
         <p className="text-center text-md font-semibold uppercase pb-4">Numerique</p>
         <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-semibold pb-10 lg:pb-24">How our paid search marketing <br /> service can help grow your <br /> revenue</h1>
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15">
@@ -194,7 +194,7 @@ const SocialMediaOptimisation = () => {
         </div>
       </div>
 
-      <div className="bg-[#fdf1e7] pt-8 md:pt-14 lg:pt-24">
+      <div className="pt-8 md:pt-14 lg:pt-24">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
           <div>
             <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">
@@ -212,7 +212,7 @@ const SocialMediaOptimisation = () => {
         </div>
       </div>
 
-      <div className="bg-[#fdf1e7] pb-4 pt-2 md:pt-8 lg:pt-18">
+      <div className="pb-4 pt-2 md:pt-8 lg:pt-18">
         <p className="text-center text-md font-semibold uppercase pb-4">what you get</p>
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">What is included in our paid search <br /> marketing services? </h1>
         <p className="text-center text-md font-base text-gray-500 pb-4">When you partner with Numerique, you'll gain access to our full range of paid SEM services. These services are designed to <br /> optimize every facet of your paid advertising, including:</p>
@@ -300,7 +300,7 @@ const SocialMediaOptimisation = () => {
   </div>
 </div>
 
-      <div className="bg-[#fdf1e7] py-8">
+      <div className="py-8">
         <p className="text-center text-md font-semibold uppercase pb-3">Creating Success</p>
         <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">What makes our paid search <br /> management services so <br /> effective?</h1>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -349,7 +349,7 @@ const SocialMediaOptimisation = () => {
         </div>
       </div>
 
-      <div className="bg-[#fdf1e7] pb-4 pt-8 md:pt-12 lg:pt-18">
+      <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
         <p className="text-center text-md font-semibold uppercase pb-4">The proof is in the numbers</p>
         <h1 className="text-3xl lg:text-5xl text-center font-semibold pb-4">Why paid search Ads can bring in <br /> the numbers </h1>
         <div className="w-full">
