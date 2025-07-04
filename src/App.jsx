@@ -8,7 +8,7 @@ import Layout from './components/Layout';
 import MarketingSolution from './pages/MarketingSolution';
 import Seo from "./pages/Seo";
 import AboutUs from './pages/AboutUs';
-import OnPageOffPageSeo from './pages/onPageOffPageSeo';
+import OnPageOffPageSeo from './pages/OnPageOffPageSeo';
 import LocalSeo from './pages/LocalSeo';
 import EnterpriseSeo from './pages/EnterpriseSeo';
 import EcommerceSeo from './pages/EcommerceSeo';
