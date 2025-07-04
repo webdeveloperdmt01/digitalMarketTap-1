@@ -12,8 +12,8 @@ import emailImg from "../assets/email-mkt.jpg";
 import paidSearchImg from "../assets/PaidMarketing1.png";
 import quoraImg from "../assets/quora-mkt.png";
 import ormImg from "../assets/onlineReputationMgmt.jpg";
-import socialMediaImg from "../assets/socialmediaopt.jpg";
-import RocketBlue from "../assets/Rocket.png";
+import socialMediaImg from "../assets/SocialMediaOpt.jpg";
+import RocketBlue from "../assets/rocket.png";
 import GooglePartner1 from "../assets/google-partner-1.png";
 
 const faqs = [
