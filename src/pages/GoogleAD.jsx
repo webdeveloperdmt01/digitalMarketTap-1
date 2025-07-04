@@ -14,9 +14,9 @@ import {
 } from "react-icons/fa";
 
 import GoogleADImg from "../assets/googleadBanner1.jpg";
-import ContentWritingServiceImg2 from "../assets/contentServiceMarketing2.jpg";
-import ContentWritingServiceImg3 from "../assets/contentServiceMarketing3.jpg";
-import ContentWritingServiceImg4 from "../assets/contentServiceMarketing4.jpg";
+import ContentWritingServiceImg2 from "../assets/contentservicemarketing2.png";
+import ContentWritingServiceImg3 from "../assets/contentservicemarketing3.png";
+import ContentWritingServiceImg4 from "../assets/contentservicemarketing4.png";
 import GooglePartner1 from "../assets/google-partner-1.png";
 import RocketBlue from "../assets/blueRocket.png";
 

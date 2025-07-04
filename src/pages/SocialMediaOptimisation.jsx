@@ -14,9 +14,9 @@ import {
 } from "react-icons/fa";
 
 import SocialMediaOptimisationImg from "../assets/SocialMediaOpt.jpg";
-import ContentWritingServiceImg2 from "../assets/ContentServiceMarketing2.jpg";
-import ContentWritingServiceImg3 from "../assets/ContentServiceMarketing3.jpg";
-import ContentWritingServiceImg4 from "../assets/ContentServiceMarketing4.jpg";
+import ContentWritingServiceImg2 from "../assets/contentservicemarketing2.png";
+import ContentWritingServiceImg3 from "../assets/contentservicemarketing3.png";
+import ContentWritingServiceImg4 from "../assets/contentservicemarketing4.png";
 import GooglePartner1 from "../assets/google-partner-1.png";
 import RocketBlue from "../assets/blueRocket.png";
 
