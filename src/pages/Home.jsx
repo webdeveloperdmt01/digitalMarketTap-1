@@ -186,16 +186,18 @@ const Home = () => {
               {" "}
               WHO WE ARE
             </h5>
-            <h2 className="font-syne text-left text-2xl md:text-4xl lg:text-5xl font-bold">Leading Digital Marketing Agency In Delhi</h2>
+            <h2 className="font-syne text-left text-2xl md:text-4xl lg:text-5xl font-bold">
+              Leading Digital Marketing Agency In Delhi
+            </h2>
           </div>
           <div className="font-Kanit font-light text-gray-700 text-md space-y-4 text-justify md:px-6 lg:px-14 pb-2 md:pb-12">
             <h6>
               {" "}
-             We provide The Best Digital Marketing services Across Delhi. We have
-over 5 years of experience; we have served over 10,000 satisfied clients,
-worked with over a hundred brands, and with the help of a highly
-experienced and trained expert team we have never failed to deliver best
-result-oriented services.{" "}
+              We provide The Best Digital Marketing services Across Delhi. We
+              have over 5 years of experience; we have served over 10,000
+              satisfied clients, worked with over a hundred brands, and with the
+              help of a highly experienced and trained expert team we have never
+              failed to deliver best result-oriented services.{" "}
             </h6>
             <a
               href="/about-us"
