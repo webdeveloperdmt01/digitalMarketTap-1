@@ -11,7 +11,7 @@ import blogImg7 from '../assets/blogImg7.jpg';
 import blogImg8 from '../assets/blogImg8.jpg';
 import blogImg9 from '../assets/blogImg9.jpg';
 import blogImg10 from '../assets/blogImg10.jpg';
-import ThemeToggle from '../components/ThemeToggle';
+// import ThemeToggle from '../components/ThemeToggle';
 
 const blogsList = [
   {
@@ -95,8 +95,8 @@ const Blog = () => {
 
   return (
     <>
-      <ThemeToggle />
-      <div className="bg-gradient-to-b from-[#fdf5ed] to-white py-15 px-5 md:px-15 lg:px-30 flex items-center justify-center">
+      {/* <ThemeToggle /> */}
+      <div className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] py-15 px-5 md:px-15 lg:px-30 flex items-center justify-center">
         <div className="bg-[#ffaa4c] dark:bg-[#ff944d] rounded-[50px] px-5 md:px-10 lg:px-20 py-10 flex max-w-7xl w-full shadow-lg flex-col md:flex-row gap-10 items-center">
           <div className="flex-1 text-left items-center">
             <p className="text-sm text-[#5c432d] mb-4 font-semibold">May 12, 2023</p>

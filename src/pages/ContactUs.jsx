@@ -61,7 +61,7 @@ function ContactUs() {
   };
 
   return (
-    <section className="bg-gradient-to-b from-[#fdf1e7] to-white py-8 lg:py-20 px-5 md:px-10 lg:px-34">
+    <section className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] py-8 lg:py-20 px-5 md:px-10 lg:px-34">
       <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
         <div>
           <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-6">Contact</h3>
