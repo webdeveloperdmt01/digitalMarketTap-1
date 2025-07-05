@@ -52,7 +52,7 @@ const Testimonials = () => {
           <h2 className="text-center md:text-left text-2xl md:text-4xl font-semibold mb-4  px-5 md:px-10 lg:px-15">
             The proof is in the numbers
           </h2>
-          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 pb-20 px-5 md:px-10 lg:px-15">
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 pb-12 md:pb-20 px-5 md:px-10 lg:px-15">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 w-full lg:w-2/3 text-center">
               {[
                 {
@@ -108,7 +108,7 @@ const Testimonials = () => {
         {/* </section> */}
         {/* </div> */}
 
-        <div className="bg-white rounded-t-[20px] md:rounded-t-[50px] overflow-hidden flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto  pt-5 md:pt-20 px-5 md:px-10 lg:px-10 pb-12 md:pb-24 relative gap-12">
+        <div className="bg-white rounded-t-[20px] md:rounded-t-[50px] overflow-hidden flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto  pt-5 md:pt-20 px-5 md:px-10 lg:px-10 pb-18 md:pb-24 relative gap-12">
           <div className="lg:w-1/2 w-full relative pt-5">
             <p className="text-xl md:text-2xl italic text-black leading-relaxed mb-6 text-left ">
               <span className="text-[#f89e1b] text-[60px] leading-none font-bold mr-2 font-mono">“</span>

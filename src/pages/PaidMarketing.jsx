@@ -10,7 +10,7 @@ import PaidMarketing4 from '../assets/PaidMarketing4.png';
 import Brand1 from '../assets/google-partner-1.png'; 
 import GoogleAdImg from '../assets/GoogleAds.png'; 
 import AmazonAdImg from '../assets/AmazonAds.png'; 
-import teamImage from '../assets/many-guys-discuss-on-laptop.jpg';
+import teamImage from '../assets/many-guys-discuss-on-laptop.webp';
 import PaidMarketingBgImage from '../assets/PaidMarketing5.png';
 
 const faqs = [

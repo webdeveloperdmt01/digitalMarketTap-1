@@ -52,9 +52,9 @@ const Header = () => {
         <NavLink to="/" className="bg-[#fff5ea]">
           <img src={logo} alt="Logo" className="h-19" />
         </NavLink>
-        <nav className="font-semibold hidden xl:flex items-center space-x-6 text-sm relative">
+        <nav className="font-semibold font-syne hidden xl:flex items-center space-x-6 text-sm relative">
           <NavLink to="/" className={({ isActive }) => (isActive ? 'border-b-2 border-[#F89E1B]' : 'border-b-2 border-transparent')}>
-            HOME
+            HOME  
           </NavLink>
 
           <div ref={marketingRef} onMouseEnter={() => setMarketingSolutionsVisible(true)} className="relative">

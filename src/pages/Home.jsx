@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import avatar from "../assets/avatar.png";
-import teamImage from "../assets/many-guys-discuss-on-laptop.jpg";
+import teamImage from "../assets/many-guys-discuss-on-laptop.webp";
 import {
   FaSearch,
   FaLaptop,
@@ -19,7 +19,7 @@ import blueBrain from "../assets/blueBrain.jpg";
 import manWithModernSpecs from "../assets/manWithModernSpecs.jpg";
 import yellowTopGirl from "../assets/yellow-top-girl.jpg";
 // import HomeBanner from '../assets/static-banner.png';
-import HomeBanner from "../assets/erasebg-transformed.png";
+import HomeBanner from "../assets/erasebg-transformed.webp";
 import BorderBottom from "../assets/border.png";
 import InfoTabs from "../components/InfoTabs";
 import TestimonialsPage from "../components/TestimonialsPage";
@@ -99,18 +99,18 @@ const Home = () => {
   ];
 
   return (
-    <div className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-16 lg:pt-24 text-center">
-      <h1 className="px-8 text-3xl md:text-4xl lg:text-6xl font-bold text-black">
+    <div className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-16 lg:pt-26 text-center">
+      <h1 className="px-5 text-[31px] md:text-4xl lg:text-6xl font-bold text-black">
         India’s #1 Digital Growth Partner
       </h1>
-      <p className="px-7 mt-4 md:mt-6 text-lg md:text-lg lg:text-xl text-gray-700 font-normal">
+      <p className="font-kanit px-5 mt-4 md:mt-6 text-lg md:text-lg lg:text-xl text-gray-700 font-normal">
         Searching for the{" "}
-        <span className="font-bold text-lg font-sans text-[#4c4a47]">
+        <span className="font-semibold text-lg font-kanit text-[#4c4a47]">
           Leading Digital Marketing Agency
         </span>{" "}
         to boost your online presence?
       </p>
-      <p className="text-lg sm:text-xl mt-1 md:mt-2 text-[#f89e1b] font-bold">
+      <p className="font-kanit text-lg sm:text-xl mt-1 md:mt-2 text-[#f89e1b] font-medium">
         Digital Market Tap{" "}
         <span className="text-gray-700 font-normal text-lg md:text-lg lg:text-xl">
           is here.
@@ -184,21 +184,18 @@ const Home = () => {
           <div>
             <h5 className="text-left text-sm font-bold tracking-widest text-gray-800 mb-4">
               {" "}
-              WHAT WE DO
+              WHO WE ARE
             </h5>
-            <h2 className="font-syne text-left text-2xl md:text-4xl lg:text-5xl font-bold">
-              Turning Digital <br />
-              Roadblocks Into Results
-            </h2>
+            <h2 className="font-syne text-left text-2xl md:text-4xl lg:text-5xl font-bold">Leading Digital Marketing Agency In Delhi</h2>
           </div>
-          <div className="font-Kanit font-light text-gray-700 text-md space-y-4 text-justify md:px-6 lg:px-14 pt-2 md:pt-12">
+          <div className="font-Kanit font-light text-gray-700 text-md space-y-4 text-justify md:px-6 lg:px-14 pb-2 md:pb-12">
             <h6>
               {" "}
-              At Digital Market Tap, we work with businesses to grow by fixing
-              the actual problems rather than keeping them stuck online. From
-              establishing your presence in search engines to creating
-              scroll-stopping social media campaigns, we concentrate on where
-              actually moves the needle{" "}
+             We provide The Best Digital Marketing services Across Delhi. We have
+over 5 years of experience; we have served over 10,000 satisfied clients,
+worked with over a hundred brands, and with the help of a highly
+experienced and trained expert team we have never failed to deliver best
+result-oriented services.{" "}
             </h6>
             <a
               href="/about-us"
@@ -329,13 +326,13 @@ const Home = () => {
       <SuccessStories />
       <BrandSlider />
 
-      <section className="py-8 lg:py-20 px-5 md:px-10 lg:px-15 xl:px-30 text-center">
+      <section className="py-6 md:py-12 lg:py-20 px-5 md:px-10 lg:px-15 xl:px-30 text-center">
         <p className="text-sm font-bold tracking-widest mb-2">BLOG</p>
-        <div className="w-2 h-2 bg-black rounded-full my-6 mx-auto"></div>
+        <div className="w-2 h-2 bg-black rounded-full my-4 md:my-6 mx-auto"></div>
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-8 max-w-3xl mx-auto">
           Expand your knowledge with our expert advice.
         </h2>
-        <div className="w-2 h-2 bg-black rounded-full my-6 mx-auto"></div>
+        <div className="w-2 h-2 bg-black rounded-full my-4 md:my-6 mx-auto"></div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {blogs.map((blog, index) => (
             <Link

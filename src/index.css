@@ -3,6 +3,9 @@
 h6 {
   font-family: 'Kanit', sans-serif;
 }
+.font-kanit{
+   font-family: 'Kanit', sans-serif;
+}
 
 @import "tailwindcss";
 /* @tailwind base;
@@ -26,6 +29,13 @@ h6 {
   animation: spin-slow 12s linear infinite;
 }
 @font-face {
+  font-family: 'Syne';
+  src: url('/digitalMarketTap/public/fonts/Syne-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+.font-syne {
   font-family: 'Syne';
   src: url('/digitalMarketTap/public/fonts/Syne-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
