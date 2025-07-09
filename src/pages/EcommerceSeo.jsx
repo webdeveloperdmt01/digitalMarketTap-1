@@ -19,39 +19,39 @@ const EcommerceSeoPage= () => {
   const services = [
     {
       icon: <FaHeartbeat className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Insurance and wellness benefits",
+      title: "Increase online traffic. ",
       description:
-        "Our comprehensive benefits package includes health, dental, and vision coverage, designed to prioritize your well-being. With employer-supported deductibles, low copays, and low deductibles, we ensure that your healthcare needs are met affordably and conveniently.",
+        "e-commerce SEO-optimized categories and products help your store get higher in search engines and attract more traffic and customers. SEO is the most organic way to get more leads and traffic. If you want to get more visible without paying extra on ads, get SEO service now—save your money and get max results.",
     },
     {
       icon: <FaPiggyBank className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Retirement & student loan assistance",
+      title: "Better product visibility. ",
       description:
-        "Starting from day one, we make an automatic 3% contribution to your 401(k) retirement plan, which is fully vested immediately. Additionally, we set aside a portion of our pre-tax profits to contribute to your 401(k), which gradually vests over three years, further enhancing your retirement savings.",
+        "When you get e-commerce SEO done, customers are more likely to come into your store when your products show up in search results. SEO improves brand and product discoverability by making your product listings prominent for both long-tail and short-tail keywords, so increase your online visibility now.",
     },
     {
       icon: <FaBalanceScale className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Unlocking work-life balance",
+      title: "Higher conversion rate.",
       description:
-        "At Numerique, we recognize the value of face-to-face interactions and the power of mentorship that comes from working side-by-side with colleagues. Our office-first approach ensures that you have ample opportunities to engage in meaningful collaboration, foster connections, and receive personalized mentorship.",
+        "e-commerce SEO increases website traffic, which means you will get higher conversions. Will search for a particular product, and you have already done SEO on your website. Your website will be shown in a higher rank, which increases chances of getting more leads, so you will get a higher conversion rate.",
     },
     {
       icon: <FaHome className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Balanced living starts here",
+      title: "Magnify product page performance.",
       description:
-        "Experience a competitive PTO package that goes beyond the basics at Numerique. We understand the importance of work-life balance and community engagement. That's why we offer a comprehensive PTO package that includes not only vacation and sick time but also dedicated volunteer days.",
+        "In e-commerce SEO, we focus on meta tags, schema markup, and product descriptions that are optimized for search engines to make your products easier for search engines to understand and more clickable in search results. It also increases your overall website performance.",
     },
     {
       icon: <FaBus className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Enhancing your commuting experience",
+      title: "Experienced SEO expert",
       description:
-        "Experience the convenience of public transportation at Numerique, with our prime location near Back Bay Station and the Arlington T stop. We understand the value of hassle-free commuting, which is why we provide a commuter stipend to help alleviate the costs associated with public transportation.",
+        "Our team has experienced SEO experts who have years of experience in this field and deliver the best service. From improving your site’s architecture and navigation to load speed, we make sure to deliver the best possible service in the given time—we focus on providing long-term results. ",
     },
     {
       icon: <FaGamepad className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Making work enjoyable",
+      title: "Improve site structure & user experience. ",
       description:
-        "Embrace your competitive spirit by joining our summer softball league or engaging in our thrilling fantasy football league. These activities foster team spirit, friendly competition, and lasting memories.",
+        "e-commerce: optimize your website, improve page-loading time and overall website structure, provide a better user experience, lower bounce rates, and improve customer satisfaction. reduced bounce rates, along with enhanced customer satisfaction. reduced bounce rates, along with enhanced customer satisfaction.",
     },
   ];
 
@@ -124,8 +124,8 @@ const EcommerceSeoPage= () => {
             <h5 className="text-sm md:text-base lg:text-md font-semibold text-black pt-4 md:pt-6 lg:pt-10">
         Ecommerce SEO
             </h5>
-            <h1 className='text-2xl md:text-4xl lg:text-6xl font-semibold pt-3 md:pt-8'>boost Your Shop<br /> with Viral Trend</h1>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">Join us and become the trusted expert relied upon by the world's biggest brands, venues, and entertainers to solve their most complex challenges.</p>
+            <h1 className='text-2xl md:text-4xl lg:text-5xl font-semibold pt-3 md:pt-8 leading-tight'>Boost Your Online Store <br />Visibility with Expert <br /> E-Commerce SEO</h1>
+            <h6 className="text-sm font-light lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">Digital Market Tap provides the best SEO service in Delhi. We will help you to boost your online store visibility with our best e-commerce SEO service. Which is personally created for e-commerce platforms.</h6>
             <NavLink to="/" className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9]">VIEW OPEN POSITIONS <FaArrowRight /><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
           </div>
           <div className="flex lg:justify-end">
@@ -148,12 +148,9 @@ const EcommerceSeoPage= () => {
             />
           </div>
           <div className="pl-2 md:pl-8 lg:pl-20">
-            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">Product Suggestion Accuracy</h3>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-2 pb-6">
-We are more than just an agency. We embody intensity, thrive on fast-paced challenges, and foster a team-driven environment. We are committed to your growth, learning, and expertise-building because we believe that your success directly contributes to our own. <br /> <br />
-
-At Numerique, you’ll discover a vibrant culture of opportunity, where strong collaboration and mentorship create a path for advancement, all while keeping a touch of fun in the mix.
-            </p>
+            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">E-commerce SEO—Rank Higher, Sell More</h3>
+            <h6 className="text-sm font-light lg:text-[16px] font-base text-[#545e5b] pt-2 pb-6">Online shopping The practice of making an online store's website more visible in search engines like Google is known as SEO. In order to help your business draw in high-intent organic traffic that turns into purchases, it focuses on optimizing product pages, category pages, metadata, technical structure, and content. Making your website visible to your customer is a task e-commerce SEO is especially for e-commerce websites to get more leads, traffic, and brand awareness. 
+            </h6>
             <a href="#" className="group inline-block text-sm font-semibold relative border-b-2 border-[#4118d2]">MEET OUR TEAM<span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span></a>
           </div>
         </div>
@@ -165,13 +162,13 @@ At Numerique, you’ll discover a vibrant culture of opportunity, where strong c
             <div>
               <p className="text-sm font-semibold uppercase mb-6">Company Values</p>
               <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-                We firmly believe in the power of collaboration to achieve greatness
+              Why You Need e-Commerce SEO
               </h1>
             </div>
             <div className="text-gray-700 pl-0 md:pl-16 lg:pl-22">
-              <p>
-                At Numerique, continuous improvement is ingrained in our DNA. Each day, we dedicate ourselves to honing our skills and excelling in every aspect of our work. We not only strive for excellence but also prioritize cultivating a diverse and inclusive community that values and respects a wide array of backgrounds, experiences, and ideas. Through our Employee Resource Groups, our team actively celebrates and embraces the unique qualities that define each of us.
-              </p>
+              <h6>
+              Just having an e-commerce website is not enough for leads and traffic. There are thousands of e-commerce websites listed online; SEO plays a crucial role in standing out among e-commerce websites. It not only generates leads but also increases website traffic, which is good for brand awareness. It's very beneficial for higher rankings for product-related keywords, driving more conversions with SEO-focused content, and driving more traffic to category and product pages. But for that, you must need an expert SEO specialist company, and we are the best SEO service provider in Delhi.
+              </h6>
             </div>
           </div>
           <div className="mt-10 md:mt-16 lg:mt-20 max-w-8xl mx-auto">

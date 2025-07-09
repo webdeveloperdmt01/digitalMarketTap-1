@@ -30,7 +30,7 @@ const tabs = [
       about:
         "Enterprise SEO denotes a strategic method for enhancing extensive websites—usually comprising thousands of pages or products—to boost organic search effectiveness. Following are the important keypoint for Enterprise SEO......",
     },
-    link: "/e-commerce-website-development",
+    link: "/enterprise-seo",
   },
   {
     title: <>e-Commerce SEO</>,
@@ -39,7 +39,7 @@ const tabs = [
       about:
         "In e-commerce SEO is the process to work on e-commerce websites to increase products and categories that appear in higher search engine results. The goal is to drive organic traffic and generate genuine leads.following are the essential key element for e-commerce SEO......",
     },
-    link: "/blog-news-website",
+    link: "/ecommerce-seo",
   },
   {
     title: <>Local SEO</>,
@@ -48,7 +48,7 @@ const tabs = [
       about:
         "Local SEO, or Local Search Engine Optimization, involves enhancing your online visibility to ensure that your business appears in local search outcomes, particularly on Google Search and Google Maps. Following are key elements for Local SEO......",
     },
-    link: "/education-website",
+    link: "/local-seo",
   },
   {
     title: <>Multilingual SEO</>,
@@ -57,7 +57,7 @@ const tabs = [
       about:
         "Multilingual SEO is optimization for websites in multiple languages. It's a smart way to rank your website in different languages and countries. The goal is to reach more audiences and get more traffic. Following are the key points for multilingual SEO.....",
     },
-    link: "/buisness-website",
+    link: "/multilingual-seo",
   },
   {
     title: <>Ai SEO</>,
@@ -66,7 +66,7 @@ const tabs = [
       about:
         "AI SEO, or Artificial Intelligence SEO, pertains to the utilization of AI-driven tools and technologies aimed at automating, analyzing, and improving search engine optimization strategies. Following are the Artificial Intelligence SEO......",
     },
-    link: "/e-commerce-website-development",
+    link: "/ai-seo",
   },
   {
     title: <>Vernacular SEO</>,
@@ -75,7 +75,7 @@ const tabs = [
       about:
         "Vernacular SEO is optimizing content in regional or local languages to get contact with users. It creates a relation between you and users because now they read content in their native language like Hindi, Bengali, Assamese, etc. The following are key elements of vernacular SEO.....",
     },
-    link: "/blog-news-website",
+    link: "/vernacular-seo",
   },
   {
     title: <>Hyperlocal SEO</>,
@@ -84,7 +84,7 @@ const tabs = [
       about:
         "Hyperlocal SEO represents a specialized form of local SEO (GMB) that focuses on specific neighborhoods, streets, or small local areas to draw in nearby customers. Rather than aiming at an entire city, hyperlocal SEO concentrates on micro-locations. Following are the key points for Hyperlocal SEO.",
     },
-    link: "/education-website",
+    link: "/hyperlocal-seo",
   },
   {
     title: <>Voice SEO</>,
@@ -93,7 +93,7 @@ const tabs = [
       about:
        "Voice SEO refers to the practice of enhancing your website and content to cater to voice search inquiries conducted via devices such as smartphones, voice assistants (including Google Assistant, Siri, and Alexa), and smart speakers following are the key points for voice SEO ",
     },
-    link: "/buisness-website",
+    link: "/voice-seo",
   },
 ];
 

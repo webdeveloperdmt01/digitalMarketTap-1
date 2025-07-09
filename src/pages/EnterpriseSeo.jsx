@@ -15,39 +15,39 @@ const EnterpriseSeoPage = () => {
   const services = [
     {
       icon: <FaHeartbeat className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Insurance and wellness benefits",
+      title: "Enhanced Search Engine Visibility on a Large Scale",
       description:
-        "Our comprehensive benefits package includes health, dental, and vision coverage, designed to prioritize your well-being. With employer-supported deductibles, low copays, and low deductibles, we ensure that your healthcare needs are met affordably and conveniently.",
+        "Enterprise SEO is best for large and complex websites with larger page sizes and multiple keyword targets. Enterprise SEO helps you to get ranked higher globally for multiple keywords. It not only increases traffic but is also great for overall website visibility, more visibility; means more traffic and leads.",
     },
     {
       icon: <FaPiggyBank className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Retirement & student loan assistance",
+      title: "Sophisticated Technical Enhancement",
       description:
-        "Starting from day one, we make an automatic 3% contribution to your 401(k) retirement plan, which is fully vested immediately. Additionally, we set aside a portion of our pre-tax profits to contribute to your 401(k), which gradually vests over three years, further enhancing your retirement savings.",
+        "Enterprise SEO encompasses comprehensive technical audits, the implementation of schema, enhancements to site architecture, and the optimization of core web vitals — we guarantee you that your website will reach more users  and improves website overall performance",
     },
     {
       icon: <FaBalanceScale className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Unlocking work-life balance",
+      title: "Increase Local & International Reach",
       description:
-        "At Numerique, we recognize the value of face-to-face interactions and the power of mentorship that comes from working side-by-side with colleagues. Our office-first approach ensures that you have ample opportunities to engage in meaningful collaboration, foster connections, and receive personalized mentorship.",
+        "Enterprise SEO focuses on both multi-local and international reach, through international SEO techniques and high-Keyword research your website will reach more audience locally and globally. It's not just increasing website traffic but it's also helping in brand awareness both locally and globally",
     },
     {
       icon: <FaHome className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Balanced living starts here",
+      title: "Stronger Website Structure for Large-Scale Operations",
       description:
-        "Experience a competitive PTO package that goes beyond the basics at Numerique. We understand the importance of work-life balance and community engagement. That's why we offer a comprehensive PTO package that includes not only vacation and sick time but also dedicated volunteer days.",
+        "Enterprise SEO helps in website overall structure for Larger-scale operations, proper url placement, proper taxonomy, it helps us to run 100 pages to function smoothly and effortlessly. It upgrades your overall website structure and makes the website more user friendly and crawlable.",
     },
     {
       icon: <FaBus className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Enhancing your commuting experience",
+      title: "Customer support and strategies",
       description:
-        "Experience the convenience of public transportation at Numerique, with our prime location near Back Bay Station and the Arlington T stop. We understand the value of hassle-free commuting, which is why we provide a commuter stipend to help alleviate the costs associated with public transportation.",
+        "We provide 100% expert customer support in case you want any help or assistance. We also provide 100% free service or business related counseling so you can get our expert services according to your issues. We provide regular reports, and strategies for better results and growth.",
     },
     {
       icon: <FaGamepad className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Making work enjoyable",
+      title: "The Integration of AI and Automation",
       description:
-        "Embrace your competitive spirit by joining our summer softball league or engaging in our thrilling fantasy football league. These activities foster team spirit, friendly competition, and lasting memories.",
+        "Enterprise SEO utilizes AI technologies, automation, and machine learning to enhance workflows, oversee content on a large scale, and quickly pinpoint ranking opportunities like never before. We Use all the latest AI tools to refine your content so your business could be up-to-date.",
     },
   ];
 
@@ -66,8 +66,8 @@ const EnterpriseSeoPage = () => {
             <h5 className="text-sm md:text-base lg:text-md font-semibold text-black pt-4 md:pt-6 lg:pt-10">
               Enterprise SEO
             </h5>
-            <h1 className='text-2xl md:text-4xl lg:text-6xl font-semibold pt-3 md:pt-8'>Elevating<br /> Enterprise SEO <br />Services</h1>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">Join us and become the trusted expert relied upon by the world's biggest brands, venues, and entertainers to solve their most complex challenges.</p>
+            <h1 className='text-2xl md:text-4xl lg:text-6xl font-semibold pt-3 md:pt-8'>Scaling Your Digital Reach with Enterprise SEO</h1>
+            <h6 className="text-sm font-light lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">Digital Market Tap presents you with The Best Enterprise SEO service in Delhi. Our expert SEO specialists will make sure to deliver the Best SEO Service so you can get long term results and meet all your expectations. Let us synchronize your business objectives with effective SEO strategies that yield results.</h6>
             <NavLink to="/" className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9]">VIEW OPEN POSITIONS <FaArrowRight /><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
           </div>
           <div className="flex lg:justify-end">
@@ -90,13 +90,10 @@ const EnterpriseSeoPage = () => {
             />
           </div>
           <div className="pl-2 md:pl-8 lg:pl-20">
-            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">Comapanies and their Digital Reach</h3>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-2 pb-6">
-              Combining search engine marketing with conversion rate optimization (CRO)
-              The secret to a successful SEM campaign is much more than just making your website appear on Google. Other SEM agencies in Singapore would just set your ads to appear on Google, and leave it there. These campaigns are not performing up to its optimal level. <br /> <br />
-
-              The secret to achieving optimal SEM results lies in the ability to get as many people as possible to call/contact you after they click on your ad and land on your website. For example, your current SEM ads are getting 2% conversion rate on your landing page. That means out of 100 people that visit your page, 2 people contact you.
-            </p>
+            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">How Enterprise SEO Drives Growth for Big Brands</h3>
+            <h6 className="text-sm font-light lg:text-[16px] font-base text-[#545e5b] pt-2 pb-6">
+        When it comes to search engine optimization, enterprise SEO is primarily concerned with massive, complex websites that have hundreds or thousands of pages. It's best for those large complex websites. <br /> <br /> Enterprise SEO needs advanced-level keyword strategies to get more traffic, advanced technical strategies so SEO websites perform smoothly, and advanced content creation, and enterprise-level analytics. It is greatly beneficial for E-commerce platforms to get more traffic, Multi-location businesses to run all more efficiently, Fortune 500 Companies, News Portals & Media Agencies as they have large and complex websites. Enterprise SEO provides great help, and Government or Educational Institutions as official websites need an advanced level of SEO. 
+            </h6>
             <a href="#" className="group inline-block text-sm font-semibold relative border-b-2 border-[#4118d2]">MEET OUR TEAM<span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span></a>
           </div>
         </div>
@@ -108,13 +105,13 @@ const EnterpriseSeoPage = () => {
             <div>
               <p className="text-sm font-semibold uppercase mb-6">Company Values</p>
               <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-                We firmly believe in the power of collaboration to achieve greatness
+              Why choose us for Enterprise SEO?
               </h1>
             </div>
-            <div className="text-gray-700 pl-0 md:pl-16 lg:pl-22">
-              <p>
-                At Numerique, continuous improvement is ingrained in our DNA. Each day, we dedicate ourselves to honing our skills and excelling in every aspect of our work. We not only strive for excellence but also prioritize cultivating a diverse and inclusive community that values and respects a wide array of backgrounds, experiences, and ideas. Through our Employee Resource Groups, our team actively celebrates and embraces the unique qualities that define each of us.
-              </p>
+            <div className="text-gray-700 pl-0 md:pl-16 lg:pl-22 font-light">
+              <h6>
+               Digital Market Tap provides Enterprise SEO services specifically designed to address the intricate requirements of large organizations. Whether you are overseeing numerous websites, managing thousands of product pages, or aiming for a global reach, our enterprise-level strategies are crafted to enhance your visibility, increase traffic, and improve ROI. Our SEO experts have years of experience handling large and complex website SEO, so you can count on us. We create strategies based on data that are customized to meet your unique business objectives and market needs. That's how we became The best SEO service in Delhi. 
+              </h6>
             </div>
           </div>
           <div className="mt-10 md:mt-16 lg:mt-20 max-w-8xl mx-auto">
