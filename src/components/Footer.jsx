@@ -194,16 +194,18 @@ Read below to know why you need to audit the website.
             {errors.company && <p className="text-red-500 text-sm mt-1">{errors.company}</p>}
           </div>
           <div>
-            <input
-              type="number"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              placeholder="Phone Number"
-              className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-xl border ${
-                errors.phone ? "border-red-500" : "border-gray-300"
-              } focus:outline-none`}
-            />
+              <input
+                type="text"
+                name="phone"
+                placeholder="Phone number"
+                value={formData.phone.replace(/\D/g, "")}
+                onChange={handleChange}
+                maxLength="10"
+                className={`w-full px-3 py-2 md:px-4 md:py-3 border ${
+                  errors.phone ? "border-red-500" : "border-gray-300"
+                } rounded-[8px] outline-none`}
+                inputMode="numeric"
+              />
             {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
           </div>
           <div className="flex gap-4">

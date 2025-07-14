@@ -116,40 +116,40 @@ export default function LocalSeoPage() {
 
   const services = [
     {
-      icon: <FaHeartbeat className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Insurance and wellness benefits",
+      icon: <FaHeartbeat className="text-[#f89e1b] text-2xl hover:text-black" />,
+      title: "Increase Local visibility",
       description:
-        "Our comprehensive benefits package includes health, dental, and vision coverage, designed to prioritize your well-being. With employer-supported deductibles, low copays, and low deductibles, we ensure that your healthcare needs are met affordably and conveniently.",
+        "Local SEO increases your visibility in local nearby areas. So when a customer is searching for services in their nearby areas, your business will appear in a higher rank. It makes it easier for customers to find your business and get their preferred services.",
     },
     {
-      icon: <FaPiggyBank className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Retirement & student loan assistance",
+      icon: <FaPiggyBank className="text-[#f89e1b] text-2xl hover:text-black" />,
+      title: "Higher website traffic",
       description:
-        "Starting from day one, we make an automatic 3% contribution to your 401(k) retirement plan, which is fully vested immediately. Additionally, we set aside a portion of our pre-tax profits to contribute to your 401(k), which gradually vests over three years, further enhancing your retirement savings.",
+        "Local SEO helps in increasing website traffic from local users. If you have linked your website in GMB Whenever a customer searches for services and your GMB appears,they will go through your website, and you will get website traffic from local users.",
     },
     {
-      icon: <FaBalanceScale className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Unlocking work-life balance",
+      icon: <FaBalanceScale className="text-[#f89e1b] text-2xl hover:text-black" />,
+      title: "More leads, calls, and traffic",
       description:
-        "At Numerique, we recognize the value of face-to-face interactions and the power of mentorship that comes from working side-by-side with colleagues. Our office-first approach ensures that you have ample opportunities to engage in meaningful collaboration, foster connections, and receive personalized mentorship.",
+        "Local SEO allows you to get more calls, directions, and in-store visits from potential clients as a result of optimizing your Google My Business (GMB) profile. Potential customers who will be searching for service will definitely visit or call you because of optimized GMB",
     },
     {
-      icon: <FaHome className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Balanced living starts here",
+      icon: <FaHome className="text-[#f89e1b] text-2xl hover:text-black" />,
+      title: "Increase customer trust.",
       description:
-        "Experience a competitive PTO package that goes beyond the basics at Numerique. We understand the importance of work-life balance and community engagement. That's why we offer a comprehensive PTO package that includes not only vacation and sick time but also dedicated volunteer days.",
+        "Having an optimized GMB will help you to increase customer trust, because customers can see both positive and negative reviews, company posts and photos, location, and all the important details, and customer reviews boost your credibility and trustworthiness.",
     },
     {
-      icon: <FaBus className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Enhancing your commuting experience",
+      icon: <FaBus className="text-[#f89e1b] text-2xl hover:text-black" />,
+      title: "Cost-Effective Marketing",
       description:
-        "Experience the convenience of public transportation at Numerique, with our prime location near Back Bay Station and the Arlington T stop. We understand the value of hassle-free commuting, which is why we provide a commuter stipend to help alleviate the costs associated with public transportation.",
+        "Compared to ads and campaigns Local SEO is an affordable way to get online recognition, and it provides long-term results. It's also the most organic way to get more traffic and online visibility. So it's not just budget-friendly but also helpful in many ways.",
     },
     {
-      icon: <FaGamepad className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-      title: "Making work enjoyable",
+      icon: <FaGamepad className="text-[#f89e1b] text-2xl hover:text-black" />,
+      title: "Stronger Presence on Google Maps",
       description:
-        "Embrace your competitive spirit by joining our summer softball league or engaging in our thrilling fantasy football league. These activities foster team spirit, friendly competition, and lasting memories.",
+        "You may establish a more powerful presence on Google Maps by using local SEO. A well-structured GMB listing and local citations improve your Google Maps ranking,which attracts customers to your business. More potential clients and a more robust Google Maps presence are the results.",
     },
   ];
 
@@ -177,22 +177,24 @@ export default function LocalSeoPage() {
   ];
 
   return (
-    <main className="bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-15 lg:px-30">
+    <main className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30">
       <div className="pt-4 md:pt-8 lg:pt-12 pb-4">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
           <div>
-            <h5 className="uppercase text-sm md:text-base lg:text-md font-semibold text-black pt-4 md:pt-6 lg:pt-10">
+            <h5 className="uppercase text-sm md:text-base lg:text-md font-semibold text-black pt-4 md:pt-6 lg:pt-0 xl:pt-10">
               Local SEO
             </h5>
-            <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold pt-3 md:pt-8">
-              Google Ranking <br />
-              for Nearby Finder <br />
-              at its Best
+            <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold pt-3 md:pt-8">
+              Rank Higher in Local Searches with Expert Local SEO
+
             </h1>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">
-              Join us and become the trusted expert relied upon by the world's biggest
-              brands, venues, and entertainers to solve their most complex challenges.
-            </p>
+            <h6 className="text-sm lg:text-[16px] font-light text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">
+             Digital Market Tap provides best local services that are intended
+to literally put your company on the map. Your clients are currently
+looking for you if you are a brick and mortar company or a local
+service provider. Allow us to assist you in being found.
+
+            </h6>
             <NavLink
               to="/"
               className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9]"
@@ -212,7 +214,7 @@ export default function LocalSeoPage() {
       </div>
 
 
-      <div className="pt-12 md:pt-28 lg:pt-38">
+      <div className="pt-12 md:pt-28 lg:pt-28 xl:pt-38">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center">
           <div className="flex lg:justify-end">
             <img
@@ -221,20 +223,20 @@ export default function LocalSeoPage() {
               className="w-full h-[250px] md:h-[470px] object-cover rounded-[30px] md:rounded-[60px]"
             />
           </div>
-          <div className="pl-2 md:pl-8 lg:pl-20">
+          <div className="pl-2 md:pl-8 lg:pl-0 xl:pl-20">
             <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">
-              ON Page SEO
+             What is local SEO
             </h3>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-2 pb-6">
-              We are more than just an agency. We embody intensity, thrive on fast-paced
-              challenges, and foster a team-driven environment. We are committed to your
-              growth, learning, and expertise-building because we believe that your
-              success directly contributes to our own. <br />
-              <br />
-              At Numerique, you’ll discover a vibrant culture of opportunity, where strong
-              collaboration and mentorship create a path for advancement, all while
-              keeping a touch of fun in the mix.
-            </p>
+            <h6 className="text-sm lg:text-[16px] font-light text-[#545e5b] pt-2 pb-6">
+              Local SEO (search engine optimization) is a way to optimize your
+Google My Business and get a higher rank in your selected area.
+When someone searches “near me” or service in your area, local SEO
+services make sure that your business appears on top. It increases
+leads and engagement and also increases customer trust. It attracts
+more physical customers who are searching for services in their
+nearby areas, and it also increases chances to get more genuine
+leads.
+            </h6>
             <a
               href="#"
               className="group inline-block text-sm font-semibold relative border-b-2 border-[#4118d2]"
@@ -252,20 +254,21 @@ export default function LocalSeoPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-start">
             <div>
               <p className="text-sm font-semibold uppercase mb-6">Company Values</p>
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-                We firmly believe in the power of collaboration to achieve greatness
+              <h1 className="text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-bold">
+              Rank Higher in Maps & Local Listings — Stay Ahead of
+Competitors
               </h1>
             </div>
-            <div className="text-gray-700 pl-0 md:pl-16 lg:pl-22">
-              <p>
-                At Numerique, continuous improvement is ingrained in our DNA. Each day,
-                we dedicate ourselves to honing our skills and excelling in every aspect
-                of our work. We not only strive for excellence but also prioritize
-                cultivating a diverse and inclusive community that values and respects a
-                wide array of backgrounds, experiences, and ideas. Through our Employee
-                Resource Groups, our team actively celebrates and embraces the unique
-                qualities that define each of us.
-              </p>
+            <div className="text-gray-700 font-light pl-0 md:pl-16 lg:pl-0 xl:pl-22">
+              <h6>
+             We have the best SEO service in Delhi, India. We have highly trained
+SEO experts who have years of experience in this field and know all
+the latest updates and ways to make sure your business gets a higher
+rank. To put your business at the top of search results, we combine
+innovative SEO methods with a comprehensive awareness of the local
+market. Our individualized strategy and open reporting guarantee that
+you see significant growth quickly. 
+              </h6>
             </div>
           </div>
           <div className="mt-10 md:mt-16 lg:mt-20 max-w-8xl mx-auto">
@@ -322,7 +325,7 @@ export default function LocalSeoPage() {
     <div className="pt-4 md:pt-8 lg:pt-12 pb-4">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
           <div>
-            <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold pt-3 md:pt-8">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold pt-3 md:pt-8">
               Get the updated <br />
               iPad <span className="text-[#f89e1b]"> Templates </span>
             </h1>
