@@ -42,10 +42,9 @@ const [step, setStep] = useState(1);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    setErrors((prev) => ({ ...prev, [name]: "" })); // Clear error when user types
+    setErrors((prev) => ({ ...prev, [name]: "" }));
   };
 
-  // ✅ Validation function
   const validateStep = () => {
     const newErrors = {};
 
@@ -173,7 +172,7 @@ Read below to know why you need to audit the website.
           <button
             type="button"
             onClick={nextStep}
-            className="w-full bg-black text-white text-sm md:text-md font-semibold py-2 md:py-3 rounded-xl hover:bg-[#6754E9] transition"
+            className="w-full bg-black text-white text-sm md:text-md font-semibold py-2 md:py-3 rounded-xl hover:bg-[#F89E1B] transition"
           >
             NEXT
           </button>
@@ -218,7 +217,7 @@ Read below to know why you need to audit the website.
             <button
               type="button"
               onClick={nextStep}
-              className="w-1/2 bg-black text-white font-semibold py-2 md:py-3 rounded-xl hover:bg-[#6754E9] transition"
+              className="w-1/2 bg-black text-white font-semibold py-2 md:py-3 rounded-xl hover:bg-[#F89E1B] transition"
             >
               NEXT
             </button>
@@ -244,7 +243,7 @@ Read below to know why you need to audit the website.
               onChange={handleChange}
               placeholder="Tell us about your project or requirements..."
               rows={4}
-              className={`w-full px-3 md:px-4 py-2 md:py-3 rounded-xl border ${
+              className={` resize-none w-full px-3 md:px-4 py-2 md:py-3 rounded-xl border ${
                 errors.message ? "border-red-500" : "border-gray-300"
               } focus:outline-none`}
             />
@@ -260,7 +259,7 @@ Read below to know why you need to audit the website.
             </button>
             <button
               type="submit"
-              className="w-1/2 bg-black text-sm md:text-md text-white font-semibold py-2 md:py-3 rounded-xl hover:bg-[#6754E9] transition"
+              className="w-1/2 bg-black text-sm md:text-md text-white font-semibold py-2 md:py-3 rounded-xl hover:bg-[#F89E1B] transition"
             >
               SEND PROPOSAL
             </button>

@@ -61,15 +61,13 @@ function ContactUs() {
   };
 
   return (
-    <section className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] py-8 lg:py-20 px-5 md:px-10 lg:px-34">
+    <section className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] py-8 lg:py-20 px-5 md:px-10 lg:px-15 xl:px-30">
       <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
         <div>
-          <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-6">Contact</h3>
-          <h2 className="text-4xl lg:text-6xl font-semibold text-black mt-2">We’re here to help you grow</h2>
+          <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-6">Contact Us</h3>
+          <h2 className="text-4xl lg:text-5xl xl:text-6xl font-semibold text-black mt-2">We’re Here to Help – Contact Us Now</h2>
           <h6 className="text-md text-black mt-5 font-light">
-            Feel free to reach out to us through your preferred method of contact.
-            We are eager to connect with you and explore how our digital marketing
-            team can contribute to your success.
+           At Digital Market Tap, we think that the first step to change is communication. We're only a message away, whether you want to dominate local search results, need a new website, or want to grow your business online! – still searching for digital marketing company in delhi contact us now.
           </h6>
 
           <div className="mt-4 lg:mt-10 block lg:flex justify-between items-start w-full">

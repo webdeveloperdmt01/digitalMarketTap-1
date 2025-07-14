@@ -29,28 +29,28 @@ import SuccessStories from "../components/SuccessStories";
 
 const services = [
   {
-    icon: <FaEye className="text-2xl text-[#F89E1B] hover:text-[#8E81FA]" />,
+    icon: <FaEye className="text-2xl text-[#F89E1B] hover:text-black" />,
     title: "Transparency",
     description:
-      "No smoke and mirrors here. We believe in being genuine in dealing with all our clients. We’ll say what we’ll do, and then do what we say.",
+      "We follow a 100% transparency policy and we don't charge any hidden fees. We believe in being genuine with all our clients and provide transparent information.",
   },
   {
-    icon: <FaShieldAlt className="text-2xl text-[#F89E1B] hover:text-[#8E81FA]" />,
+    icon: <FaShieldAlt className="text-2xl text-[#F89E1B] hover:text-black" />,
     title: "Integrity",
     description:
-      "We prioritize honesty and integrity, always striving to build relationships rooted in trust. We understand that trust is earned by consistently upholding our uncompromising standards",
+      "We value being truthful and establishing relationships of trust with each and every one of our clients. We provide sincere service and always put our moral principles first.",
   },
   {
-    icon: <FaLightbulb className="text-2xl text-[#F89E1B] hover:text-[#8E81FA]" />,
+    icon: <FaLightbulb className="text-2xl text-[#F89E1B] hover:text-black" />,
     title: "Simplicity",
     description:
-      "We believe that being an expert should not mean sounding complicated. We are straightforward with our approach, always doing our best to simplify what’s seemingly complex.",
+      "We believe in simplicity, marketing experts should sound understandable and straightforward and not complicated. We deliver genuine results without making it complex.",
   },
   {
-    icon: <FaTachometerAlt className="text-2xl text-[#F89E1B] hover:text-[#8E81FA]" />,
+    icon: <FaTachometerAlt className="text-2xl text-[#F89E1B] hover:text-black" />,
     title: "Performance",
     description:
-      "Being in the digital marketing space, data is a given. But we aren’t just talking about having access to reports on certain metrics. We ensure each campaign translates into real business growth.",
+      "We have years of experience in this field, our trained digital marketing experts will make sure to deliver genuine, our every service delivers real results with failure.",
   },
 ];
 
@@ -86,23 +86,28 @@ const BrandStaticLine = () => {
 
 const testimonials = [
   {
-    text: "This company transformed our business. Highly recommended!",
-    name: "John Doe",
-    role: "CEO, ExampleCorp",
+    text: "Our website was slow and had SEO issues. Their quick fixes improved load speed and dropped our bounce rate by 30%. Highly effective work.",
+   name: "Kareena Tanwar",
+    role: "Ecommerce Business Owner",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
-    text: "Exceptional service and great results every time.",
-    name: "Jane Smith",
-    role: "Marketing Head, Acme Inc.",
+   text: "Partnering with Digital Market Tap boosted our organic traffic by 60% in 3 months. Their SEO strategies and communication are simply excellent.",
+    name: "Reshmi Sharma",
+    role: "Founder, Weaves by Weavers",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
-    text: "Their digital marketing strategy boosted our revenue immensely.",
-    name: "Sam Wilson",
-    role: "Founder, Startup XYZ",
+   text: "Digital Market Tap’s SEO, Google Ads, and social media strategies grew my brand’s visibility and delivered high-quality leads within weeks.",
+    name: "Muskan Sangwan",
+    role: "Lifestyle Influencer",
     avatar: "https://randomuser.me/api/portraits/men/76.jpg",
   },
+  {
+     text: "Their tailored social media strategy helped us 4x our followers and significantly increase leads. The team truly understands platform-specific marketing.",
+    name: "Manish Yadav",
+    role: "Sales Director, FinEdge Solutions",
+  }
 ];
 
 const AboutUs = () => {
@@ -124,35 +129,36 @@ const AboutUs = () => {
 
   return (
     <>
-      <section className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] py-8 lg:py-20 px-5 md:px-10 lg:px-28">
-        <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+      <section className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] py-8 lg:py-20 px-5 md:px-10 lg:px-15 xl:px-28">
+        <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
           <div>
             <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-16">
               About Us
             </h3>
-            <h2 className="text-4xl lg:text-6xl font-bold text-black mt-2 leading-tight">
-              Digital marketing solutions designed to generate revenue for your
-              business
+            <h2 className="text-4xl lg:px-5xl xl:text-6xl font-bold text-black mt-2 leading-tight">
+              Leading Digital Marketing Agency in
+Delhi
             </h2>
           </div>
-          <div className="flex lg:justify-end pt-2.5 pr-2.5 pb-2.5 pl-0 lg:p-0">
+          <div className="flex lg:justify-end ">
             <img
               src={AboutUsImg}
               alt="Marketing Visual"
-              className="w-full h-[250px] md:h-[470px] object-cover rounded-[30px] md:rounded-[60px]"
+              className="w-full h-[250px] md:h-[440px] object-cover rounded-[30px] md:rounded-[60px]"
             />
           </div>
         </div>
       </section>
 
-      <section className="px-5 md:px-10 lg:px-28 pt-5 pb-5">
+      <section className="px-5 md:px-10 lg:px-15 xl:px-28 pt-5 pb-5">
         <div className="max-w-3xl mx-auto text-lg md:text-3xl font-bold text-left pb-8 md:pb-16 lg:pb-28">
-          Numerique was established 20 years ago with the belief that
-          advertising could drive significant business leverage for our clients.
-          Initially, our focus was on the entertainment industry, including live
-          events and record labels. Over time, we have expanded our services and
-          successfully partnered with both major and niche brands. Our client
-          base spans globally, with a growing roster of local clients.
+     We provide the best digital marketing services across Delhi. We have over 5 years of
+experience; we have served over 10,000 satisfied clients and worked with over a
+hundred brands, and with the help of a highly experienced and trained expert team, we
+have never failed to deliver the best result-oriented services. No matter what issues
+you're facing, Digital Market Tap is a one-stop digital marketing destination for complete
+digital solutions tailored to your business needs.
+
         </div>
         <div className="max-w-7xl mx-auto rounded-[40px] overflow-hidden mb-8 md:mb-12">
           <img
@@ -163,7 +169,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="py-8 md:py-12 px-5 md:px-10 lg:px-30">
+      <section className="py-8 md:py-12 px-5 md:px-10 lg:px-15 xl:px-30">
         <h2 className="text-2xl md:text-4xl lg:text-5xl mb-4 font-bold text-black text-center leading-tight">
          Our Values
             </h2>
@@ -171,7 +177,7 @@ const AboutUs = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-100 rounded-3xl p-8 text-black flex flex-col justify-between h-full"
+              className="bg-gray-100 rounded-3xl px-8 pt-8 text-black flex flex-col justify-between h-full"
             >
               <div>
                 <div className="w-16 h-16 flex items-center justify-center bg-white rounded-full mb-4">
@@ -180,7 +186,7 @@ const AboutUs = () => {
                 <h3 className="text-xl font-semibold mb-6 text-left">
                   {service.title}
                 </h3>
-                <p className="text-md text-[#57595b] mb-12 text-left">
+                <p className="text-md text-[#57595b] mb-8 text-left">
                   {service.description}
                 </p>
               </div>
@@ -192,7 +198,7 @@ const AboutUs = () => {
       <BrandStaticLine />
       <SuccessStories />
 
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-6 px-5 md:px-10 lg:px-30 py-16">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-6 px-5 md:px-10 lg:px-8 xl:px-30 py-16">
         <div className="w-full md:w-1/3 items-center text-center lg:text-left">
           <p className="text-xl font-semibold text-gray-800 leading-snug">
             Credentials & <br className="hidden md:block" /> Recognition:
@@ -228,7 +234,7 @@ const AboutUs = () => {
         </div>
         <div className="w-full md:w-1/3 flex justify-center md:justify-end">
           <a
-            href="/testimonials"
+            href="/contact-us"
             className="inline-flex items-center text-sm font-medium rounded-[15px] bg-black px-6 md:px-8 py-3 text-white hover:bg-[#F89E1B] group transition-all duration-300"
           >
             <span className="relative">
@@ -240,10 +246,10 @@ const AboutUs = () => {
         </div>
       </div>
       <section className="px-5">
-        <div className="bg-[#f7f7fa] rounded-[40px] overflow-hidden flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto mt-10 pt-5 md:pt-30 px-5 md:px-10 lg:px-10 pb-5 md:pb-15 relative gap-12 mb-12">
+        <div className="bg-[#f7f7fa] rounded-[40px] overflow-hidden flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto mt-10 pt-8 md:pt-30 px-5 md:px-10 lg:px-10 pb-5 md:pb-15 relative gap-12 mb-12">
           <div className="lg:w-1/2 w-full relative pt-5">
             <div className="flex items-center mb-4">
-              <span className="text-orange-500 text-[60px] leading-none font-bold mr-2 font-sans">
+              <span className="text-orange-500 text-[60px] leading-none font-bold mr-2 font-mono absolute">
                 “
               </span>
             </div>
@@ -304,7 +310,7 @@ const AboutUs = () => {
                 </div>
 
                 <a
-                  href="/testimonials"
+                 href="https://g.co/kgs/VtCEEcM"
                   className="inline-flex items-center text-sm font-medium text-black hover:text-orange-500 group transition-all duration-300"
                 >
                   <span className="relative">

@@ -58,7 +58,7 @@ const Home = () => {
         </>
       ),
       description:
-        "Paid search marketing — also known as PPC (Pay-Per-Click) advertising — is one of the fastest ways to get traffic and leads. Get the best PPC service and maximize your ROI.",
+        "Paid search marketing—also known as PPC (pay-per-click) advertising—is one of the fastest ways to get traffic and leads. Get the best PPC service and maximize your ROI.",
       link: "/paid-search-marketing",
     },
     {
@@ -71,7 +71,7 @@ const Home = () => {
         </>
       ),
       description:
-        "Search engine optimization—also known as SEO is one of the best organic ways to get ranked in Google search engine. We will handle your on-page SEO, off-page SEO, and technical SEO so your website can rank in the most organic manner.",
+        "Search engine optimization—is one of the best organic ways to get ranked in the Google search engine. Get the best SEO service to rank in the most organic manner.",
       link: "/search-engine-optimization",
     },
     {
@@ -82,7 +82,7 @@ const Home = () => {
         </>
       ),
       description:
-        "Social Media Marketing is the best way to get brand awareness, drive engagement, and help to grow trust between you and your audience. Time to uplift your online presence. We will handle your social media by posting high-quality content and value.",
+        "Social media marketing is the best way to get brand awareness, drive engagement, and help to grow trust between you and your audience. Time to uplift your online presence.",
       link: "/social-media-marketing",
     },
     {
@@ -93,7 +93,7 @@ const Home = () => {
         </>
       ),
       description:
-        "Website design & development is the best way to present your business as it reflects your brand, drive engagement, and support business growth. We provide a high-performing website according to your niche.",
+        "Website design & development is the best way to present your business digitally, as itreflects your brand value, drives engagement, and supports business growth.",
       link: "/website-design",
     },
   ];
@@ -193,11 +193,11 @@ const Home = () => {
           <div className="font-Kanit font-light text-gray-700 text-md space-y-4 text-justify md:px-6 lg:px-14 pb-2 md:pb-12">
             <h6>
               {" "}
-              We provide The Best Digital Marketing services Across Delhi. We
-              have over 5 years of experience; we have served over 10,000
-              satisfied clients, worked with over a hundred brands, and with the
-              help of a highly experienced and trained expert team we have never
-              failed to deliver best result-oriented services.{" "}
+             We provide the best digital marketing services across Delhi. We have over 5 years of
+experience; we have served over 10,000 satisfied clients and worked with over a
+hundred brands, and with the help of a highly experienced and trained expert team, we
+have never failed to deliver the best result-oriented services.
+.{" "}
             </h6>
             <a
               href="/about-us"
@@ -221,10 +221,10 @@ const Home = () => {
               </div>
             </div>
             <h6 className="text-[#5c5f61] font-light text-sm md:text-md">
-              We first study the business and then target the right audience
-              according to your needs, so that you can get the best ROI on your
-              ads. Choosing a better audience is a key factor to get better and
-              genuine leads.
+             We first study the business and then target the right audience according to your needs
+so that you can get the best ROI on your ads. Choosing a better audience is a key
+factor in getting better and genuine leads.
+
             </h6>
           </div>
 
@@ -238,9 +238,9 @@ const Home = () => {
               </div>
             </div>
             <h6 className="text-[#5c5f61] font-light text-sm md:text-md">
-              Analyzing is a key factor for better results. Better analytics
-              mean better results. Whether you want SEO service, ads, and social
-              media we track, measure, and optimize every move.
+              Analyzing is a key factor for better results. Better analytics means better results.
+Whether you want SEO service, ads, or social media, we track, measure, and optimize
+every move
             </h6>
           </div>
 
@@ -254,9 +254,9 @@ const Home = () => {
               </div>
             </div>
             <h6 className="text-[#5c5f61] font-light text-sm md:text-md">
-              By combining strategy, creativity, and technology so we can drive
-              real business results. Our latest marketing ideas and strategies
-              always deliver better outcomes.
+             By combining strategy, creativity, and technology, we can drive real business results.
+Our latest marketing ideas and strategies always deliver better outcomes.
+
             </h6>
           </div>
         </div>

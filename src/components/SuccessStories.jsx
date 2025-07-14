@@ -65,13 +65,13 @@ export default function SuccessStories() {
   };
 
   return (
-    <div className="w-full px-5 md:px-10 lg:px-15 xl:px-30 py-10 lg:py-20 flex flex-col lg:flex-row items-start gap-12">
+    <div className="w-full px-5 md:px-10 lg:px-15 xl:px-30 py-10 lg:py-20 flex flex-col lg:flex-row items-start gap-10">
 
       <div className="w-full lg:w-1/3 flex flex-col justify-start">
         <h4 className="text-md text-left font-bold uppercase text-black tracking-wide">
           Business Outcomes
         </h4>
-        <h2 className="text-left text-2xl md:text-[38px] lg:text-[48px] font-bold leading-[1.1] text-black mt-6 md:mt-16 tracking-tight">
+        <h2 className="text-left text-2xl md:text-[38px] lg:text-[30px] xl:text-[48px] font-bold leading-[1.1] text-black mt-6 md:mt-16 tracking-tight">
           we create strategies that drive businesses forward and fuel lasting growth.
         </h2>
         <a href="/paid-search-tag"><div className="text-left mt-10"><button className="group inline-block text-sm font-semibold relative border-b-3 border-[#FFCF92]">VIEW ALL<span className="block absolute left-0 -bottom-0.5 h-0.5 w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span></button></div></a>
@@ -92,7 +92,7 @@ export default function SuccessStories() {
                 alt={slide.brand}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/50 px-5 md:px-6 lg:px-10 py-8 flex flex-col justify-between">
+              <div className="absolute inset-0 bg-black/50 px-5 lg:px-6 xl:px-10 py-8 flex flex-col justify-between">
                 <h2
                   onClick={() => navigate(`/brand/${slide.brand.toLowerCase()}`)}
                   className="text-white text-left text-xl font-bold cursor-pointer hover:underline hover:text-yellow-300 transition-colors duration-200"
