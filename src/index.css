@@ -30,14 +30,14 @@ h6 {
 }
 @font-face {
   font-family: 'Syne';
-  src: url('/digitalMarketTap/public/fonts/Syne-VariableFont_wght.ttf') format('truetype');
+  src: url('./fonts/Syne-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
 }
 
 .font-syne {
   font-family: 'Syne';
-  src: url('/digitalMarketTap/public/fonts/Syne-VariableFont_wght.ttf') format('truetype');
+  src: url('./fonts/Syne-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
 }
