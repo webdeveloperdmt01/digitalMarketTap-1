@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import { FaArrowRight, FaPlus, FaMinus, FaCheckCircle, FaSearchDollar, FaUserTie, FaGoogle,  FaQuoteLeft, FaStar,FaChartLine  } from "react-icons/fa";
-import Box1 from "../assets/seo-box1.png";
-import Box2 from "../assets/seo-box2.png";
-import Box3 from "../assets/seo-box3.png";
+import { FaCheckCircle, FaSearchDollar, FaUserTie, FaGoogle,  FaQuoteLeft, FaStar,FaChartLine } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import SeoImg from "../assets/seoimg.png";
 import SeoGoogleExperts from "../assets/SeoGoogleExperts.jpg";
@@ -15,22 +12,22 @@ import womanTalking from "../assets/womanTaking-Seo.jpg";
 
 const services = [
   {
-    icon: <FaSearchDollar className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-    title: "Match search intent at every touchpoint",
+    icon: <FaSearchDollar className="text-[#f89e1b] text-2xl hover:text-black" />,
+    title: "Increase global & local customers.",
     description:
-      "Picking the right keywords will only get you so far. We understand how to match the search intent of your target keywords with ad copy, CTAs, and landing pages that turn clicks into ROI.",
+      "Multilingual SEO optimizes your website in different languages, which helps you to connect with global and local customers. It builds trust & credibility across borders. It expands global reach and emotionally connects you with your customer.",
   },
   {
-    icon: <FaUserTie className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-    title: "Experienced PPC management",
+    icon: <FaUserTie className="text-[#f89e1b] text-2xl hover:text-black" />,
+    title: "100% transparency and customer support",
     description:
-      "How do you know what works if you’ve never gotten results before? Our paid search managers have years of experience managing successful campaigns in a variety of industries. And we have the happy clients to back it up.",
+      "We follow 100% transparency. It means being honest with our customers regarding prices, and results. We don't charge any hidden fees and provide weekly reports to your customers and also provide personalized support to better understand your business. ",
   },
   {
-    icon: <FaGoogle className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-    title: "Google Premier Partnership",
+    icon: <FaGoogle className="text-[#f89e1b] text-2xl hover:text-black" />,
+    title: "Get Rank Higher in Every Language and Region",
     description:
-      "Working with a Google Partner agency gives you a leg up. Not only are we certified in all types of Google advertising, but we also get access to direct support and other resources provided by Google. Your campaigns benefit directly from this exclusive insider knowledge.",
+      "When you partner with Digital market tap we unlock all your success and connect you with your customers globally & locally. Get The Best SEO service in Delhi.",
   },
 ];
 
@@ -64,7 +61,7 @@ const MultilingualSeo = () => {
   };
 
   return (
-  <section aria-labelledby="seo-heading" className="bg-gradient-to-b from-[#fdf1e7] to-white pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-16 lg:px-30">
+  <section aria-labelledby="seo-heading" className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-10 lg:px-15 xl:px-30">
     <div>
         <p className="text-gray-600 text-sm md:text-md font-bold uppercase text-center">Create your own</p>
         <h3 className="text-2xl md:text-5xl font-semibold text-black mb-2 md:mb-6 text-center">Various Countries various Language <span className="hover:text-[#f89e1b] cursor-pointer"> Barriers</span></h3>
@@ -83,15 +80,20 @@ const MultilingualSeo = () => {
 
     <div className="max-w-7xl mx-auto pt-12 md:pt-32 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-28 items-start">
         <div>
-          <h3 className="text-2xl md:text-5xl font-semibold text-black leading-tight mb-2 md:mb-6">
-           Remove Negativity <br /> Digitally
+          <h3 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-black leading-tight mb-2 md:mb-6">
+          Reach Global Audiences with Local Precision
+
           </h3>
-          <p className="text-gray-600 text-sm md:text-md max-w-2xl">
-          Our relationship with you relies on getting results, and paid search marketing results are measured in ROI. Each and every day, our primary focus is building ROI by interpreting real data and creating campaigns that convert. This includes:
-          </p>
+          <h6 className="text-gray-600 text-sm md:text-md max-w-2xl font-light">
+         Digital Market Tap offers Multilingual SEO to take your online presence
+globally. It helps you to take your content beyond borders and increases
+overall visibility, whether you are targeting international markets or
+multilingual regions it will help in all.
+
+          </h6>
         </div>
-        <div className="border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
-        {["Keyword and competitor research","SKAGS (single keyword ad groups)","Negative keyword pruning","Ad copy optimization","Landing page creation & optimization","Search engine retargeting", ].map((item, idx) => (
+        <div className="border-l-1 border-gray-300 pl-4 md:pl-12 lg:pl-26 space-y-4">
+        {["Language-specific keyword search","Website structure and URL","Translate meta tags and URL","Localize content","International backlink building", ].map((item, idx) => (
         <div key={idx} className="flex items-start gap-3">
         <FaCheckCircle className="text-[#f89e1b] text-2xl mt-0.5" />
         <span className="text-gray-700 text-base md:text-md">{item}</span>
@@ -100,8 +102,8 @@ const MultilingualSeo = () => {
     </div>
 
     <div className="pt-8 md:pt-14 lg:pt-24">
-          <p className="text-center text-md font-semibold uppercase pb-4">Numerique</p>
-          <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-semibold pb-10 lg:pb-24">How our ORM service can help <br /> grow your revenue</h1>
+          <p className="text-center text-md font-semibold uppercase pb-4"> Multilingual SEO</p>
+          <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-semibold pb-10 lg:pb-24">What is Multilingual SEO?</h1>
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15">
           <div className="flex lg:justify-end pt-2.5 pr-2.5 pb-2.5 pl-0 lg:p-0">
             <img
@@ -111,13 +113,19 @@ const MultilingualSeo = () => {
             />
           </div>
           <div className="pl-2 md:pl-8 lg:pl-20">
-            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">Combining search <br /> engine marketing with <br /> conversion rate <br /> optimization (CRO)</h3>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] mt-2">
-             Combining search engine marketing with conversion rate optimization (CRO)
-             The secret to a successful SEM campaign is much more than just making your website appear on Google. Other SEM agencies in Singapore would just set your ads to appear on Google, and leave it there. These campaigns are not performing up to its optimal level. <br/> <br />
+            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">Why you need Multilingual Seo for global recognition</h3>
+            <h6 className="text-sm lg:text-[16px] font-base font-light text-[#545e5b] mt-2">
+            The process of optimizing your website in many languages to rank in local
+search engines for various regions is known as multilingual SEO. We
+localize content—modifying keywords, content, and metadata for cultural
+relevance and search behavior—instead of just translating it. <br /> <br /> Multilingual
+SEO concentrates on optimizing for particular languages and the
+geographical areas where those languages are spoken. Multilingual SEO is
+great for businesses that want references globally; it helps in global
+recognition so you can connect with customers globally. If you're looking for
+the best SEO service in Delhi, we can help you.
 
-             The secret to achieving optimal SEM results lies in the ability to get as many people as possible to call/contact you after they click on your ad and land on your website. For example, your current SEM ads are getting 2% conversion rate on your landing page. That means out of 100 people that visit your page, 2 people contact you.
-            </p>
+            </h6>
           </div>
         </div>
      </div>
@@ -126,9 +134,12 @@ const MultilingualSeo = () => {
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
           <div>
             <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">
-             Real certified Google Ads professionals
+            Your Global Growth Partner in Multilingual SEO
             </h3>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] mt-2">Get a team of certified Google Adwords / SEM specialists who have a minimum of 2 years experience managing various SEM campaigns locally. We help you create the perfect combination of strategy and implementation to ensure we achieve your goals.</p>
+            <h6 className="text-sm lg:text-[16px] font-light font-base text-[#545e5b] mt-2">We have over 5 years of experience in this field. Our multilingual SEO experts will make
+sure to deliver the best service by using both technical and linguistic accuracy, which
+will guarantee that your material works in a variety of markets.
+</h6>
           </div>
           <div className="flex lg:justify-end">
             <img
@@ -141,8 +152,9 @@ const MultilingualSeo = () => {
      </div>
 
     <div className="py-8">
-          <p className="text-center text-md font-semibold uppercase pb-3">Creating Success</p>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">What makes our paid search <br /> management services so <br /> effective?</h1>
+          <h6 className="text-center font-light text-sm uppercase pb-3">Get global recognition—Digital Market Tap
+</h6>
+          <h1 className="text-xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">Improve Rankings on Global & Local Search Engines</h1>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {services.map((service, index) => (
           <div
@@ -150,7 +162,7 @@ const MultilingualSeo = () => {
               className="bg-white rounded-3xl p-8 text-black flex flex-col justify-between h-full">
         <div>
              <div className="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-4">{service.icon}</div>
-            <h3 className="text-2xl font-semibold mb-4 text-left">{service.title}</h3>
+            <h3 className="text-xl md:text-2xl font-semibold mb-4 text-left">{service.title}</h3>
             <p className="text-md text-[#57595b] text-left">{service.description}</p>
         </div>
        </div>))}
@@ -159,7 +171,7 @@ const MultilingualSeo = () => {
 
   <div className="pb-4 pt-2 md:pt-8 lg:pt-18">
           <p className="text-center text-md font-semibold uppercase pb-4">what you get</p>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">What is included in our paid search <br /> marketing services? </h1>
+          <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">What is included in our paid search <br /> marketing services? </h1>
           <p className="text-center text-md font-base text-gray-500 pb-4">When you partner with Numerique, you’ll gain access to our full range of paid SEM services. These services are designed to <br /> optimize every facet of your paid advertising, including:</p>
   </div>
 
@@ -237,7 +249,7 @@ const MultilingualSeo = () => {
       <div className="md:w-1/2 relative">
         <img src={womanTalking} alt="Testimonial video" className="w-full h-full object-cover" />
 
-        <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center bg-white bg-opacity-90 px-8 py-6 rounded-tl-[40px] md:rounded-tl-[60px]">
+        <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center bg-white bg-opacity-90 px-8 py-6 rounded-tl-[18px] md:rounded-tl-[40px] md:rounded-tl-[60px]">
           <div className="flex flex-col items-start">
              <div className="flex items-center gap-1">
             {[...Array(5)].map((_, i) => (
@@ -253,36 +265,37 @@ const MultilingualSeo = () => {
 </div>
 
 <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
-          <p className="text-center text-md font-semibold uppercase pb-4">The proof is in the numbers</p>
-          <h1 className="text-3xl lg:text-5xl text-center font-semibold pb-4">Why paid search Ads can bring in <br /> the numbers </h1>
+          <p className="text-center text-md font-semibold uppercase pb-4">The proof is in the results</p>
+          <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-semibold pb-4">Reach the Right Audience, in the Right Language</h1>
       <div className="w-full">
         <div className="max-w-8xl mx-auto grid md:grid-cols-2  lg:grid-cols-3 gap-6 pt-4">
-          <div className="text-left px-8 py-10 border border-[#E2E2E2] rounded-[40px] bg-white">
+          <div className="text-left px-6 md:px-8 py-8 md:py-10 border border-[#E2E2E2] rounded-[40px] bg-white">
             <div className="flex items-center gap-4 mb-6 justify-between">
-              <h3 className="text-5xl font-bold text-black leading-tight">38%</h3>
+              <h3 className="text-5xl font-bold text-black leading-tight">75%</h3>
               <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
                 <FaChartLine className="text-orange-500 text-2xl" />
               </div>
             </div>
-            <p className="text-[#5c5f61]">of growth rate in brand awareness for businesses that start doing Search Ads</p>
+            <h6 className="text-[#5c5f61] font-light">of brand awareness and increase in businesses that started SEO service.</h6>
           </div>
-          <div className="text-left px-8 py-10 border border-[#E2E2E2] rounded-[40px] bg-white">
+          <div className="text-left px-6 md:px-8 py-8 md:py-10 border border-[#E2E2E2] rounded-[40px] bg-white">
             <div className="flex items-center gap-4 mb-6 justify-between">
               <h3 className="text-5xl font-bold text-black leading-tight">100%</h3>
               <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
                 <FaChartLine className="text-orange-500 text-2xl" />
               </div>
             </div>
-            <p className="text-[#5c5f61]">of total clicks on search results page are Search Ads, serving as proof that a dependence on SEO alone limits your potential for more traffic and leads.</p>
+            <h6 className="text-[#5c5f61] font-light">Of satisfaction percentage rate, by businesses those who get our services.</h6>
           </div>
-          <div className="text-left px-8 py-10 border border-[#E2E2E2] rounded-[40px] bg-white">
+          <div className="text-left px-6 md:px-8 py-8 md:py-10 border border-[#E2E2E2] rounded-[40px] bg-white">
             <div className="flex items-center gap-4 mb-6 justify-between">
-              <h3 className="text-5xl font-bold text-black leading-tight">82%</h3>
+              <h3 className="text-5xl font-bold text-black leading-tight">85%</h3>
               <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
                 <FaChartLine className="text-orange-500 text-2xl" />
               </div>
             </div>
-            <p className="text-[#5c5f61]">of clicks on Search Ads are more likely to buy, making for better leads.</p>
+            <h6 className="text-[#5c5f61] font-light">Of genuine leads and increase in website traffic, and higher keyword
+ranking.</h6>
           </div>
         </div>
       </div>

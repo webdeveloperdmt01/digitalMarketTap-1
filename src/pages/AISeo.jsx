@@ -25,12 +25,11 @@ const AISeoPage = () => {
         ),
         title: (
           <>
-            Paid search <br />
-            marketing
+           Experience in Search Engine Optimization
           </>
         ),
         description:
-          "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
+          "Get the best SEO service in Delhi. We provide the most reliable and the best digital marketing service in Delhi. We provide high-end SEO services with the power of AI, which makes them more effective. Get more traffic, visibility, and genuine leads.",
       },
       {
         icon: (
@@ -38,21 +37,19 @@ const AISeoPage = () => {
         ),
         title: (
           <>
-            Search engine
-            <br />
-            optimization
+           Improve content optimization.
           </>
         ),
         description:
-          "Maintain your best spot on the search results page, so you can find new customers and re–engage loyal ones.",
+          "As we know, SEO is the most organic way to get ranked on search engines. AI SEO made it more effective by using natural sound to make it more readable, which enhances content structure. Get AI SEO service to get a higher rank in search engines",
       },
       {
         icon: (
           <FaEnvelope className="text-[#F89E1B] text-2xl hover:text-black" />
         ),
-        title: <>Email marketing</>,
+        title: <>Faster and Smarter Keyword Research</>,
         description:
-          "When it comes to reaching your target audience, you can’t get much closer than direct to their inboxes.",
+          "AI SEO makes work more effective and fast. By using AI SEO services to get high-performing keywords with better accuracy, it will save so much time and make SEO faster and smarter. Keyword analysis became easier than ever.",
       },
       {
         icon: (
@@ -60,46 +57,30 @@ const AISeoPage = () => {
         ),
         title: (
           <>
-            Conversion rate
-            <br />
-            optimization
+           Enhanced Competitor analysis
+
           </>
         ),
         description:
-          "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
+          "In AI SEO, we will track all your competitor research. From keyword analysis to backlinks. We keep all the tracks. All the broken links of your competitor analysis so we can convert them as our referral domain research so we can make ours accordingly",
       },
     
   ];
 
-  const faqs = [
-    {
-      question: "What is paid search management?",
-      answer: "Paid search management involves creating, managing, and optimizing pay-per-click (PPC) advertising campaigns on search engines like Google and Bing to drive targeted traffic to your website."
-    },
-    {
-      question: "How much does paid search management cost?",
-      answer: "The cost varies depending on your budget, industry, and campaign complexity. We offer flexible pricing models to suit different business needs and budgets."
-    },
-    {
-      question: "How long does it take to see results?",
-      answer: "You can start seeing traffic immediately once campaigns are live, but meaningful results and optimization typically occur within 2-4 weeks of continuous management."
-    },
-    {
-      question: "Do you provide reporting and analytics?",
-      answer: "Yes, we provide detailed monthly reports showing campaign performance, key metrics, and recommendations for improvement."
-    }
-  ];
-
   return (
-    <main className='bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-15 lg:px-30'>
+    <main className='!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30'>
       <div className="pt-4 md:pt-8 lg:pt-12 pb-4">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
           <div>
             <h5 className="text-sm md:text-base lg:text-md font-semibold text-black pt-4 md:pt-6 lg:pt-10">
               A.I. SEO
             </h5>
-            <h1 className='text-2xl md:text-4xl lg:text-6xl font-semibold pt-3 md:pt-8'>SEO with Artificial<br />Intelligence</h1>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">Join us and become the trusted expert relied upon by the world's biggest brands, venues, and entertainers to solve their most complex challenges.</p>
+            <h1 className='text-2xl md:text-4xl lg:text-5xl font-semibold pt-3 md:pt-8'>Artificial intelligence with SEO
+</h1>
+            <h6 className="text-sm lg:text-[16px] font-base font-light text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">At Digital Market Tap we present you a high-end SEO service with the
+power of Artificial intelligence (AI). To take your business to another
+level. Get AI SEO now.
+</h6>
             <NavLink to="/" className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9]">VIEW OPEN POSITIONS <FaArrowRight /><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
           </div>
           <div className="flex lg:justify-end">
@@ -112,20 +93,23 @@ const AISeoPage = () => {
         </div>
       </div>
 <div className='py-8 md:py-16'>
-    <div className="bg-[#f7f7fa] rounded-2xl p-5 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+    <div className="bg-[#f7f7fa] rounded-2xl p-5 md:p-12 md:block lg:flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
       <div className="items-start gap-4 max-w-xl">
         <div className="text-[#f89e1b] text-3xl md:text-5xl">
           <FaCrown />
         </div>
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold pt-6 text-black">
-            Get $245 Worth of Premium Stock Images FREE with Your Package!
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold pt-6 text-black">
+           Smarter, Faster, Data-Driven Optimization with AI SEO Services
           </h2>
         </div>
       </div>
-      <div className="max-w-sm">
-        <p className="font-bold text-black text-right">Premium<br /><span className="font-normal text-sm">Stock images</span></p>
-        <p className="text-sm text-black pt-10 text-left">All images shown on the demo website come with the demo content, and can be used in your next project, without the need to buy any additional licences.</p>
+      <div className="max-w-md">
+        <p className=" md:hidden font-bold text-black text-right">Premium<br /><span className="font-normal text-sm">Stock images</span></p>
+        <h6 className="text-sm text-black font-light pt-10 text-left">Artificial Intelligence Search Engine Optimization, commonly referred to as AI SEO,
+involves the utilization of AI tools and algorithms to automate technical SEO tasks,
+analyze data, predict search trends, and enhance content. This approach improves
+conventional SEO by rendering it more intelligent, scalable, and precise.</h6>
       </div>
     </div>
 </div>
@@ -136,7 +120,7 @@ const AISeoPage = () => {
   </div>  
   <div className="max-w-2xl text-left">
     <p className="text-sm font-semibold uppercase tracking-widest mb-3"> Our Capabilities</p>
-    <h2 className="text-2xl md:text-5xl font-semibold text-black mb-6 leading-tight">Data-driven, customer-centric digital services</h2>
+    <h2 className="text-2xl md:text-5xl font-semibold text-black mb-6 leading-tight">Why should you choose Digital Market Tap for AI SEO?</h2>
     <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
       <span className="relative z-10 flex items-baseline gap-2">View All Solutions <FaArrowRight/>
       <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
@@ -155,9 +139,9 @@ const AISeoPage = () => {
                 <h3 className="text-xl font-semibold mb-6 text-left">
                   {service.title}
                 </h3>
-                <p className="text-sm text-[#57595b] mb-12 text-left">
+                <h6 className="text-sm text-[#57595b] mb-8 font-light text-left">
                   {service.description}
-                </p>
+                </h6>
               </div>
 
               <div className="text-left mt-auto">

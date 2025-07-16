@@ -22,12 +22,11 @@ const VernacularSeo = () => {
         ),
         title: (
           <>
-            Paid search <br />
-            marketing
+            Wider Reach in Tier 2 & Tier 3 Cities
           </>
         ),
         description:
-          "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
+          "Most of the users are from non metro regions, and some are from villages, so they don't consume content in English to get connected with every customer. Vernacular SEO is the best for wider reach so users can get content in their preferred language.",
       },
       {
         icon: (
@@ -35,21 +34,19 @@ const VernacularSeo = () => {
         ),
         title: (
           <>
-            Search engine
-            <br />
-            optimization
+            Increase in engagement
           </>
         ),
         description:
-          "Maintain your best spot on the search results page, so you can find new customers and re–engage loyal ones.",
+          "Get more engagement, if your content is available in all the native languages, so the whole nation can consume your content which will automatically increase your engagement and also create a strong relationship with your customers.",
       },
       {
         icon: (
           <FaEnvelope className="text-[#F89E1B] text-2xl hover:text-black" />
         ),
-        title: <>Email marketing</>,
+        title: <>Boost brand trust and loyalty</>,
         description:
-          "When it comes to reaching your target audience, you can’t get much closer than direct to their inboxes.",
+          "Customers tend to have greater trust in a brand that communicates in a language they find comfortable, which results in increased loyalty and repeat visits. Its create also create a relationship between brand and customer as customer find it more comfortable understandable.",
       },
       {
         icon: (
@@ -57,28 +54,28 @@ const VernacularSeo = () => {
         ),
         title: (
           <>
-            Conversion rate
-            <br />
-            optimization
+            Optimized for Voice Search
           </>
         ),
         description:
-          "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
+          "We all know the rise of mobile assistants and studies show 70% users use voice assistants over typing. It must be that your content is optimized for voice search, users often speak in their native language in the search engine. It increases your visibility chances.",
       },
     
   ];
 
 
   return (
-    <main className='bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-15 lg:px-30'>
+    <main className='!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30'>
       <div className="pt-4 md:pt-8 lg:pt-12 pb-4">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
           <div>
             <h5 className="text-sm md:text-base lg:text-md font-semibold text-black pt-4 md:pt-6 lg:pt-10 uppercase">
               Vernacular seo
             </h5>
-            <h1 className='text-2xl md:text-4xl lg:text-6xl font-bold pt-3 md:pt-8'>Boost Your Business with SEO in Regional Languages</h1>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">Join us and become the trusted expert relied upon by the world's biggest brands, venues, and entertainers to solve their most complex challenges.</p>
+            <h1 className='text-2xl md:text-3xl lg:text-5xl font-bold pt-3 md:pt-8'>Boost Your Business with SEO in Regional Languages</h1>
+            <h6 className="text-sm lg:text-[16px] font-base font-light text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">Digital Market Tap helps you to connect your business deeply with locals.
+Because 70% of users consume data in their native language and get a
+better connection when they read their native language.</h6>
             <NavLink to="/" className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9]">VIEW OPEN POSITIONS <FaArrowRight /><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
           </div>
           <div className="flex lg:justify-end">
@@ -97,14 +94,20 @@ const VernacularSeo = () => {
           <FaCrown />
         </div>
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold pt-6 text-black">
-            Get $245 Worth of Premium Stock Images FREE with Your Package!
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold pt-6 text-black">
+           Vernacular SEO Services – Speak the Language of Your Local
+Audience
+
           </h2>
         </div>
       </div>
-      <div className="max-w-sm">
-        <p className="font-bold text-black text-right">Premium<br /><span className="font-normal text-sm">Stock images</span></p>
-        <p className="text-sm text-black pt-10 text-left">All images shown on the demo website come with the demo content, and can be used in your next project, without the need to buy any additional licences.</p>
+      <div className="max-w-md">
+        <p className=" font-bold text-black text-right">Premium<br /><span className="font-normal text-sm">Stock images</span></p>
+        <h6 className="text-sm text-black font-light pt-10 text-left">Build Trust with Customers Through Native Language Content. Getting
+vernacular SEO and speaking your customer's language helps create an
+emotional connection and boosts conversion rates. Because local users
+don't consume content in English.
+</h6>
       </div>
     </div>
 </div>
@@ -115,7 +118,7 @@ const VernacularSeo = () => {
   </div>  
   <div className="max-w-2xl text-left">
     <p className="text-sm font-semibold uppercase tracking-widest mb-3"> Our Capabilities</p>
-    <h2 className="text-2xl md:text-5xl font-semibold text-black mb-6 leading-tight">Data-driven, customer-centric digital services</h2>
+    <h2 className="text-2xl md:text-5xl font-semibold text-black mb-6 leading-tight">Why choose Digital Market Tap for vernacular SEO?</h2>
     <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
       <span className="relative z-10 flex items-baseline gap-2">View All Solutions <FaArrowRight/>
       <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
@@ -134,9 +137,9 @@ const VernacularSeo = () => {
                 <h3 className="text-xl font-semibold mb-6 text-left">
                   {service.title}
                 </h3>
-                <p className="text-sm text-[#57595b] mb-12 text-left">
+                <h6 className="text-sm font-light text-[#57595b] mb-8 text-left">
                   {service.description}
-                </p>
+                </h6>
               </div>
 
               <div className="text-left mt-auto">
