@@ -23,7 +23,7 @@ import HomeBanner from "../assets/erasebg-transformed.webp";
 import BorderBottom from "../assets/border.png";
 import InfoTabs from "../components/InfoTabs";
 import TestimonialsPage from "../components/TestimonialsPage";
-// import MarketingTabs from '../components/MarketingTabs';
+import MarketingTabs from '../components/MarketingTabs';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -324,7 +324,7 @@ Our latest marketing ideas and strategies always deliver better outcomes.
         </div>
       </section>
 
-      {/* <MarketingTabs/> */}
+      <MarketingTabs/>
       <SuccessStories />
       <BrandSlider />
 
