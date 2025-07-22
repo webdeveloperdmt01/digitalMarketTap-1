@@ -139,16 +139,7 @@ const WebsiteDesign = () => {
 
               </h1>
               <h6 className="text-sm lg:text-[16px] font-light text-black pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
-  Searching for <span className="font-semibold text-gray-500">The Best Website Development Company In Delhi</span>, your search
-  ends here. Digital marketing tap provides the best website development
-  and designing services all across Delhi. With the help of your expert
-  website developers and graphic designers, we never fail to deliver
-  high-performing websites, we use the latest UI, UX designs to evaluate the
-  overall look of the website, our websites are 100% mobile optimized and
-  SEO friendly so don't have to be worried about website ranking and
-  performance, we use all the latest technologies, designs, and animations to
-  increase overall look and performance of our website. That's what makes
-  us the best website development agency in Delhi.
+  Searching for <span className="font-semibold text-gray-500">The Best Website Development Company In Delhi</span>, Your search ends here. Digital Marketing Tap provides the best website development and design services all across Delhi. With the help of your expert website developers and graphic designers, we never fail to deliver high-performing websites. We use the latest UI and UX designs to evaluate the overall look of the website. Our websites are 100% mobile optimized and SEO friendly, so you don't have to worry about website ranking and performance. We use all the latest technologies, designs, and animations to increase the overall look and performance of our website. That's what makes us the best website development agency in Delhi.
 </h6>
 
               <NavLink
