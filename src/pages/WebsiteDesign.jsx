@@ -20,7 +20,7 @@ const tabs = [
    title: <>Ecommerce<br />Website</>,
     content: {
       heading: "Ecommerce Website",
-      about: "One of the first things we'll do for your business is provide you with a full PPC audit. In the audit, we'll evaluate every significant element of your existing PPC campaign and compile a report of what's working and what isn't. The report will break down every aspect of your PPC strategy and determine what you could improve. In addition, we'll offer recommendations on how to improve them. In fact, if your business has over four employees and spends more than $1000 per month on PPC, you qualify for a free PPC audit! Just get in touch with us to get started."
+      about: "We design your website very carefully, especially when it comes to Ecommerce websites. It took so much effort to create, design ideas, and creativity to deliver an Ecommerce website which is as unique as your business. Following are the key points which we add in Ecommerce website to increase its performance "
     },
      link: "/e-commerce-website-development",
   },
@@ -28,7 +28,7 @@ const tabs = [
    title: <>Blog News<br />Website</>,
     content: {
       heading: "Blog News Website",
-      about: "At Numerique, we specialize in helping you harness the full potential of remarketing, particularly through platforms like Google Ads. With Google Ads, you gain the ability to track the traffic to specific pages on your website and deliver targeted ads to those users who have visited those pages. Our team is dedicated to assisting you in setting up the necessary tracking mechanisms and creating captivating remarketing ads that effectively capture the attention and interest of your target audience."
+      about: "We create a high-performing SEO optimized Blog News Website which effortlessly delivers news and blogs perfect for today's generation. Want to level-up your blogs, journalist, content creation journey to the next level you're at the right place we present you the best Blog News Website with following key points. "
     },
      link: "/blog-news-website",
   },
@@ -36,7 +36,7 @@ const tabs = [
    title: <>Educational<br />Website</>,
     content: {
       heading: "Educational Website",
-      about: "Numerique is here to provide you with comprehensive support in harnessing the potential of geofencing, ensuring that your ad campaigns are optimized for maximum impact. Our team of experts will assist you in identifying the ideal outer limits for your geofences and seamlessly integrate them into your Google Ads strategy. Using this information, we will assist in setting up geofences that precisely align with your objectives, reaching the right people at the right time and maximizing the efficiency of your advertising efforts."
+      about: "Digital Market Tap presents you the best high-performing 100% customized Educational website yet at the most affordable rates to transform every institute, school, tuition classes, and e-learning platforms digital presence. Our customized educational website helps you deliver your knowledge and values more efficiently. "
     },
      link: "/education-website",
   },
@@ -44,7 +44,7 @@ const tabs = [
     title: <>Business<br />Website</>,
     content: {
       heading: "Buisness Website",
-      about: "While Google Ads is undoubtedly a powerful advertising platform, it's important to recognize that there are various other avenues to effectively display ads and engage with your target audience. Social media platforms, in particular, offer compelling paid advertising options that shouldn't be overlooked. With users spending approximately 28% of their Internet time on social media, these platforms present a fantastic opportunity to connect with your audience."
+      about: "Looking for 100% customized latest UI and UX design business website service in Delhi? Which wouldn't hurt your pocket and increase your business, digital performance, and reflect and maintain your strong business presence. Following are key points we added to your website to attract customers and generate leads. "
     },
      link: "/buisness-website",
   },
