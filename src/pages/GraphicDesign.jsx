@@ -1,4 +1,4 @@
-import React, { useState } from "react";;
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
@@ -6,7 +6,14 @@ import StarImg from "../assets/star.png";
 import GraphicDesign1 from "../assets/GraphicDesign1.png";
 import GraphicDesign2 from "../assets/GraphicDesign2.png";
 import GraphicDesign3 from "../assets/GraphicDesign3.png";
-import { FaChessKnight, FaPlus, FaMinus, FaTags, FaPrint , FaArrowRight } from "react-icons/fa";
+import {
+  FaChessKnight,
+  FaPlus,
+  FaMinus,
+  FaTags,
+  FaPrint,
+  FaArrowRight,
+} from "react-icons/fa";
 import GraphicDesign4 from "../assets/GraphicDesign4.png";
 import GraphicDesign7 from "../assets/GraphicDesign7.png";
 import HighlightedStrokes from "../assets/Highlight_strokes.png";
@@ -25,42 +32,44 @@ const GraphicDesign = () => {
   });
 
   const faqs = [
-  {
-    question: " What is graphic design and why is it important for my business?",
-    answer:
-      "Graphic design is the art of visually communicating messages through typography, images, colors, and layout. It plays a crucial role in branding,marketing, and communication. High-quality design builds trust, improves brand recognition, and makes your content more engaging and professional.",
-  },
-  {
-    question: "Do you also design logos for business?",
-    answer:
-      " Absolutely! We specialize in customized logo design tailored to your business. Our expert graphic design team brings years of experience in understanding brand vision and creating logos that truly represent your identity.",
-  },
- {
-  question: "What types of graphic design services do you offer?",
-  answer: " We offer a wide range of design services, including:",
-  answerPoints: [
-    "Logo & brand identity design",
-    "Social media graphics",
-    "Business cards & brochures",
-    "Website and UI/UX design",
-    "Banners, flyers, and posters",
-    "Packaging and label design",
-    "Presentation & pitch deck design",
-  ],
-},
- {
-  question: "What tools do you use for graphic design?",
-  answer: "Our designers have years of experience on work with industry-standard tools like:",
-  answerPoints: [
-    "Adobe Photoshop",
-    "Adobe Illustrator",
-    "Canva Pro",
-    "Figma (for UI/UX)",
-    "Adobe InDesign (for print design)",
-    "Corel draw",
-  ],
-}
-];
+    {
+      question:
+        " What is graphic design and why is it important for my business?",
+      answer:
+        "Graphic design is the art of visually communicating messages through typography, images, colors, and layout. It plays a crucial role in branding,marketing, and communication. High-quality design builds trust, improves brand recognition, and makes your content more engaging and professional.",
+    },
+    {
+      question: "Do you also design logos for business?",
+      answer:
+        " Absolutely! We specialize in customized logo design tailored to your business. Our expert graphic design team brings years of experience in understanding brand vision and creating logos that truly represent your identity.",
+    },
+    {
+      question: "What types of graphic design services do you offer?",
+      answer: " We offer a wide range of design services, including:",
+      answerPoints: [
+        "Logo & brand identity design",
+        "Social media graphics",
+        "Business cards & brochures",
+        "Website and UI/UX design",
+        "Banners, flyers, and posters",
+        "Packaging and label design",
+        "Presentation & pitch deck design",
+      ],
+    },
+    {
+      question: "What tools do you use for graphic design?",
+      answer:
+        "Our designers have years of experience on work with industry-standard tools like:",
+      answerPoints: [
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Canva Pro",
+        "Figma (for UI/UX)",
+        "Adobe InDesign (for print design)",
+        "Corel draw",
+      ],
+    },
+  ];
 
   const stats = [
     { value: 4800, suffix: "K", label: "JOBS COMPLETED" },
@@ -69,7 +78,7 @@ const GraphicDesign = () => {
     { value: 130, suffix: "+", label: "AWARDS WINNED" },
   ];
 
-   const toggleFAQ = (index) => {
+  const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
@@ -87,7 +96,7 @@ const GraphicDesign = () => {
           className="absolute top-[20%] md:top-[15%] left-[10%] md:left-[18%] lg:left-[26%] w-[30px] md:w-[40px] object-contain"
         />
         <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-black leading-tight pb-6 z-10 relative">
-           <div className="absolute top-0 md:-top-[2%] lg:top-[2%] -left-[11%] w-[80px] h-[40px] md:w-[120px] lg:w-[180px] md:h-[70px] lg:h-[90px] bg-[#f89e1b] rounded-full -z-1"></div>
+          <div className="absolute top-0 md:-top-[2%] lg:top-[2%] -left-[11%] w-[80px] h-[40px] md:w-[120px] lg:w-[180px] md:h-[70px] lg:h-[90px] bg-[#f89e1b] rounded-full -z-1"></div>
           Visual Motion <br /> Graphics
         </h1>
         <p className="text-lg md:text-xl text-black pb-15 lg:pb-10 px-5 md:px-0 lg:px-0">
@@ -95,7 +104,7 @@ const GraphicDesign = () => {
         </p>
         <NavLink
           to="/free-audit"
-          className="group bg-black text-white hover:text-black px-12 py-4 rounded-[10px] text-lg font-semibold border border-black hover:bg-transparent transition duration-300 relative overflow-hidden"
+          className="group bg-black text-white hover:text-black px-6 md:px-12 py-2 md:py-4 rounded-[10px] text-lg font-semibold border border-black hover:bg-transparent transition duration-300 relative overflow-hidden"
         >
           <span className="relative z-10">
             GET STARTED
@@ -185,51 +194,63 @@ const GraphicDesign = () => {
           alt="star"
           className="absolute top-[35%] left-[35%] transform -translate-x-1/2 w-[50px] h-[50px] object-contain z-10"
         />
-        <div className="text-center mb-8 md:mb-12 lg:mb-16">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-4 text-left">
-            Our services solve any <br /> business problem
-          </h2>
-          <p className="text-gray-500 text-sm md:text-lg text-right">
-            Our team has a successful track record of helping brands scale
-            profitably based on <br /> high-performing strategies.
-          </p>
-        </div>
-
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto relative z-10">
-  <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl mt-[10px]">
-    <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5 bg-gray-100">
-      <FaChessKnight className="text-black hover:text-[#f89e1b] text-2xl" />
-    </div>
-    <h3 className="text-xl font-semibold text-black mb-2">Logo Design</h3>
-    <p className="text-gray-500 text-sm leading-relaxed">
-      Increasing conversions, repeat traffic, and online authority
-      across your website is our top priority.
-    </p>
-  </div>
-
-  <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl mt-[30px]">
-    <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5 bg-[#f89e1b]">
-      <FaTags className="text-white hover:text-black text-2xl" />
-    </div>
-    <h3 className="text-xl font-semibold text-black mb-2">Branding</h3>
-    <p className="text-gray-500 text-sm leading-relaxed">
-      In order for your funnel to be successful, you need to make it as
-      smooth as possible.
-    </p>
-  </div>
-
-  <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl mt-[60px]">
-    <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5 bg-gray-100">
-      <FaPrint className="text-black hover:text-[#f89e1b] text-2xl" />
-    </div>
-    <h3 className="text-xl font-semibold text-black mb-2">Print Design</h3>
-    <p className="text-gray-500 text-sm leading-relaxed">
-      Leads are nurtured through our email, SMS, and automation
-      services, resulting in customer acquisition and retention.
-    </p>
-  </div>
+      <div className="flex flex-col justify-between min-h-[30px] md:min-h-[40px] lg:min-h-[50px] mb-8 md:mb-12 lg:mb-16">
+  <h2 className="text-xl md:text-4xl lg:text-5xl font-bold text-black mb-4 text-left">
+    From Concept to Creation <br /> – We Design It All
+  </h2>
+  
+  <h6 className="text-gray-500 text-[15px] md:text-sm lg:text-lg text-right font-light max-w-lg ml-auto">
+    At Digital Market Tap, we create designs that not only look great but also
+    perform well, helping your business attract, engage, and convert
+    customers. That's why we are the best Digital Marketing agency in Delhi.
+  </h6>
 </div>
 
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto relative z-10">
+          <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl mt-[10px]">
+            <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5 bg-gray-100">
+              <FaChessKnight className="text-black hover:text-[#f89e1b] text-2xl" />
+            </div>
+            <h3 className="text-xl font-semibold text-black mb-2">
+              Logo design & Branding
+            </h3>
+            <h6 className="text-gray-500 text-sm leading-relaxed font-light">
+              We design logos that are memorable and meaningful, conveying your
+              values and vision. Whether startups or established companies, we
+              assist brands in establishing a distinct identity through
+              customized logo design and full branding solutions
+            </h6>
+          </div>
+
+          <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl mt-[30px]">
+            <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5 bg-[#f89e1b]">
+              <FaTags className="text-white hover:text-black text-2xl" />
+            </div>
+            <h3 className="text-xl font-semibold text-black mb-2">
+              Infographics & Illustrations
+            </h3>
+            <h6 className="text-gray-500 text-sm leading-relaxed font-light">
+              Complicated information or concepts? No issue. We transform them
+              into captivating infographics and unique illustrations that boost
+              content shareability and streamline your message.
+            </h6>
+          </div>
+
+          <div className="bg-white rounded-[30px] shadow-md p-8 transition duration-300 hover:shadow-xl mt-[60px]">
+            <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5 bg-gray-100">
+              <FaPrint className="text-black hover:text-[#f89e1b] text-2xl" />
+            </div>
+            <h3 className="text-xl font-semibold text-black mb-2">
+              Social Media Post Designs
+            </h3>
+            <h6 className="text-gray-500 text-sm leading-relaxed font-light">
+              We design high quality eye-catching social media posts for
+              instagram, facebook, linkedin, youtube thumbnail or covers, and
+              for other platforms, to boost your social media presence.
+            </h6>
+          </div>
+        </div>
       </div>
 
       <div className="pt-12 md:pt-14 pb-12 md:pb-14 lg:pb-18 px-5 md:px-10 lg:px-30">
@@ -243,135 +264,195 @@ const GraphicDesign = () => {
           </div>
           <div className="pl-2 md:pl-8 lg:pl-20">
             <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-14">
-              Why you need graphic <br /> designing services
+              Why Choose Digital Market Tap for Graphic Design?
             </h3>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-2 pb-6">
-              In order to scale new customer acquisition and retention for
-              e-commerce brands, we work across the entire customer journey. Our
-              team has a successful track record of helping brands scale
-              profitably based on high-performing strategies.
-            </p>
-          <NavLink to="/about-us" className="text-md border-b-2 border-[#f89e1b] font-semibold group relative inline-flex items-center gap-2  text-black transition duration-300">LEARN MORE <FaArrowRight /><span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-[calc(100%-0rem)]"></span></NavLink>
+            <h6 className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-2 pb-6 font-light">
+              Our team has years of experience in graphic designing, our
+              talented designer will make sure to deliver high-quality graphics,
+              We think as well as design. Every graphic is made with the
+              intention of delivering value, arousing emotion, and motivating
+              action. We respect your time, that's why we deliver graphics on
+              time, so if you're looking for a graphic designing agency in Delhi
+              contact us.
+            </h6>
+            <NavLink
+              to="/about-us"
+              className="text-md border-b-2 border-[#f89e1b] font-semibold group relative inline-flex items-center gap-2  text-black transition duration-300"
+            >
+              LEARN MORE <FaArrowRight />
+              <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-[calc(100%-0rem)]"></span>
+            </NavLink>
           </div>
         </div>
       </div>
 
-     <div className="bg-black text-white pt-15 md:pt-20 lg:pt-30 relative overflow-hidden">
-      <img src={YellowStar} alt="star" className="absolute top-[1%] md:top-[4%] lg:top-[6%] left-[9%] w-[30px] md:w-[40px] object-contain"/>
-      <svg className="absolute md:top-22 lg:top-28 md:-right-14 lg:right-28 hidden md:block rotate-75" width="250" height="200" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d=" M10 150 C30 30, 90 30, 90 150 C90 220, 30 180, 80 100 C160 0, 250 250, 195 1000" stroke="#FFF" strokeWidth="1.5" strokeDasharray="5 6" strokeLinecap="round"/>
-      </svg>
-
-      <div className="px-5 md:px-10 lg:px-30 text-center">
-        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-8">
-          Make your Brand more <br /> effective
-        </h2>
-        <p className="text-gray-300 max-w-xl mx-auto mb-12">
-          E-commerce brands can acquire and retain new customers using solutions
-          that span the entire customer journey.
-        </p>
-
-  <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mt-12">
-  <div className="md:col-span-4 bg-[#F4DD86] text-black rounded-3xl px-8 pt-8 flex flex-col justify-between shadow-md">
-    <div>
-      <h3 className="text-2xl font-semibold mb-3 text-left">Appealing Logo</h3>
-      <p className="text-base leading-relaxed mb-6 text-black text-left">
-        Our team has a successful track record of helping brands.
-      </p>
-      <div className="w-full flex justify-start">
-        <NavLink
-          to="/about-us"
-          className="text-md font-semibold group relative inline-flex items-center gap-2 text-black transition duration-300 hover:text-white"
+      <div className="bg-black text-white pt-15 md:pt-20 lg:pt-30 relative overflow-hidden">
+        <img
+          src={YellowStar}
+          alt="star"
+          className="absolute top-[1%] md:top-[4%] lg:top-[6%] left-[9%] w-[30px] md:w-[40px] object-contain"
+        />
+        <svg
+          className="absolute md:top-22 lg:top-28 md:-right-14 lg:right-28 hidden md:block rotate-75"
+          width="250"
+          height="200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          LEARN MORE <FaArrowRight />
-          <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
-        </NavLink>
-      </div>
-    </div>
-    <img
-      src={GraphicDesign8}
-      alt="Appealing Logo"
-      className="mt-8 w-full max-w-[280px] self-center"
-    />
-  </div>
+          <path
+            d=" M10 150 C30 30, 90 30, 90 150 C90 220, 30 180, 80 100 C160 0, 250 250, 195 1000"
+            stroke="#FFF"
+            strokeWidth="1.5"
+            strokeDasharray="5 6"
+            strokeLinecap="round"
+          />
+        </svg>
 
-  <div className="md:col-span-8 bg-[#9E98F8] text-black rounded-3xl px-8 pt-8 flex flex-col justify-between shadow-md">
-    <div>
-      <h3 className="text-2xl font-semibold mb-3 text-left">Eye Catching Color Theory</h3>
-      <p className="text-sm mb-6 text-left">
-        Our team has a successful track record of helping brands scale profitably
-        based on high-performing strategies.
-      </p>
-      <div className="w-full flex justify-start">
-        <NavLink
-          to="/about-us"
-          className="text-md font-semibold group relative inline-flex items-center gap-2 text-black transition duration-300 hover:text-white"
-        >
-          LEARN MORE <FaArrowRight />
-          <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
-        </NavLink>
-      </div>
-    </div>
-    <img src={GraphicDesign9} alt="Color Theory" className="mt-4" />
-  </div>
+        <div className="px-5 md:px-10 lg:px-30 text-center">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-8">
+            Make your Brand more <br /> effective
+          </h2>
+          <h6 className="text-gray-300 max-w-xl mx-auto mb-12 font-light">
+            E-commerce brands can acquire and retain new customers using
+            solutions that span the entire customer journey.
+          </h6>
 
-  <div className="md:col-span-12 bg-[#F1F1F1] text-black rounded-3xl px-8 pt-10 flex flex-col md:flex-row justify-between items-center shadow-md">
-    <div className="mb-4 md:mb-0 max-w-xl">
-      <h3 className="text-2xl font-semibold mb-4 text-left">Design Uniformity</h3>
-      <p className="text-sm mb-6 text-left">
-        Leads are nurtured through our email, SMS, and automation services, resulting in customer acquisition and retention.
-      </p>
-      <div className="w-full flex justify-start">
-        <NavLink
-          to="/about-us"
-          className="text-md font-semibold group relative inline-flex items-center gap-2 text-black transition duration-300 hover:text-white"
-        >
-          LEARN MORE <FaArrowRight />
-          <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
-        </NavLink>
-      </div>
-    </div>
-    <img src={GraphicDesign10} alt="Design Uniformity" className="w-full md:w-[50%] max-w-md" />
-  </div>
-</div>
-
-
-      <div className="pt-15 md:pt-28 lg:pt-38 pb-20">
-        <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center">
-          <div className="flex lg:justify-end">
-            <img
-              src={GraphicDesign11}
-              alt="Marketing Visual"
-              className="w-full h-[250px] md:h-[470px] object-cover rounded-[30px] md:rounded-[60px]"
-            />
-          </div>
-          <div className="pl-2 md:pl-8 lg:pl-20">
-            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-white mb-2 md:mb-4 lg:mb-8 text-left">Growth drives everything <br /> we do</h3>
-            <p className="text-sm lg:text-[16px] font-base text-gray-400 pt-2 pb-6 text-left">
-              In order to scale new customer acquisition and retention for
-              e-commerce brands, we work across the entire customer journey. Our
-              team has a successful track record of helping brands scale
-              profitably based on high-performing strategies.
-            </p>
-         
-          <div className="bg-black text-[#F4DD86] py-8 px-4 lg:px-0 flex flex-col md:flex-row items-center justify-start gap-12">
-            <div className="text-center">
-              <h2 className="text-4xl font-bold lg:text-6xl text-left">5K+</h2>
-              <p className="text-white font-semibold text-sm md:text-lg mt-2 text-left">Advertising Partners</p>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mt-12">
+            <div className="md:col-span-4 bg-[#F4DD86] text-black rounded-3xl px-8 pt-8 flex flex-col justify-between shadow-md">
+              <div>
+                <h3 className="text-2xl font-semibold mb-3 text-left">
+                  Appealing Logo
+                </h3>
+                <h6 className="text-base font-light leading-relaxed mb-6 text-black text-left">
+                  A great logo is the foundation of a brand that's remembered.
+                  It shows your personality, establishes trust, and provides
+                  instant recognition. At Digital Market Tap, we create logos
+                  that are distinctive, enduring, and in alignment with your
+                  values, helping you make a lasting impression on all platforms
+                  and touchpoints
+                </h6>
+                <div className="w-full flex justify-start">
+                  <NavLink
+                    to="/about-us"
+                    className="text-md font-semibold group relative inline-flex items-center gap-2 text-black transition duration-300 hover:text-white"
+                  >
+                    LEARN MORE <FaArrowRight />
+                    <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
+                  </NavLink>
+                </div>
+              </div>
+              <img
+                src={GraphicDesign8}
+                alt="Appealing Logo"
+                className="mt-8 w-full max-w-[280px] self-center"
+              />
             </div>
 
-            <div className="text-center">
-              <h2 className="text-4xl font-bold lg:text-6xl text-left">90%</h2>
-              <p className="text-white font-semibold text-sm md:text-lg mt-2 text-left">Increase in ROAS</p>
-         </div>
+            <div className="md:col-span-8 bg-[#9E98F8] text-black rounded-3xl px-8 pt-8 flex flex-col justify-between shadow-md">
+              <div>
+                <h3 className="text-2xl font-semibold mb-3 text-left">
+                  Eye Catching Color Theory
+                </h3>
+                <h6 className="text-sm mb-6 text-left font-light">
+                  Choosing colour is very important for any brand, we will
+                  create brand-kit according to your brand and logo for better
+                  branding. To attract attention and direct viewers,
+                  eye-catching designs employ complementary palettes,
+                  contrasting hues, and clever colour psychology. At Digital
+                  Market Tap, we employ colour theory to produce eye-catching
+                  visuals that immediately engage your audience. That's why we
+                  are the best graphic designing agency in Delhi, India.
+                </h6>
+                <div className="w-full flex justify-start">
+                  <NavLink
+                    to="/about-us"
+                    className="text-md font-semibold group relative inline-flex items-center gap-2 text-black transition duration-300 hover:text-white"
+                  >
+                    LEARN MORE <FaArrowRight />
+                    <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
+                  </NavLink>
+                </div>
+              </div>
+              <img src={GraphicDesign9} alt="Color Theory" className="mt-4" />
+            </div>
+
+            <div className="md:col-span-12 bg-[#F1F1F1] text-black rounded-3xl px-8 pt-10 flex flex-col md:flex-row justify-between items-center shadow-md">
+              <div className="mb-4 md:mb-0 max-w-xl">
+                <h3 className="text-2xl font-semibold mb-4 text-left">
+                  Design Uniformity
+                </h3>
+                <h6 className="text-sm mb-6 text-left font-light">
+                  Uniformity of design guarantees consistency on every aspect of
+                  a brand's visual content. It entails employing the same shade
+                  of color, typography, style of arrangement, and tone across
+                  your website, social media, packaging, and marketing
+                  materials.
+                </h6>
+                <div className="w-full flex justify-start">
+                  <NavLink
+                    to="/about-us"
+                    className="text-md font-semibold group relative inline-flex items-center gap-2 text-black transition duration-300 hover:text-white"
+                  >
+                    LEARN MORE <FaArrowRight />
+                    <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
+                  </NavLink>
+                </div>
+              </div>
+              <img
+                src={GraphicDesign10}
+                alt="Design Uniformity"
+                className="w-full md:w-[50%] max-w-md"
+              />
+            </div>
           </div>
+
+          <div className="pt-15 md:pt-28 lg:pt-38 pb-20">
+            <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center">
+              <div className="flex lg:justify-end">
+                <img
+                  src={GraphicDesign11}
+                  alt="Marketing Visual"
+                  className="w-full h-[250px] md:h-[470px] object-cover rounded-[30px] md:rounded-[60px]"
+                />
+              </div>
+              <div className="pl-2 md:pl-8 lg:pl-20">
+                <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-white mb-2 md:mb-4 lg:mb-8 text-left">
+                  Let’s Bring Your Vision to Life
+                </h3>
+                <h6 className="text-sm lg:text-[16px] font-base text-gray-400 pt-2 pb-6 text-left font-light">
+                  Whether you're introducing a new brand, running a seasonal
+                  promotion, or require a full design refresh, Digital Market
+                  Tap is your partner in creativity. Our crew hears you,
+                  conceptualizes your vision, and provides design material that
+                  says it all for your brand.
+                </h6>
+
+                <div className="bg-black text-[#F4DD86] py-8 px-4 lg:px-0 flex flex-col md:flex-row items-center justify-start gap-12">
+                  <div className="text-center">
+                    <h2 className="text-4xl font-bold lg:text-6xl text-left">
+                      5K+
+                    </h2>
+                    <p className="text-white font-semibold text-sm md:text-lg mt-2 text-left">
+                      Advertising Partners
+                    </p>
+                  </div>
+
+                  <div className="text-center">
+                    <h2 className="text-4xl font-bold lg:text-6xl text-left">
+                      90%
+                    </h2>
+                    <p className="text-white font-semibold text-sm md:text-lg mt-2 text-left">
+                      Increase in ROAS
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-    </div>
 
-     <GraphicDesignSlider/>
+      <GraphicDesignSlider />
 
       <div className="pt-12 md:pt-20 lg:pt-38 md:pb-15 px-5 md:px-10 lg:px-30">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center">
@@ -385,7 +466,13 @@ const GraphicDesign = () => {
               team has a successful track record of helping brands scale
               profitably based on high-performing strategies.
             </p>
-            <NavLink to="/about-us" className="text-md border-b-2 border-[#f89e1b] font-semibold group relative inline-flex items-center gap-2  text-black transition duration-300">LEARN MORE <FaArrowRight /><span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-[calc(100%-0rem)]"></span></NavLink>
+            <NavLink
+              to="/about-us"
+              className="text-md border-b-2 border-[#f89e1b] font-semibold group relative inline-flex items-center gap-2  text-black transition duration-300"
+            >
+              LEARN MORE <FaArrowRight />
+              <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-[calc(100%-0rem)]"></span>
+            </NavLink>
           </div>
           <div className="flex lg:justify-end">
             <img
@@ -412,58 +499,71 @@ const GraphicDesign = () => {
         </p>
         <NavLink
           to="/free-audit"
-          className="group bg-black text-white hover:text-black px-12 py-4 rounded-[10px] text-lg font-semibold border border-black hover:bg-transparent transition duration-300 relative overflow-hidden"
+          className="group bg-black text-white hover:text-black px-6 md:px-12 py-2 md:py-4 rounded-[10px] text-lg font-semibold border border-black hover:bg-transparent transition duration-300 relative overflow-hidden"
         >
           <span className="relative z-10">
             GET STARTED
             <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300" />
           </span>
         </NavLink>
-        <img src={HighlightedStrokes} alt="highlight" className="absolute top-[62%] md:top-[65%] lg:top-[70%] left-[14%] md:left-[30%] lg:left-[40%] w-[30px] md:w-[40px]" />
+        <img
+          src={HighlightedStrokes}
+          alt="highlight"
+          className="absolute top-[62%] md:top-[65%] lg:top-[70%] left-[14%] md:left-[30%] lg:left-[40%] w-[30px] md:w-[40px]"
+        />
         <div className="absolute top-[19%] md:top-[17%] lg:top-[15%] left-[15%] md:left-[26%] lg:left-[31%] w-[90px] md:w-[120px] lg:w-[150px] h-[45px] md:h-[60px] lg:h-[80px] bg-[#f89e1b] rounded-full z-1"></div>
-        <img src={HighlightedStrokes} alt="highlight" className="absolute top-[84%] left-[78%] md:left-[66%] lg:left-[59%] w-[30px] md:w-[40px] rotate-160" />
+        <img
+          src={HighlightedStrokes}
+          alt="highlight"
+          className="absolute top-[84%] left-[78%] md:left-[66%] lg:left-[59%] w-[30px] md:w-[40px] rotate-160"
+        />
       </div>
 
       <div className="pb-4 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
-                <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about Graphic <br />Designing</h1>
-                <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">Looking to learn more about Graphic Designing for your business? Browse our FAQs</p>
-        </div>
+        <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+          FAQs about Graphic <br />
+          Designing
+        </h1>
+        <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">
+          Looking to learn more about Graphic Designing for your business?
+          Browse our FAQs
+        </p>
+      </div>
 
-     <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5">
-  {faqs.map((faq, index) => (
-    <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
-      <button
-        onClick={() => toggleFAQ(index)}
-        className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
-      >
-        <span className="flex-1">{faq.question}</span>
-        <span className="ml-3 flex items-center justify-center">
-          {openIndex === index ? (
-            <FaMinus className="text-[18px] text-black" />
-          ) : (
-            <FaPlus className="text-[18px] text-[#f89e1b]" />
-          )}
-        </span>
-      </button>
+      <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5">
+        {faqs.map((faq, index) => (
+          <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+            <button
+              onClick={() => toggleFAQ(index)}
+              className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+            >
+              <span className="flex-1">{faq.question}</span>
+              <span className="ml-3 flex items-center justify-center">
+                {openIndex === index ? (
+                  <FaMinus className="text-[18px] text-black" />
+                ) : (
+                  <FaPlus className="text-[18px] text-[#f89e1b]" />
+                )}
+              </span>
+            </button>
 
-      {openIndex === index && (
-        <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
-          <p>{faq.answer}</p>
+            {openIndex === index && (
+              <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
+                <p>{faq.answer}</p>
 
-          {faq.answerPoints && Array.isArray(faq.answerPoints) && (
-            <ul className="list-disc ml-5 mt-2 space-y-1">
-              {faq.answerPoints.map((point, idx) => (
-                <li key={idx}>{point}</li>
-              ))}
-            </ul>
-          )}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
+                {faq.answerPoints && Array.isArray(faq.answerPoints) && (
+                  <ul className="list-disc ml-5 mt-2 space-y-1">
+                    {faq.answerPoints.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </main>
   );
 };
