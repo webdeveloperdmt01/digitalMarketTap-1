@@ -11,7 +11,7 @@ function FreeAudit() {
 
   return (
     <>
-      <section className="bg-gradient-to-b from-[#fdf1e7] to-white py-8 lg:py-20 px-5 md:px-10 lg:px-30">
+      <section className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] py-8 lg:py-20 px-5 md:px-10 lg:px-30">
   <div className="py-4 md:py-6 lg:py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-15 lg:gap-40">
             <div>
