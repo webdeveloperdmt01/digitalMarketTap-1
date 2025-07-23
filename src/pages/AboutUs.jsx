@@ -137,7 +137,7 @@ const AboutUs = () => {
   <meta name="title" content="Digital Marketing agency in Delhi | Digital Market Tap"/>
   <meta name="description" content="Delhi’s top digital marketing agency with 8+ years of experience & 10,000+ clients. Get tailored, result-driven digital solutions today."/>
   <meta name="keywords" content="digital marketing agency, digital marketing agency in Delhi, SEO services in Delhi, social media agency in Delhi"/>
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="noindex, nofollow" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="language" content="English" />
   <meta meta name="revisit-after" content="2 days"/>
@@ -164,7 +164,7 @@ const AboutUs = () => {
       </section>
 
       <section className="px-5 md:px-10 lg:px-15 xl:px-28 pt-5 pb-5">
-        <div className="max-w-3xl mx-auto text-lg md:text-3xl font-bold text-left pb-8 md:pb-16 lg:pb-28">
+        <h6 className="max-w-3xl mx-auto text-lg md:text-3xl font-medium text-left pb-8 md:pb-16 lg:pb-28">
           We provide the best digital marketing services across Delhi. We have
           over 5 years of experience; we have served over 10,000 satisfied
           clients and worked with over a hundred brands, and with the help of a
@@ -173,7 +173,7 @@ const AboutUs = () => {
           you're facing, Digital Market Tap is a one-stop digital marketing
           destination for complete digital solutions tailored to your business
           needs.
-        </div>
+        </h6>
         <div className="max-w-7xl mx-auto rounded-[40px] overflow-hidden mb-8 md:mb-12">
           <img
             src={AboutUsWideImg}
