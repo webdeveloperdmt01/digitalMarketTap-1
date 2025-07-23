@@ -24,6 +24,7 @@ import BorderBottom from "../assets/border.png";
 import InfoTabs from "../components/InfoTabs";
 import TestimonialsPage from "../components/TestimonialsPage";
 // import MarketingTabs from '../components/MarketingTabs';
+import { Helmet } from "react-helmet"; 
 
 const Home = () => {
   const navigate = useNavigate();
@@ -99,6 +100,17 @@ const Home = () => {
   ];
 
   return (
+    <>
+<Helmet>
+  <meta name="title" content="Digital Marketing agency in Delhi | Digital Market Tap"/>
+  <meta name="description" content="Boost your online presence with Digital Market Tap – the leading digitalmarketing agency in Delhi. SEO, PPC, Social Media, Web Design & more.Get results now!"/>
+  <meta name="keywords" content="Best digital marketing agency, digital marketing agency in delhi, digital marketing company in delhi, digital marketing company in india "/>
+  <meta name="robots" content="index, follow" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="2 days"/>
+</Helmet>
+
     <div className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-16 lg:pt-26 text-center">
       <h1 className="px-5 text-[31px] md:text-4xl lg:text-6xl font-bold text-black">
         India’s #1 Digital Growth Partner
@@ -363,6 +375,7 @@ Our latest marketing ideas and strategies always deliver better outcomes.
 
       {/* main div tag */}
     </div>
+    </>
   );
 };
 

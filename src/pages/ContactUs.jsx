@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import SparklingStar from "../assets/SparklingStar.png";
 import BorderBottomCenter from "../assets/border-center.png";
+import { Helmet } from "react-helmet";
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -62,6 +63,16 @@ function ContactUs() {
   };
 
   return (
+<>
+ <Helmet>
+  <meta name="title" content="Digital Marketing agency in Delhi | Digital Market Tap"/>
+  <meta  name="description" content="Looking for a top digital marketing company in Delhi? Contact Digital Market Tap for expert SEO, PPC, social media, web solutions & a free website audit"/>
+  <meta name="keywords" content="website designing agency in Delhi, graphical designing agency in Delhi, digital marketing company in delhi"/>
+  <meta name="robots" content="index, follow" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="language" content="English" />
+  <meta meta name="revisit-after" content="2 days"/>
+</Helmet>
     <section className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] py-8 lg:py-20 px-5 md:px-10 lg:px-15 xl:px-30">
       <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
         <div>
@@ -298,6 +309,7 @@ function ContactUs() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

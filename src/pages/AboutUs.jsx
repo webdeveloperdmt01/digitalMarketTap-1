@@ -26,6 +26,8 @@ import Badge2 from "../assets/new-badge2.png";
 import Badge3 from "../assets/new-badge3.png";
 import Badge4 from "../assets/logo_hubspot.png";
 import SuccessStories from "../components/SuccessStories";
+import { Helmet } from "react-helmet";
+
 
 const services = [
   {
@@ -47,7 +49,9 @@ const services = [
       "We believe in simplicity, marketing experts should sound understandable and straightforward and not complicated. We deliver genuine results without making it complex.",
   },
   {
-    icon: <FaTachometerAlt className="text-2xl text-[#F89E1B] hover:text-black" />,
+    icon: (
+      <FaTachometerAlt className="text-2xl text-[#F89E1B] hover:text-black" />
+    ),
     title: "Performance",
     description:
       "We have years of experience in this field, our trained digital marketing experts will make sure to deliver genuine, our every service delivers real results with failure.",
@@ -87,27 +91,27 @@ const BrandStaticLine = () => {
 const testimonials = [
   {
     text: "Our website was slow and had SEO issues. Their quick fixes improved load speed and dropped our bounce rate by 30%. Highly effective work.",
-   name: "Kareena Tanwar",
+    name: "Kareena Tanwar",
     role: "Ecommerce Business Owner",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
-   text: "Partnering with Digital Market Tap boosted our organic traffic by 60% in 3 months. Their SEO strategies and communication are simply excellent.",
+    text: "Partnering with Digital Market Tap boosted our organic traffic by 60% in 3 months. Their SEO strategies and communication are simply excellent.",
     name: "Reshmi Sharma",
     role: "Founder, Weaves by Weavers",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
-   text: "Digital Market Tap’s SEO, Google Ads, and social media strategies grew my brand’s visibility and delivered high-quality leads within weeks.",
+    text: "Digital Market Tap’s SEO, Google Ads, and social media strategies grew my brand’s visibility and delivered high-quality leads within weeks.",
     name: "Muskan Sangwan",
     role: "Lifestyle Influencer",
     avatar: "https://randomuser.me/api/portraits/men/76.jpg",
   },
   {
-     text: "Their tailored social media strategy helped us 4x our followers and significantly increase leads. The team truly understands platform-specific marketing.",
+    text: "Their tailored social media strategy helped us 4x our followers and significantly increase leads. The team truly understands platform-specific marketing.",
     name: "Manish Yadav",
     role: "Sales Director, FinEdge Solutions",
-  }
+  },
 ];
 
 const AboutUs = () => {
@@ -129,6 +133,16 @@ const AboutUs = () => {
 
   return (
     <>
+ <Helmet>
+  <meta name="title" content="Digital Marketing agency in Delhi | Digital Market Tap"/>
+  <meta name="description" content="Delhi’s top digital marketing agency with 8+ years of experience & 10,000+ clients. Get tailored, result-driven digital solutions today."/>
+  <meta name="keywords" content="digital marketing agency, digital marketing agency in Delhi, SEO services in Delhi, social media agency in Delhi"/>
+  <meta name="robots" content="index, follow" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="language" content="English" />
+  <meta meta name="revisit-after" content="2 days"/>
+</Helmet>
+
       <section className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] py-8 lg:py-20 px-5 md:px-10 lg:px-15 xl:px-28">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
           <div>
@@ -136,8 +150,7 @@ const AboutUs = () => {
               About Us
             </h3>
             <h2 className="text-4xl lg:px-5xl xl:text-6xl font-bold text-black mt-2 leading-tight">
-              Leading Digital Marketing Agency in
-Delhi
+              Leading Digital Marketing Agency in Delhi
             </h2>
           </div>
           <div className="flex lg:justify-end ">
@@ -152,13 +165,14 @@ Delhi
 
       <section className="px-5 md:px-10 lg:px-15 xl:px-28 pt-5 pb-5">
         <div className="max-w-3xl mx-auto text-lg md:text-3xl font-bold text-left pb-8 md:pb-16 lg:pb-28">
-     We provide the best digital marketing services across Delhi. We have over 5 years of
-experience; we have served over 10,000 satisfied clients and worked with over a
-hundred brands, and with the help of a highly experienced and trained expert team, we
-have never failed to deliver the best result-oriented services. No matter what issues
-you're facing, Digital Market Tap is a one-stop digital marketing destination for complete
-digital solutions tailored to your business needs.
-
+          We provide the best digital marketing services across Delhi. We have
+          over 5 years of experience; we have served over 10,000 satisfied
+          clients and worked with over a hundred brands, and with the help of a
+          highly experienced and trained expert team, we have never failed to
+          deliver the best result-oriented services. No matter what issues
+          you're facing, Digital Market Tap is a one-stop digital marketing
+          destination for complete digital solutions tailored to your business
+          needs.
         </div>
         <div className="max-w-7xl mx-auto rounded-[40px] overflow-hidden mb-8 md:mb-12">
           <img
@@ -171,8 +185,8 @@ digital solutions tailored to your business needs.
 
       <section className="py-8 md:py-12 px-5 md:px-10 lg:px-15 xl:px-30">
         <h2 className="text-2xl md:text-4xl lg:text-5xl mb-4 font-bold text-black text-center leading-tight">
-         Our Values
-            </h2>
+          Our Values
+        </h2>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div
@@ -310,7 +324,7 @@ digital solutions tailored to your business needs.
                 </div>
 
                 <a
-                 href="https://g.co/kgs/VtCEEcM"
+                  href="https://g.co/kgs/VtCEEcM"
                   className="inline-flex items-center text-sm font-medium text-black hover:text-orange-500 group transition-all duration-300"
                 >
                   <span className="relative">
