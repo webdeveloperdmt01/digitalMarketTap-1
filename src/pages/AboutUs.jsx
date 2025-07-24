@@ -28,7 +28,6 @@ import Badge4 from "../assets/logo_hubspot.png";
 import SuccessStories from "../components/SuccessStories";
 import { Helmet } from "react-helmet";
 
-
 const services = [
   {
     icon: <FaEye className="text-2xl text-[#F89E1B] hover:text-black" />,
@@ -133,15 +132,24 @@ const AboutUs = () => {
 
   return (
     <>
- <Helmet>
-  <meta name="title" content="Digital Marketing agency in Delhi | Digital Market Tap"/>
-  <meta name="description" content="Delhi’s top digital marketing agency with 8+ years of experience & 10,000+ clients. Get tailored, result-driven digital solutions today."/>
-  <meta name="keywords" content="digital marketing agency, digital marketing agency in Delhi, SEO services in Delhi, social media agency in Delhi"/>
-  <meta name="robots" content="noindex, nofollow" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="language" content="English" />
-  <meta meta name="revisit-after" content="2 days"/>
-</Helmet>
+      <Helmet>
+        <meta
+          name="title"
+          content="Digital Marketing agency in Delhi | Digital Market Tap"
+        />
+        <meta
+          name="description"
+          content="Delhi’s top digital marketing agency with 8+ years of experience & 10,000+ clients. Get tailored, result-driven digital solutions today."
+        />
+        <meta
+          name="keywords"
+          content="digital marketing agency, digital marketing agency in Delhi, SEO services in Delhi, social media agency in Delhi"
+        />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <meta meta name="revisit-after" content="2 days" />
+      </Helmet>
 
       <section className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] py-8 lg:py-20 px-5 md:px-10 lg:px-15 xl:px-28">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">

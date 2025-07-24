@@ -105,7 +105,7 @@ const Home = () => {
   <meta name="title" content="Digital Marketing agency in Delhi | Digital Market Tap"/>
   <meta name="description" content="Boost your online presence with Digital Market Tap – the leading digitalmarketing agency in Delhi. SEO, PPC, Social Media, Web Design & more.Get results now!"/>
   <meta name="keywords" content="Best digital marketing agency, digital marketing agency in delhi, digital marketing company in delhi, digital marketing company in india "/>
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="noindex, nofollow" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="language" content="English" />
   <meta name="revisit-after" content="2 days"/>

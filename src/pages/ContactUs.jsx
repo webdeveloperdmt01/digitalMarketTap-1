@@ -68,7 +68,7 @@ function ContactUs() {
   <meta name="title" content="Digital Marketing agency in Delhi | Digital Market Tap"/>
   <meta  name="description" content="Looking for a top digital marketing company in Delhi? Contact Digital Market Tap for expert SEO, PPC, social media, web solutions & a free website audit"/>
   <meta name="keywords" content="website designing agency in Delhi, graphical designing agency in Delhi, digital marketing company in delhi"/>
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="noindex, nofollow" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="language" content="English" />
   <meta meta name="revisit-after" content="2 days"/>
