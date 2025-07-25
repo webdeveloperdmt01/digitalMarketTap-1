@@ -97,10 +97,6 @@ function App() {
         <Route path="/amazon-ads" element={<Layout><AmazonAD/></Layout>} />
         <Route path="/404-error" element={<Layout><Error/></Layout>} />
         <Route path="/digital-marketing" element={<Layout><DigitalMarketing/></Layout>} />
-        
-    
-        
-
       </Routes>
     </Router>
   );
