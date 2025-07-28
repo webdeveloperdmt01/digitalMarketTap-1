@@ -43,7 +43,7 @@ const InfoTabs = () => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`text-xs md:text-base font-semibold infoTabsPadding transition-all duration-200 rounded-t-[15px] md:rounded-t-[25px] lg:rounded-t-[30px] ${
+              className={`font-syne text-xs md:text-base font-semibold infoTabsPadding transition-all duration-200 rounded-t-[15px] md:rounded-t-[25px] lg:rounded-t-[30px] ${
                 activeTab === tab
                   ? "bg-[#ffdfbe]"
                   : "text-black"
@@ -60,9 +60,9 @@ const InfoTabs = () => {
           <h2 className="text-lg md:text-2xl lg:text-3xl font-semibold mb-2 md:mb-8 text-left">
             {contentData[activeTab].title}
           </h2>
-          <p className="text-gray-700 mb-4 text-xs md:text-sm lg:text-base leading-relaxed text-left">
+          <h6 className="text-gray-700 mb-4 text-xs md:text-sm lg:text-base leading-relaxed text-left font-light">
             {contentData[activeTab].description}
-          </p>
+          </h6>
 
           <div className="rounded-[20px]">
             <img
@@ -88,7 +88,7 @@ const InfoTabs = () => {
           <div className="flex justify-start">
             <button
               onClick={() => navigate("/contact-us")}
-              className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
+              className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
             >
               <span className="relative z-10 flex items-center gap-2">
                 Get Proposal

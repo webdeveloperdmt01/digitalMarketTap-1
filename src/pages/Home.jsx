@@ -146,7 +146,7 @@ const Home = () => {
           <span className="relative group inline-block">
             <a
               href="./meet-the-team"
-              className="inline-flex items-center gap-2 text-black group-hover:text-black transition-colors duration-300 font-medium mt-2 md:mt-0"
+              className="font-syne inline-flex items-center gap-2 text-black group-hover:text-black transition-colors duration-300 font-medium mt-2 md:mt-0"
             >
               Let Our Experts Guide You
               <FaArrowRight className="font-medium transition-transform duration-300 group-hover:translate-x-1 hover:text-[#f89e1b]" />
@@ -155,14 +155,14 @@ const Home = () => {
           </span>
         </div>
         <div className="block lg:flex">
-          <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-black">
+          <h6 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-black">
             12,0240
-          </p>
-          <p className="text-sm md:text-sm ml-1 md:ml-4 font-medium">
+          </h6>
+          <h6 className="text-sm md:text-sm ml-1 md:ml-4 font-base">
             Revenue driven
             <br />
             for our clients
-          </p>
+          </h6>
         </div>
 
         <div>
@@ -180,9 +180,9 @@ const Home = () => {
                 </svg>
               ))}
           </div>
-          <p className="text-md md:text-base font-medium text-black pt-0 md:pt-4 lg:pt-0">
+          <h6 className="text-md md:text-base font-base text-black pt-0 md:pt-4 lg:pt-0">
             500+ Client reviews
-          </p>
+          </h6>
         </div>
         <img
           src={BorderBottom}
@@ -213,7 +213,7 @@ have never failed to deliver the best result-oriented services.
             </h6>
             <a
               href="/about-us"
-              className="inline-block text-sm font-semibold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200"
+              className="font-syne inline-block text-sm font-semibold text-black border-b-3 border-[#e7ba78] hover:border-[#F89E1B] transition duration-200"
             >
               MORE ABOUT US
             </a>
@@ -292,7 +292,7 @@ Our latest marketing ideas and strategies always deliver better outcomes.
             Smart digital marketing Solutions centred on data and your audience
           </h2>
           <a href="/digital-marketing">
-            <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
+            <button className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
               <span className="relative z-10">
                 {" "}
                 View All Solutions
@@ -325,7 +325,7 @@ Our latest marketing ideas and strategies always deliver better outcomes.
               <div className="text-left mt-auto">
                 <button
                   onClick={() => navigate(service.link)}
-                  className="group inline-block text-xs font-semibold relative border-b-2 border-[#FFCF92]"
+                  className="font-syne group inline-block text-xs font-semibold relative border-b-2 border-[#FFCF92]"
                 >
                   GET STARTED
                   <span className="block absolute left-0 -bottom-0.5 h-0.5 w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>

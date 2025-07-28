@@ -25,6 +25,13 @@ import {
   FaMapMarkerAlt,
   FaStar,
 } from 'react-icons/fa';
+const socialLinks = [
+  { Icon: FaLinkedinIn, url: "https://www.linkedin.com/company/digitalmarkettap" },
+  { Icon: FaTwitter, url: "https://x.com/DmtWebservices" },
+  { Icon: FaInstagram, url: "https://www.instagram.com/digitalmarkettap/" },
+  { Icon: FaFacebookF, url: "https://www.facebook.com/digitalmarkettap" },
+  { Icon: FaYoutube, url: "https://www.youtube.com/@DigitalMarketTap" },
+];
 
 const Footer = () => {
 const [step, setStep] = useState(1);
@@ -110,7 +117,7 @@ const [step, setStep] = useState(1);
 Read below to know why you need to audit the website.
 </h6>
             <div className="h-px bg-white/20 my-3 md:my-6 text-sm md:text-base" />
-            <ul className="space-y-4">
+            <ul className="space-y-4 font-syne">
               {[
                 " A website audit will show the results of your website's overall performance which we can help to fix.",
                 " We can analyze all the duplicate content which can risk your website spam score and help to fix it.",
@@ -172,7 +179,7 @@ Read below to know why you need to audit the website.
           <button
             type="button"
             onClick={nextStep}
-            className="w-full bg-black text-white text-sm md:text-md font-semibold py-2 md:py-3 rounded-xl hover:bg-[#F89E1B] transition"
+            className="font-syne w-full bg-black text-white text-sm md:text-md font-semibold py-2 md:py-3 rounded-xl hover:bg-[#F89E1B] transition"
           >
             NEXT
           </button>
@@ -290,7 +297,7 @@ Read below to know why you need to audit the website.
       <img src={avatar} alt="Expert" className="w-16 h-16 rounded-full" />
       <p className="text-lg font-medium text-black">Talk to a growth expert</p>
   <div className="w-fit relative group cursor-pointer">
-        <a href="tel:+917290969680" className="inline-block text-gray-800 transition-colors duration-300 text-2xl font-bold tracking-wider">+91-729-096-9680</a>
+        <a href="tel:+917290969680" className="font-syne inline-block text-gray-800 transition-colors duration-300 text-2xl font-bold tracking-wider">+91-729-096-9680</a>
         <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
       </div>
   </div>
@@ -308,13 +315,13 @@ Read below to know why you need to audit the website.
 
     <div className="flex items-center gap-2">
       <div className="w-fit relative group cursor-pointer">
-        <a href="mailto:info@digitalmarketingtap.com" className="inline-block text-base text-gray-800 transition-colors duration-300">info@digitalmarketingtap.com</a>
+        <a href="mailto:info@digitalmarketingtap.com" className="font-syne inline-block text-base text-gray-800 transition-colors duration-300">info@digitalmarketingtap.com</a>
         <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
       </div>
     </div>
 
     <div className="w-fit relative group cursor-pointer">
-      <a href='https://www.google.com/maps/place/Digital+Market+Tap/@28.6193963,77.0314992,17z/data=!3m1!4b1!4m6!3m5!1s0x390d0537617778cd:0x766c783a3d1b2311!8m2!3d28.6193963!4d77.0340741!16s%2Fg%2F11mgq84k_y?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D' className="inline-block text-base text-gray-800 transition-colors border-b-2 border-[#FFCF92] duration-300">View On Map</a>
+      <a href='https://www.google.com/maps/place/Digital+Market+Tap/@28.6193963,77.0314992,17z/data=!3m1!4b1!4m6!3m5!1s0x390d0537617778cd:0x766c783a3d1b2311!8m2!3d28.6193963!4d77.0340741!16s%2Fg%2F11mgq84k_y?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D' className="font-syne inline-block text-base text-gray-800 transition-colors border-b-2 border-[#FFCF92] duration-300">View On Map</a>
       <span className="block absolute left-0 -bottom-[1px] h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
     </div>
   </div>
@@ -359,7 +366,7 @@ Read below to know why you need to audit the website.
       <li key={index} className="w-fit relative group">
         <Link
           to={path}
-          className="inline-block text-white group-hover:text-white transition-colors duration-300"
+          className="font-syne inline-block text-white group-hover:text-white transition-colors duration-300"
         >
           {text}
           <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
@@ -372,25 +379,25 @@ Read below to know why you need to audit the website.
           <div className='mt-0 md:mt-8'>
            <ul className="space-y-1 md:space-y-2 text-sm md:text-md">
   <li className="w-fit relative group">
-    <Link to="/social-media-marketing" className="inline-block text-white group-hover:text-white transition-colors duration-300">
+    <Link to="/social-media-marketing" className="font-syne inline-block text-white group-hover:text-white transition-colors duration-300">
       Social Media Marketing
       <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
     </Link>
   </li>
   <li className="w-fit relative group">
-    <Link to="/graphic-design" className="inline-block text-white group-hover:text-white transition-colors duration-300">
+    <Link to="/graphic-design" className="font-syne inline-block text-white group-hover:text-white transition-colors duration-300">
       Graphic Design
       <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
     </Link>
   </li>
   <li className="w-fit relative group">
-    <Link to="/online-reputation-management" className="inline-block text-white group-hover:text-white transition-colors duration-300">
+    <Link to="/online-reputation-management" className="font-syne inline-block text-white group-hover:text-white transition-colors duration-300">
       Online Reputation Management
       <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
     </Link>
   </li>
   <li className="w-fit relative group">
-    <Link to="/website-design" className="inline-block text-white group-hover:text-white transition-colors duration-300">
+    <Link to="/website-design" className="font-syne inline-block text-white group-hover:text-white transition-colors duration-300">
       Website Design
       <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
     </Link>
@@ -401,7 +408,7 @@ Read below to know why you need to audit the website.
             <h3 className="text-lg md:text-sm font-bold mb-2 md:mb-4">WHO WE ARE</h3>
             <ul className="space-y-1 md:space-y-2 text-sm md:text-md">
                <li className="w-fit relative group">
-                <Link to="/awards" className="inline-block text-white group-hover:text-white transition-colors duration-300">Awards
+                <Link to="/awards" className="font-syne inline-block text-white group-hover:text-white transition-colors duration-300">Awards
                      <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span></Link></li>
                   <li className="w-fit relative group"><Link to="/contact-us" className="inline-block text-white group-hover:text-white transition-colors duration-300">Contact
                      <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span></Link></li>
@@ -412,7 +419,7 @@ Read below to know why you need to audit the website.
             <ul className="space-y-1 md:space-y-2 text-sm md:text-md">
               {['About Us', 'Blog'].map((text, index) => (
                 <li key={index} className="w-fit relative group">
-                  <a href="#" className="inline-block text-white group-hover:text-white transition-colors duration-300">
+                  <a href="#" className="font-syne inline-block text-white group-hover:text-white transition-colors duration-300">
                     {text}
                     <span className="block absolute left-0 -bottom-1 h-[1px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
                   </a>
@@ -427,19 +434,24 @@ Read below to know why you need to audit the website.
       <div className="flex flex-col md:flex-row items-center text-sm text-black gap-2 md:gap-8 w-full md:w-auto">
     <p className="text-center md:text-left">© 2025 Digital Market Tap</p>
 
-    <div className="flex gap-4">
+    <div className="flex gap-4 font-syne">
       <a href="/terms-and-conditions" className="hover:text-[#6754E9]">Terms & Conditions</a>
       <a href="privacy-policy" className="hover:text-[#6754E9]">Privacy Policy</a>
     </div>
   </div>
 
-  <div className="flex items-center gap-4">
-    {[FaLinkedinIn, FaTwitter, FaInstagram, FaFacebookF, FaYoutube].map((Icon, index) => (
-      <div key={index} className="bg-[#f8f9fa] p-2 rounded-full transition-transform duration-200">
-        <a href="#"><Icon className="text-black w-5 h-5 md:w-6 md:h-6 hover:text-[#f89e1b]" /></a>
-      </div>
-    ))}
-  </div>
+    <div className="flex items-center gap-4">
+      {socialLinks.map(({ Icon, url }, index) => (
+        <div
+          key={index}
+          className="bg-[#f8f9fa] p-2 rounded-full transition-transform duration-200 hover:scale-105"
+        >
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            <Icon className="text-black w-5 h-5 md:w-6 md:h-6 hover:text-[#f89e1b]" />
+          </a>
+        </div>
+      ))}
+    </div>
 </div>
     </section>
   );

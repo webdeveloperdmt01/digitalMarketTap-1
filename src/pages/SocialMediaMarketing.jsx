@@ -127,7 +127,7 @@ const SocialMediaMarketing = () => {
   };
 
   return (
-  <section aria-labelledby="seo-heading" className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-16 md:pb-18 lg:pb-22 px-5 md:px-16 lg:px-30">
+  <section aria-labelledby="seo-heading" className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-16 md:pb-18 lg:pb-22 px-5 md:px-16 lg:px-15 xl:px-30">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
         <div className="space-y-6">
           <h2
@@ -146,7 +146,7 @@ const SocialMediaMarketing = () => {
           <div className="relative">
             <form
               onSubmit={(e) => e.preventDefault()}
-              className="relative bg-white rounded-[30px] shadow-[10px_10px_0_0_rgba(0,0,0,0.7)] px-5 py-4 flex flex-col md:flex-row items-center gap-4"
+              className="font-syne relative bg-white rounded-[30px] shadow-[10px_10px_0_0_rgba(0,0,0,0.7)] px-5 py-4 flex flex-col md:flex-row items-center gap-4"
             >
               <div className="absolute top-0 left-10 h-1 w-18 bg-yellow-400 rounded-md" />
               <div className="w-full md:w-1/2 border border-[#E3E3E8] rounded-[15px] p-3">
@@ -204,7 +204,7 @@ const SocialMediaMarketing = () => {
           Our relationship with you relies on getting results, and paid search marketing results are measured in ROI. Each and every day, our primary focus is building ROI by interpreting real data and creating campaigns that convert. This includes:
           </p>
         </div>
-        <div className="border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
+        <div className="font-syne border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
         {["Keyword and competitor research","SKAGS (single keyword ad groups)","Negative keyword pruning","Ad copy optimization","Landing page creation & optimization","Search engine retargeting", ].map((item, idx) => (
         <div key={idx} className="flex items-start gap-3">
         <FaCheckCircle className="text-[#f89e1b] text-2xl mt-0.5" />
@@ -268,7 +268,7 @@ const SocialMediaMarketing = () => {
           <div
             key={index}
             onClick={() => setActiveTabIndex(index)}
-            className={`!w-[160%] relative cursor-pointer transition-all duration-300 pl-6 pr-16 py-5 text-left text-lg md:text-xl font-medium leading-tight -ml-8
+            className={`font-syne !w-[160%] relative cursor-pointer transition-all duration-300 pl-6 pr-16 py-5 text-left text-lg md:text-xl font-medium leading-tight -ml-8
             ${isActive ? "bg-[#f89e1b] text-white rounded-full z-10" : "text-white hover:text-black hover:bg-white rounded-full z-0"}`}
           >
             {tab.title}
@@ -286,15 +286,15 @@ const SocialMediaMarketing = () => {
         <h2 className="text-3xl font-bold mb-6 leading-snug text-left text-black">
           {tabs[activeTabIndex]?.content.heading}
         </h2>
-        <p className="text-gray-600 text-base mb-8 leading-relaxed">
+        <h6 className="text-gray-600 text-base mb-8 leading-relaxed font-light">
           {tabs[activeTabIndex]?.content.about}
-        </p>
+        </h6>
         <div className="text-left">
             <NavLink
   to="/free-audit"
   className="hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
 >
-  <span className="relative z-10 flex items-center gap-2">
+  <span className="font-syne relative z-10 flex items-center gap-2">
     Get A Free Audit <FaArrowRight />
     <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-orange-400 group-hover:w-full transition-all duration-300"></span>
   </span>
@@ -353,7 +353,7 @@ const SocialMediaMarketing = () => {
         <div>
              <div className="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-4">{service.icon}</div>
             <h3 className="text-2xl font-semibold mb-4 text-left">{service.title}</h3>
-            <p className="text-md text-[#57595b] text-left">{service.description}</p>
+            <h6 className="text-md text-[#57595b] text-left font-light">{service.description}</h6>
         </div>
        </div>))}
     </div>
@@ -382,9 +382,9 @@ const SocialMediaMarketing = () => {
             <FaStar key={i} className="text-yellow-500 text-lg" />
              ))}
   </div>
-  <span className="font-semibold text-sm mt-1">5000+ Client reviews</span>
+  <span className="font-semibold text-sm mt-1 font-syne">5000+ Client reviews</span>
 </div>
-                     <a href="/about" className="inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase">View all reviews</a>
+                     <a href="/about" className="font-syne inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase">View all reviews</a>
         </div>
       </div>
     </div>
@@ -402,7 +402,7 @@ const SocialMediaMarketing = () => {
                 <FaChartLine className="text-orange-500 text-2xl" />
               </div>
             </div>
-            <p className="text-[#5c5f61]">of growth rate in brand awareness for businesses that start doing Search Ads</p>
+            <h6 className="text-[#5c5f61] font-light">of growth rate in brand awareness for businesses that start doing Search Ads</h6>
           </div>
           <div className="text-left px-8 py-10 border border-[#E2E2E2] rounded-[40px] bg-white">
             <div className="flex items-center gap-4 mb-6 justify-between">
@@ -411,7 +411,7 @@ const SocialMediaMarketing = () => {
                 <FaChartLine className="text-orange-500 text-2xl" />
               </div>
             </div>
-            <p className="text-[#5c5f61]">of total clicks on search results page are Search Ads, serving as proof that a dependence on SEO alone limits your potential for more traffic and leads.</p>
+            <h6 className="text-[#5c5f61] font-light">of total clicks on search results page are Search Ads, serving as proof that a dependence on SEO alone limits your potential for more traffic and leads.</h6>
           </div>
           <div className="text-left px-8 py-10 border border-[#E2E2E2] rounded-[40px] bg-white">
             <div className="flex items-center gap-4 mb-6 justify-between">
@@ -420,7 +420,7 @@ const SocialMediaMarketing = () => {
                 <FaChartLine className="text-orange-500 text-2xl" />
               </div>
             </div>
-            <p className="text-[#5c5f61]">of clicks on Search Ads are more likely to buy, making for better leads.</p>
+            <h6 className="text-[#5c5f61] font-light">of clicks on Search Ads are more likely to buy, making for better leads.</h6>
           </div>
         </div>
       </div>
@@ -431,7 +431,7 @@ const SocialMediaMarketing = () => {
           <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about Social Media<br />Marketing</h1>
           <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">Looking to learn more about social media marketing for your business? Browse our FAQs</p>
   </div>
-      <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5">
+      <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4">
   {faqs.map((faq, index) => (
     <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
       <button

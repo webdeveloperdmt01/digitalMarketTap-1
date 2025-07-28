@@ -98,10 +98,10 @@ function ContactUs() {
               <br />
               <a
                 href="tel:+917290969680"
-                className="relative inline-block cursor-pointer text-black no-underline"
+                className="font-syne relative inline-block cursor-pointer text-black no-underline"
               >
                 +91-7290969680
-                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
               </a>
             </p>
             <p className="text-black text-xl group">
@@ -111,10 +111,10 @@ function ContactUs() {
               <br />
               <a
                 href="mailto:info@digitalmarkettap.com"
-                className="relative inline-block cursor-pointer text-black no-underline"
+                className="font-syne relative inline-block cursor-pointer text-black no-underline"
               >
                 info@digitalmarkettap.com
-                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
               </a>
             </p>
           </div>
@@ -136,7 +136,7 @@ function ContactUs() {
           
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col items-center space-y-4 text-[#a4a4a4] px-4"
+              className="flex flex-col items-center space-y-4 text-[#a4a4a4] px-4 font-syne"
             >
               <input
                 type="text"
@@ -146,7 +146,7 @@ function ContactUs() {
                 onChange={handleChange}
                 className={`w-full px-3 py-2 md:px-4 md:py-3 border ${
                   errors.name ? "border-red-500" : "border-[#ababab]"
-                } hover:border-[#6754E9] rounded-[8px] outline-none`}
+                } hover:border-[#f89e1b] rounded-[8px] outline-none`}
               />
               {errors.name && (
                 <p className="text-red-500 text-sm -mt-2">{errors.name}</p>
@@ -160,7 +160,7 @@ function ContactUs() {
                 onChange={handleChange}
                 className={`w-full px-3 py-2 md:px-4 md:py-3 border ${
                   errors.email ? "border-red-500" : "border-[#ababab]"
-                } hover:border-[#6754E9] rounded-[8px] outline-none`}
+                } hover:border-[#f89e1b] rounded-[8px] outline-none`}
               />
               {errors.email && (
                 <p className="text-red-500 text-sm -mt-2">{errors.email}</p>
@@ -174,7 +174,7 @@ function ContactUs() {
                 onChange={handleChange}
                 className={`w-full px-3 py-2 md:px-4 md:py-3 border ${
                   errors.company ? "border-red-500" : "border-[#ababab]"
-                } hover:border-[#6754E9] rounded-[8px] outline-none`}
+                } hover:border-[#f89e1b] rounded-[8px] outline-none`}
               />
               {errors.company && (
                 <p className="text-red-500 text-sm -mt-2">{errors.company}</p>
@@ -188,7 +188,7 @@ function ContactUs() {
                 maxLength="10"
                 className={`w-full px-3 py-2 md:px-4 md:py-3 border ${
                   errors.phone ? "border-red-500" : "border-[#ababab]"
-                } hover:border-[#6754E9] rounded-[8px] outline-none`}
+                } hover:border-[#f89e1b] rounded-[8px] outline-none`}
                 inputMode="numeric"
               />
 
@@ -202,7 +202,7 @@ function ContactUs() {
                 onChange={handleChange}
                 className={`w-full px-3 py-2 md:px-4 md:py-3 border ${
                   errors.service ? "border-red-500" : "border-[#ababab]"
-                } hover:border-[#6754E9] rounded-[8px] outline-none`}
+                } hover:border-[#f89e1b] rounded-[8px] outline-none`}
               >
                 <option value="">Services We Provide</option>
                 <option value="Website Development">Website Development</option>
@@ -234,7 +234,7 @@ function ContactUs() {
                 onChange={handleChange}
                 className={`w-full px-4 py-3 border ${
                   errors.message ? "border-red-500" : "border-[#ababab]"
-                } hover:border-[#6754E9] rounded-[8px] outline-none resize-none h-28`}
+                } hover:border-[#f89e1b] rounded-[8px] outline-none resize-none h-28`}
               ></textarea>
               {errors.message && (
                 <p className="text-red-500 text-sm -mt-2">{errors.message}</p>
@@ -242,7 +242,7 @@ function ContactUs() {
 
               <button
                 type="submit"
-                className="relative w-full bg-black text-white font-semibold py-3 rounded-xl hover:bg-[#6754E9] transition duration-300 group"
+                className="relative w-full bg-black text-white font-semibold py-3 rounded-xl hover:bg-[#f89e1b] transition duration-300 group"
               >
                 <span className="relative inline-block">
                   Get In Touch →
@@ -288,10 +288,10 @@ function ContactUs() {
             <br />
             <a
               href="tel:+917290969680"
-              className="relative inline-block cursor-pointer text-black no-underline"
+              className="font-syne relative inline-block cursor-pointer text-black no-underline"
             >
               +91-7290969680
-              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
             </a>
           </p>
 
@@ -303,7 +303,7 @@ function ContactUs() {
           >
             <span className="relative inline-block border-b-2 border-amber-400">
               View On Map
-              <span className="absolute left-0 -bottom-[2px] h-[2px] w-0 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-[2px] h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
             </span>
           </a>
         </div>

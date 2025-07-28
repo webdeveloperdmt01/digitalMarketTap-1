@@ -104,7 +104,7 @@ const GraphicDesign = () => {
         </p>
         <NavLink
           to="/free-audit"
-          className="group bg-black text-white hover:text-black px-6 md:px-12 py-2 md:py-4 rounded-[10px] text-lg font-semibold border border-black hover:bg-transparent transition duration-300 relative overflow-hidden"
+          className="font-syne group bg-black text-white hover:text-black px-6 md:px-12 py-2 md:py-4 rounded-[10px] text-lg font-semibold border border-black hover:bg-transparent transition duration-300 relative overflow-hidden"
         >
           <span className="relative z-10">
             GET STARTED
@@ -277,7 +277,7 @@ const GraphicDesign = () => {
             </h6>
             <NavLink
               to="/about-us"
-              className="text-md border-b-2 border-[#f89e1b] font-semibold group relative inline-flex items-center gap-2  text-black transition duration-300"
+              className="font-syne text-md border-b-2 border-[#f89e1b] font-semibold group relative inline-flex items-center gap-2  text-black transition duration-300"
             >
               LEARN MORE <FaArrowRight />
               <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-[calc(100%-0rem)]"></span>
@@ -332,13 +332,13 @@ const GraphicDesign = () => {
                   and touchpoints
                 </h6>
                 <div className="w-full flex justify-start">
-                  <NavLink
+                  {/* <NavLink
                     to="/about-us"
                     className="text-md font-semibold group relative inline-flex items-center gap-2 text-black transition duration-300 hover:text-white"
                   >
                     LEARN MORE <FaArrowRight />
                     <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
-                  </NavLink>
+                  </NavLink> */}
                 </div>
               </div>
               <img
@@ -363,7 +363,7 @@ const GraphicDesign = () => {
                   visuals that immediately engage your audience. That's why we
                   are the best graphic designing agency in Delhi, India.
                 </h6>
-                <div className="w-full flex justify-start">
+                {/* <div className="w-full flex justify-start">
                   <NavLink
                     to="/about-us"
                     className="text-md font-semibold group relative inline-flex items-center gap-2 text-black transition duration-300 hover:text-white"
@@ -371,7 +371,7 @@ const GraphicDesign = () => {
                     LEARN MORE <FaArrowRight />
                     <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
                   </NavLink>
-                </div>
+                </div> */}
               </div>
               <img src={GraphicDesign9} alt="Color Theory" className="mt-4" />
             </div>
@@ -388,7 +388,7 @@ const GraphicDesign = () => {
                   your website, social media, packaging, and marketing
                   materials.
                 </h6>
-                <div className="w-full flex justify-start">
+                {/* <div className="w-full flex justify-start">
                   <NavLink
                     to="/about-us"
                     className="text-md font-semibold group relative inline-flex items-center gap-2 text-black transition duration-300 hover:text-white"
@@ -396,7 +396,7 @@ const GraphicDesign = () => {
                     LEARN MORE <FaArrowRight />
                     <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-full"></span>
                   </NavLink>
-                </div>
+                </div> */}
               </div>
               <img
                 src={GraphicDesign10}
@@ -467,8 +467,8 @@ const GraphicDesign = () => {
               profitably based on high-performing strategies.
             </p>
             <NavLink
-              to="/about-us"
-              className="text-md border-b-2 border-[#f89e1b] font-semibold group relative inline-flex items-center gap-2  text-black transition duration-300"
+              to="/contact-us"
+              className="font-syne text-md border-b-2 border-[#f89e1b] font-semibold group relative inline-flex items-center gap-2  text-black transition duration-300"
             >
               LEARN MORE <FaArrowRight />
               <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-[calc(100%-0rem)]"></span>
@@ -499,7 +499,7 @@ const GraphicDesign = () => {
         </p>
         <NavLink
           to="/free-audit"
-          className="group bg-black text-white hover:text-black px-6 md:px-12 py-2 md:py-4 rounded-[10px] text-lg font-semibold border border-black hover:bg-transparent transition duration-300 relative overflow-hidden"
+          className="font-syne group bg-black text-white hover:text-black px-6 md:px-12 py-2 md:py-4 rounded-[10px] text-lg font-semibold border border-black hover:bg-transparent transition duration-300 relative overflow-hidden"
         >
           <span className="relative z-10">
             GET STARTED

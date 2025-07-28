@@ -74,7 +74,7 @@ export default function SuccessStories() {
         <h2 className="text-left text-2xl md:text-[38px] lg:text-[30px] xl:text-[48px] font-bold leading-[1.1] text-black mt-6 md:mt-16 tracking-tight">
           we create strategies that drive businesses forward and fuel lasting growth.
         </h2>
-        <a href="/paid-search-tag"><div className="text-left mt-10"><button className="group inline-block text-sm font-semibold relative border-b-3 border-[#FFCF92]">VIEW ALL<span className="block absolute left-0 -bottom-0.5 h-0.5 w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span></button></div></a>
+        <a href="/paid-search-tag"><div className="text-left mt-10"><button className="font-syne group inline-block text-sm font-semibold relative border-b-3 border-[#FFCF92]">VIEW ALL<span className="block absolute left-0 -bottom-0.5 h-0.5 w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span></button></div></a>
       </div>
 
       <div className="w-full lg:w-2/3">
@@ -113,7 +113,7 @@ export default function SuccessStories() {
                       <span
                         key={i}
                         onClick={() => tagRoutes[tag] && navigate(tagRoutes[tag])}
-                        className="bg-white text-black text-sm px-4 py-1 rounded-full font-medium transition-colors duration-200 hover:text-[#6754E9] cursor-pointer"
+                        className="font-syne bg-white text-black text-sm px-4 py-1 rounded-full font-medium transition-colors duration-200 hover:text-[#6754E9] cursor-pointer"
                       >
                         {tag}
                       </span>

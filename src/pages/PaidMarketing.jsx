@@ -55,10 +55,10 @@ const PaidMarketing = () => {
   return (
     <>
       <main className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF]">
-        <div className="pb-4 pl-5 md:pl-10 lg:pl-30">
+        <div className="pb-4 pl-5 md:pl-10 lg:pl-15 xl:pl-30">
           <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
             <div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold pt-20 md:pt-25 lg:pt-48 pr-5 md:pr-0 lg:pr-0">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold pt-16 md:pt-25 lg:pt-48 pr-5 md:pr-0 lg:pr-0">
                 Drive Instant Traffic with Strategic Paid Ads
               </h1>
               <h6 className="font-light text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
@@ -120,7 +120,7 @@ const PaidMarketing = () => {
           </div>
         </div>
 
-        <div className="py-16 px-4 bg-white text-center">
+        <div className="py-16 px-5 md:px-0 lg:px-15 bg-white text-center">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-18 md:mb-16 lg:mb-24">
             Here are our Major Paid <br /> Marketing Services
           </h2>
@@ -191,7 +191,7 @@ const PaidMarketing = () => {
           </div>
         </div>
 
-        <section className="px-5 md:px-10 lg:px-30 pt-5 pb-10">
+        <section className="px-5 md:px-10 lg:px-15 xl-px-30 pt-5 pb-10">
           <div className="max-w-7xl mx-auto rounded-[40px] overflow-hidden mb-8 md:mb-12">
             <img
               src={teamImage}
@@ -212,7 +212,7 @@ const PaidMarketing = () => {
           </div>
         </section>
 
-        <div className="pb-4 px-5 md:px-10 lg:px-30">
+        <div className="pb-4 px-5 md:px-10 lg:px-15 xl:px-30">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
             <div>
               <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold pt-5 md:pt-8 lg:pt-48 pr-5 md:pr-0 lg:pr-0">
@@ -238,7 +238,7 @@ const PaidMarketing = () => {
             </div>
           </div>
         </div>
-        <div className="pb-4 px-5 md:px-10 lg:px-30">
+        <div className="pb-4 px-5 md:px-10 lg:px-15 xl:px-30">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
             <div className="flex lg:justify-end">
               <img
@@ -265,7 +265,7 @@ const PaidMarketing = () => {
             </div>
           </div>
         </div>
-        <div className="pb-14 px-5 md:px-10 lg:px-30">
+        <div className="pb-14 px-5 md:px-10 lg:px-15 xl:px-30">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
             <div>
               <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold pt-5 md:pt-8 lg:pt-48 pr-5 md:pr-0 lg:pr-0">

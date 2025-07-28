@@ -74,7 +74,7 @@ const Testimonials = () => {
                 <div key={i} className="flex flex-col items-center">
                   <div className="relative w-42 h-42 rounded-full border border-[#D7DEE6] flex items-center justify-center">
                     <div className="relative w-32 h-32 flex items-center justify-center rounded-full border-2 border-[#f89e1b]">
-                      <div className="text-3xl font-bold">
+                      <div className="text-3xl font-bold font-syne">
                         <CountUp end={stat.value} duration={2.5} />
                         {stat.suffix}
                       </div>
@@ -90,7 +90,7 @@ const Testimonials = () => {
             </div>
 
             <div className="bg-orange-200 text-center px-4 py-10 md:px-6 md:py-12 rounded-[30px] md:rounded-[40px] lg:w-1/3 w-full">
-              <h3 className="text-5xl font-bold mb-2">
+              <h3 className="text-5xl font-bold mb-2 font-syne">
                 <CountUp end={92000} duration={3} separator="," />+
               </h3>
               <p className="text-black font-semibold mb-6"> 
@@ -98,7 +98,7 @@ const Testimonials = () => {
               </p>
               <a
                 href="/contact-us"
-                className="text-sm group relative inline-flex items-center gap-2 rounded-full bg-black px-6 py-2 text-white transition duration-300 hover:bg-[#f89e1b]"
+                className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-full bg-black px-6 py-2 text-white transition duration-300 hover:bg-[#f89e1b]"
               >
                 CONTACT US <FaArrowRight />
                 <span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span>
@@ -159,7 +159,7 @@ const Testimonials = () => {
                   href="https://g.co/kgs/VtCEEcM"
                   className="inline-flex items-center text-sm font-medium text-black hover:text-[#f89e1b] group transition-all duration-300"
                 >
-                  <span className="relative">
+                  <span className="font-syne font-semibold relative">
                     View all reviews
                     <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
                   </span>

@@ -150,8 +150,8 @@ h1,h2,h3,h4,h5,p {
 
 @media (min-width: 1024px) {
   .infoTabsPadding {
-    padding-left: 44px;
-    padding-right: 44px;
+    padding-left: 34px;
+    padding-right: 34.2px;
     padding-top: 20px;
     padding-bottom: 14px;
   }

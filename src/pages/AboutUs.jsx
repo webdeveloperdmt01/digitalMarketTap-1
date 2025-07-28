@@ -257,7 +257,7 @@ const AboutUs = () => {
         <div className="w-full md:w-1/3 flex justify-center md:justify-end">
           <a
             href="/contact-us"
-            className="inline-flex items-center text-sm font-medium rounded-[15px] bg-black px-6 md:px-8 py-3 text-white hover:bg-[#F89E1B] group transition-all duration-300"
+            className="font-syne inline-flex items-center text-sm font-medium rounded-[15px] bg-black px-6 md:px-8 py-3 text-white hover:bg-[#F89E1B] group transition-all duration-300"
           >
             <span className="relative">
               GET PROPOSAL
@@ -267,7 +267,7 @@ const AboutUs = () => {
           </a>
         </div>
       </div>
-      <section className="px-5">
+      <section className="px-5 font-syne">
         <div className="bg-[#f7f7fa] rounded-[40px] overflow-hidden flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto mt-10 pt-8 md:pt-30 px-5 md:px-10 lg:px-10 pb-5 md:pb-15 relative gap-12 mb-12">
           <div className="lg:w-1/2 w-full relative pt-5">
             <div className="flex items-center mb-4">
@@ -335,7 +335,7 @@ const AboutUs = () => {
                   href="https://g.co/kgs/VtCEEcM"
                   className="inline-flex items-center text-sm font-medium text-black hover:text-orange-500 group transition-all duration-300"
                 >
-                  <span className="relative">
+                  <span className="relative font-syne">
                     View all reviews
                     <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
                   </span>

@@ -123,7 +123,7 @@ const Header = () => {
   className="hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
 >
   <span className="relative z-10 flex items-center gap-2">
-    <span className="font-mono relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
+    <span className="font-syne relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
       FREE AUDIT
     </span>
     <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />

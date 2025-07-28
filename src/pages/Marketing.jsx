@@ -13,7 +13,7 @@ import Petmania from "../assets/petmania.png";
 import Jolie from "../assets/jolie.png";
 import Scuola from "../assets/Scuola_Logo.png";
 import Technologia from "../assets/tecnologia.png";
-import RocketBlue from "../assets/rocket.png";
+import RocketBlue from "../assets/blueRocket.png";
 import GooglePartner1 from "../assets/google-partner-1.png";
 
 const faqs = [
@@ -178,7 +178,7 @@ const Marketing = () => {
 
   return (
     <>
-      <main className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-30 relative">
+      <main className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30 relative">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 py-6 md:py-8 lg:py-14 items-center">
           <div>
             <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-8">
@@ -230,7 +230,7 @@ const Marketing = () => {
                   <div
                     key={index}
                     onClick={() => setActiveIndex(index)}
-                    className={`!w-[160%] relative cursor-pointer transition-all duration-300 pl-12 pr-16 py-4 text-left text-lg md:text-xl font-medium leading-tight -ml-8
+                    className={`font-syne !w-[160%] relative cursor-pointer transition-all duration-300 pl-12 pr-16 py-4 text-left text-lg md:text-xl font-medium leading-tight -ml-8
                     ${
                       isActive
                         ? "bg-[#f89e1b] text-white rounded-full z-10"
@@ -247,7 +247,7 @@ const Marketing = () => {
                 );
               })}
             </div>
-            <div className="w-3/3 bg-[#f7f7fa] py-20 pl-36 pr-16 flex items-center justify-between gap-15 rounded-[60px]">
+            <div className="w-3/3 bg-[#f7f7fa] py-20 lg:pl-10 xl:pl-36 lg:pr-4 xl:pr-16 flex items-center justify-between gap-15 rounded-[60px] font-syne">
               <div className="flex-1">
                 <h2 className="text-xl font-semibold mb-6 leading-snug text-left">
                   {tabs[activeIndex]?.content.heading}
@@ -267,7 +267,7 @@ const Marketing = () => {
                   >
                     {" "}
                     LEARN MORE →
-                    <span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
+                    <span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </div>
               </div>
@@ -362,7 +362,7 @@ const Marketing = () => {
                 className="w-full h-[250px] md:h-[470px] object-cover rounded-[30px] md:rounded-[60px]"
               />
             </div>
-            <div className="pl-2 md:pl-8 lg:pl-20 content-center">
+            <div className="pl-2 md:pl-8 lg:pl-12 xl:pl-20 content-center">
               <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">
                 Digital Market Tap—Smart, Data-Driven Marketing That Delivers
                 Results
@@ -387,7 +387,7 @@ const Marketing = () => {
                 className="font-syne group inline-block text-sm font-semibold relative border-b-2 border-[#fbc371] uppercase mt-8"
               >
                 more about our company
-                <span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
+                <span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
               </a>
             </div>
           </div>
@@ -421,12 +421,12 @@ const Marketing = () => {
               ].map((stat, i) => (
                 <div key={i} className="flex flex-col items-center">
                   <div className="relative w-44 h-44 rounded-full border border-[#D7DEE6] flex items-center justify-center">
-                    <div className="relative w-32 h-32 flex items-center justify-center rounded-full border-2 border-orange-300">
+                    <div className="relative w-32 h-32 flex items-center justify-center rounded-full border-2 border-[#f89e1b]">
                       <div className="text-3xl font-bold">
                         {inView && <CountUp end={stat.value} duration={4} />}
                         {stat.suffix}
                       </div>
-                      <FaArrowUp className="absolute bottom-3 text-orange-500 text-xl" />
+                      <FaArrowUp className="absolute bottom-3 text-[#f89e1b] text-xl" />
                     </div>
                   </div>
                   <p className="mt-4 text-sm md:text-md font-medium text-black">
@@ -436,8 +436,8 @@ const Marketing = () => {
               ))}
             </div>
 
-            <div className="bg-orange-200 text-center px-10 py-10 md:px-20 md:py-15 rounded-[40px] lg:w-1/3 w-full">
-              <h3 className="text-4xl font-bold mb-2">
+            <div className="bg-orange-200 text-center px-10 py-10 md:px-18 md:py-15 rounded-[40px] lg:w-1/3 w-full">
+              <h3 className="text-4xl font-bold mb-2 font-syne">
                 {inView && <CountUp end={282000} duration={3} separator="," />}+
               </h3>
               <p className="text-black font-semibold mb-6">
@@ -445,7 +445,7 @@ const Marketing = () => {
               </p>
               <a
                 href="/contact"
-                className="text-sm group relative inline-flex items-center gap-2 rounded-full bg-black px-6 py-2 text-white transition duration-300 hover:bg-orange-400"
+                className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-full bg-black px-6 py-2 text-white transition duration-300 hover:bg-orange-400"
               >
                 CONTACT US <FaArrowRight />
                 <span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span>
@@ -456,13 +456,15 @@ const Marketing = () => {
 
         <BrandStaticLine />
         {/* <img src={BorderBottom} alt="border-bottom-line" className="w-full absolute bottom-0 right-0 object-contain pt-22 px-5 md:px-10 lg:px-30"/> */}
+<div className="relative">
 
-        <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 relative overflow-hidden max-w-7xl mx-auto my-8 md:my-12 lg:my-24 text-center shadow-sm">
-          <img
-            src={RocketBlue}
-            alt="Custom"
-            className="hidden md:block w-14 md:w-18 absolute right-2 md:right-12 top-0 -rotate-20 origin-top z-10"
-          />
+
+        <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 overflow-hidden max-w-7xl mx-auto my-8 md:my-12 lg:my-24 text-center shadow-sm">
+           <img
+                      src={RocketBlue}
+                      alt="Custom"
+                      className="hidden md:block w-14 md:w-18 absolute right-2 md:right-36 lg:right-46 -top-6 -rotate-30 origin-top z-10"
+                    />
           <div className="flex justify-center items-center mb-4">
             <img
               src={GooglePartner1}
@@ -478,14 +480,14 @@ const Marketing = () => {
             to="/free-audit"
             className="group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#6754E9] transition duration-300 inline-block relative overflow-hidden"
           >
-            <span className="relative z-10 flex items-center justify-center gap-1">
+            <span className="font-syne relative z-10 flex items-center justify-center gap-1">
               GET A PROPOSAL <FaArrowRight />
               <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300" />
             </span>
           </NavLink>
         </section>
-
-        <div className="pb-16 md:pb-18 lg:pb-22 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-30">
+</div>
+        <div className="pb-16 md:pb-18 lg:pb-22 pt-8 md:pt-12 lg:pt-18 px-0 md:px-10 lg:px-30">
           <p className="text-center text-md font-semibold uppercase pb-4">
             FAQ
           </p>
@@ -497,7 +499,7 @@ const Marketing = () => {
             FAQs
           </p>
 
-          <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5">
+          <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4">
             {faqs.map((faq, index) => (
               <div
                 key={index}

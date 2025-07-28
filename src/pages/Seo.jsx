@@ -21,6 +21,7 @@ import Stats from "../assets/Stats.png";
 import Stats2 from "../assets/Stats2.png";
 import PeopleDiscuss from "../assets/peopleDiscussOnTopic.png";
 import womanTalking from "../assets/womanTaking-Seo.jpg";
+import InfoTabs from "../components/InfoTabs";
 
 const tabs = [
   {
@@ -181,9 +182,9 @@ const Seo = () => {
   return (
     <section
       aria-labelledby="seo-heading"
-      className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-16 md:pb-18 lg:pb-22 px-5 md:px-16 lg:px-30"
+      className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-16 md:pb-18 lg:pb-22"
     >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 px-5 md:px-10 lg:px-15 xl:px-30">
         <div className="space-y-6">
           <h2
             id="seo-heading"
@@ -202,7 +203,7 @@ const Seo = () => {
           <div className="relative">
             <form
               onSubmit={(e) => e.preventDefault()}
-              className="relative bg-white rounded-[30px] shadow-[10px_10px_0_0_rgba(0,0,0,0.7)] px-5 py-4 flex flex-col md:flex-row items-center gap-4"
+              className="font-syne relative bg-white rounded-[30px] shadow-[10px_10px_0_0_rgba(0,0,0,0.7)] px-5 py-4 flex flex-col md:flex-row items-center gap-4"
             >
               <div className="absolute top-0 left-10 h-1 w-18 bg-yellow-400 rounded-md" />
               <div className="w-full md:w-1/2 border border-[#E3E3E8] rounded-[15px] p-3">
@@ -251,7 +252,7 @@ const Seo = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto pt-52 md:pt-88 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-28 items-start">
+      <div className="max-w-7xl mx-auto pt-52 md:pt-88 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-28 items-start px-5 md:px-10 lg:px-15 xl:px-0">
         <div>
           <h3 className="text-2xl md:text-5xl font-semibold text-black leading-tight mb-2 md:mb-6">
             How Search Engine Optimization works
@@ -265,7 +266,7 @@ const Seo = () => {
             attractiveness to search engines such as Google.
           </h6>
         </div>
-        <div className="border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
+        <div className="border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4 font-syne">
           {[
             "Keyword research & and analysis.",
             "On-page SEO & off-page SEO.",
@@ -282,7 +283,7 @@ const Seo = () => {
         </div>
       </div>
 
-      <div className="pt-8 md:pt-14 lg:pt-24">
+      <div className="pt-8 md:pt-14 lg:pt-24 px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-center text-md font-semibold uppercase pb-4">
           Digital Market tap
         </p>
@@ -319,7 +320,7 @@ const Seo = () => {
         </div>
       </div>
 
-      <div className="pt-8 md:pt-14 lg:pt-24">
+      <div className="pt-8 md:pt-14 lg:pt-24 px-5 md:px-10 lg:px-15 xl:px-30">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
           <div>
             <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">
@@ -339,8 +340,7 @@ const Seo = () => {
         </div>
       </div>
 
-      {/* <div className="px-5 md:px-10 lg:px-30"> */}
-      <div className="max-w-7xl mx-auto pt-8 md:pt-12 px-0 md:px-4">
+      <div className="max-w-7xl mx-auto pt-8 md:pt-12 px-5 md:px-10 lg:px-15 xl:px-0">
         <div className="hidden lg:flex rounded-[60px] overflow-hidden bg-black">
           <div className="w-1/3 p-12 flex flex-col gap-6 text-white relative">
             {tabs.map((tab, index) => {
@@ -349,7 +349,7 @@ const Seo = () => {
                 <div
                   key={index}
                   onClick={() => setActiveTabIndex(index)}
-                  className={`!w-[160%] relative cursor-pointer transition-all duration-300 pl-10 pr-16 py-5 text-left text-lg md:text-xl font-medium leading-tight -ml-8
+                  className={`font-syne !w-[160%] relative cursor-pointer transition-all duration-300 pl-10 pr-16 py-5 text-left text-lg md:text-xl font-medium leading-tight -ml-8
             ${
               isActive
                 ? "bg-[#f89e1b] text-white rounded-full z-10"
@@ -379,7 +379,7 @@ const Seo = () => {
                   to={tabs[activeTabIndex]?.link}
                   className="mt-6 group text-black py-2 text-md font-semibold transition duration-300 relative overflow-hidden inline-flex items-center"
                 >
-                  <span className="relative z-10">
+                  <span className="font-syne relative z-10">
                     LEARN MORE
                     <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
                   </span>
@@ -434,9 +434,8 @@ const Seo = () => {
           })}
         </div>
       </div>
-      {/* </div> */}
 
-      <div className="py-8">
+      <div className="py-8 px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-center text-md font-semibold uppercase pb-3">
           Creating Success
         </p>
@@ -466,7 +465,7 @@ const Seo = () => {
         </div>
       </div>
 
-      <div className="pb-4 pt-2 md:pt-8 lg:pt-18">
+      <div className="pb-4 pt-2 md:pt-8 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-center text-md font-semibold uppercase pb-4">
           what you get
         </p>
@@ -480,7 +479,7 @@ const Seo = () => {
         </p>
       </div>
 
-      <div className="w-full pt-4 md:pt-14 lg:pt-24">
+      {/* <div className="w-full pt-4 md:pt-14 lg:pt-24">
         <div className="flex justify-start mb-4 md:mb-8">
           <div className="inline-flex rounded-full bg-orange-100 p-2 md:p-1">
             {Object.keys(contentData).map((tab) => (
@@ -537,9 +536,11 @@ const Seo = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <InfoTabs/>
 
-      <div className="w-full pt-8 md:pt-14 lg:pt-24">
+
+      <div className="w-full pt-8 md:pt-14 lg:pt-24 px-5 md:px-10 lg:px-15 xl:px-30">
         <div className="flex flex-col md:flex-row items-center bg-[#f7f7fa] rounded-[25px] md:rounded-[50px] overflow-hidden">
           <div className="md:w-1/2 px-6 md:px-12 lg:px-18 py-8">
             <FaQuoteLeft className="text-orange-400 text-3xl mb-4" />
@@ -584,7 +585,7 @@ const Seo = () => {
         </div>
       </div>
 
-      <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+      <div className="pb-4 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-center text-md font-semibold uppercase pb-4">
           The proof is in the numbers
         </p>
@@ -640,7 +641,7 @@ const Seo = () => {
         </div>
       </div>
 
-      <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+      <div className="pb-4 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
           FAQs about Search Engine <br /> Optimization
@@ -650,7 +651,7 @@ const Seo = () => {
           business? Browse our FAQs
         </p>
       </div>
-      <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
+      <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4  px-5 md:px-10 lg:px-15 xl:px-0">
         {faqs.map((faq, index) => (
           <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
             <button

@@ -144,7 +144,7 @@ const WebsiteDesign = () => {
 
               <NavLink
                 to="/"
-                className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9]"
+                className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#f89e1b]"
               >
                 GET QUOTE <FaArrowRight />
                 <span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span>
@@ -270,7 +270,7 @@ mobile optimized and seo friendly.
                 <div key={i} className="w-4 h-4 rounded-full bg-[#f89e1b] relative -top-2" />
               ))}
             </div>
-            <div className="flex justify-between mt-3 md:mt-5 max-w-8xl mx-auto text-sm font-semibold text-black">
+            <div className="flex justify-between mt-3 md:mt-5 max-w-8xl mx-auto text-sm font-semibold text-black font-syne">
               <span className='text-xs md:text-sm'>Our customers have raised <br /> over $350mn in Funding</span>
               <span className='text-xs md:text-sm'>In over 2 years, we've  <br />never lost a customer</span>
               <span className='text-xs md:text-sm'>We work with the world's <br /> fastest growing startups</span>

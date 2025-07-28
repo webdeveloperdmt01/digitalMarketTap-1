@@ -126,7 +126,7 @@ const SocialMediaOptimisation = () => {
   return (
     <section
       aria-labelledby="seo-heading"
-      className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-16 lg:px-30"
+      className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-10 lg:px-15 xl:px-30"
     >
       <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
         <div>
@@ -135,7 +135,7 @@ const SocialMediaOptimisation = () => {
           <p className="text-md text-black mt-5 mb-10 font-semibold">Struggling to find PPC experts who really understand your business and can actually drive long term results? Our world-class marketers would love to help your business thrive!</p>
           <NavLink
             to="/free-audit"
-            className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
+            className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
           >
             <span className="relative z-10">
               GET A FREE AUDIT →
@@ -161,10 +161,10 @@ const SocialMediaOptimisation = () => {
             Our relationship with you relies on getting results, and paid search marketing results are measured in ROI. Each and every day, our primary focus is building ROI by interpreting real data and creating campaigns that convert. This includes:
           </p>
         </div>
-        <div className="border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
+        <div className="border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4 font-syne">
           {["Keyword and competitor research","SKAGS (single keyword ad groups)","Negative keyword pruning","Ad copy optimization","Landing page creation & optimization","Search engine retargeting"].map((item, idx) => (
             <div key={idx} className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#6754E9] text-2xl mt-0.5" />
+              <FaCheckCircle className="text-[#f89e1b] text-2xl mt-0.5" />
               <span className="text-gray-700 text-base md:text-md">{item}</span>
             </div>
           ))}
@@ -227,7 +227,7 @@ const SocialMediaOptimisation = () => {
           <div
             key={index}
             onClick={() => setActiveTabIndex(index)}
-            className={`!w-[160%] relative cursor-pointer transition-all duration-300 pl-6 pr-16 py-5 text-left text-lg md:text-xl font-medium leading-tight -ml-8
+            className={`font-syne !w-[160%] relative cursor-pointer transition-all duration-300 pl-6 pr-16 py-5 text-left text-lg md:text-xl font-medium leading-tight -ml-8
             ${isActive ? "bg-[#f89e1b] text-white rounded-full z-10" : "text-white hover:text-black hover:bg-white rounded-full z-0"}`}
           >
             {tab.title}
@@ -245,13 +245,13 @@ const SocialMediaOptimisation = () => {
         <h2 className="text-3xl font-bold mb-6 leading-snug text-left text-black">
           {tabs[activeTabIndex]?.content.heading}
         </h2>
-        <p className="text-gray-600 text-base mb-8 leading-relaxed">
+        <h6 className="text-gray-600 text-base mb-8 leading-relaxed font-light">
           {tabs[activeTabIndex]?.content.about}
-        </p>
+        </h6>
         <div className="text-left">
             <NavLink
   to="/free-audit"
-  className="hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
+  className="font-syne hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
 >
   <span className="relative z-10 flex items-center gap-2">
     Get A Free Audit <FaArrowRight />
@@ -341,15 +341,15 @@ const SocialMediaOptimisation = () => {
                     <FaStar key={i} className="text-yellow-500 text-lg" />
                   ))}
                 </div>
-                <span className="font-semibold text-sm mt-1">5000+ Client reviews</span>
+                <span className="font-syne font-semibold text-sm mt-1">5000+ Client reviews</span>
               </div>
-              <a href="/about" className="inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase">View all reviews</a>
+              <a href="/about" className="font-syne inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase">View all reviews</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+      <div className="pb-4 pt-1- md:pt-12 lg:pt-18">
         <p className="text-center text-md font-semibold uppercase pb-4">The proof is in the numbers</p>
         <h1 className="text-3xl lg:text-5xl text-center font-semibold pb-4">Why paid search Ads can bring in <br /> the numbers </h1>
         <div className="w-full">
@@ -400,7 +400,7 @@ const SocialMediaOptimisation = () => {
           </h2>
           <NavLink
             to="/free-audit"
-            className="group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#6754E9] transition duration-300 inline-block relative overflow-hidden"
+            className="font-syne group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#6754E9] transition duration-300 inline-block relative overflow-hidden"
           >
           <span className="relative z-10 flex items-center justify-center gap-1">
             GET A PROPOSAL <FaArrowRight />
@@ -410,13 +410,13 @@ const SocialMediaOptimisation = () => {
       </section>
       </div>
 
-     <div className="pb-4 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
+     <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
                 <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about Social Media <br />Optimization</h1>
                 <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">Looking to learn more about Social Media Optimization for your business? Browse our FAQs</p>
         </div>
 
-        <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5">
+        <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
             <button

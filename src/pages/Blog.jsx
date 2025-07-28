@@ -105,7 +105,7 @@ const Blog = () => {
             </h1>
             <a
               href="#"
-              className="relative text-black dark:text-white font-semibold text-sm inline-block mt-0 md:mt-4 border-b-2 border-white
+              className="font-syne relative text-black dark:text-white font-semibold text-sm inline-block mt-0 md:mt-4 border-b-2 border-white
                          after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:w-0 after:bg-black dark:after:bg-white
                          after:transition-[width] after:duration-300 hover:after:w-full"
             >
@@ -150,7 +150,7 @@ const Blog = () => {
           <div className="mt-10">
             <button
               onClick={handleLoadMore}
-              className="bg-black dark:bg-white text-white dark:text-black font-semibold px-8 py-3 rounded-[20px] shadow-md hover:bg-[#8E81FA] dark:hover:bg-[#6754E9] transition"
+              className="font-syne bg-black dark:bg-white text-white dark:text-black font-semibold px-8 py-3 rounded-[20px] shadow-md hover:bg-[#8E81FA] dark:hover:bg-[#6754E9] transition"
               disabled={loading}
               aria-label="Load more blog posts"
             >

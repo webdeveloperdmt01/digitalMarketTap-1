@@ -173,19 +173,22 @@ function MarketingSolution() {
             <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">
               Marketing Solutions
             </h3>
-            <h2 className="text-4xl lg:text-6xl font-bold text-black mt-2 leading-tight">
-              Solutions for business growth
+            <h2 className="text-4xl lg:text-5xl font-bold text-black mt-2 leading-tight">
+             Marketing Solution in every Platform of Social Media
+
             </h2>
-            <p className="text-md text-black mt-5 mb-10 font-semibold">
-              Numerique Marketing is the intersection between creative and
-              performance. Our team delivers the perfect combination of creative
-              and paid media expertise to maximize results.
-            </p>
+            <h6 className="text-md text-black mt-5 mb-10 font-light">
+           In today's fast-moving digital world, where trends change so fast that
+what works today has no guarantee of working tomorrow. In this case,
+having an experienced and expert digital marketing agency is a must
+because marketing is not a luxury but a necessity.
+
+            </h6>
             <NavLink
               to="/free-audit"
               className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
             >
-              <span className="relative z-10">
+              <span className="font-syne relative z-10">
                 GET A FREE AUDIT →
                 <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300" />
               </span>
@@ -225,7 +228,7 @@ function MarketingSolution() {
               <div className="text-left mt-auto">
                 <a
                   href="#"
-                  className="group inline-block text-sm font-semibold relative border-b-2 border-[#6754e9]"
+                  className="font-syne group inline-block text-sm font-semibold relative border-b-2 border-[#6754e9]"
                 >
                   LEARN MORE
                   <span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
@@ -246,21 +249,31 @@ function MarketingSolution() {
             />
           </div>
           <div className="p-2 md:p-8 lg:p-14">
-            <h2 className="text-3xl lg:text-5xl font-bold text-black mt-2 leading-tight">
-              We are committed to your strategy{" "}
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mt-2 leading-tight">
+          Digital Market Tap—Smart, Data-Driven Marketing That Delivers
+Results
+{" "}
             </h2>
-            <p className="text-md text-black mt-5 mb-10 font-semibold">
-              Numerique Marketing is the intersection between creative and
-              performance. Our team delivers the perfect combination of creative
-              and paid media expertise to maximize results.
-            </p>
+            <h6 className="text-md text-black mt-5 mb-10 font-light">
+    We are the best digital marketing agency in Delhi because we
+understand marketing is no longer a nicety in this day and age of
+ever-evolving digital space, but a necessity. For companies looking to
+expand, compete, and remain relevant, a well-defined, holistic, and
+customer-centered marketing strategy is imperative. At Digital Market
+Tap, our innovative and specialized marketing solutions enable brands
+to reach, interact with, and convert their desired audience. Our goal is
+to understand our client's moral values and needs and then deliver
+results. Marketing is not just randomly posting and running random
+ads; it's a strategy to have your brand get more leads and visibility,
+and we understand all these things very well.
+            </h6>
             <NavLink
               to="/"
               className="group text-black text-sm font-semibold transition duration-300 relative overflow-hidden"
             >
               <a
                 href="#"
-                className="group inline-block text-xs font-semibold relative border-b-2 border-[#6754e9]"
+                className="font-syne group inline-block text-sm font-semibold relative border-b-2 border-[#6754e9]"
               >
                 MORE ABOUT OUR COMPANY
                 <span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
@@ -286,7 +299,7 @@ function MarketingSolution() {
                   <div key={i} className="flex flex-col items-center">
                     <div className="relative w-42 h-42 rounded-full border border-[#D7DEE6] flex items-center justify-center">
                       <div className="relative w-32 h-32 flex items-center justify-center rounded-full border-2 border-[#6754e9]">
-                        <div className="text-3xl font-bold">
+                        <div className="text-3xl font-bold font-syne">
                           {animatedValues[i]}
                           {suffix}
                         </div>
@@ -311,7 +324,7 @@ function MarketingSolution() {
               </p>
              <NavLink
   to="/contact-us"
-  className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-6 py-2 text-white transition duration-300 hover:bg-[#6754E9]"
+  className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-6 py-2 text-white transition duration-300 hover:bg-[#6754E9]"
 >
   CONTACT US <FaArrowRight />
   <span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span>
@@ -337,7 +350,7 @@ function MarketingSolution() {
   </h2>
   <NavLink
     to="/free-audit"
-    className="group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#6754E9] transition duration-300 inline-block relative overflow-hidden"
+    className="font-syne group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#6754E9] transition duration-300 inline-block relative overflow-hidden"
   >
     <span className="relative z-10 flex items-center justify-center gap-1">
       GET A PROPOSAL <FaArrowRight />

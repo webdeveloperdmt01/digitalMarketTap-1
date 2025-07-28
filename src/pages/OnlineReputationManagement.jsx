@@ -21,6 +21,7 @@ import womanTalking from "../assets/womanTaking-Seo.jpg";
 import { NavLink } from "react-router-dom";
 import RocketBlue from "../assets/blueRocket.png";
 import GooglePartner1 from "../assets/google-partner-1.png";
+import InfoTabs from "../components/InfoTabs";
 
 const faqs = [
   {
@@ -96,10 +97,10 @@ const OnlineReputationManagement = () => {
   return (
     <section
       aria-labelledby="seo-heading"
-      className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-10 lg:px-16 xl:px-30"
+      className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-6 md:pb-8"
     >
-      <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-20 xl:gap-30 items-center">
-        <div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-20 xl:gap-30 items-center px-6 md:px-10 lg:px-15 xl:px-30">
+        <div className="pb-8">
           <h3 className="uppercase text-xs md:text-sm font-bold tracking-widest text-black mb-8 md:mb-10 lg:mb-18">
             ONLINE REPUTATION MANAGEMENT
           </h3>
@@ -117,7 +118,7 @@ const OnlineReputationManagement = () => {
           </h6>
           <NavLink
             to="/free-audit"
-            className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
+            className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
           >
             <span className="relative z-10">
               GET A FREE AUDIT →
@@ -134,7 +135,7 @@ const OnlineReputationManagement = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto pt-12 md:pt-28 lg:pt-38 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-28 items-start">
+      <div className="pt-12 md:pt-28 lg:pt-38 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-28 items-start px-6 md:px-10 lg:px-15 xl:px-30">
         <div>
           <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-black leading-tight mb-2 md:mb-6">
             What is online reputation management?
@@ -147,7 +148,7 @@ const OnlineReputationManagement = () => {
             ORM keeps you in charge of your company story. This includes:
           </h6>
         </div>
-        <div className="border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
+        <div className="font-syne border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
           {[
             " Review Monitoring & Response",
             " Search Engine Result Optimization",
@@ -163,7 +164,7 @@ const OnlineReputationManagement = () => {
         </div>
       </div>
 
-      <div className="pt-8 md:pt-14 lg:pt-24">
+      <div className="pt-8 md:pt-14 lg:pt-24 px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-center text-md font-semibold uppercase pb-4">
           Digital Market tap
         </p>
@@ -197,7 +198,7 @@ const OnlineReputationManagement = () => {
         </div>
       </div>
 
-      <div className="pt-8 md:pt-14 lg:pt-24">
+      <div className="pt-8 md:pt-14 lg:pt-24 px-5 md:px-10 lg:px-15 xl:px-30">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 xl:gap-30 items-center">
           <div>
             <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">
@@ -222,7 +223,7 @@ social media
         </div>
       </div>
 
-      <div className="py-8">
+      <div className="py-8 px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-center text-md font-semibold uppercase pb-3">
           Creating Success
         </p>
@@ -242,16 +243,16 @@ social media
                 <h3 className="text-2xl font-semibold mb-4 text-left">
                   {service.title}
                 </h3>
-                <p className="text-md text-[#57595b] text-left">
+                <h6 className="text-md text-[#57595b] text-left font-light">
                   {service.description}
-                </p>
+                </h6>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="pb-4 pt-2 md:pt-8 lg:pt-18">
+      <div className="pb-4 pt-2 md:pt-8 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-center text-md font-semibold uppercase pb-4">
           what you get
         </p>
@@ -265,7 +266,7 @@ social media
         </p>
       </div>
 
-      <div className="w-full pt-4 md:pt-14 lg:pt-24">
+      {/* <div className="w-full pt-4 md:pt-14 lg:pt-24">
         <div className="flex justify-start mb-4 md:mb-8">
           <div className="inline-flex rounded-full bg-orange-100 p-2 md:p-1">
             {Object.keys(contentData).map((tab) => (
@@ -322,9 +323,10 @@ social media
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+       <InfoTabs/>
 
-      <div className="w-full pt-8 md:pt-14 lg:pt-24">
+      <div className="w-full pt-8 md:pt-14 lg:pt-24 px-5 md:px-10 lg:px-15 xl:px-30">
         <div className="flex flex-col md:flex-row items-center bg-[#f7f7fa] rounded-[25px] md:rounded-[50px] overflow-hidden">
           <div className="md:w-1/2 px-6 md:px-12 lg:px-18 py-8">
             <FaQuoteLeft className="text-orange-400 text-3xl mb-4" />
@@ -354,13 +356,13 @@ social media
                     <FaStar key={i} className="text-yellow-500 text-lg" />
                   ))}
                 </div>
-                <span className="font-semibold text-sm mt-1">
+                <span className="font-syne font-semibold text-sm mt-1">
                   5000+ Client reviews
                 </span>
               </div>
               <a
                 href="/about"
-                className="inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase"
+                className="font-syne inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase"
               >
                 View all reviews
               </a>
@@ -369,7 +371,7 @@ social media
         </div>
       </div>
 
-      <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+      <div className="pb-4 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-center text-md font-semibold upperca se pb-4">
           The proof is in the numbers
         </p>
@@ -424,12 +426,12 @@ the numbers?{" "}
         </div>
       </div>
 
-      <div className="p-5 md:p-0">
-        <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 relative overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
+      <div className="py-5 md:py-0 px-5 md:px-10 lg:px-15 xl:px-30 relative">
+        <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12  overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
           <img
             src={RocketBlue}
             alt="Custom"
-            className="hidden md:block w-14 md:w-18 absolute right-2 md:right-12 top-0 -rotate-20 origin-top z-10"
+            className="hidden md:block w-14 md:w-18 absolute right-2 md:right-36 lg:right-46 -top-6 -rotate-30 origin-top z-10"
           />
           <div className="flex justify-center items-center mb-4">
             <img
@@ -444,7 +446,7 @@ the numbers?{" "}
           </h2>
           <NavLink
             to="/free-audit"
-            className="group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#6754E9] transition duration-300 inline-block relative overflow-hidden"
+            className="font-syne group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 inline-block relative overflow-hidden"
           >
             <span className="relative z-10 flex items-center justify-center gap-1">
               GET A PROPOSAL <FaArrowRight />
@@ -464,7 +466,7 @@ the numbers?{" "}
           business? Browse our FAQs
         </h6>
 
-        <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
+        <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4 px-5 md:px-0">
   {faqs.map((faq, index) => (
     <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
       <button
