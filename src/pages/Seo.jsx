@@ -252,7 +252,7 @@ const Seo = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto pt-52 md:pt-88 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-28 items-start px-5 md:px-10 lg:px-15 xl:px-0">
+      <div className="pt-52 md:pt-88 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-28 items-start px-5 md:px-10 lg:px-15 xl:px-30">
         <div>
           <h3 className="text-2xl md:text-5xl font-semibold text-black leading-tight mb-2 md:mb-6">
             How Search Engine Optimization works
@@ -340,7 +340,7 @@ const Seo = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto pt-8 md:pt-12 px-5 md:px-10 lg:px-15 xl:px-0">
+      <div className="pt-8 md:pt-12 px-5 md:px-10 lg:px-15 xl:px-30">
         <div className="hidden lg:flex rounded-[60px] overflow-hidden bg-black">
           <div className="w-1/3 p-12 flex flex-col gap-6 text-white relative">
             {tabs.map((tab, index) => {
