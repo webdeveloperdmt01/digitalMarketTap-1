@@ -314,7 +314,7 @@ const MultilingualSeo = () => {
               className="w-full h-full object-cover"
             />
 
-            <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center bg-white bg-opacity-90 px-8 py-6 rounded-tl-[18px] md:rounded-tl-[40px] md:rounded-tl-[60px]">
+            <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center bg-white bg-opacity-90 px-8 py-6 rounded-tl-[18px] md:rounded-tl-[40px] lg:rounded-tl-[60px]">
               <div className="flex flex-col items-start">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
