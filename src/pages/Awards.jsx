@@ -100,7 +100,7 @@ function Awards() {
   }, []);
 
   return (
-    <main className='bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-15 lg:px-30'>
+    <main className='!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30'>
 
       <div className="pt-4 md:pt-8 lg:pt-12 pb-4">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
@@ -162,9 +162,9 @@ function Awards() {
         </div>
       </div>
 
-      <div className="bg-[#ebebf4] mb-20 px-2 md:px-4 lg:px-6 pt-6 md:pt-10 lg:pt-16 pb-10 md:pb-11 lg:pb-22 rounded-[55px] max-w-8xl mx-auto text-center">
+      <div className="font-syne bg-[#ebebf4] mb-20 px-2 md:px-4 lg:px-6 pt-6 md:pt-10 lg:pt-16 pb-10 md:pb-11 lg:pb-22 rounded-[35px] md:rounded-[55px] max-w-8xl mx-auto text-center">
         <div className="mb-6 relative">
-          <img src={Rocket1} alt="Rocket" className="absolute right-2 md:right-14 -rotate-24 top-[-70px] md:top-[-80px] lg:top-[-120px] w-12 md:w-18 lg:w-28" />
+          <img src={Rocket1} alt="Rocket" className="absolute right-2 md:right-14 -rotate-24 top-[-60px] md:top-[-80px] lg:top-[-120px] w-12 md:w-18 lg:w-28" />
           <img src={googlePartner} alt="Google Partner" className="mx-auto mb-4 w-40" />
           <h1 className="text-xl md:text-3xl lg:text-5xl font-bold text-gray-900 pb-5 md:pb-18 lg:pb-28">
             Start driving SEO results with <br />

@@ -64,7 +64,7 @@ const ProjectDetailPage = () => {
     );
 
   return (
-    <main className="bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-10 lg:px-30 relative">
+    <main className="bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30 relative">
       <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center pt-8 md:pt-16 pb-6 md:pb-10">
         <div>
           <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-4 md:mb-6 lg:mb-8">
@@ -176,7 +176,7 @@ const ProjectDetailPage = () => {
             marketing team is small, but with Numerique, we can accomplish so much more.”
           </h3>
         </div>
-        <div className="border-l-1 h-full border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
+        <div className="font-syne border-l-1 h-full border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
           <h2 className="text-xl md:text-3xl font-semibold text-black leading-tight mb-2 md:mb-8">
             For Zara, we put together a robust digital strategy that includes:
           </h2>
@@ -187,14 +187,14 @@ const ProjectDetailPage = () => {
             "Web design",
           ].map((item, idx) => (
             <div key={idx} className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#6754e9] text-2xl mt-0.5" />
+              <FaCheckCircle className="text-[#f89e1b]  text-2xl mt-0.5" />
               <span className="text-gray-700 text-sm md:text-md">{item}</span>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="relative flex flex-col lg:flex-row items-center justify-between pt-10 pb-16 md:pb-20 lg:pb-30 gap-8 md:gap-0 text-center">
+      <div className="font-syne relative flex flex-col lg:flex-row items-center justify-between pt-10 pb-16 md:pb-20 lg:pb-30 gap-8 md:gap-0 text-center">
         {[
           { value: "+40 %", label: "Ecommerce growth" },
           { value: "236 %", label: "Increase in organic sessions" },
@@ -227,7 +227,7 @@ const ProjectDetailPage = () => {
         <h2 className="text-xl md:text-4xl font-semibold text-gray-800 mb-2">Pricing Plans</h2>
         <p className="text-md text-gray-500 mb-8">Choose the perfect plan for your needs</p>
 
-        <div className="bg-[#ededf0] rounded-lg px-6 py-4 shadow-md mb-6">
+        <div className="font-syne bg-[#ededf0] rounded-lg px-6 py-4 shadow-md mb-6">
           <div className="flex justify-between text-sm font-medium text-gray-600 mb-1">
             <span>Basic</span>
             <span>Premium</span>
@@ -247,12 +247,12 @@ const ProjectDetailPage = () => {
           <div className="text-right text-xs text-gray-500 mt-1">{price}</div>
         </div>
 
-        <div className="text-5xl font-bold text-[#f89e1b] mb-6">
+        <div className="font-syne text-5xl font-bold text-[#f89e1b] mb-6">
           ₹{Number(price).toFixed(2)}{" "}
           <span className="text-gray-500 text-2xl font-medium">/month</span>
         </div>
 
-        <ul className="text-left mb-6 space-y-2 px-2 md:px-0">
+        <ul className="font-syne text-left mb-6 space-y-2 px-2 md:px-0">
           {[
             { label: "Basic Feature", included: price >= 1 },
             { label: "Advanced Feature", included: price >= 35 },
@@ -271,7 +271,7 @@ const ProjectDetailPage = () => {
           ))}
         </ul>
 
-        <button className="bg-black text-white px-6 py-2 md:px-8 md:py-3 rounded-[5px] font-semibold hover:bg-[#4054b2] transition">
+        <button className="font-syne bg-black text-white px-6 py-2 md:px-8 md:py-3 rounded-[5px] font-semibold hover:bg-[#4054b2] transition">
           Choose Plan
         </button>
       </div>

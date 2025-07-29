@@ -45,19 +45,19 @@ const faqs = [
 
 const services = [
   {
-    icon: <FaSearchDollar className="text-2xl text-[#6754E9]" />,
+    icon: <FaSearchDollar className="text-2xl text-[#f89e1b]" />,
     title: "Match search intent at every touchpoint",
     description:
       "Picking the right keywords will only get you so far. We understand how to match the search intent of your target keywords with ad copy, CTAs, and landing pages that turn clicks into ROI.",
   },
   {
-    icon: <FaUserTie className="text-2xl text-[#6754E9]" />,
+    icon: <FaUserTie className="text-2xl text-[#f89e1b]" />,
     title: "Experienced PPC management",
     description:
       "How do you know what works if you've never gotten results before? Our paid search managers have years of experience managing successful campaigns in a variety of industries. And we have the happy clients to back it up.",
   },
   {
-    icon: <FaGoogle className="text-2xl text-[#6754E9]" />,
+    icon: <FaGoogle className="text-2xl text-[#f89e1b]" />,
     title: "Google Premier Partnership",
     description:
       "Working with a Google Partner agency gives you a leg up. Not only are we certified in all types of Google advertising, but we also get access to direct support and other resources provided by Google. Your campaigns benefit directly from this exclusive insider knowledge.",
@@ -112,7 +112,7 @@ const ContentWritingService = () => {
   return (
     <section
       aria-labelledby="seo-heading"
-      className="bg-gradient-to-b from-[#fdf1e7] to-white pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-16 lg:px-30"
+      className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-10 lg:px-15 xl:px-30"
     >
       <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
         <div>
@@ -121,9 +121,9 @@ const ContentWritingService = () => {
           <p className="text-md text-black mt-5 mb-10 font-semibold">Struggling to find PPC experts who really understand your business and can actually drive long term results? Our world-class marketers would love to help your business thrive!</p>
           <NavLink
             to="/free-audit"
-            className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
+            className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
           >
-            <span className="relative z-10">
+            <span className="font-syne relative z-10">
               GET A FREE AUDIT →
               <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300" />
             </span>
@@ -147,10 +147,10 @@ const ContentWritingService = () => {
             Our relationship with you relies on getting results, and paid search marketing results are measured in ROI. Each and every day, our primary focus is building ROI by interpreting real data and creating campaigns that convert. This includes:
           </p>
         </div>
-        <div className="border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
+        <div className="font-syne border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
           {["Keyword and competitor research","SKAGS (single keyword ad groups)","Negative keyword pruning","Ad copy optimization","Landing page creation & optimization","Search engine retargeting"].map((item, idx) => (
             <div key={idx} className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#6754E9] text-2xl mt-0.5" />
+              <FaCheckCircle className="text-[#f89e1b] text-2xl mt-0.5" />
               <span className="text-gray-700 text-base md:text-md">{item}</span>
             </div>
           ))}
@@ -213,7 +213,7 @@ const ContentWritingService = () => {
           <div
             key={index}
             onClick={() => setActiveTabIndex(index)}
-            className={`!w-[160%] relative cursor-pointer transition-all duration-300 pl-6 pr-16 py-5 text-left text-lg md:text-xl font-medium leading-tight -ml-8
+            className={`font-syne !w-[160%] relative cursor-pointer transition-all duration-300 pl-6 pr-16 py-5 text-left text-lg md:text-xl font-medium leading-tight -ml-8
             ${isActive ? "bg-[#f89e1b] text-white rounded-full z-10" : "text-white hover:text-black hover:bg-white rounded-full z-0"}`}
           >
             {tab.title}
@@ -231,17 +231,17 @@ const ContentWritingService = () => {
         <h2 className="text-3xl font-bold mb-6 leading-snug text-left text-black">
           {tabs[activeTabIndex]?.content.heading}
         </h2>
-        <p className="text-gray-600 text-base mb-8 leading-relaxed">
+        <h6 className="text-gray-600 text-base mb-8 leading-relaxed font-light">
           {tabs[activeTabIndex]?.content.about}
-        </p>
+        </h6>
         <div className="text-left">
             <NavLink
   to="/free-audit"
-  className="hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
+  className="font-syne hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
 >
   <span className="relative z-10 flex items-center gap-2">
     Get A Free Audit <FaArrowRight />
-    <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-orange-400 group-hover:w-full transition-all duration-300"></span>
+    <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
   </span>
 </NavLink>
 
@@ -273,11 +273,11 @@ const ContentWritingService = () => {
               <div className="text-left">
                            <NavLink
   to="/free-audit"
-  className="hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
+  className="font-syne hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
 >
   <span className="relative z-10 flex items-center gap-2">
     Get A Free Audit <FaArrowRight />
-    <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-orange-400 group-hover:w-full transition-all duration-300"></span>
+    <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
   </span>
 </NavLink>
         </div>
@@ -297,7 +297,7 @@ const ContentWritingService = () => {
               <div>
                 <div className="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-4">{service.icon}</div>
                 <h3 className="text-2xl font-semibold mb-4 text-left">{service.title}</h3>
-                <p className="text-md text-[#57595b] text-left">{service.description}</p>
+                <h6 className="text-md text-[#57595b] text-left font-light">{service.description}</h6>
               </div>
             </div>
           ))}
@@ -307,7 +307,7 @@ const ContentWritingService = () => {
       <div className="w-full pt-8 md:pt-14 lg:pt-24">
         <div className="flex flex-col md:flex-row items-center bg-[#f7f7fa] rounded-[25px] md:rounded-[50px] overflow-hidden">
           <div className="md:w-1/2 px-6 md:px-12 lg:px-18 py-8">
-            <FaQuoteLeft className="text-orange-400 text-3xl mb-4" />
+            <FaQuoteLeft className="text-[#f89e1b] text-3xl mb-4" />
             <p className="text-md md:text-xl lg:text-2xl italic mb-6">
               "DMT PPC service is light years ahead of the competition because of their intelligent, specialized and courteous account managers."
             </p>
@@ -327,9 +327,9 @@ const ContentWritingService = () => {
                     <FaStar key={i} className="text-yellow-500 text-lg" />
                   ))}
                 </div>
-                <span className="font-semibold text-sm mt-1">5000+ Client reviews</span>
+                <span className="font-syne font-semibold text-sm mt-1">5000+ Client reviews</span>
               </div>
-              <a href="/about" className="inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase">View all reviews</a>
+              <a href="/about" className="font-syne inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase">View all reviews</a>
             </div>
           </div>
         </div>
@@ -344,7 +344,7 @@ const ContentWritingService = () => {
               <div className="flex items-center gap-4 mb-6 justify-between">
                 <h3 className="text-5xl font-bold text-black leading-tight">38%</h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl" />
                 </div>
               </div>
               <p className="text-[#5c5f61]">of growth rate in brand awareness for businesses that start doing Search Ads</p>
@@ -353,7 +353,7 @@ const ContentWritingService = () => {
               <div className="flex items-center gap-4 mb-6 justify-between">
                 <h3 className="text-5xl font-bold text-black leading-tight">100%</h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl" />
                 </div>
               </div>
               <p className="text-[#5c5f61]">of total clicks on search results page are Search Ads, serving as proof that a dependence on SEO alone limits your potential for more traffic and leads.</p>
@@ -362,7 +362,7 @@ const ContentWritingService = () => {
               <div className="flex items-center gap-4 mb-6 justify-between">
                 <h3 className="text-5xl font-bold text-black leading-tight">82%</h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl" />
                 </div>
               </div>
               <p className="text-[#5c5f61]">of clicks on Search Ads are more likely to buy, making for better leads.</p>
@@ -382,7 +382,7 @@ const ContentWritingService = () => {
           <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+              className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
             >
               {faq.question}
               {openIndex === index ? (
@@ -400,9 +400,9 @@ const ContentWritingService = () => {
         ))}
       </div>
 
-      <div className="p-5 md:p-0">
-        <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 relative overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
-          <img src={RocketBlue} alt="Custom" className="hidden md:block w-14 md:w-18 absolute right-2 md:right-12 top-0 -rotate-20 origin-top z-10"/>
+      <div className="p-5 md:p-0 relative">
+        <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
+          <img src={RocketBlue} alt="Custom" className="hidden md:block w-14 md:w-18 absolute right-2 md:right-12 -top-8 -rotate-30 origin-top z-10"/>
           <div className="flex justify-center items-center mb-4">
             <img
               src={GooglePartner1}
@@ -415,7 +415,7 @@ const ContentWritingService = () => {
           </h2>
           <NavLink
             to="/free-audit"
-            className="group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#6754E9] transition duration-300 inline-block relative overflow-hidden"
+            className="group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 inline-block relative overflow-hidden"
           >
           <span className="relative z-10 flex items-center justify-center gap-1">
             GET A PROPOSAL <FaArrowRight />

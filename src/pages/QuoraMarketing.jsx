@@ -89,7 +89,7 @@ const QuoraMarketing = () => {
   };
 
   return (
-  <section aria-labelledby="seo-heading" className="bg-gradient-to-b from-[#fdf1e7] to-white pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-16 lg:px-30">
+  <section aria-labelledby="seo-heading" className="bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-10 lg:px-15  xl:px-30">
        <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
         <div>
           <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">Marketing solutions</h3>
@@ -123,7 +123,7 @@ const QuoraMarketing = () => {
           Our relationship with you relies on getting results, and paid search marketing results are measured in ROI. Each and every day, our primary focus is building ROI by interpreting real data and creating campaigns that convert. This includes:
           </p>
         </div>
-        <div className="border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
+        <div className="font-syne border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
         {["Keyword and competitor research","SKAGS (single keyword ad groups)","Negative keyword pruning","Ad copy optimization","Landing page creation & optimization","Search engine retargeting", ].map((item, idx) => (
         <div key={idx} className="flex items-start gap-3">
         <FaCheckCircle className="text-[#f89e1b] text-2xl mt-0.5" />
@@ -244,7 +244,7 @@ const QuoraMarketing = () => {
       </p>
       <div className="flex justify-start">
         <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
-          <span className="relative z-10">
+          <span className="font-syne relative z-10">
             Get Proposal →
             <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
           </span>
@@ -277,9 +277,9 @@ const QuoraMarketing = () => {
             <FaStar key={i} className="text-yellow-500 text-lg" />
              ))}
   </div>
-  <span className="font-semibold text-sm mt-1">5000+ Client reviews</span>
+  <span className="font-syne font-semibold text-sm mt-1">5000+ Client reviews</span>
 </div>
-                     <a href="/about" className="inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase">View all reviews</a>
+                     <a href="/about" className="font-syne inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase">View all reviews</a>
         </div>
       </div>
     </div>
@@ -294,7 +294,7 @@ const QuoraMarketing = () => {
             <div className="flex items-center gap-4 mb-6 justify-between">
               <h3 className="text-5xl font-bold text-black leading-tight">38%</h3>
               <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                <FaChartLine className="text-orange-500 text-2xl" />
+                <FaChartLine className="text-[#F89E1B] text-2xl" />
               </div>
             </div>
             <p className="text-[#5c5f61]">of growth rate in brand awareness for businesses that start doing Search Ads</p>
@@ -303,7 +303,7 @@ const QuoraMarketing = () => {
             <div className="flex items-center gap-4 mb-6 justify-between">
               <h3 className="text-5xl font-bold text-black leading-tight">100%</h3>
               <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                <FaChartLine className="text-orange-500 text-2xl" />
+                <FaChartLine className="text-[#F89E1B] text-2xl" />
               </div>
             </div>
             <p className="text-[#5c5f61]">of total clicks on search results page are Search Ads, serving as proof that a dependence on SEO alone limits your potential for more traffic and leads.</p>
@@ -312,7 +312,7 @@ const QuoraMarketing = () => {
             <div className="flex items-center gap-4 mb-6 justify-between">
               <h3 className="text-5xl font-bold text-black leading-tight">82%</h3>
               <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                <FaChartLine className="text-orange-500 text-2xl" />
+                <FaChartLine className="text-[#F89E1B] text-2xl" />
               </div>
             </div>
             <p className="text-[#5c5f61]">of clicks on Search Ads are more likely to buy, making for better leads.</p>
@@ -331,7 +331,7 @@ const QuoraMarketing = () => {
           <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+              className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#F89E1B] focus:outline-none pt-5"
             >
               {faq.question}
               {openIndex === index ? (
@@ -348,9 +348,9 @@ const QuoraMarketing = () => {
           </div>
         ))}
       </div>
-       <div className="p-5 md:p-0">
-              <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 relative overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
-                <img src={RocketBlue} alt="Custom" className="hidden md:block w-14 md:w-18 absolute right-2 md:right-12 top-0 -rotate-20 origin-top z-10"/>
+       <div className="p-5 md:p-0 relative">
+              <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
+                <img src={RocketBlue} alt="Custom" className="hidden md:block w-14 md:w-18 absolute right-2 md:right-12 -top-8 -rotate-30 origin-top z-10"/>
                 <div className="flex justify-center items-center mb-4">
                   <img
                     src={GooglePartner1}
@@ -363,7 +363,7 @@ const QuoraMarketing = () => {
                 </h2>
                 <NavLink
                   to="/free-audit"
-                  className="group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#6754E9] transition duration-300 inline-block relative overflow-hidden"
+                  className="font-syne group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#F89E1B] transition duration-300 inline-block relative overflow-hidden"
                 >
                 <span className="relative z-10 flex items-center justify-center gap-1">
                   GET A PROPOSAL <FaArrowRight />

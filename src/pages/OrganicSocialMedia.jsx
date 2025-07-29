@@ -58,7 +58,7 @@ const OrganicSocialMediaTag = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-[#f3f0ff] to-white pt-12 md:pt-18 lg:pt-24 pb-10 px-5 md:px-10 lg:px-30">
+    <div className="font-syne !bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-12 md:pt-18 lg:pt-24 pb-10 px-5 md:px-10 lg:px-15 xl:px-30">
       <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-black mb-6 md:mb-12 lg:mb-16">
         Tag: <span className="text-black">Organic Social Media</span>
       </h1>

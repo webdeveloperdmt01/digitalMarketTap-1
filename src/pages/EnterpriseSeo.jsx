@@ -59,7 +59,7 @@ const EnterpriseSeoPage = () => {
   ];
 
   return (
-    <main className='bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-15 lg:px-30'>
+    <main className='!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30'>
       <div className="pt-4 md:pt-8 lg:pt-12 pb-4">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
           <div>
@@ -68,7 +68,7 @@ const EnterpriseSeoPage = () => {
             </h5>
             <h1 className='text-2xl md:text-4xl lg:text-6xl font-semibold pt-3 md:pt-8'>Scaling Your Digital Reach with Enterprise SEO</h1>
             <h6 className="text-sm font-light lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">Digital Market Tap presents you with The Best Enterprise SEO service in Delhi. Our expert SEO specialists will make sure to deliver the Best SEO Service so you can get long term results and meet all your expectations. Let us synchronize your business objectives with effective SEO strategies that yield results.</h6>
-            <NavLink to="/" className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9]">VIEW OPEN POSITIONS <FaArrowRight /><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
+            <NavLink to="/" className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#f89e1b]">VIEW OPEN POSITIONS <FaArrowRight /><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
           </div>
           <div className="flex lg:justify-end">
             <img
@@ -94,7 +94,7 @@ const EnterpriseSeoPage = () => {
             <h6 className="text-sm font-light lg:text-[16px] font-base text-[#545e5b] pt-2 pb-6">
         When it comes to search engine optimization, enterprise SEO is primarily concerned with massive, complex websites that have hundreds or thousands of pages. It's best for those large complex websites. <br /> <br /> Enterprise SEO needs advanced-level keyword strategies to get more traffic, advanced technical strategies so SEO websites perform smoothly, and advanced content creation, and enterprise-level analytics. It is greatly beneficial for E-commerce platforms to get more traffic, Multi-location businesses to run all more efficiently, Fortune 500 Companies, News Portals & Media Agencies as they have large and complex websites. Enterprise SEO provides great help, and Government or Educational Institutions as official websites need an advanced level of SEO. 
             </h6>
-            <a href="#" className="group inline-block text-sm font-semibold relative border-b-2 border-[#4118d2]">MEET OUR TEAM<span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span></a>
+            <a href="#" className="font-syne group inline-block text-sm font-semibold relative border-b-2 border-[#4118d2]">MEET OUR TEAM<span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span></a>
           </div>
         </div>
       </div>
@@ -120,7 +120,7 @@ const EnterpriseSeoPage = () => {
                 <div key={i} className="w-4 h-4 rounded-full bg-[#f89e1b] relative -top-2" />
               ))}
             </div>
-            <div className="flex justify-between mt-3 md:mt-5 max-w-8xl mx-auto text-sm font-semibold text-black">
+            <div className="font-syne flex justify-between mt-3 md:mt-5 max-w-8xl mx-auto text-sm font-semibold text-black">
               <span className='text-xs md:text-sm'>Celebrate creativity</span>
               <span className='text-xs md:text-sm'>Honest & integrity</span>
               <span className='text-xs md:text-sm'>Teamwork & collaboration</span>
@@ -249,7 +249,7 @@ const EnterpriseSeoPage = () => {
                   key={index}
                   className="flex items-start gap-3 text-md text-[#444] pt-3 md:pt-6 lg:pt-8"
                 >
-                  <FaCheckCircle className="text-[#6754E9] text-2xl mt-1 shrink-0" />
+                  <FaCheckCircle className="text-[#f89e1b] text-2xl mt-1 shrink-0" />
                   <p>{text}</p>
                 </div>
               ))}
@@ -261,36 +261,36 @@ const EnterpriseSeoPage = () => {
                 <div className="bg-white rounded-[32px] shadow-[12px_12px_0_0_black] px-4 md:px-6 pt-8 pb-10 w-full">
                   <h2 className="text-2xl font-semibold text-black pb-6">Get your Quotation</h2>
 
-                  <form className="flex flex-col space-y-6 text-[#a4a4a4]">
+                  <form className="font-syne flex flex-col space-y-6 text-[#a4a4a4]">
                     <input
                       type="text"
                       placeholder="Name"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                       required
                     />
                     <input
                       type="email"
                       placeholder="Email"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                       required
                     />
                     <input
                       type="text"
                       placeholder="Company name"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                     />
                     <input
                       type="tel"
                       placeholder="Phone number"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                     />
                     <textarea
                       placeholder="What can we help you with?"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none resize-none h-28"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none resize-none h-28"
                     ></textarea>
                     <button
                       type="submit"
-                      className="relative w-full bg-black text-white font-semibold py-3 rounded-2xl hover:bg-[#6754E9] transition duration-300 group"
+                      className="relative w-full bg-black text-white font-semibold py-3 rounded-2xl hover:bg-[#f89e1b] transition duration-300 group"
                     >
                       <span className="relative inline-block">
                         SEND ME A PROPOSAL →

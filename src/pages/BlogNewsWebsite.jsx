@@ -37,12 +37,12 @@ const services = [
 ];
 const BlogNewsWebsite = () => {
   return (
-   <div className="bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-10 lg:px-30">
+   <div className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30">
        <div className="pb-4 pt-22">
           <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
             <div>
                <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-3 md:mb-6 lg:mb-8">Blog Website</h3>
-              <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold pr-5 md:pr-0 lg:pr-0">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold pr-5 md:pr-0 lg:pr-0">
              Day to Day <br /> Updates of <br /> through Blogs
               </h1>
               <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
@@ -50,7 +50,7 @@ const BlogNewsWebsite = () => {
               </p>
               <NavLink
                 to="/"
-                className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9] uppercase"
+                className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#f89e1b] uppercase"
               >
                view open positions <FaArrowRight />
                 <span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span>
@@ -99,7 +99,7 @@ const BlogNewsWebsite = () => {
                Our Best Services
              </p>
              <h2 className="text-2xl md:text-5xl font-bold text-black mb-6 leading-tight"> Smart digital marketing Solutions centred on data and your audience</h2>
-             <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"><span className="relative z-10"> View All Solutions<FaArrowRight className="inline ml-2 items-center"/><span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span></span></button>
+             <button className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"><span className="relative z-10"> View All Solutions<FaArrowRight className="inline ml-2 items-center"/><span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span></span></button>
            </div>
     </div>
 
@@ -112,7 +112,7 @@ const BlogNewsWebsite = () => {
           <h3 className="text-xl font-semibold mb-4 text-left">{service.title}</h3>
           <p className="text-md text-[#57595b] text-left">{service.description}</p>
         </div>
-       <NavLink to={service.link} className="mt-6 group text-black py-2 text-md font-semibold transition duration-300 relative overflow-hidden inline-flex items-center"><span className="relative z-10">LEARN MORE<span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span></span></NavLink>
+       <NavLink to={service.link} className="font-syne mt-6 group text-black py-2 text-md font-semibold transition duration-300 relative overflow-hidden inline-flex items-center"><span className="relative z-10">LEARN MORE<span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span></span></NavLink>
       </div>
     ))}
   </div>
@@ -139,7 +139,7 @@ const BlogNewsWebsite = () => {
                   key={index}
                   className="flex items-start gap-3 text-md text-[#444] pt-3 md:pt-6 lg:pt-8"
                 >
-                  <FaCheckCircle className="text-[#6754E9] text-2xl mt-1 shrink-0" />
+                  <FaCheckCircle className="text-[#f89e1b] text-2xl mt-1 shrink-0" />
                   <p>{text}</p>
                 </div>
               ))}
@@ -151,36 +151,36 @@ const BlogNewsWebsite = () => {
                 <div className="bg-white rounded-[32px] shadow-[12px_12px_0_0_black] px-4 md:px-6 pt-8 pb-10 w-full">
                   <h2 className="text-2xl font-semibold text-black pb-6">Get your Quotation</h2>
 
-                  <form className="flex flex-col space-y-6 text-[#a4a4a4]">
+                  <form className="font-syne flex flex-col space-y-6 text-[#a4a4a4]">
                     <input
                       type="text"
                       placeholder="Name"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                       required
                     />
                     <input
                       type="email"
                       placeholder="Email"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                       required
                     />
                     <input
                       type="text"
                       placeholder="Company name"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                     />
                     <input
                       type="tel"
                       placeholder="Phone number"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                     />
                     <textarea
                       placeholder="What can we help you with?"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none resize-none h-28"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none resize-none h-28"
                     ></textarea>
                     <button
                       type="submit"
-                      className="relative w-full bg-black text-white font-semibold py-3 rounded-2xl hover:bg-[#6754E9] transition duration-300 group"
+                      className="relative w-full bg-black text-white font-semibold py-3 rounded-2xl hover:bg-[#f89e1b] transition duration-300 group"
                     >
                       <span className="relative inline-block">
                         SEND ME A PROPOSAL →

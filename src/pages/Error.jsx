@@ -64,7 +64,7 @@ const Error = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-[#fdf1e7] to-white flex items-center justify-center px-5 md:px-10 lg:px-30 py-18 md:py-28">
+    <div className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30 flex items-center justify-center py-18 md:py-28">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div>
           <img src={ErrorImg} alt="404" className="w-[100%] md:h-[380px] lg:h-[480px] rounded-xl shadow-md object-cover"/>

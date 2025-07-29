@@ -71,7 +71,7 @@ const services = [
   ];
 
   return (
-    <main className='bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-15 lg:px-30'>
+    <main className='!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30'>
       <div className="pt-4 md:pt-8 lg:pt-12 pb-4">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
           <div>
@@ -80,7 +80,7 @@ const services = [
             </h5>
             <h1 className='text-2xl md:text-4xl lg:text-6xl font-semibold pt-3 md:pt-8'> Google Ranking <br /> at its Best</h1>
             <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">Join us and become the trusted expert relied upon by the world's biggest brands, venues, and entertainers to solve their most complex challenges.</p>
-            <NavLink to="/" className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9]">VIEW OPEN POSITIONS <FaArrowRight /><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
+            <NavLink to="/" className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#f89e1b]">VIEW OPEN POSITIONS <FaArrowRight /><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
           </div>
           <div className="flex lg:justify-end">
             <img
@@ -109,7 +109,7 @@ const services = [
 
               The secret to achieving optimal SEM results lies in the ability to get as many people as possible to call/contact you after they click on your ad and land on your website. For example, your current SEM ads are getting 2% conversion rate on your landing page. That means out of 100 people that visit your page, 2 people contact you.
             </p>
-            <a href="#" className="group inline-block text-sm font-semibold relative border-b-2 border-[#4118d2]">MEET OUR TEAM<span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span></a>
+            <a href="#" className="font-syne group inline-block text-sm font-semibold relative border-b-2 border-[#4118d2]">MEET OUR TEAM<span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span></a>
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@ const services = [
                 <div key={i} className="w-4 h-4 rounded-full bg-[#f89e1b] relative -top-2" />
               ))}
             </div>
-            <div className="flex justify-between mt-3 md:mt-5 max-w-8xl mx-auto text-sm font-semibold text-black">
+            <div className="font-syne flex justify-between mt-3 md:mt-5 max-w-8xl mx-auto text-sm font-semibold text-black">
               <span className='text-xs md:text-sm'>Celebrate creativity</span>
               <span className='text-xs md:text-sm'>Honest & integrity</span>
               <span className='text-xs md:text-sm'>Teamwork & collaboration</span>
@@ -168,7 +168,7 @@ const services = [
         </div>
       </div>
 
-      <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+      <div className="pb-8 md:pb-18 pt-8 md:pt-12 lg:pt-18">
         <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about paid search <br /> management</h1>
         <p className="text-center text-md font-base text-gray-500 pb-4">Looking to learn more about paid search management for your business? Browse our FAQs</p>
@@ -177,7 +177,7 @@ const services = [
             <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+                className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
               >
                 {faq.question}
                 {openIndex === index ? (

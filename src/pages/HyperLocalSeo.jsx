@@ -83,7 +83,7 @@ service in Delhi, contact us now
             </h6>
             <NavLink
               to="/"
-              className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9]"
+              className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#f89e1b]"
             >
               VIEW OPEN POSITIONS <FaArrowRight />
               <span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span>
@@ -142,7 +142,7 @@ company's secret weapon is hyperlocal SEO. It helps you show up in Google's loca
           <h2 className="text-2xl md:text-5xl font-semibold text-black mb-6 leading-tight">
        What is hyperlocal SEO, and why does it matter in 2025?
           </h2>
-          <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
+          <button className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
             <span className="relative z-10 flex items-baseline gap-2">
               View All Solutions <FaArrowRight />
               <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
@@ -173,7 +173,7 @@ company's secret weapon is hyperlocal SEO. It helps you show up in Google's loca
               <div className="text-left mt-auto">
                 <a
                   href="#"
-                  className="group inline-block text-sm font-semibold relative border-b-2 border-[#6754e9]"
+                  className="font-syne group inline-block text-sm font-semibold relative border-b-2 border-[#6754e9]"
                 >
                   LEARN MORE
                   <span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-orange-500 group-hover:w-full transition-all duration-300"></span>
@@ -209,7 +209,7 @@ company's secret weapon is hyperlocal SEO. It helps you show up in Google's loca
                 key={index}
                 className="flex items-start gap-3 text-md text-[#444] pt-3 md:pt-6 lg:pt-8"
               >
-                <FaCheckCircle className="text-[#6754E9] text-2xl mt-1 shrink-0" />
+                <FaCheckCircle className="text-[#f89e1b] text-2xl mt-1 shrink-0" />
                 <p>{text}</p>
               </div>
             ))}
@@ -232,36 +232,36 @@ company's secret weapon is hyperlocal SEO. It helps you show up in Google's loca
                   alt="SparklingStar"
                   className="absolute top-0 right-0 md:right-12 lg:right-50 h-10 md:h-14 -mt-4 md:-mt-6 lg:-mt-6 mr-15 md:mr-10 lg:-mr-10 rotate-[35deg] object-contain"
                 />
-                <form className="flex flex-col space-y-6 text-[#a4a4a4]">
+                <form className="font-syne flex flex-col space-y-6 text-[#a4a4a4]">
                   <input
                     type="text"
                     placeholder="Name"
-                    className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                    className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                     required
                   />
                   <input
                     type="email"
                     placeholder="Email"
-                    className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                    className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                     required
                   />
                   <input
                     type="text"
                     placeholder="Company name"
-                    className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                    className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                   />
                   <input
                     type="tel"
                     placeholder="Phone number"
-                    className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                    className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                   />
                   <textarea
                     placeholder="What can we help you with?"
-                    className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none resize-none h-28"
+                    className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none resize-none h-28"
                   ></textarea>
                   <button
                     type="submit"
-                    className="relative w-full bg-black text-white font-semibold py-3 rounded-2xl hover:bg-[#6754E9] transition duration-300 group"
+                    className="relative w-full bg-black text-white font-semibold py-3 rounded-2xl hover:bg-[#f89e1b] transition duration-300 group"
                   >
                     <span className="relative inline-block">
                       SEND ME A PROPOSAL →

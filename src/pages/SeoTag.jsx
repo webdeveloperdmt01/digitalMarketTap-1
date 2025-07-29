@@ -28,7 +28,7 @@ const SeoTag = () => {
   };
 
   return (
-    <section className="bg-gradient-to-b from-[#fdf1e7] to-white py-8 lg:py-20 px-5 md:px-10 lg:px-30">
+    <section className="bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] font-syne py-8 lg:py-20 px-5 md:px-10 lg:px-15 xl:px-30">
       <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-black mb-6 md:mb-12 lg:mb-16">
         Tag: <span className="text-black">Paid Social</span>
       </h1>
@@ -47,7 +47,7 @@ const SeoTag = () => {
             <img src={blog.image} alt={blog.brandName} className="w-full h-60 object-cover" />
             <div className="p-8 hover:bg-[#F1F3F6] dark:hover:bg-[#333] transition-colors">
               <p className="text-sm font-semibold text-[#666666] dark:text-[#cccccc] mb-4 md:mb-6">{blog.date}</p>
-              <h3 className="text-xl font-semibold leading-snug hover:text-[#8E81FA] text-black dark:text-white mb-2 md:mb-4">
+              <h3 className="text-xl font-semibold leading-snug hover:text-[#f89e1b] text-black dark:text-white mb-2 md:mb-4">
                 {blog.brandName}
               </h3>
             </div>
