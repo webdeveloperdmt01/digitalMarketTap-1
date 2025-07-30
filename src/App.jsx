@@ -45,6 +45,7 @@ import GoogleAD from "./pages/GoogleAD";
 import AmazonAD from "./pages/AmazonAD";
 import Error from "./pages/Error";
 import DigitalMarketing from "./pages/DigitalMarketing";
+import ComingSoon from "./pages/ComingSoon";
 
 
 
@@ -54,7 +55,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout><Home /></Layout>} />
         <Route path="/contact-us" element={<Layout><ContactUs /></Layout>} />
-        <Route path="/about-us" element={<Layout><AboutUs /></Layout>} />
+        {/* <Route path="/about-us" element={<Layout><AboutUs /></Layout>} /> */}
         <Route path="/blog" element={<Layout><Blog /></Layout>} />
         <Route path="/blog/:id" element={<Layout><BlogPost /></Layout>} />
         <Route path="/brand/:brandName" element={<Layout><ProjectDetailPage /></Layout>} />
@@ -97,6 +98,7 @@ function App() {
         <Route path="/amazon-ads" element={<Layout><AmazonAD/></Layout>} />
         <Route path="/404-error" element={<Layout><Error/></Layout>} />
         <Route path="/digital-marketing" element={<Layout><DigitalMarketing/></Layout>} />
+        <Route path="/coming-soon" element={<Layout><ComingSoon/></Layout>} />
       </Routes>
     </Router>
   );

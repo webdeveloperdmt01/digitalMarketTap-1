@@ -185,18 +185,16 @@ const Marketing = () => {
               Marketing
             </h3>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mt-2 leading-tight">
-              Marketing Solution in every Platform of Social Media
+        Marketing Solution in every Platform of Social Media
             </h2>
             <h6 className="font-light text-sm md:text-md lg:text-lg text-gray-500 mt-5 mb-10">
-              Marketing Solution in every Platform of Social Media In today's
-              fast-moving digital world, where trends change so fast that what
-              works today has no guarantee of working tomorrow. In this case,
-              having an experienced and expert digital marketing agency is a
-              must because marketing is not a luxury but a necessity.
+             In today's fast-moving digital world, where trends change so fast that what works today
+has no guarantee of working tomorrow. In this case, having an experienced and expert
+digital marketing agency is a must because marketing is not a luxury but a necessity
             </h6>
             <NavLink
               to="/free-audit"
-              className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
+              className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
             >
               <span className="relative z-10">
                 GET A FREE AUDIT →
