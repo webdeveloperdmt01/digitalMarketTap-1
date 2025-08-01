@@ -159,7 +159,7 @@ const DigitalMarketing = () => {
   };
 
   return (
-    <main className="bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-15 lg:px-30">
+    <main className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-15 lg:px-30">
       <section className="py-8 md:py-16 lg:py-20">
         <div className="flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:w-1/2 text-left lg:text-left">
@@ -176,7 +176,7 @@ const DigitalMarketing = () => {
             </h6>
             <NavLink
               to="/"
-              className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9]"
+              className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#F89E1B]"
             >
               GET STARTED
               <FaArrowRight />

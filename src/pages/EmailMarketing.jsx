@@ -59,27 +59,6 @@ const services = [
   },
 ];
 
-const contentData = {
-  Transparency: {
-    title: "100% Campaign transparency",
-    description:
-      "We cultivate an environment of transparency and communication in all we do...",
-    image: Stats,
-  },
-  "Team of Experts": {
-    title: "Team of Marketing Experts",
-    description:
-      "Our seasoned professionals bring years of industry experience...",
-    image: Stats2,
-  },
-  Results: {
-    title: "Results that Matter",
-    description:
-      "Our strategies drive measurable results...",
-    image: PeopleDiscuss,
-  },
-};
-
 const EmailMarketing = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const [activeTab, setActiveTab] = useState("Transparency");
@@ -195,64 +174,6 @@ const EmailMarketing = () => {
           <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">What is included in our paid search <br /> marketing services? </h1>
           <p className="text-center text-md font-base text-gray-500 pb-4">When you partner with Numerique, you’ll gain access to our full range of paid SEM services. These services are designed to <br /> optimize every facet of your paid advertising, including:</p>
   </div>
-
-<div className="w-full pt-4 md:pt-14 lg:pt-24">
-  <div className="flex justify-start mb-4 md:mb-8">
-    <div className="inline-flex rounded-full bg-orange-100 p-2 md:p-1">
-      {Object.keys(contentData).map((tab) => (
-        <button
-          key={tab}
-          onClick={() => setActiveTab(tab)}
-          className={`text-xs md:text-base font-semibold px-3 py-1 md:px-5 md:py-2 transition-all duration-200 rounded-full ${
-            activeTab === tab
-              ? "bg-black text-white"
-              : "text-black/60 hover:text-orange-500"
-          }`}
-        >
-          {tab.toUpperCase()}
-        </button>
-      ))}
-    </div>
-  </div>
-
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-32 items-start">
-    <div className="bg-[#ffdfbe] py-4 px-2 md:py-10 md:px-8 rounded-3xl w-full order-1 md:order-1">
-      <h2 className="text-xl md:text-2xl font-bold mb-2">
-        {contentData[activeTab].title}
-      </h2>
-      <p className="text-gray-700 mb-4 text-sm leading-relaxed">
-        {contentData[activeTab].description}
-      </p>
-      <div className="bg-white rounded-xl">
-        <img
-          src={contentData[activeTab].image}
-          alt={`${activeTab} chart`}
-          className="w-full rounded-lg"
-        />
-      </div>
-    </div>
-
-    <div className="max-w-xl order-2 md:order-2">
-      <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold leading-tight mb-3 md:mb-6 text-left">
-        Why digital market <br /> tap is your top- <br /> choice
-      </h2>
-      <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-6 text-left">
-        We are a five-star rated holistic full-service digital marketing agency,
-        serving thousands of clients. Our digital agency covers all aspects of
-        internet marketing: SEO, social media, and PPC management, all the way
-        to email marketing, website design, and web development.
-      </p>
-      <div className="flex justify-start">
-        <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
-          <span className="relative z-10">
-            Get Proposal →
-            <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
-          </span>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div className="w-full pt-8 md:pt-14 lg:pt-24">
  <div className="flex flex-col md:flex-row items-center bg-[#f7f7fa] rounded-[25px] md:rounded-[50px] overflow-hidden">

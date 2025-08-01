@@ -48,7 +48,7 @@ export default function ComingSoonPage() {
             opacity: 1;
             transform: translateY(0);
           }
-        }
+        } 
         .animate-fadeIn {
           opacity: 0;
           animation-name: fadeIn;

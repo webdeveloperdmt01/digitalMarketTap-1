@@ -124,7 +124,7 @@ const faqs = [
 const services = [
   {
     icon: (
-      <FaSearchDollar className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />
+      <FaSearchDollar className="text-[#f89e1b] text-2xl hover:text-[#000]" />
     ),
     title: "Match search intent at every touchpoint",
     description:
@@ -132,43 +132,22 @@ const services = [
   },
   {
     icon: (
-      <FaUserTie className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />
+      <FaUserTie className="text-[#f89e1b] text-2xl hover:text-[#000]" />
     ),
     title: "Experienced PPC management",
     description:
       "How do you know what works if you’ve never gotten results before? Our paid search managers have years of experience managing successful campaigns in a variety of industries. And we have the happy clients to back it up.",
   },
   {
-    icon: <FaGoogle className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+    icon: <FaGoogle className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
     title: "Google Premier Partnership",
     description:
       "Working with a Google Partner agency gives you a leg up. Not only are we certified in all types of Google advertising, but we also get access to direct support and other resources provided by Google. Your campaigns benefit directly from this exclusive insider knowledge.",
   },
 ];
 
-const contentData = {
-  Transparency: {
-    title: "100% Campaign transparency",
-    description:
-      "We cultivate an environment of transparency and communication in all we do...",
-    image: Stats,
-  },
-  "Team of Experts": {
-    title: "Team of Marketing Experts",
-    description:
-      "Our seasoned professionals bring years of industry experience...",
-    image: Stats2,
-  },
-  Results: {
-    title: "Results that Matter",
-    description: "Our strategies drive measurable results...",
-    image: PeopleDiscuss,
-  },
-};
-
 const Seo = () => {
   const [openIndex, setOpenIndex] = useState(null);
-  const [activeTab, setActiveTab] = useState("Transparency");
   const [activeTabIndex, setActiveTabIndex] = useState(0);
 
   const handleAccordionToggle = (index) => {
@@ -435,12 +414,12 @@ const Seo = () => {
         </div>
       </div>
 
-      <div className="py-8 px-5 md:px-10 lg:px-15 xl:px-30">
+      <div className="pb-8 pt-12 md:pt-16 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-center text-md font-semibold uppercase pb-3">
           Creating Success
         </p>
-        <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">
-          What makes our paid search <br /> management services so <br />{" "}
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">
+          What makes our paid search management services so {" "}
           effective?
         </h1>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -479,66 +458,7 @@ const Seo = () => {
         </p>
       </div>
 
-      {/* <div className="w-full pt-4 md:pt-14 lg:pt-24">
-        <div className="flex justify-start mb-4 md:mb-8">
-          <div className="inline-flex rounded-full bg-orange-100 p-2 md:p-1">
-            {Object.keys(contentData).map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`text-xs md:text-base font-semibold px-3 py-1 md:px-5 md:py-2 transition-all duration-200 rounded-full ${
-                  activeTab === tab
-                    ? "bg-black text-white"
-                    : "text-black/60 hover:text-orange-500"
-                }`}
-              >
-                {tab.toUpperCase()}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-32 items-start">
-          <div className="bg-[#ffdfbe] py-4 px-2 md:py-10 md:px-8 rounded-3xl w-full order-1 md:order-1">
-            <h2 className="text-xl md:text-2xl font-bold mb-2">
-              {contentData[activeTab].title}
-            </h2>
-            <p className="text-gray-700 mb-4 text-sm leading-relaxed">
-              {contentData[activeTab].description}
-            </p>
-            <div className="bg-white rounded-xl">
-              <img
-                src={contentData[activeTab].image}
-                alt={`${activeTab} chart`}
-                className="w-full rounded-lg"
-              />
-            </div>
-          </div>
-
-          <div className="max-w-xl order-2 md:order-2">
-            <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold leading-tight mb-3 md:mb-6 text-left">
-              Why digital market <br /> tap is your top- <br /> choice
-            </h2>
-            <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-6 text-left">
-              We are a five-star rated holistic full-service digital marketing
-              agency, serving thousands of clients. Our digital agency covers
-              all aspects of internet marketing: SEO, social media, and PPC
-              management, all the way to email marketing, website design, and
-              web development.
-            </p>
-            <div className="flex justify-start">
-              <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
-                <span className="relative z-10">
-                  Get Proposal →
-                  <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <InfoTabs/>
-
 
       <div className="w-full pt-8 md:pt-14 lg:pt-24 px-5 md:px-10 lg:px-15 xl:px-30">
         <div className="flex flex-col md:flex-row items-center bg-[#f7f7fa] rounded-[25px] md:rounded-[50px] overflow-hidden">
@@ -563,7 +483,7 @@ const Seo = () => {
               className="w-full h-full object-cover"
             />
 
-            <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center bg-white bg-opacity-90 px-8 py-6 rounded-tl-[40px] md:rounded-tl-[60px]">
+            <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center bg-white bg-opacity-90 px-6 md:px-8 py-4 md:py-6 rounded-tl-[35px] md:rounded-tl-[60px]">
               <div className="flex flex-col items-start">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
@@ -576,7 +496,7 @@ const Seo = () => {
               </div>
               <a
                 href="/about"
-                className="inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase"
+                className="font-syne inline-block text-xs md:text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase"
               >
                 View all reviews
               </a>
@@ -600,7 +520,7 @@ const Seo = () => {
                   38%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl" />
                 </div>
               </div>
               <p className="text-[#5c5f61]">
@@ -614,7 +534,7 @@ const Seo = () => {
                   100%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl" />
                 </div>
               </div>
               <p className="text-[#5c5f61]">
@@ -629,7 +549,7 @@ const Seo = () => {
                   82%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl" />
                 </div>
               </div>
               <p className="text-[#5c5f61]">
@@ -656,7 +576,7 @@ const Seo = () => {
           <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+              className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#F89E1B] focus:outline-none pt-5"
             >
               {faq.question}
               {openIndex === index ? (

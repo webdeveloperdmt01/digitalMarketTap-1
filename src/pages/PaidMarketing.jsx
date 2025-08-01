@@ -58,7 +58,10 @@ const PaidMarketing = () => {
         <div className="pb-4 pl-5 md:pl-10 lg:pl-15 xl:pl-30">
           <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
             <div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold pt-16 md:pt-25 lg:pt-48 pr-5 md:pr-0 lg:pr-0">
+               <h5 className="text-sm md:text-base lg:text-md font-semibold text-black pt-4 md:pt-6 lg:pt-24 uppercase">
+              Paid Marketing
+            </h5>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold pt-6 md:pt-20 lg:pt-24 pr-5 md:pr-0 lg:pr-0">
                 Drive Instant Traffic with Strategic Paid Ads
               </h1>
               <h6 className="font-light text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
@@ -69,7 +72,7 @@ const PaidMarketing = () => {
               </h6>
               <NavLink
                 to="/"
-                className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9]"
+                className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#F89E1B]"
               >
                 GET QUOTE <FaArrowRight />
                 <span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span>
@@ -191,7 +194,7 @@ const PaidMarketing = () => {
           </div>
         </div>
 
-        <section className="px-5 md:px-10 lg:px-15 xl-px-30 pt-5 pb-10">
+        <section className="px-5 md:px-10 lg:px-15 xl:px-30 pt-5 pb-10">
           <div className="max-w-7xl mx-auto rounded-[40px] overflow-hidden mb-8 md:mb-12">
             <img
               src={teamImage}
@@ -334,7 +337,7 @@ const PaidMarketing = () => {
             <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+                className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#F89E1B] focus:outline-none pt-5"
               >
                 <span className="flex-1">{faq.question}</span>
                 <span className="ml-3 flex items-center justify-center">

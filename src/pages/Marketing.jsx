@@ -2,19 +2,21 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import MarketingImg from "../assets/Marketing1.png";
 import MarketingImg2 from "../assets/Marketing2.png";
-import { FaArrowRight, FaCheckCircle, FaArrowUp } from "react-icons/fa";
+import {
+  FaArrowRight,
+  FaCheckCircle,
+  FaArrowUp,
+  FaSearchDollar,
+  FaUserTie,
+  FaGoogle,
+} from "react-icons/fa";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 import BorderBottom from "../assets/border.png";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import F7 from "../assets/F7.png";
-import Caridad from "../assets/caridad.png";
-import Petmania from "../assets/petmania.png";
-import Jolie from "../assets/jolie.png";
-import Scuola from "../assets/Scuola_Logo.png";
-import Technologia from "../assets/tecnologia.png";
 import RocketBlue from "../assets/blueRocket.png";
 import GooglePartner1 from "../assets/google-partner-1.png";
+import BrandSlider from "../components/BrandSlider";
 
 const faqs = [
   {
@@ -40,33 +42,31 @@ const faqs = [
   },
 ];
 
-const toggleFAQ = (index) => {
-  setOpenIndex(openIndex === index ? null : index);
-};
-
 const Marketing = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   const tabs = [
     {
       title: (
         <>
-          Search engine
-          <br />
-          optimization
+          Digital <br /> marketing services
         </>
       ),
       content: {
         heading:
-          "Increase your organic traffic by ranking high on search engines and AI discovery tools like ChatGPT",
+          "Digital Market Tap provides full digital marketing services such as :",
         features: [
-          "Keyword and competitor research",
-          "SKAGS (single keyword ad groups)",
-          "Negative keyword pruning",
-          "Ad copy optimization",
-          "Backlink Generation",
+          "SEO, PPC, social media marketing",
+          "Content Writing, & Website Development",
+          "Meta & Goole Ads",
+          "Maximum ROI and long-term growth",
+          "Online visibility, leads, & selling more",
         ],
+        link: "/digital-marketing",
         percentage: "93%",
         percentageNote:
           "Of customers reported that their online experience begins with search",
@@ -75,19 +75,20 @@ const Marketing = () => {
     {
       title: (
         <>
-          Paid search <br /> marketing
+          Email <br /> marketing
         </>
       ),
       content: {
         heading:
-          "Struggling to find PPC experts who drive long term results? Our world-class marketers would love to help your business thrive!",
+          "Email marketing is very important marketing service for businesses that want to..",
         features: [
-          "Google Ads campaign setup",
-          "Budget optimization",
-          "A/B testing for ad creatives",
-          "Real-time analytics",
-          "Landing page alignment",
+          "Build long-term relationships with customers",
+          "Very cost-efficient",
+          "Engage customers and drive conversions",
+          "Expert email marketing management",
+          "More Engagement",
         ],
+        link: "/email-marketing",
         percentage: "82%",
         percentageNote:
           "Clients saw immediate uplift in lead generation from paid campaigns",
@@ -96,19 +97,20 @@ const Marketing = () => {
     {
       title: (
         <>
-          Conversion rate <br /> optimization
+          Content <br /> writing
         </>
       ),
       content: {
         heading:
-          "Unlock your website’s full potential and boost your revenue with Numerique’s top-notch conversion rate optimization services.",
+          "We provide professional content writing services. Which is perfect for..",
         features: [
-          "User behavior analysis",
-          "A/B testing on CTAs",
-          "Form optimization",
-          "Heatmaps and session recordings",
-          "Funnel tracking",
+          "100% seo friend content",
+          "Expert content writers",
+          "High quantity content",
+          "Keyword specific content",
+          "Enhance online visibility",
         ],
+        link: "/content-writing-service",
         percentage: "71%",
         percentageNote:
           "Improved conversions after optimizing landing pages and forms",
@@ -117,19 +119,20 @@ const Marketing = () => {
     {
       title: (
         <>
-          Social media <br /> marketing
+          Quora <br /> marketing
         </>
       ),
       content: {
         heading:
-          "Finding the balance between staying current and relying on proven strategies is essential for staying competitive in the ever-changing landscape of marketing.",
+          "We offer professional Quora marketing services to assist businesses in..",
         features: [
-          "Platform-specific strategy",
-          "Post scheduling and automation",
-          "Influencer collaboration",
-          "Ad targeting by interests",
-          "Analytics and sentiment tracking",
+          "Enhance your SEO",
+          "Enchance brand visibility",
+          "Niche-specific content creation",
+          "High web traffic",
+          "Great for lead generation",
         ],
+        link: "/quora-marketing",
         percentage: "86%",
         percentageNote:
           "Reported increased brand awareness via targeted social campaigns",
@@ -146,35 +149,28 @@ const Marketing = () => {
     threshold: 0.3,
   });
 
-  const logos = [
-    { src: F7 },
-    { src: Caridad },
-    { src: Petmania },
-    { src: Jolie },
-    { src: Scuola },
-    { src: Technologia },
+  const services = [
+    {
+      icon: (
+        <FaSearchDollar className="text-[#f89e1b] text-2xl hover:text-[#000]" />
+      ),
+      title: "Generate more qualified leads.",
+      description:
+        "In today's digital world marketing services are a necessity, and having an experienced digital marketing agency can help in many ways. If you want to generate genuine leads,our ads and SEO service can be very helpful for you. So reach more people at a lower cost than traditional marketing.",
+    },
+    {
+      icon: <FaUserTie className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
+      title: "Experienced marketing agency",
+      description:
+        "We have over 8 years of experience as a marketing agency, working with over 500+ brands under every niche, which makes us experts in marketing. We are known for our punctuality and result-delivering service. That's how we became the best digital marketing in Delhi, India.",
+    },
+    {
+      icon: <FaGoogle className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
+      title: "Brand Growth and Awareness",
+      description:
+        "We help businesses to grow faster and help in building awareness. We make sure your brand is more visible among your targeted audience. By consistent marketing, choosing correct keyword analysis, and correct geographical targeting. As more people recognize and trust your brand",
+    },
   ];
-
-  const BrandStaticLine = () => {
-    return (
-      <div className="py-8 md:py-16 lg:py-20 text-center">
-        <h2 className="text-xl sm:px-5 font-bold mb-10 md:mb-12 text-center">
-          The Best Brands Choose Numerique
-        </h2>
-        <div className="flex justify-evenly flex-wrap gap-10 max-w-7xl mx-auto">
-          {logos.map((logo, index) => (
-            <div key={index} className="max-h-16 flex items-center">
-              <img
-                src={logo.src}
-                alt={`brand-logo-${index}`}
-                className="max-h-16 object-contain"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  };
 
   return (
     <>
@@ -182,15 +178,16 @@ const Marketing = () => {
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 py-6 md:py-8 lg:py-14 items-center">
           <div>
             <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-8">
-              Marketing
+              Marketing Solutions
             </h3>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mt-2 leading-tight">
-        Marketing Solution in every Platform of Social Media
+              Marketing Solution in every Platform of Social Media
             </h2>
             <h6 className="font-light text-sm md:text-md lg:text-lg text-gray-500 mt-5 mb-10">
-             In today's fast-moving digital world, where trends change so fast that what works today
-has no guarantee of working tomorrow. In this case, having an experienced and expert
-digital marketing agency is a must because marketing is not a luxury but a necessity
+              In today's fast-moving digital world, where trends change so fast
+              that what works today has no guarantee of working tomorrow. In
+              this case, having an experienced and expert digital marketing
+              agency is a must because marketing is not a luxury but a necessity
             </h6>
             <NavLink
               to="/free-audit"
@@ -212,8 +209,80 @@ digital marketing agency is a must because marketing is not a luxury but a neces
           </div>
         </div>
 
+        {/* <img src={BorderBottom} alt="border-bottom-line" className="w-full absolute bottom-0 right-0 object-contain pt-22 px-5 md:px-10 lg:px-30"/> */}
+
+        <div className="pt-6 md:pt-14 lg:pt-24 pb-10">
+          <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15">
+            <div className="flex lg:justify-end">
+              <img
+                src={MarketingImg2}
+                alt="Marketing Visual"
+                className="w-full h-[250px] md:h-[470px] object-cover rounded-[30px] md:rounded-[60px]"
+              />
+            </div>
+            <div className="pl-2 md:pl-8 lg:pl-12 xl:pl-20 content-center">
+              <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">
+                Digital Market Tap—Smart, Data-Driven Marketing That Delivers
+                Results
+              </h3>
+              <h6 className="font-light text-sm lg:text-[16px] font-base text-[#545e5b] mt-2">
+                {" "}
+                We are the best digital marketing agency in Delhi because we
+                understand marketing is no longer a nicety in this day and age
+                of ever-evolving digital space, but a necessity. For companies
+                looking to expand, compete, and remain relevant, a well-defined,
+                holistic, and customer-centered marketing strategy is
+                imperative. At Digital Market Tap, our innovative and
+                specialized marketing solutions enable brands to reach, interact
+                with, and convert their desired audience. Our goal is to
+                understand our client's moral values and needs and then deliver
+                results. Marketing is not just randomly posting and running
+                random ads; it's a strategy to have your brand get more leads
+                and visibility, and we understand all these things very well.
+              </h6>
+              <a
+                href="#"
+                className="font-syne group inline-block text-sm font-semibold relative border-b-2 border-[#fbc371] uppercase mt-8"
+              >
+                more about our company
+                <span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="pb-8 pt-18">
+          <p className="text-center text-md font-semibold uppercase pb-3">
+            Creating Success
+          </p>
+          <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">
+            Why choose Digital Market Tap for marketing
+            <br /> services?
+          </h1>
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-3xl p-8 text-black flex flex-col justify-between h-full"
+              >
+                <div>
+                  <div className="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-4">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-2xl font-semibold mb-4 text-left">
+                    {service.title}
+                  </h3>
+                  <h6 className="text-md text-[#57595b] text-left font-light">
+                    {service.description}
+                  </h6>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <section className="max-w-7xl mx-auto py-6 md:py-12 lg:py-24">
-          <h1 className="text-2xl md:text-4xl lg:text-5xl max-w-4xl mx-auto text-center pb-6 font-medium md:font-semibold">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl max-w-5xl mx-auto text-center pb-6 font-medium md:font-semibold">
             We lead with customer-first strategies:
           </h1>
           <h6 className="font-light text-md md:text-lg max-w-3xl mx-auto text-center pb-8 md:pb-10 lg:pb-18 text-[#5a5a5a]">
@@ -221,14 +290,14 @@ digital marketing agency is a must because marketing is not a luxury but a neces
             business building.
           </h6>
           <div className="hidden lg:flex rounded-[60px] overflow-hidden bg-black">
-            <div className="w-1/3 p-12 flex flex-col gap-6 text-white relative">
+            <div className="w-1/3 p-12 flex flex-col gap-4 text-white relative">
               {tabs.map((tab, index) => {
                 const isActive = index === activeIndex;
                 return (
                   <div
                     key={index}
                     onClick={() => setActiveIndex(index)}
-                    className={`font-syne !w-[160%] relative cursor-pointer transition-all duration-300 pl-12 pr-16 py-4 text-left text-lg md:text-xl font-medium leading-tight -ml-8
+                    className={`font-syne !w-[160%] relative cursor-pointer transition-all duration-300 pl-12 pr-16 py-4 text-left text-lg md:text-2xl font-medium leading-tight -ml-8
                     ${
                       isActive
                         ? "bg-[#f89e1b] text-white rounded-full z-10"
@@ -260,10 +329,9 @@ digital marketing agency is a must because marketing is not a luxury but a neces
                 </ul>
                 <div className="text-left mt-8">
                   <a
-                    href="#"
+                    href={tabs[activeIndex]?.content.link}
                     className="group inline-block text-sm font-semibold relative border-b-2 border-[#fbc371]"
                   >
-                    {" "}
                     LEARN MORE →
                     <span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
                   </a>
@@ -321,7 +389,7 @@ digital marketing agency is a must because marketing is not a luxury but a neces
                       </ul>
                       <div className="mt-6 text-left">
                         <a
-                          href="#"
+                           href={tabs[activeIndex]?.content.link}
                           className="text-sm font-semibold text-orange-500 border-b-2 border-orange-300 hover:border-orange-500"
                         >
                           LEARN MORE →
@@ -349,47 +417,6 @@ digital marketing agency is a must because marketing is not a luxury but a neces
             })}
           </div>
         </section>
-        {/* <img src={BorderBottom} alt="border-bottom-line" className="w-full absolute bottom-0 right-0 object-contain pt-22 px-5 md:px-10 lg:px-30"/> */}
-
-        <div className="pt-6 md:pt-14 lg:pt-24 pb-10">
-          <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15">
-            <div className="flex lg:justify-end">
-              <img
-                src={MarketingImg2}
-                alt="Marketing Visual"
-                className="w-full h-[250px] md:h-[470px] object-cover rounded-[30px] md:rounded-[60px]"
-              />
-            </div>
-            <div className="pl-2 md:pl-8 lg:pl-12 xl:pl-20 content-center">
-              <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">
-                Digital Market Tap—Smart, Data-Driven Marketing That Delivers
-                Results
-              </h3>
-              <h6 className="font-light text-sm lg:text-[16px] font-base text-[#545e5b] mt-2">
-                {" "}
-                We are the best digital marketing agency in Delhi because we
-                understand marketing is no longer a nicety in this day and age
-                of ever-evolving digital space, but a necessity. For companies
-                looking to expand, compete, and remain relevant, a well-defined,
-                holistic, and customer-centered marketing strategy is
-                imperative. At Digital Market Tap, our innovative and
-                specialized marketing solutions enable brands to reach, interact
-                with, and convert their desired audience. Our goal is to
-                understand our client's moral values and needs and then deliver
-                results. Marketing is not just randomly posting and running
-                random ads; it's a strategy to have your brand get more leads
-                and visibility, and we understand all these things very well.
-              </h6>
-              <a
-                href="#"
-                className="font-syne group inline-block text-sm font-semibold relative border-b-2 border-[#fbc371] uppercase mt-8"
-              >
-                more about our company
-                <span className="block absolute left-0 -bottom-.5 h-0.5 w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
-              </a>
-            </div>
-          </div>
-        </div>
 
         <section
           ref={ref}
@@ -442,7 +469,7 @@ digital marketing agency is a must because marketing is not a luxury but a neces
                 Leads generated so far...
               </p>
               <a
-                href="/contact"
+                href="/contact-us"
                 className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-full bg-black px-6 py-2 text-white transition duration-300 hover:bg-orange-400"
               >
                 CONTACT US <FaArrowRight />
@@ -452,39 +479,39 @@ digital marketing agency is a must because marketing is not a luxury but a neces
           </div>
         </section>
 
-        <BrandStaticLine />
+        <BrandSlider />
+
         {/* <img src={BorderBottom} alt="border-bottom-line" className="w-full absolute bottom-0 right-0 object-contain pt-22 px-5 md:px-10 lg:px-30"/> */}
-<div className="relative">
-
-
-        <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 overflow-hidden max-w-7xl mx-auto my-8 md:my-12 lg:my-24 text-center shadow-sm">
-           <img
-                      src={RocketBlue}
-                      alt="Custom"
-                      className="hidden md:block w-14 md:w-18 absolute right-2 md:right-36 lg:right-46 -top-6 -rotate-30 origin-top z-10"
-                    />
-          <div className="flex justify-center items-center mb-4">
+        <div className="relative">
+          <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 overflow-hidden max-w-7xl mx-auto my-8 md:my-12 lg:my-24 text-center shadow-sm">
             <img
-              src={GooglePartner1}
-              alt="Partner Logo"
-              className="h-8 sm:h-10 w-auto"
+              src={RocketBlue}
+              alt="Custom"
+              className="hidden md:block w-14 md:w-18 absolute right-2 md:right-36 lg:right-46 -top-6 -rotate-30 origin-top z-10"
             />
-          </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-snug text-black px-2 sm:px-0">
-            Get started with a Free <br className="hidden md:block" />{" "}
-            consultation
-          </h2>
-          <NavLink
-            to="/free-audit"
-            className="group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#6754E9] transition duration-300 inline-block relative overflow-hidden"
-          >
-            <span className="font-syne relative z-10 flex items-center justify-center gap-1">
-              GET A PROPOSAL <FaArrowRight />
-              <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300" />
-            </span>
-          </NavLink>
-        </section>
-</div>
+            <div className="flex justify-center items-center mb-4">
+              <img
+                src={GooglePartner1}
+                alt="Partner Logo"
+                className="h-8 sm:h-10 w-auto"
+              />
+            </div>
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-snug text-black px-2 sm:px-0">
+              Get started with a Free <br className="hidden md:block" />{" "}
+              consultation
+            </h2>
+            <NavLink
+              to="/free-audit"
+              className="group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 inline-block relative overflow-hidden"
+            >
+              <span className="font-syne relative z-10 flex items-center justify-center gap-1">
+                GET A PROPOSAL <FaArrowRight />
+                <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300" />
+              </span>
+            </NavLink>
+          </section>
+        </div>
+
         <div className="pb-16 md:pb-18 lg:pb-22 pt-8 md:pt-12 lg:pt-18 px-0 md:px-10 lg:px-30">
           <p className="text-center text-md font-semibold uppercase pb-4">
             FAQ
@@ -505,7 +532,7 @@ digital marketing agency is a must because marketing is not a luxury but a neces
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+                  className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
                 >
                   <span className="flex-1">{faq.question}</span>
                   <span className="ml-3 flex items-center justify-center">

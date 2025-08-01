@@ -5,7 +5,6 @@ import ContactUs from './pages/ContactUs';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPosts';
 import Layout from './components/Layout';
-import MarketingSolution from './pages/MarketingSolution';
 import Seo from "./pages/Seo";
 import AboutUs from './pages/AboutUs';
 import OnPageOffPageSeo from './pages/OnPageOffPageSeo';
@@ -55,11 +54,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout><Home /></Layout>} />
         <Route path="/contact-us" element={<Layout><ContactUs /></Layout>} />
-        {/* <Route path="/about-us" element={<Layout><AboutUs /></Layout>} /> */}
         <Route path="/blog" element={<Layout><Blog /></Layout>} />
         <Route path="/blog/:id" element={<Layout><BlogPost /></Layout>} />
         <Route path="/brand/:brandName" element={<Layout><ProjectDetailPage /></Layout>} />
-        <Route path="/marketing-solution" element={<Layout><MarketingSolution /></Layout>} />
+        <Route path="/marketing-solution" element={<Layout><Marketing /></Layout>} />
         <Route path="/website-design" element={<Layout><WebsiteDesign /></Layout>} />
         <Route path="/about-us" element={<Layout><AboutUs /></Layout>} />
         <Route path="/search-engine-optimization" element={<Layout><Seo /></Layout>} />
