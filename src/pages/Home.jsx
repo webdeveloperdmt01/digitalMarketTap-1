@@ -95,7 +95,7 @@ const Home = () => {
       ),
       description:
         "Website design & development is the best way to present your business digitally, as itreflects your brand value, drives engagement, and supports business growth.",
-      link: "/website-design",
+      link: "/website-development",
     },
   ];
 
@@ -137,7 +137,7 @@ const Home = () => {
             is here.
           </span>
         </p>
-        <a href="/contact-us">
+        <a href="#">
           <img src={HomeBanner} alt="homeBanner" className="w-full" />
         </a>
         <div className="relative flex flex-col lg:flex-row items-center justify-between px-5 md:px-10 lg:px-15 xl:px-30 pt-10 pb-10 md:pb-20 lg:pb-30 gap-8 md:gap-0 text-center">
@@ -276,9 +276,9 @@ const Home = () => {
                 </div>
               </div>
               <h6 className="text-[#5c5f61] font-light text-sm md:text-md">
-                By combining strategy, creativity, and technology, we can drive
-                real business results. Our latest marketing ideas and strategies
-                always deliver better outcomes.
+                For better outcome we combining strategy, creativity, and
+                technology, we can drive real business results. Our latest
+                marketing ideas and strategies always deliver better outcomes.
               </h6>
             </div>
           </div>

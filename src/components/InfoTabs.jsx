@@ -14,13 +14,13 @@ const contentData = {
         </>
       ),
     description:
-      "We believe in 100% transparency, that’s why we don’t charge any hidden fees, and by being accountable to our clients, because we believe in honesty and building trust, we are known for our honesty and delivering high-end results yet at an affordable price.",
+      "We believe in 100% transparency, that’s why we don’t charge any hidden fees, and we'll be accountable to our clients, because we believe in honesty and building trust, we are known for our honesty and delivering high-end results yet at an affordable price.",
     image: TransparencyImage,
   },
   "Team of Experts": {
     title: "Highly trained expert team",
     description:
-      "Our team consists of highly trained, experienced and dedicated team members who try their level best to deliver real results which satisfy your needs. We ensure that you get personalized support.",
+      "Our team consists of highly trained, experienced and dedicated expert members who try their level best to deliver real results which satisfy your needs. We ensure that you get personalized support.",
     image: TeamOfExpertsImage,
   },
   Results: {
@@ -87,11 +87,11 @@ const InfoTabs = () => {
 
           <div className="flex justify-start">
             <button
-              onClick={() => navigate("/contact-us")}
+              onClick={() => navigate("/about-us")}
               className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Get Proposal
+               ABOUT US
                 <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
                 <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
               </span>

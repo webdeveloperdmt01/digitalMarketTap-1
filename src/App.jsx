@@ -58,7 +58,7 @@ function App() {
         <Route path="/blog/:id" element={<Layout><BlogPost /></Layout>} />
         <Route path="/brand/:brandName" element={<Layout><ProjectDetailPage /></Layout>} />
         <Route path="/marketing-solution" element={<Layout><Marketing /></Layout>} />
-        <Route path="/website-design" element={<Layout><WebsiteDesign /></Layout>} />
+        <Route path="/website-development" element={<Layout><WebsiteDesign /></Layout>} />
         <Route path="/about-us" element={<Layout><AboutUs /></Layout>} />
         <Route path="/search-engine-optimization" element={<Layout><Seo /></Layout>} />
         <Route path="/onpage-offpage-seo" element={<Layout><OnPageOffPageSeo /></Layout>} />

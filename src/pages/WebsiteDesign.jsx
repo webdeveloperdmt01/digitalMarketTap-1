@@ -198,7 +198,7 @@ const WebsiteDesign = () => {
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold pt-20 md:pt-25 lg:pt-68 pr-5 md:pr-0 lg:pr-0">
                 Website development company in Delhi
               </h1>
-              <h6 className="text-sm lg:text-[16px] font-light text-black pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
+              <h6 className="text-sm lg:text-[16px] font-light text-gray-500 pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
                 Searching for{" "}
                 <span className="font-semibold text-gray-500">
                   The Best Website Development Company In Delhi
@@ -208,11 +208,7 @@ const WebsiteDesign = () => {
                 the help of your expert website developers and graphic
                 designers, we never fail to deliver high-performing websites. We
                 use the latest UI and UX designs to evaluate the overall look of
-                the website. Our websites are 100% mobile optimized and SEO
-                friendly, so you don't have to worry about website ranking and
-                performance. We use all the latest technologies, designs, and
-                animations to increase the overall look and performance of our
-                website. That's what makes us the best website development
+                the website.what makes us the best Digital Marketing
                 agency in Delhi.
               </h6>
 
@@ -248,12 +244,7 @@ const WebsiteDesign = () => {
               </div>
             </div>
             <div className="max-w-lg">
-              <p className="font-bold text-black text-right">
-                Premium
-                <br />
-                <span className="font-normal text-sm">Stock images</span>
-              </p>
-              <p className="text-md text-black pt-10 text-left">
+              <h6 className="text-md text-gray-500 pt-10 text-left font-light">
                 We want to help you get the best tailored website according to
                 your needs, which will be as unique as your brand value, as
                 beautiful as your services and products, and as secure as your
@@ -262,7 +253,7 @@ const WebsiteDesign = () => {
                 experienced website developers and graphic designers we make
                 sure the website turns out 100% secure, eye catchy visuals, 100%
                 mobile optimized and seo friendly.
-              </p>
+              </h6>
             </div>
           </div>
         </div>

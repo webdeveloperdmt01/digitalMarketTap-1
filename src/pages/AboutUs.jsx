@@ -33,7 +33,7 @@ const services = [
     icon: <FaEye className="text-2xl text-[#F89E1B] hover:text-black" />,
     title: "Transparency",
     description:
-      "We follow a 100% transparency policy and we don't charge any hidden fees. We believe in being genuine with all our clients and provide transparent information.",
+      "We follow a 100% transparency policy and we don't charge any hidden fees. We believe in being genuine & honest with all our clients and provide transparent information.",
   },
   {
     icon: <FaShieldAlt className="text-2xl text-[#F89E1B] hover:text-black" />,
@@ -45,7 +45,7 @@ const services = [
     icon: <FaLightbulb className="text-2xl text-[#F89E1B] hover:text-black" />,
     title: "Simplicity",
     description:
-      "We believe in simplicity, marketing experts should sound understandable and straightforward and not complicated. We deliver genuine results without making it complex.",
+      "We believe in simplicity, marketing experts should sound understandable and straightforward. We deliver genuine results without making it complex.",
   },
   {
     icon: (
@@ -175,7 +175,7 @@ const AboutUs = () => {
         <h6 className="max-w-3xl mx-auto text-lg md:text-3xl font-medium text-left pb-8 md:pb-16 lg:pb-28">
           We provide the best digital marketing services across Delhi. We have
           over 5 years of experience; we have served over 10,000 satisfied
-          clients and worked with over a hundred brands, and with the help of a
+          clients and worked with over a hundred brands, and with the help of our
           highly experienced and trained expert team, we have never failed to
           deliver the best result-oriented services. No matter what issues
           you're facing, Digital Market Tap is a one-stop digital marketing

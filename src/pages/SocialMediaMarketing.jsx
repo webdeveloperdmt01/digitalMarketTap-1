@@ -31,7 +31,7 @@ const services = [
   {
     icon: (
       <FaUserTie className="text-[#f89e1b] text-2xl hover:text-[#000]" />
-    ),
+    ), 
     title: "Expert in PPC management",
     description:
       "We are a trusted and experienced marketing agency. Our paid search managers have years of experience running profitable campaigns across a range of sectors. And the satisfied customers attest to that. So always choose an experience agency for your business.",
@@ -131,7 +131,7 @@ const tabs = [
         "Clients saw immediate uplift in lead generation from paid campaigns",
     },
   },
-];
+];  
 
 const SocialMediaMarketing = () => {
   const [openIndex, setOpenIndex] = useState(null);

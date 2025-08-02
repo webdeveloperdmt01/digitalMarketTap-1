@@ -62,7 +62,7 @@ const Header = () => {
             {marketingSolutionsVisible && (
               <div className="absolute top-full justify-around left-[160px] -translate-x-1/2 mt-8 bg-white shadow-lg rounded-3xl z-50 px-5 py-6 flex space-x-10 w-[1260px]">
                 <div className="flex flex-col space-y-1">
-                 <HoverService icon={<FaCode color="#000" />} text="Website Development" to="/website-design" />
+                 <HoverService icon={<FaCode color="#000" />} text="Website Development" to="/website-development" />
                   <HoverService icon={<FaSearch color='#E0E0E0' />} text="Search Engine Optimization" to="/search-engine-optimization" />
                   {/* <HoverService icon={<FaEnvelope  />} text="Email Marketing" to="/email-marketing" /> */}
                   {/* <HoverService icon={<FaQuora color="#D53716" />} text="Quora Marketing" to="/quora-marketing" /> */}

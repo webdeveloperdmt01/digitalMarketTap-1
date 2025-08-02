@@ -228,7 +228,7 @@ const Marketing = () => {
               <h6 className="font-light text-sm lg:text-[16px] font-base text-[#545e5b] mt-2">
                 {" "}
                 We are the best digital marketing agency in Delhi because we
-                understand marketing is no longer a nicety in this day and age
+                understand marketing is no longer a luxary in this day and age
                 of ever-evolving digital space, but a necessity. For companies
                 looking to expand, compete, and remain relevant, a well-defined,
                 holistic, and customer-centered marketing strategy is
