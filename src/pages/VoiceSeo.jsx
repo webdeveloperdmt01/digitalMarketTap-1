@@ -29,22 +29,13 @@ const VoiceSeo = () => {
   const services = [
     {
       icon: <FaBullseye className="text-[#F89E1B] text-2xl hover:text-black" />,
-      title: (
-        <>
-        We Focus on local SEO.
-        </>
-      ),
+      title: <>We Focus on local SEO.</>,
       description:
         "It's also majorly focused and supports local businesses as users search for services “near me,” and if your business is voice search optimized, it increases your chances of getting selected, and it will also increase your ranking, so get your brand heard first by smart assistants like Alexa, Siri, and Google",
     },
     {
       icon: <FaSearch className="text-[#F89E1B] text-2xl hover:text-black" />,
-      title: (
-        <>
-          Stay Ahead of the Competition
-
-        </>
-      ),
+      title: <>Stay Ahead of the Competition</>,
       description:
         "There are still many businesses ignoring voice search optimization because they don’t understand its importance, so it's still a big opportunity to get your content voice search optimized to get ahead of big competitors. For that, Digital Market Tap will help you to get the best SEO service",
     },
@@ -56,11 +47,7 @@ const VoiceSeo = () => {
     },
     {
       icon: <FaRocket className="text-[#F89E1B] text-2xl hover:text-black" />,
-      title: (
-        <>
-       Increased Website Traffic & Conversions
-        </>
-      ),
+      title: <>Increased Website Traffic & Conversions</>,
       description:
         "Voice SEO increases website traffic & conversions because it makes your content voice search optimized, and many people use voice search more than typing, so if your content is voice search friendly, then it increases your chance to get picked. The more it is seen, the more leads and traffic you will get.",
     },
@@ -101,9 +88,10 @@ const VoiceSeo = () => {
               Optimize for Voice, Not Just Text
             </h1>
             <h6 className="text-sm font-light lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">
-           The best digital marketing agency in Delhi. Digital Marketing Tap presents you Voice
-SEO, in which your website will be optimized for voice, not just for text, because over
-50% of searches are voice-based
+              The best digital marketing agency in Delhi. Digital Marketing Tap
+              presents you Voice SEO, in which your website will be optimized
+              for voice, not just for text, because over 50% of searches are
+              voice-based
             </h6>
             <NavLink
               to="/"
@@ -130,7 +118,7 @@ SEO, in which your website will be optimized for voice, not just for text, becau
             </div>
             <div>
               <h2 className="text-2xl md:text-3xl font-bold pt-6 text-black">
-             Voice SEO: Preparing Your Brand for Search's Future
+                Voice SEO: Preparing Your Brand for Search's Future
               </h2>
             </div>
           </div>
@@ -141,10 +129,11 @@ SEO, in which your website will be optimized for voice, not just for text, becau
               <span className="font-normal text-sm">Stock images</span>
             </p>
             <h6 className="text-sm text-black pt-10 text-left font-light">
-             We prepare your brand for future ready because we provide the best SEO service in
-Delhi, and now more than 60% of users use voice assistants, so it's important that your
-content is voice search optimized. And if your business isn’t voice search ready, you're
-missing out on something
+              We prepare your brand for future ready because we provide the best
+              SEO service in Delhi, and now more than 60% of users use voice
+              assistants, so it's important that your content is voice search
+              optimized. And if your business isn’t voice search ready, you're
+              missing out on something
             </h6>
           </div>
         </div>

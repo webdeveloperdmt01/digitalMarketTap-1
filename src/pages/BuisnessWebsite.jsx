@@ -12,25 +12,25 @@ import { FaArrowRight, FaCrown, FaEnvelope, FaRocket, FaBullseye, FaSearchengin 
 
 const services = [
   {
-    icon: <FaSearchengin className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+    icon: <FaSearchengin className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
     title: "Paid search marketing",
     description: "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
     link: "/content-writing-service",
   },
   {
-    icon: <FaBullseye className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+    icon: <FaBullseye className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
     title: "Search engine optimization",
     description: "Maintain your best spot on the search results page, so you can find new customers and re-engage loyal ones.",
     link: "/search-engine-optimization",
   },
   {
-    icon: <FaEnvelope className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+    icon: <FaEnvelope className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
     title: "Email marketing",
     description: "When it comes to reaching your target audience, you can’t get much closer than direct to their inboxes.",
     link: "/email-marketing",
   },
   {
-    icon: <FaRocket className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+    icon: <FaRocket className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
     title: "Conversion rate optimization",
     description: "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
     link: "/social-media-optimisation",
@@ -39,7 +39,7 @@ const services = [
 
 const BuisnessWebsite = () => {
   return (
-     <div className="bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-10 lg:px-30">
+     <div className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-30">
        <div className="pb-4 pt-22">
           <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
             <div>

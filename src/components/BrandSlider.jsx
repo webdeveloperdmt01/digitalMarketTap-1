@@ -6,21 +6,23 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import F7 from '../assets/F7.png';
-import Caridad from '../assets/caridad.png';
-import Petmania from '../assets/petmania.png';
-import Jolie from '../assets/jolie.png';
-import Scuola from '../assets/Scuola_Logo.png';
-import Technologia from '../assets/tecnologia.png';
+import CcLogo from '../assets/CC-logo.webp';
+import PwLogo from '../assets/pw-logo.webp';
+import SehajLogo from '../assets/sehaj-bg.webp';
+import CraftoriumLogo from '../assets/craftorium-bg.webp';
+import DDLogo from '../assets/dd-logo.webp';
+import ShreyaLogo from '../assets/shreya-logo.webp';
+import WeavesLogo from '../assets/weaves-logo.webp';
 import BorderBottomCenter from '../assets/border-center.png';
 
 const logos = [
-  { src: F7 },
-  { src: Caridad },
-  { src: Petmania },
-  { src: Jolie },
-  { src: Scuola },
-  { src: Technologia },
+  { src: CcLogo },
+  { src: PwLogo },
+  { src: SehajLogo },
+  { src: CraftoriumLogo },
+  { src: DDLogo },
+  { src: ShreyaLogo },
+  { src: WeavesLogo },
 ];
 
 const BrandSlider = () => {
@@ -55,7 +57,7 @@ const BrandSlider = () => {
       >
         {logos.map((logo, index) => (
           <SwiperSlide key={index}>
-            <img src={logo.src} alt={`brand-${index}`} className="mx-auto max-h-16" />
+            <img src={logo.src} alt={`brand-${index}`} className="mx-auto max-h-22" />
           </SwiperSlide>
         ))}
       </Swiper>
