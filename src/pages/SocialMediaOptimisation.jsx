@@ -421,7 +421,7 @@ const SocialMediaOptimisation = () => {
           <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+              className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
             >
               <span className="flex-1">{faq.question}</span>
               <span className="ml-3 flex items-center justify-center">
@@ -434,8 +434,8 @@ const SocialMediaOptimisation = () => {
             </button>
       
             {openIndex === index && (
-              <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
-                <p>{faq.answer}</p>
+              <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md">
+                <h6>{faq.answer}</h6>
       
                 {faq.answerPoints && Array.isArray(faq.answerPoints) && (
                   <ul className="list-disc ml-5 mt-2 space-y-1">

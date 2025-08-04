@@ -525,10 +525,10 @@ const GraphicDesign = () => {
           FAQs about Graphic <br />
           Designing
         </h1>
-        <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">
+        <h6 className="text-center text-md md:text-lg font-light text-gray-500 pb-4">
           Looking to learn more about Graphic Designing for your business?
           Browse our FAQs
-        </p>
+        </h6>
       </div>
 
       <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5">
@@ -536,7 +536,7 @@ const GraphicDesign = () => {
           <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+              className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
             >
               <span className="flex-1">{faq.question}</span>
               <span className="ml-3 flex items-center justify-center">
@@ -549,8 +549,8 @@ const GraphicDesign = () => {
             </button>
 
             {openIndex === index && (
-              <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
-                <p>{faq.answer}</p>
+              <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
+                <h6>{faq.answer}</h6>
 
                 {faq.answerPoints && Array.isArray(faq.answerPoints) && (
                   <ul className="list-disc ml-5 mt-2 space-y-1">

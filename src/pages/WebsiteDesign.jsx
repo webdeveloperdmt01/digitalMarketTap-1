@@ -598,10 +598,10 @@ const WebsiteDesign = () => {
           <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
             FAQs about Website <br /> Development
           </h1>
-          <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">
+          <h6 className="text-center text-md md:text-lg font-base text-gray-500 pb-4 font-light">
             Looking to learn more about website design & development for your
             business? Browse our FAQs
-          </p>
+          </h6>
 
           <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
             {faqs.map((faq, index) => (
@@ -611,7 +611,7 @@ const WebsiteDesign = () => {
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full flex justify-between items-center text-left text-lg md:text-2xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
+                  className="font-syne w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
                 >
                   {faq.question}
                   {openIndex === index ? (
@@ -621,9 +621,9 @@ const WebsiteDesign = () => {
                   )}
                 </button>
                 {openIndex === index && (
-                  <p className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
+                  <h6 className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
                     {faq.answer}
-                  </p>
+                  </h6>
                 )}
               </div>
             ))}

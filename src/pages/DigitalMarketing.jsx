@@ -6,14 +6,8 @@ import CountUp from "react-countup";
 import { NavLink } from "react-router-dom";
 import { FaArrowRight, FaPlus, FaMinus } from "react-icons/fa";
 
-// Images
 import heroImg from "../assets/digitalMarketingHeroImg.jpg";
-import emailImg from "../assets/email-mkt.jpg";
-import paidSearchImg from "../assets/PaidMarketing1.png";
-import quoraImg from "../assets/quora-mkt.png";
-import ormImg from "../assets/onlineReputationMgmt.jpg";
-import socialMediaImg from "../assets/SocialMediaOpt.jpg";
-import RocketBlue from "../assets/rocket.png";
+import RocketBlue from "../assets/bluerocket.png";
 import GooglePartner1 from "../assets/google-partner-1.png";
 
 const faqs = [
@@ -51,39 +45,6 @@ const faqs = [
     question: "How do I get started with Digital Market Tap?",
     answer:
       "Simply contact us for a free consultation. Our experts will analyze your current online presence, understand your goals, and recommend a strategy tailored to your success.",
-  },
-];
-
-const services = [
-  {
-    img: emailImg,
-    title: "Email Marketing",
-    desc: "Engage customers with personalized, automated, and effective email campaigns.",
-    link: "/email-marketing",
-  },
-  {
-    img: paidSearchImg,
-    title: "Paid Search Marketing",
-    desc: "Drive targeted traffic using Google Ads, Bing Ads, and PPC strategies.",
-    link: "/paid-marketing",
-  },
-  {
-    img: quoraImg,
-    title: "Quora Marketing",
-    desc: "Boost credibility and visibility by engaging with niche audiences on Quora.",
-    link: "/quora-marketing",
-  },
-  {
-    img: ormImg,
-    title: "Online Reputation Management",
-    desc: "Build and protect your brand's online reputation and handle reviews.",
-    link: "/online-reputation-management",
-  },
-  {
-    img: socialMediaImg,
-    title: "Social Media Marketing",
-    desc: "Grow your audience with campaigns across Facebook, Instagram, LinkedIn, and more.",
-    link: "/social-media-marketing",
   },
 ];
 
@@ -233,7 +194,7 @@ const DigitalMarketing = () => {
               drive ROI, and become a true partner in your success.
             </strong>
           </h6>
-          <div className="absolute bottom-2 md:bottom-8 lg:bottom-10 right-6 md:right-34 lg:right-124 text-5xl text-[#F89E1B] font-mono">
+          <div className="absolute bottom-2 md:bottom-8 lg:bottom-8 right-6 md:right-34 lg:right-124 text-5xl text-[#F89E1B] font-mono">
             ”
           </div>
         </div>
@@ -252,38 +213,6 @@ const DigitalMarketing = () => {
           </span>{" "}
           fuels your growth with data-driven strategies and measurable success.
         </p>
-      </div>
-
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="relative group bg-white/70 backdrop-blur-md border border-gray-200 rounded-3xl p-6 overflow-hidden hover:shadow-2xl transition hover:scale-105"
-          >
-            <img
-              src={service.img}
-              alt={service.title}
-              className="w-full h-48 object-cover rounded-xl mb-6"
-            />
-
-            <h4 className="text-2xl font-semibold text-gray-800 mb-2">
-              {service.title}
-            </h4>
-            <p className="text-gray-600">{service.desc}</p>
-
-            <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-90 group-hover:backdrop-blur-lg flex flex-col justify-center items-center transition duration-500 rounded-3xl">
-              <h4 className="text-xl text-white font-semibold mb-4">
-                {service.title}
-              </h4>
-              <NavLink
-                to={service.link}
-                className="bg-white text-black px-6 py-2 rounded-full text-sm font-medium hover:bg-[#F89E1B] hover:text-white transition"
-              >
-                Learn More
-              </NavLink>
-            </div>
-          </div>
-        ))}
       </div>
 
       <div className="max-w-7xl mx-auto pt-8 md:pt-12 px-0 md:px-4">
@@ -397,7 +326,7 @@ const DigitalMarketing = () => {
               key={index}
               className="bg-white shadow-lg hover:shadow-2xl transition rounded-3xl p-8 text-center flex flex-col items-center"
             >
-              <div className="w-32 h-32 bg-[#FCD9A0] flex items-center justify-center rounded-full mb-6">
+              <div className="w-32 h-32 bg-[#f89e1b] flex items-center justify-center rounded-full mb-6">
                 <span className="text-4xl font-bold text-[#fff]">
                   <CountUp end={stat.value} duration={3} />
                   {stat.suffix}
@@ -431,7 +360,7 @@ const DigitalMarketing = () => {
           </h2>
           <NavLink
             to="/free-audit"
-            className="group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#6754E9] transition duration-300 inline-block relative overflow-hidden"
+            className="group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 inline-block relative overflow-hidden"
           >
             <span className="relative z-10 flex items-center justify-center gap-1">
               GET A PROPOSAL <FaArrowRight />
@@ -452,12 +381,12 @@ const DigitalMarketing = () => {
         </h6>
       </div>
 
-      <div className="max-w-5xl mx-auto pt-8 pb-12 md:pb-16 space-y-2 md:space-y-4">
+      <div className="max-w-5xl mx-auto pt-8 pb-14 md:pb-20 space-y-2 md:space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+              className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
             >
               {faq.question}
               {openIndex === index ? (
@@ -467,9 +396,9 @@ const DigitalMarketing = () => {
               )}
             </button>
             {openIndex === index && (
-              <p className="mt-3 text-gray-500 text-xs font-semibold md:text-md">
+              <h6 className="mt-3 text-gray-500 text-sm md:text-md lg:text-lg font-normal md:text-md">
                 {faq.answer}
-              </p>
+              </h6>
             )}
           </div>
         ))}

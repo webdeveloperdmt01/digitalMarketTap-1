@@ -688,17 +688,17 @@ const Seo = () => {
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
           FAQs about Search Engine <br /> Optimization
         </h1>
-        <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">
+        <h6 className="text-center text-md md:text-lg font-light text-gray-500 pb-4">
           Looking to learn more about search engine optimization for your
           business? Browse our FAQs
-        </p>
+        </h6>
       </div>
       <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4  px-5 md:px-10 lg:px-15 xl:px-0">
         {faqs.map((faq, index) => (
           <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#F89E1B] focus:outline-none pt-5"
+              className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#F89E1B] focus:outline-none pt-5"
             >
               {faq.question}
               {openIndex === index ? (
@@ -708,9 +708,9 @@ const Seo = () => {
               )}
             </button>
             {openIndex === index && (
-              <p className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
+              <h6 className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
                 {faq.answer}
-              </p>
+              </h6>
             )}
           </div>
         ))}

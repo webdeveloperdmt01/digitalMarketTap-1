@@ -461,7 +461,7 @@ the numbers?{" "}
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
           FAQs about Online Reputation <br /> Management
         </h1>
-        <h6 className="text-center font-light text-md md:text-lg font-base text-gray-500 pb-4">
+        <h6 className="text-center font-light text-md md:text-lg text-gray-500 pb-4">
           Looking to learn more about Online Reputation Management for your
           business? Browse our FAQs
         </h6>
@@ -471,7 +471,7 @@ the numbers?{" "}
     <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
       <button
         onClick={() => toggleFAQ(index)}
-        className="w-full flex justify-between items-center text-left text-lg md:text-2xl font-medium hover:text-[#6754E9] focus:outline-none pt-5"
+        className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
       >
         <span className="flex-1">{faq.question}</span>
         <div className="flex-none w-7 h-7 md:w-8 md:h-8 flex justify-center items-center">
@@ -483,7 +483,7 @@ the numbers?{" "}
         </div>
       </button>
       {openIndex === index && (
-        <p className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-medium md:text-md">
+        <p className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
           {faq.answer}
         </p>
       )}
