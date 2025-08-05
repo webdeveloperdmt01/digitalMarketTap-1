@@ -2,7 +2,7 @@ import React from "react";
 import clutch from "../assets/clutch-badge.png";
 import expertise from "../assets/expertise-badge.png";
 import localExcellence from "../assets/local-excellence-badge.png";
-import rocket from "../assets/bluerocket.png";
+import rocket from "../assets/blueRocket.png";
 import avatar from "../assets/avatar.png";
 import clutchLogo from "../assets/clutch-logo.png";
 import bbb from "../assets/bbb.png";
