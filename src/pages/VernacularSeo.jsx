@@ -65,7 +65,7 @@ const VernacularSeo = () => {
 
 
   return (
-    <main className='!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30'>
+    <main className='bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30'>
       <div className="pt-4 md:pt-8 lg:pt-12 pb-4">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
           <div>
