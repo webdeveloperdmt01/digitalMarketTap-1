@@ -178,7 +178,7 @@ const Marketing = () => {
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 py-6 md:py-8 lg:py-14 items-center">
           <div>
             <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-8">
-              Marketing Solutions
+              Marketing
             </h3>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mt-2 leading-tight">
               Marketing Solution in every Platform of Social Media
@@ -512,7 +512,7 @@ const Marketing = () => {
           </section>
         </div>
 
-        <div className="pb-16 md:pb-18 lg:pb-22 pt-8 md:pt-12 lg:pt-18 px-0 md:px-10 lg:px-30">
+        <div className="pb-16 md:pb-18 lg:pb-22 pt-8 md:pt-12 lg:pt-18">
           <p className="text-center text-md font-semibold uppercase pb-4">
             FAQ
           </p>

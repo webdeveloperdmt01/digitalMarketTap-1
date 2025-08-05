@@ -44,7 +44,7 @@ const faqs = [
 const services = [
   {
     icon: (
-      <FaSearchDollar className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />
+      <FaSearchDollar className="text-[#f89e1b] text-2xl hover:text-[#000]" />
     ),
     title: "We Boost your positive content.",
     description:
@@ -52,14 +52,14 @@ const services = [
   },
   {
     icon: (
-      <FaUserTie className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />
+      <FaUserTie className="text-[#f89e1b] text-2xl hover:text-[#000]" />
     ),
     title: "We Improve brand appearance.",
     description:
       "In our online reputation service, we help you to improve brand appearance by delivering positive reviews. We create positive brand values about your business so that other users can trust your brand, and a positive image of your brand can be generated in the market so your audience sees your best side—always.",
   },
   {
-    icon: <FaGoogle className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+    icon: <FaGoogle className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
     title: "We handle negative feedback smartly.",
     description:
       "We manage your negative criticism intelligently, amplify your good content, and make your audience see your best side—every time. Whether you're a new business, mature business, or public personality, we keep your credibility safe and enable you to build trust, draw more customers, and develop with assurance",
@@ -109,7 +109,7 @@ const OnlineReputationManagement = () => {
             Online Reputation <br />
             Management
           </h2>
-          <h6 className="text-md text-black mt-5 mb-10 font-light">
+          <h6 className="text-md md:text-lg text-gray-500 mt-5 mb-10 font-light">
             In today's online age, your reputation online is your initial
             impression. Digital Market Tap provides professional online
             reputation management (ORM) solutions that assist companies in
@@ -118,7 +118,7 @@ const OnlineReputationManagement = () => {
           </h6>
           <NavLink
             to="/free-audit"
-            className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
+            className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
           >
             <span className="relative z-10">
               GET A FREE AUDIT →
@@ -387,7 +387,7 @@ the numbers?{" "}
                   90%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] hover:text-black text-2xl" />
                 </div>
               </div>
               <h6 className="text-[#5c5f61] font-light">
@@ -401,7 +401,7 @@ the numbers?{" "}
                   95%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] hover:text-black text-2xl" />
                 </div>
               </div>
                 <h6 className="text-[#5c5f61] font-light">
@@ -415,7 +415,7 @@ the numbers?{" "}
                   98%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] hover:text-black text-2xl" />
                 </div>
               </div>
               <h6 className="text-[#5c5f61] font-light">

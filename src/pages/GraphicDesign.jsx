@@ -113,7 +113,7 @@ const GraphicDesign = () => {
         </NavLink>
       </div>
 
-      <div className="w-full pb-6 lg:pb-12 pt-4 md:pt-8 lg:pt-12 relative px-5 md:px-10 lg:px-30">
+      <div className="w-full pb-6 lg:pb-12 pt-4 md:pt-8 lg:pt-12 relative px-5 md:px-10 lg:px-15 xl:px-30">
         <div className="flex justify-center gap-8 relative z-10 px-0 md:px-4 flex-wrap">
           <img
             src={GraphicDesign1}
@@ -177,18 +177,18 @@ const GraphicDesign = () => {
       >
         {stats.map((stat, idx) => (
           <div key={idx} className="w-1/2 md:w-1/4 mb-8 md:mb-6">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-black">
               {inView ? <CountUp end={stat.value} duration={2.5} /> : 0}
               {stat.suffix}
             </h2>
-            <p className="text-gray-500 mt-2 font-bold uppercase tracking-wide text-sm">
+            <p className="text-gray-500 mt-2 font-semibold uppercase tracking-wide text-sm">
               {stat.label}
             </p>
           </div>
         ))}
       </div>
 
-      <div className="relative py-4 md:py-12 lg:py-20 px-5 md:px-10 lg:px-30">
+      <div className="relative py-4 md:py-12 lg:py-20 px-5 md:px-10 lg:px-15 xl:px-30">
         <img
           src={StarImg}
           alt="star"
@@ -253,7 +253,7 @@ const GraphicDesign = () => {
         </div>
       </div>
 
-      <div className="pt-12 md:pt-14 pb-12 md:pb-14 lg:pb-18 px-5 md:px-10 lg:px-30">
+      <div className="pt-12 md:pt-14 pb-12 md:pb-14 lg:pb-18 px-5 md:px-10 lg:px-15 xl:px-30">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center">
           <div className="flex lg:justify-end">
             <img
@@ -262,7 +262,7 @@ const GraphicDesign = () => {
               className="w-full h-[250px] md:h-[470px] object-cover rounded-[30px] md:rounded-[60px]"
             />
           </div>
-          <div className="pl-2 md:pl-8 lg:pl-20">
+          <div className="pl-2 md:pl-8 lg:pl-4 xl:pl-20">
             <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-14">
               Why Choose Digital Market Tap for Graphic Design?
             </h3>
@@ -279,7 +279,7 @@ const GraphicDesign = () => {
               to="/about-us"
               className="font-syne text-md border-b-2 border-[#f89e1b] font-semibold group relative inline-flex items-center gap-2  text-black transition duration-300"
             >
-              LEARN MORE <FaArrowRight />
+             GET STARTED <FaArrowRight />
               <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-[calc(100%-0rem)]"></span>
             </NavLink>
           </div>
@@ -308,7 +308,7 @@ const GraphicDesign = () => {
           />
         </svg>
 
-        <div className="px-5 md:px-10 lg:px-30 text-center">
+        <div className="px-5 md:px-10 lg:px-15 xl:px-30 text-center">
           <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-8">
             Make your Brand more <br /> effective
           </h2>
@@ -454,23 +454,23 @@ const GraphicDesign = () => {
 
       <GraphicDesignSlider />
 
-      <div className="pt-12 md:pt-20 lg:pt-38 md:pb-15 px-5 md:px-10 lg:px-30">
+      <div className="pt-12 md:pt-20 lg:pt-38 md:pb-15 px-5 md:px-10 lg:px-15 xl:px-30">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 items-center">
           <div className="pl-2 md:pl-8 lg:pl-20">
             <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-14">
               24/7 Customers Support <br /> Service
             </h3>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-2 pb-6">
+            <h6 className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-2 pb-6 font-light">
               In order to scale new customer acquisition and retention for
               e-commerce brands, we work across the entire customer journey. Our
               team has a successful track record of helping brands scale
               profitably based on high-performing strategies.
-            </p>
+            </h6>
             <NavLink
               to="/contact-us"
               className="font-syne text-md border-b-2 border-[#f89e1b] font-semibold group relative inline-flex items-center gap-2  text-black transition duration-300"
             >
-              LEARN MORE <FaArrowRight />
+              CONTACT US <FaArrowRight />
               <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#f89e1b] transition-all duration-300 group-hover:w-[calc(100%-0rem)]"></span>
             </NavLink>
           </div>
@@ -494,9 +494,9 @@ const GraphicDesign = () => {
           Ready for your <br />
           digital success?
         </h1>
-        <p className="text-lg md:text-xl text-black pb-12 md:pb-20 lg:pb-30">
+        <h6 className="text-lg md:text-xl text-black pb-12 md:pb-20 lg:pb-30 font-light">
           Our services solve any business problem.
-        </p>
+        </h6>
         <NavLink
           to="/free-audit"
           className="font-syne group bg-black text-white hover:text-black px-6 md:px-12 py-2 md:py-4 rounded-[10px] text-lg font-semibold border border-black hover:bg-transparent transition duration-300 relative overflow-hidden"
@@ -511,7 +511,7 @@ const GraphicDesign = () => {
           alt="highlight"
           className="absolute top-[62%] md:top-[65%] lg:top-[70%] left-[14%] md:left-[30%] lg:left-[40%] w-[30px] md:w-[40px]"
         />
-        <div className="absolute top-[19%] md:top-[17%] lg:top-[15%] left-[15%] md:left-[26%] lg:left-[31%] w-[90px] md:w-[120px] lg:w-[150px] h-[45px] md:h-[60px] lg:h-[80px] bg-[#f89e1b] rounded-full z-1"></div>
+        <div className="absolute top-[19.5%] md:top-[16%] lg:top-[14%] xl:top-[14%] left-[14%] md:left-[22%] lg:left-[19.5%] xl:left-[28%] w-[90px] md:w-[120px] lg:w-[150px] h-[45px] md:h-[60px] lg:h-[80px] bg-[#f89e1b] rounded-full z-1"></div>
         <img
           src={HighlightedStrokes}
           alt="highlight"
@@ -531,7 +531,7 @@ const GraphicDesign = () => {
         </h6>
       </div>
 
-      <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5">
+      <div className="pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5 md:px-10 lg:px-15 xl:px-30">
         {faqs.map((faq, index) => (
           <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
             <button

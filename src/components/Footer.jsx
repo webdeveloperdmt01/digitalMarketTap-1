@@ -446,7 +446,7 @@ const Footer = () => {
           )}
         </div>
 
-        <div className="bg-black text-white py-6 md:py-12 px-1 md:px-5 lg:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 md:gap-10">
+        <div className="bg-black text-white py-6 md:py-12 px-1 md:px-5 lg:px-12 xl:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-10">
           <div>
             <h3 className="text-lg md:text-md lg:text-lg font-bold mb-2 md:mb-4">
               OUR SERVICES
@@ -478,7 +478,7 @@ const Footer = () => {
               <li className="w-fit relative group">
                 <Link
                   to="/graphic-design"
-                  className="font-syne inline-block text-white group-hover:text-white transition-colors duration-300"
+                  className="font-syne inline-block text-white group-hover:text-white transition-colors duration-300 mt-3"
                 >
                   Graphic Design
                   <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>

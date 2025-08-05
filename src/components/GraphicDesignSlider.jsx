@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { FaQuoteRight, FaStar } from "react-icons/fa";
-import YellowStar from "../assets/Misc_star.png";
 import HighlightedStrokes from "../assets/Highlight_strokes.png";
 
 const testimonials = [
@@ -73,9 +72,8 @@ const testimonials = [
 
 const GraphicDesignSlider = () => {
   return (
-    <div className="pt-20 pb-16 px-5 md:px-10 lg:px-30 text-black text-center relative">
-      <img src={YellowStar} alt="star" className="absolute top-[17%] md:top-[10%] right-[16%] md:right-[28%] w-[30px] md:w-[40px]" />
-      <img src={HighlightedStrokes} alt="highlight" className="absolute top-[9%] md:top-[10%] left-[11%] md:left-[26%] lg:left-[30%] w-[30px] md:w-[40px]" />
+    <div className="pt-20 pb-16 px-5 md:px-10 lg:px-15 xl:px-30 text-black text-center relative">
+      <img src={HighlightedStrokes} alt="highlight" className="absolute top-[9%] md:top-[6%] lg:top-[7%] xl:top-[7%] left-[11%] md:left-[20%] lg:left-[22%] xl:left-[29%] w-[30px] md:w-[40px]"/>
       <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold mb-4 relative inline-block"> What our awesome <br />customers say</h2>
       <p className="text-gray-600 max-w-2xl mx-auto mb-10 px-4 text-sm md:text-md"> Our team has a successful track record of helping brands scale profitably based on high-performing strategies.</p>
       <Swiper
@@ -98,9 +96,9 @@ const GraphicDesignSlider = () => {
                   <FaQuoteRight />
                 </div>
               </div>
-              <p className="text-md font-medium mb-4 text-gray-700 leading-relaxed italic">
+              <h6 className="text-md mb-4 text-gray-700 leading-relaxed italic font-light">
                 “{testimonial.quote}”
-              </p>
+              </h6>
               <div className="flex justify-center mb-2 text-[#f89e1b]">
                 {[...Array(5)].map((_, i) => (
                   <FaStar key={i} />

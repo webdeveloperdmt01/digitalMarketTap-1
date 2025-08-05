@@ -28,8 +28,8 @@ const logos = [
 const BrandSlider = () => {
   return (
     <div className="sm:px-5 pb-15 lg:pb-30 pt-8 md:pt-14 text-center relative">
-      <h2 className="text-xl px-5 font-bold mb-10 md:mb-12">
-        Digital Market Tap is the first choice of industry leaders.
+      <h2 className="text-2xl md:text-4xl lg:text-5xl px-5 font-bold mb-8 md:mb-12 lg:mb-18">
+        Digital Market Tap - <br /> First choice of industry leaders.
       </h2>
 
       <Swiper

@@ -47,9 +47,9 @@ const Testimonials = () => {
   return (
     <>
       <div className="px-0 md:px-10 lg:px-15 xl:px-30">
-        <div className="rounded-t-[30px] md:rounded-t-[60px] pt-4 bg-[#FFF5EB]">
+        <div className="rounded-t-[30px] md:rounded-t-[60px] bg-[#FFF5EB]">
         <section className="pt-6 md:pt-16 rounded-t-[60px]">
-          <h2 className="text-center md:text-left text-2xl md:text-4xl font-semibold mb-4  px-5 md:px-10 lg:px-15">
+          <h2 className="text-center md:text-left text-2xl md:text-4xl font-semibold md:mb-4 lg:mb-8 px-5 md:px-10 lg:px-15">
             The proof is in the numbers
           </h2>
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 pb-12 md:pb-20 px-5 md:px-10 lg:px-15">

@@ -31,50 +31,52 @@ const faqs = [
     answer:
       "SMO focuses on organic growth by optimizing profile and content quality. Meanwhile SMM includes paid promotions through campaigns .SMM is a quick way to increase visibility and traffic but if you want an organic way SMO is the best way.",
   },
- {
-  question: "What platforms do you optimize for?",
-  answer: "We optimize all major platforms, including:",
-  answerPoints: [
-    "Pinterest",
-    "Instagram",
-    "LinkedIn",
-    "Twitter (X)",
-    "YouTube",
-    "Facebook",
-  ],
-},
- {
-  question: "What’s included in your SMO service?",
-  answer: " Our SMO services typically include:",
-  answerPoints: [
-    "Profile setup or optimization",
-    "Bio and description refinement",
-    "Keyword and hashtag strategy",
-    "Visual consistency (logos, banners, etc.)",
-    "Content formatting and posting guidance",
-    "Engagement strategy and timing optimization",
-  ],
-}
+  {
+    question: "What platforms do you optimize for?",
+    answer: "We optimize all major platforms, including:",
+    answerPoints: [
+      "Pinterest",
+      "Instagram",
+      "LinkedIn",
+      "Twitter (X)",
+      "YouTube",
+      "Facebook",
+    ],
+  },
+  {
+    question: "What’s included in your SMO service?",
+    answer: " Our SMO services typically include:",
+    answerPoints: [
+      "Profile setup or optimization",
+      "Bio and description refinement",
+      "Keyword and hashtag strategy",
+      "Visual consistency (logos, banners, etc.)",
+      "Content formatting and posting guidance",
+      "Engagement strategy and timing optimization",
+    ],
+  },
 ];
 
 const services = [
   {
-    icon: <FaSearchDollar className="text-2xl text-[#6754E9]" />,
-    title: "Match search intent at every touchpoint",
+    icon: (
+      <FaSearchDollar className="text-2xl text-[#f89e1b] hover:text-black" />
+    ),
+    title: "Proficient Across Online Platforms",
     description:
-      "Picking the right keywords will only get you so far. We understand how to match the search intent of your target keywords with ad copy, CTAs, and landing pages that turn clicks into ROI.",
+      "From LinkedIn stories to Instagram reels, we know how all social media platforms work. Our content is designed by experts who know how to create user-behavior-specific content, platform-specific content, and even algorithm-specific content. This ensures your brand resonates well, grows incrementally, and stays top of mind where your target audience is most engaged.",
   },
   {
-    icon: <FaUserTie className="text-2xl text-[#6754E9]" />,
-    title: "Experienced PPC management",
+    icon: <FaUserTie className="text-2xl text-[#f89e1b] hover:text-black" />,
+    title: "We create tailored strategies",
     description:
-      "How do you know what works if you've never gotten results before? Our paid search managers have years of experience managing successful campaigns in a variety of industries. And we have the happy clients to back it up.",
+      "After having more than 8 years of experience in digital marketing, we create personalized social media optimization strategies tailored to your audience, goals, and niche. We create strategies that actually work, not just any old copy-paste traditional tips and tricks that provide genuine results. So if you're looking for the best social media optimization service, contact us",
   },
   {
-    icon: <FaGoogle className="text-2xl text-[#6754E9]" />,
-    title: "Google Premier Partnership",
+    icon: <FaGoogle className="text-2xl text-[#f89e1b] hover:text-black" />,
+    title: "Creative & Analytical Balance",
     description:
-      "Working with a Google Partner agency gives you a leg up. Not only are we certified in all types of Google advertising, but we also get access to direct support and other resources provided by Google. Your campaigns benefit directly from this exclusive insider knowledge.",
+      "We bring data-driven strategy and good looks together. Every post is crafted to be noticed and backed by analytics to ensure it delivers. This best-of-both-worlds combination allows us to create content that not only looks great but also drives reach, engagement, and business growth in measurable terms.",
   },
 ];
 
@@ -83,32 +85,35 @@ const tabs = [
     title: "1.PPC audit service",
     content: {
       heading: "PPC audit services",
-      about: "One of the first things we'll do for your business is provide you with a full PPC audit. In the audit, we'll evaluate every significant element of your existing PPC campaign and compile a report of what's working and what isn't. The report will break down every aspect of your PPC strategy and determine what you could improve. In addition, we'll offer recommendations on how to improve them. In fact, if your business has over four employees and spends more than $1000 per month on PPC, you qualify for a free PPC audit! Just get in touch with us to get started."
+      about:
+        "One of the first things we'll do for your business is provide you with a full PPC audit. In the audit, we'll evaluate every significant element of your existing PPC campaign and compile a report of what's working and what isn't. The report will break down every aspect of your PPC strategy and determine what you could improve. In addition, we'll offer recommendations on how to improve them. In fact, if your business has over four employees and spends more than $1000 per month on PPC, you qualify for a free PPC audit! Just get in touch with us to get started.",
     },
   },
   {
     title: "2.Remarketing services",
     content: {
       heading: "Remarketing services",
-      about: "At Numerique, we specialize in helping you harness the full potential of remarketing, particularly through platforms like Google Ads. With Google Ads, you gain the ability to track the traffic to specific pages on your website and deliver targeted ads to those users who have visited those pages. Our team is dedicated to assisting you in setting up the necessary tracking mechanisms and creating captivating remarketing ads that effectively capture the attention and interest of your target audience."
+      about:
+        "At Numerique, we specialize in helping you harness the full potential of remarketing, particularly through platforms like Google Ads. With Google Ads, you gain the ability to track the traffic to specific pages on your website and deliver targeted ads to those users who have visited those pages. Our team is dedicated to assisting you in setting up the necessary tracking mechanisms and creating captivating remarketing ads that effectively capture the attention and interest of your target audience.",
     },
   },
   {
     title: "3.Geofencing ad services",
     content: {
       heading: "Geofencing ad services",
-      about: "Numerique is here to provide you with comprehensive support in harnessing the potential of geofencing, ensuring that your ad campaigns are optimized for maximum impact. Our team of experts will assist you in identifying the ideal outer limits for your geofences and seamlessly integrate them into your Google Ads strategy. Using this information, we will assist in setting up geofences that precisely align with your objectives, reaching the right people at the right time and maximizing the efficiency of your advertising efforts."
+      about:
+        "Numerique is here to provide you with comprehensive support in harnessing the potential of geofencing, ensuring that your ad campaigns are optimized for maximum impact. Our team of experts will assist you in identifying the ideal outer limits for your geofences and seamlessly integrate them into your Google Ads strategy. Using this information, we will assist in setting up geofences that precisely align with your objectives, reaching the right people at the right time and maximizing the efficiency of your advertising efforts.",
     },
   },
   {
     title: "4.Social media ad services",
     content: {
       heading: "Social media ad services",
-      about: "While Google Ads is undoubtedly a powerful advertising platform, it's important to recognize that there are various other avenues to effectively display ads and engage with your target audience. Social media platforms, in particular, offer compelling paid advertising options that shouldn't be overlooked. With users spending approximately 28% of their Internet time on social media, these platforms present a fantastic opportunity to connect with your audience."
+      about:
+        "While Google Ads is undoubtedly a powerful advertising platform, it's important to recognize that there are various other avenues to effectively display ads and engage with your target audience. Social media platforms, in particular, offer compelling paid advertising options that shouldn't be overlooked. With users spending approximately 28% of their Internet time on social media, these platforms present a fantastic opportunity to connect with your audience.",
     },
   },
 ];
-
 
 const SocialMediaOptimisation = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -130,12 +135,25 @@ const SocialMediaOptimisation = () => {
     >
       <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
         <div>
-          <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">Social Media Optimization</h3>
-          <h2 className="text-4xl lg:text-6xl font-bold text-black mt-2 leading-tight"> Social Media <br />Optimization</h2>
-          <p className="text-md text-black mt-5 mb-10 font-semibold">Struggling to find PPC experts who really understand your business and can actually drive long term results? Our world-class marketers would love to help your business thrive!</p>
+          <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">
+            Social Media Optimization
+          </h3>
+          <h2 className="text-4xl lg:text-6xl font-bold text-black mt-2 leading-tight">
+            {" "}
+            Social Media <br />
+            Optimization
+          </h2>
+          <h6 className="text-md text-gray-500 mt-5 mb-10 font-light">
+            Optimizing social media can uplift your overall business presence,
+            and your social media page can rank higher in search engines. This
+            makes your brand easier to find and trust. The correct audience is
+            drawn to your profiles and posts when they are optimized, and
+            increased engagement—likes, shares, comments, and clicks—is
+            encouraged.
+          </h6>
           <NavLink
             to="/free-audit"
-            className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
+            className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
           >
             <span className="relative z-10">
               GET A FREE AUDIT →
@@ -154,15 +172,25 @@ const SocialMediaOptimisation = () => {
 
       <div className="max-w-7xl mx-auto pt-8 md:pt-22 lg:pt-42 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-28 items-start">
         <div>
-          <h3 className="text-2xl md:text-5xl font-semibold text-black leading-tight mb-2 md:mb-6">
-            ROI-Driven paid search <br />optimization
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-black leading-tight mb-2 md:mb-6">
+            Why Social Media Optimization Matters for Your Business
           </h3>
-          <p className="text-gray-600 text-sm md:text-md max-w-2xl">
-            Our relationship with you relies on getting results, and paid search marketing results are measured in ROI. Each and every day, our primary focus is building ROI by interpreting real data and creating campaigns that convert. This includes:
-          </p>
+          <h6 className="text-gray-600 text-sm md:text-md max-w-2xl font-light">
+            In today's digital-first environment, the success of a business not
+            only lies in its presence on social media but also in optimizing it
+            successfully. Social media optimization is very important for any
+            business because it improves.
+          </h6>
         </div>
         <div className="border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4 font-syne">
-          {["Keyword and competitor research","SKAGS (single keyword ad groups)","Negative keyword pruning","Ad copy optimization","Landing page creation & optimization","Search engine retargeting"].map((item, idx) => (
+          {[
+            "Social Media visibility",
+            " Boost followers and growth",
+            "Enhance brand authority",
+            " Improves Organic Reach",
+            " Boost engagement",
+            " Drives Quality Website Traffic",
+          ].map((item, idx) => (
             <div key={idx} className="flex items-start gap-3">
               <FaCheckCircle className="text-[#f89e1b] text-2xl mt-0.5" />
               <span className="text-gray-700 text-base md:text-md">{item}</span>
@@ -172,8 +200,12 @@ const SocialMediaOptimisation = () => {
       </div>
 
       <div className="pt-8 md:pt-14 lg:pt-24">
-        <p className="text-center text-md font-semibold uppercase pb-4">Numerique</p>
-        <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-semibold pb-10 lg:pb-24">How our paid search marketing <br /> service can help grow your <br /> revenue</h1>
+        <p className="text-center text-md font-semibold uppercase pb-4">
+          digital market tap
+        </p>
+        <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-semibold pb-10 lg:pb-24">
+          Boost Your Online Presence with Smart Social Media Optimization
+        </h1>
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15">
           <div className="flex lg:justify-end pt-2.5 pr-2.5 pb-2.5 pl-0 lg:p-0">
             <img
@@ -183,13 +215,23 @@ const SocialMediaOptimisation = () => {
             />
           </div>
           <div className="pl-2 md:pl-8 lg:pl-20">
-            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">Combining search <br /> engine marketing with <br /> conversion rate <br /> optimization (CRO)</h3>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] mt-2">
-              Combining search engine marketing with conversion rate optimization (CRO)
-              The secret to a successful SEM campaign is much more than just making your website appear on Google. Other SEM agencies in Singapore would just set your ads to appear on Google, and leave it there. These campaigns are not performing up to its optimal level. <br/> <br />
-
-              The secret to achieving optimal SEM results lies in the ability to get as many people as possible to call/contact you after they click on your ad and land on your website. For example, your current SEM ads are getting 2% conversion rate on your landing page. That means out of 100 people that visit your page, 2 people contact you.
-            </p>
+            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">
+              Unlock the Power of Social Media Optimization for Your Brand
+            </h3>
+            <h6 className="text-sm lg:text-[16px] font-light text-[#545e5b] mt-2">
+              We are the best digital marketing company in Delhi, so if you are
+              looking for a social media optimization agency, we would be the
+              best choice for you. Optimizing social media not only ranks your
+              social media pages higher but also boosts followers and
+              engagement, because when your profile and posts are fully
+              optimized, they attract a new audience and encourage higher
+              engagement, likes, follows, comments, and all. <br /> <br /> Your
+              profile will get more reach. Without relying entirely on paid
+              advertisements, SMO enables you to reach a wider audience. It
+              makes you more likely to be found through searches, hashtags,
+              shares, and tags. So unlock the power of social media optimization
+              for your brand.
+            </h6>
           </div>
         </div>
       </div>
@@ -198,9 +240,16 @@ const SocialMediaOptimisation = () => {
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
           <div>
             <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">
-              Real certified Google Ads professionals
+              Get Started with Professional SMO Today!
             </h3>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] mt-2">Get a team of certified Google Adwords / SEM specialists who have a minimum of 2 years experience managing various SEM campaigns locally. We help you create the perfect combination of strategy and implementation to ensure we achieve your goals.</p>
+            <h6 className="text-sm lg:text-[16px] font-light text-[#545e5b] mt-2">
+              Ready to propel your brand's social media reach to new heights?
+              Just beginning or seeking to increase your current profiles,
+              Digital Market Tap is here to assist you with intelligent,
+              tailored social media optimization techniques, and with the help
+              of our talented and experienced marketing, we will make sure to
+              deliver high-quality service.
+            </h6>
           </div>
           <div className="flex lg:justify-end">
             <img
@@ -213,105 +262,137 @@ const SocialMediaOptimisation = () => {
       </div>
 
       <div className="pb-4 pt-2 md:pt-8 lg:pt-18">
-        <p className="text-center text-md font-semibold uppercase pb-4">what you get</p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">What is included in our paid search <br /> marketing services? </h1>
-        <p className="text-center text-md font-base text-gray-500 pb-4">When you partner with Numerique, you'll gain access to our full range of paid SEM services. These services are designed to <br /> optimize every facet of your paid advertising, including:</p>
+        <p className="text-center text-md font-semibold uppercase pb-4">
+          what you get
+        </p>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+          What is included in our paid search <br /> marketing services?{" "}
+        </h1>
+        <p className="text-center text-md font-base text-gray-500 pb-4">
+          When you partner with Numerique, you'll gain access to our full range
+          of paid SEM services. These services are designed to <br /> optimize
+          every facet of your paid advertising, including:
+        </p>
       </div>
-      
-<div className="max-w-7xl mx-auto pt-8 md:pt-12 px-0 md:px-4">
-  <div className="hidden lg:flex rounded-[60px] overflow-hidden bg-black">
-    <div className="w-1/3 p-12 flex flex-col gap-6 text-white relative">
-      {tabs.map((tab, index) => {
-        const isActive = index === activeTabIndex;
-        return (
-          <div
-            key={index}
-            onClick={() => setActiveTabIndex(index)}
-            className={`font-syne !w-[160%] relative cursor-pointer transition-all duration-300 pl-6 pr-16 py-5 text-left text-lg md:text-xl font-medium leading-tight -ml-8
-            ${isActive ? "bg-[#f89e1b] text-white rounded-full z-10" : "text-white hover:text-black hover:bg-white rounded-full z-0"}`}
-          >
-            {tab.title}
-            {isActive && (
-              <span className="absolute right-3 top-1/2 -translate-y-1/2 transform bg-black text-white rounded-full w-10 h-10 flex items-center justify-center">
-                <FaArrowRight size={18} />
-              </span>
-            )}
-          </div>
-        );
-      })}
-    </div>
-    <div className="w-3/3 bg-[#f7f7fa] py-20 pl-38 pr-22 flex items-center rounded-[60px]">
-      <div className="flex-1">
-        <h2 className="text-3xl font-bold mb-6 leading-snug text-left text-black">
-          {tabs[activeTabIndex]?.content.heading}
-        </h2>
-        <h6 className="text-gray-600 text-base mb-8 leading-relaxed font-light">
-          {tabs[activeTabIndex]?.content.about}
-        </h6>
-        <div className="text-left">
-            <NavLink
-  to="/free-audit"
-  className="font-syne hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
->
-  <span className="relative z-10 flex items-center gap-2">
-    Get A Free Audit <FaArrowRight />
-    <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-orange-400 group-hover:w-full transition-all duration-300"></span>
-  </span>
-</NavLink>
 
-        </div>
-      </div>
-    </div>
-  </div>
- 
-  <div className="lg:hidden">
-    {tabs.map((tab, index) => {
-      const isOpen = activeTabIndex === index;
-      const { heading, about } = tab.content;
-
-      return (
-        <div key={index} className="mb-6 border border-gray-200 rounded-3xl overflow-hidden">
-          <button
-            onClick={() => handleAccordionToggle(index)}
-            className={`w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-white ${
-              isOpen ? "bg-[#f89e1b]" : "bg-black"
+      <div className="max-w-7xl mx-auto pt-8 md:pt-12 px-0 md:px-4">
+        <div className="hidden lg:flex rounded-[60px] overflow-hidden bg-black">
+          <div className="w-1/3 p-12 flex flex-col gap-6 text-white relative">
+            {tabs.map((tab, index) => {
+              const isActive = index === activeTabIndex;
+              return (
+                <div
+                  key={index}
+                  onClick={() => setActiveTabIndex(index)}
+                  className={`font-syne !w-[160%] relative cursor-pointer transition-all duration-300 pl-6 pr-16 py-5 text-left text-lg md:text-xl font-medium leading-tight -ml-8
+            ${
+              isActive
+                ? "bg-[#f89e1b] text-white rounded-full z-10"
+                : "text-white hover:text-black hover:bg-white rounded-full z-0"
             }`}
-          >
-            <span>{tab.title}</span>
-            <span>{isOpen ? <FaMinus /> : <FaPlus />}</span>
-          </button>
-          {isOpen && (
-            <div className="bg-[#f7f7fa] px-6 py-8">
-              <h2 className="text-2xl font-bold mb-4 text-black">{heading}</h2>
-              <p className="text-gray-600 text-sm mb-6 leading-relaxed">{about}</p>
+                >
+                  {tab.title}
+                  {isActive && (
+                    <span className="absolute right-3 top-1/2 -translate-y-1/2 transform bg-black text-white rounded-full w-10 h-10 flex items-center justify-center">
+                      <FaArrowRight size={18} />
+                    </span>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          <div className="w-3/3 bg-[#f7f7fa] py-20 pl-38 pr-22 flex items-center rounded-[60px]">
+            <div className="flex-1">
+              <h2 className="text-3xl font-bold mb-6 leading-snug text-left text-black">
+                {tabs[activeTabIndex]?.content.heading}
+              </h2>
+              <h6 className="text-gray-600 text-base mb-8 leading-relaxed font-light">
+                {tabs[activeTabIndex]?.content.about}
+              </h6>
               <div className="text-left">
-                           <NavLink
-  to="/free-audit"
-  className="hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
->
-  <span className="relative z-10 flex items-center gap-2">
-    Get A Free Audit <FaArrowRight />
-    <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-orange-400 group-hover:w-full transition-all duration-300"></span>
-  </span>
-</NavLink>
+                <NavLink
+                  to="/free-audit"
+                  className="font-syne hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
+                >
+                  <span className="relative z-10 flex items-center gap-2">
+                    Get A Free Audit <FaArrowRight />
+                    <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-orange-400 group-hover:w-full transition-all duration-300"></span>
+                  </span>
+                </NavLink>
+              </div>
+            </div>
+          </div>
         </div>
-      </div> )}
-    </div>); })}
-  </div>
-</div>
 
-      <div className="py-8">
-        <p className="text-center text-md font-semibold uppercase pb-3">Creating Success</p>
-        <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">What makes our paid search <br /> management services so <br /> effective?</h1>
+        <div className="lg:hidden">
+          {tabs.map((tab, index) => {
+            const isOpen = activeTabIndex === index;
+            const { heading, about } = tab.content;
+
+            return (
+              <div
+                key={index}
+                className="mb-6 border border-gray-200 rounded-3xl overflow-hidden"
+              >
+                <button
+                  onClick={() => handleAccordionToggle(index)}
+                  className={`w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-white ${
+                    isOpen ? "bg-[#f89e1b]" : "bg-black"
+                  }`}
+                >
+                  <span>{tab.title}</span>
+                  <span>{isOpen ? <FaMinus /> : <FaPlus />}</span>
+                </button>
+                {isOpen && (
+                  <div className="bg-[#f7f7fa] px-6 py-8">
+                    <h2 className="text-2xl font-bold mb-4 text-black">
+                      {heading}
+                    </h2>
+                    <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+                      {about}
+                    </p>
+                    <div className="text-left">
+                      <NavLink
+                        to="/free-audit"
+                        className="hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
+                      >
+                        <span className="relative z-10 flex items-center gap-2">
+                          Get A Free Audit <FaArrowRight />
+                          <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-orange-400 group-hover:w-full transition-all duration-300"></span>
+                        </span>
+                      </NavLink>
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="pb-8 pt-8 md:pt-18">
+        <p className="text-center text-md font-semibold uppercase pb-3">
+          Creating Success
+        </p>
+        <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">
+          What makes our paid search management services so effective?
+        </h1>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl p-8 text-black flex flex-col justify-between h-full">
+              className="bg-white rounded-3xl p-8 text-black flex flex-col justify-between h-full"
+            >
               <div>
-                <div className="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-4">{service.icon}</div>
-                <h3 className="text-2xl font-semibold mb-4 text-left">{service.title}</h3>
-                <p className="text-md text-[#57595b] text-left">{service.description}</p>
+                <div className="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-4">
+                  {service.icon}
+                </div>
+                <h3 className="text-2xl font-semibold mb-4 text-left">
+                  {service.title}
+                </h3>
+                <p className="text-md text-[#57595b] text-left">
+                  {service.description}
+                </p>
               </div>
             </div>
           ))}
@@ -323,16 +404,23 @@ const SocialMediaOptimisation = () => {
           <div className="md:w-1/2 px-6 md:px-12 lg:px-18 py-8">
             <FaQuoteLeft className="text-orange-400 text-3xl mb-4" />
             <p className="text-md md:text-xl lg:text-2xl italic mb-6">
-              "DMT PPC service is light years ahead of the competition because of their intelligent, specialized and courteous account managers."
+              "DMT PPC service is light years ahead of the competition because
+              of their intelligent, specialized and courteous account managers."
             </p>
             <div>
-              <p className="font-bold uppercase tracking-wide">Director of Marketing</p>
+              <p className="font-bold uppercase tracking-wide">
+                Director of Marketing
+              </p>
               <p className="text-gray-600">Zarra Home</p>
             </div>
           </div>
 
           <div className="md:w-1/2 relative">
-            <img src={ContentWritingServiceImg4} alt="Testimonial video" className="w-full h-full object-cover" />
+            <img
+              src={ContentWritingServiceImg4}
+              alt="Testimonial video"
+              className="w-full h-full object-cover"
+            />
 
             <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center bg-white bg-opacity-90 px-8 py-6 rounded-tl-[40px] md:rounded-tl-[60px]">
               <div className="flex flex-col items-start">
@@ -341,45 +429,70 @@ const SocialMediaOptimisation = () => {
                     <FaStar key={i} className="text-yellow-500 text-lg" />
                   ))}
                 </div>
-                <span className="font-syne font-semibold text-sm mt-1">5000+ Client reviews</span>
+                <span className="font-syne font-semibold text-sm mt-1">
+                  5000+ Client reviews
+                </span>
               </div>
-              <a href="/about" className="font-syne inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase">View all reviews</a>
+              <a
+                href="/about"
+                className="font-syne inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase"
+              >
+                View all reviews
+              </a>
             </div>
           </div>
         </div>
       </div>
 
       <div className="pb-4 pt-1- md:pt-12 lg:pt-18">
-        <p className="text-center text-md font-semibold uppercase pb-4">The proof is in the numbers</p>
-        <h1 className="text-3xl lg:text-5xl text-center font-semibold pb-4">Why paid search Ads can bring in <br /> the numbers </h1>
+        <p className="text-center text-md font-semibold uppercase pb-4">
+          The proof is in the numbers
+        </p>
+        <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-semibold pb-4">
+          How can social media optimization bring in the numbers?
+        </h1>
         <div className="w-full">
           <div className="max-w-8xl mx-auto grid md:grid-cols-2  lg:grid-cols-3 gap-6 pt-4">
             <div className="text-left px-8 py-10 border border-[#E2E2E2] rounded-[40px] bg-white">
               <div className="flex items-center gap-4 mb-6 justify-between">
-                <h3 className="text-5xl font-bold text-black leading-tight">38%</h3>
+                <h3 className="text-5xl font-bold text-black leading-tight">
+                  98%
+                </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#F89E1B] hover:text-black text-2xl" />
                 </div>
               </div>
-              <p className="text-[#5c5f61]">of growth rate in brand awareness for businesses that start doing Search Ads</p>
+              <h6 className="text-[#5c5f61] font-light">
+                98% more engagement on social media pages after getting Social
+                Media Optimization service.
+              </h6>
             </div>
             <div className="text-left px-8 py-10 border border-[#E2E2E2] rounded-[40px] bg-white">
               <div className="flex items-center gap-4 mb-6 justify-between">
-                <h3 className="text-5xl font-bold text-black leading-tight">100%</h3>
+                <h3 className="text-5xl font-bold text-black leading-tight">
+                  95%
+                </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#F89E1B] hover:text-black text-2xl" />
                 </div>
               </div>
-              <p className="text-[#5c5f61]">of total clicks on search results page are Search Ads, serving as proof that a dependence on SEO alone limits your potential for more traffic and leads.</p>
+              <h6 className="text-[#5c5f61] font-light">
+                 more reach on social media pages after getting social media optimization service.
+              </h6>
             </div>
             <div className="text-left px-8 py-10 border border-[#E2E2E2] rounded-[40px] bg-white">
               <div className="flex items-center gap-4 mb-6 justify-between">
-                <h3 className="text-5xl font-bold text-black leading-tight">82%</h3>
+                <h3 className="text-5xl font-bold text-black leading-tight">
+                  80%
+                </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#F89E1B] hover:text-black text-2xl" />
                 </div>
               </div>
-              <p className="text-[#5c5f61]">of clicks on Search Ads are more likely to buy, making for better leads.</p>
+              <h6 className="text-[#5c5f61] font-light">
+               growth in followers on social media pages after getting social media optimization
+service.
+              </h6>
             </div>
           </div>
         </div>
@@ -387,7 +500,11 @@ const SocialMediaOptimisation = () => {
 
       <div className="p-5 md:p-0 relative">
         <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
-          <img src={RocketBlue} alt="Custom" className="hidden md:block w-14 md:w-18 absolute right-2 md:right-12 -top-8 -rotate-25 z-10"/>
+          <img
+            src={RocketBlue}
+            alt="Custom"
+            className="hidden md:block w-14 md:w-18 absolute right-2 md:right-12 -top-8 -rotate-25 z-10"
+          />
           <div className="flex justify-center items-center mb-4">
             <img
               src={GooglePartner1}
@@ -396,27 +513,34 @@ const SocialMediaOptimisation = () => {
             />
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-snug text-black px-2 sm:px-0">
-            Get started with a Free <br className="hidden md:block" /> consultation
+            Get started with a Free <br className="hidden md:block" />{" "}
+            consultation
           </h2>
           <NavLink
             to="/free-audit"
-            className="font-syne group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#6754E9] transition duration-300 inline-block relative overflow-hidden"
+            className="font-syne group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#F89E1B] transition duration-300 inline-block relative overflow-hidden"
           >
-          <span className="relative z-10 flex items-center justify-center gap-1">
-            GET A PROPOSAL <FaArrowRight />
-            <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300" />
-          </span>
-        </NavLink>
-      </section>
+            <span className="relative z-10 flex items-center justify-center gap-1">
+              GET A PROPOSAL <FaArrowRight />
+              <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300" />
+            </span>
+          </NavLink>
+        </section>
       </div>
 
-     <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
-                <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
-                <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">FAQs about Social Media <br />Optimization</h1>
-                <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">Looking to learn more about Social Media Optimization for your business? Browse our FAQs</p>
-        </div>
+      <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+        <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+          FAQs about Social Media <br />
+          Optimization
+        </h1>
+        <p className="text-center text-md md:text-lg font-base text-gray-500 pb-4">
+          Looking to learn more about Social Media Optimization for your
+          business? Browse our FAQs
+        </p>
+      </div>
 
-        <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4">
+      <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
             <button
@@ -432,11 +556,11 @@ const SocialMediaOptimisation = () => {
                 )}
               </span>
             </button>
-      
+
             {openIndex === index && (
               <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md">
                 <h6>{faq.answer}</h6>
-      
+
                 {faq.answerPoints && Array.isArray(faq.answerPoints) && (
                   <ul className="list-disc ml-5 mt-2 space-y-1">
                     {faq.answerPoints.map((point, idx) => (
@@ -449,7 +573,6 @@ const SocialMediaOptimisation = () => {
           </div>
         ))}
       </div>
-
     </section>
   );
 };

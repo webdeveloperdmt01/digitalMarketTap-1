@@ -22,19 +22,19 @@ import RocketBlue from "../assets/blueRocket.png";
 
 const services = [
   {
-    icon: <FaSearchDollar className="text-2xl text-[#f89e1b]" />,
+    icon: <FaSearchDollar className="text-2xl text-[#f89e1b] hover:text-black" />,
     title: "Audience-Based Targeting",
     description:
       "We will make sure to target the audience according to your niche. We target shoppers based on their browsing and purchase behavior, so it will increase your chance to get selected. We target high-converting keywords for better return on investment (ROI).",
   },
   {
-    icon: <FaUserTie className="text-2xl text-[#f89e1b]" />,
+    icon: <FaUserTie className="text-2xl text-[#f89e1b] hover:text-black" />,
     title: "Increase Brand Awareness",
     description:
       "These ads get visible beyond Amazon, like in search results, customer review sections, third-party websites, and apps. These ads appear in different placements and on multiple devices; shoppers repeatedly see your logo, products, and brand name, building familiarity and trust.",
   },
   {
-    icon: <FaGoogle className="text-2xl text-[#f89e1b]" />,
+    icon: <FaGoogle className="text-2xl text-[#f89e1b] hover:text-black" />,
     title: "Ads Expert",
     description:
       "Amazon Ads are quite effective, especially when someone experienced is handling them. We have over 8 years of experience in digital marketing, and we have worked on over 80,000+ projects in every niche. Our experienced ad expert makes sure to deliver 4x ROI.",
@@ -86,19 +86,20 @@ const AmazonAD = () => {
       aria-labelledby="seo-heading"
       className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-10 lg:px-15 xl:px-30"
     >
-      <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
+      <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
         <div>
           <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">
             Amazon ads
           </h3>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black mt-2 leading-tight">
-            Why Choose Digital Market Tap for Amazon Ads Management?
+            Amazon Ads
           </h2>
-          <p className="text-md text-black mt-5 mb-10 font-semibold">
-            Struggling to find PPC experts who really understand your business
-            and can actually drive long term results? Our world-class marketers
-            would love to help your business thrive!
-          </p>
+          <h6 className="text-lg text-gray-500 mt-5 mb-10 font-light">
+            Boost your sales with targeted Amazon Ads. Reach the right
+            customers, increase product visibility, and maximize ROI with
+            data-driven campaigns designed to put your products ahead of the
+            competition.
+          </h6>
           <NavLink
             to="/free-audit"
             className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
@@ -118,30 +119,28 @@ const AmazonAD = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto pt-8 md:pt-22 lg:pt-42 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-28 items-start">
+      <div className="max-w-7xl mx-auto pt-8 md:pt-22 lg:pt-28 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-28 items-start">
         <div>
           <h3 className="text-2xl md:text-5xl font-semibold text-black leading-tight mb-2 md:mb-6">
-            ROI-Driven paid search <br />
-            optimization
+            Why amazon ads is beneficial
           </h3>
-          <p className="text-gray-600 text-sm md:text-md max-w-2xl">
-            Our relationship with you relies on getting results, and paid search
-            marketing results are measured in ROI. Each and every day, our
-            primary focus is building ROI by interpreting real data and creating
-            campaigns that convert. This includes:
-          </p>
+          <h6 className="text-gray-500 text-sm md:text-md lg:text-md font-light">
+            Reaching highly targeted customers who are already looking for
+            comparable products is made easier for businesses via Amazon Ads.
+            Amazon ads are very beneficial because. :
+          </h6>
         </div>
         <div className="border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
           {[
-            "Keyword and competitor research",
-            "SKAGS (single keyword ad groups)",
-            "Negative keyword pruning",
-            "Ad copy optimization",
-            "Landing page creation & optimization",
-            "Search engine retargeting",
+            "Highly Targeted customers",
+            "Largest e-commerce platform",
+            "Cost effective advertisement",
+            "High traffic & visibility",
+            "High boost in sales",
+            "Improves brand recognition",
           ].map((item, idx) => (
             <div key={idx} className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#6754E9] text-2xl mt-0.5" />
+              <FaCheckCircle className="text-[#f89e1b] text-2xl mt-0.5" />
               <span className="text-gray-700 text-base md:text-md">{item}</span>
             </div>
           ))}
@@ -325,7 +324,7 @@ const AmazonAD = () => {
           Creating Success
         </p>
         <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">
-          What makes our Amazon Ads <br /> services so {" "}effective?
+          What makes our Amazon Ads <br /> services so effective?
         </h1>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {services.map((service, index) => (
@@ -399,7 +398,7 @@ const AmazonAD = () => {
           The proof is in the numbers
         </p>
         <h1 className="text-3xl lg:text-5xl text-center font-semibold pb-4">
-    Amazon Ads Services—Boost Sales <br /> with Expert PPC Campaigns{" "}
+          Amazon Ads Services—Boost Sales <br /> with Expert PPC Campaigns{" "}
         </h1>
         <div className="w-full">
           <div className="max-w-8xl mx-auto grid md:grid-cols-2  lg:grid-cols-3 gap-6 pt-4">
@@ -409,11 +408,11 @@ const AmazonAD = () => {
                   80%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-[#f89e1b] text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl hover:text-black" />
                 </div>
               </div>
-             <h6 className="text-[#5c5f61] font-light">
-               more brand visibility for those who get our Amazon Ads service
+              <h6 className="text-[#5c5f61] font-light">
+                more brand visibility for those who get our Amazon Ads service
               </h6>
             </div>
             <div className="text-left px-8 py-10 border border-[#E2E2E2] rounded-[40px] bg-white">
@@ -422,11 +421,11 @@ const AmazonAD = () => {
                   90%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-[#f89e1b] text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl hover:text-black" />
                 </div>
               </div>
-            <h6 className="text-[#5c5f61] font-light">
-               more sales for those who get our Amazon Ads service
+              <h6 className="text-[#5c5f61] font-light">
+                more sales for those who get our Amazon Ads service
               </h6>
             </div>
             <div className="text-left px-8 py-10 border border-[#E2E2E2] rounded-[40px] bg-white">
@@ -435,11 +434,11 @@ const AmazonAD = () => {
                   95%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-[#f89e1b] text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl hover:text-black" />
                 </div>
               </div>
               <h6 className="text-[#5c5f61] font-light">
-            more brand awareness for those who got our Amazon Ads service
+                more brand awareness for those who got our Amazon Ads service
               </h6>
             </div>
           </div>

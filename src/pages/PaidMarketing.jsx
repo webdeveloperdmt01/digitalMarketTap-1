@@ -332,7 +332,7 @@ const PaidMarketing = () => {
             our FAQs
           </h6>
         </div>
-        <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5">
+        <div className="pt-8 pb-16 md:pb-22 space-y-2 md:space-y-4 px-5 md:px-10 lg:px-15 xl:px-30">
           {faqs.map((faq, index) => (
             <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
               <button

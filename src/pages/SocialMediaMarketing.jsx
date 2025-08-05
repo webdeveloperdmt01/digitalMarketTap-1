@@ -468,7 +468,7 @@ const SocialMediaMarketing = () => {
                   68%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-[#f89e1b] text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl hover:text-black" />
                 </div>
               </div>
               <h6 className="text-[#5c5f61] font-light">
@@ -482,7 +482,7 @@ search ads.
                   90%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-[#f89e1b] text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl hover:text-black" />
                 </div>
               </div>
               <h6 className="text-[#5c5f61] font-light">
@@ -495,9 +495,9 @@ search ads.
                   95%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-[#f89e1b] text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl hover:text-black" />
                 </div>
-              </div>
+              </div>  
               <h6 className="text-[#5c5f61] font-light">
              more brand awareness and engagement by social media marketing.
               </h6>

@@ -22,19 +22,19 @@ import RocketBlue from "../assets/blueRocket.png";
 
 const services = [
   {
-    icon: <FaSearchDollar className="text-2xl text-[#f89e1b]" />,
+    icon: <FaSearchDollar className="text-2xl text-[#f89e1b] hover:text-black" />,
     title: "Massive reach across Google Search Engine",
     description:
       "Get massive reach across Google search engines by getting our Google Ads management service. Display ads displayed on millions of websites and apps provide massive reach and brand visibility. Great for if you want to target based on location, interest, age, gender, or behavior.",
   },
   {
-    icon: <FaUserTie className="text-2xl text-[#f89e1b]" />,
+    icon: <FaUserTie className="text-2xl text-[#f89e1b] hover:text-black" />,
     title: "Experienced ads management",
     description:
       "We are the best digital marketing agency in Delhi, India, and have more than 8 years of experience in running ads. Google became very powerful. If you want to reach millions of the users specifically targeting your niche, for that you need an expert who can handle all these.",
   },
   {
-    icon: <FaGoogle className="text-2xl text-[#f89e1b]" />,
+    icon: <FaGoogle className="text-2xl text-[#f89e1b] hover:text-black" />,
     title: "High-performing ads creatives",
     description:
       "Digital Market Tap focuses on crafting high-converting and visually engaging display ads that capture attention and generate clicks. Our creatives are crafted to meet your brand identity, which means improved engagement and increased performance.",
@@ -423,7 +423,7 @@ const GoogleAD = () => {
                   90%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] hover:text-black text-2xl" />
                 </div>
               </div>
               <h6 className="text-[#5c5f61] font-light">
@@ -437,7 +437,7 @@ service.
                   95%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] hover:text-black text-2xl" />
                 </div>
               </div>
                <h6 className="text-[#5c5f61] font-light">
@@ -451,7 +451,7 @@ management service.
                   98%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-orange-500 text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] hover:text-black text-2xl" />
                 </div>
               </div>
                <h6 className="text-[#5c5f61] font-light">

@@ -642,7 +642,7 @@ const Seo = () => {
                   38%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-[#f89e1b] text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl hover:text-black" />
                 </div>
               </div>
               <p className="text-[#5c5f61]">
@@ -656,7 +656,7 @@ const Seo = () => {
                   100%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-[#f89e1b] text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl hover:text-black" />
                 </div>
               </div>
               <p className="text-[#5c5f61]">
@@ -671,7 +671,7 @@ const Seo = () => {
                   82%
                 </h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-[#f89e1b] text-2xl" />
+                  <FaChartLine className="text-[#f89e1b] text-2xl hover:text-black" />
                 </div>
               </div>
               <p className="text-[#5c5f61]">

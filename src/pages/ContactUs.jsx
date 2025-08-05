@@ -82,7 +82,7 @@ function ContactUs() {
           <h2 className="text-4xl lg:text-5xl xl:text-6xl font-semibold text-black mt-2">
             We’re Here to Help – Contact Us Now
           </h2>
-          <h6 className="text-md text-black mt-5 font-light">
+          <h6 className="text-lg text-gray-500 mt-5 font-light">
             At Digital Market Tap, we think that the first step to change is
             communication. We're only a message away, whether you want to
             dominate local search results, need a new website, or want to grow
