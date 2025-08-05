@@ -80,10 +80,10 @@ function FreeAudit() {
 
             <hr className="border border-gray-200" />
             {[
-              "We’ll review your current marketing goals and understand your vision.",
-              "We’ll check if your messaging aligns with your ideal customer.",
-              "We’ll audit your website for usability, mobile experience, and SEO.",
-              "We’ll evaluate your blog, emails, and social media for consistency and impact.",
+              "We'll review your current marketing goals and understand your vision.",
+              "We'll check if your messaging aligns with your ideal customer.",
+              "We'll audit your website for usability, mobile experience, and SEO.",
+              "We'll evaluate your blog, emails, and social media for consistency and impact.",
             ].map((text, index) => (
               <div
                 key={index}
