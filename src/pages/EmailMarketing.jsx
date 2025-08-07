@@ -14,9 +14,6 @@ import {
 import EmailMarketingImg from "../assets/email-mkt.jpg";
 import SeoImg from "../assets/seoimg.png";
 import SeoGoogleExperts from "../assets/SeoGoogleExperts.jpg";
-import Stats from "../assets/Stats.png";
-import Stats2 from "../assets/Stats2.png";
-import PeopleDiscuss from "../assets/peopleDiscussOnTopic.png";
 import womanTalking from "../assets/womanTaking-Seo.jpg";
 import { NavLink } from "react-router-dom";
 import RocketBlue from "../assets/blueRocket.png";
