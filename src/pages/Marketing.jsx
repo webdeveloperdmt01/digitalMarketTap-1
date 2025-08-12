@@ -297,7 +297,7 @@ const Marketing = () => {
                   <div
                     key={index}
                     onClick={() => setActiveIndex(index)}
-                    className={`font-syne !w-[160%] relative cursor-pointer transition-all duration-300 pl-12 pr-16 py-4 text-left text-lg md:text-2xl font-medium leading-tight -ml-8
+                    className={`font-syne !w-[160%] relative cursor-pointer transition-all duration-300 pl-10 pr-16 py-4 text-left text-lg md:text-xl font-medium leading-tight -ml-8
                     ${
                       isActive
                         ? "bg-[#f89e1b] text-white rounded-full z-10"
@@ -306,7 +306,7 @@ const Marketing = () => {
                   >
                     {tab.title}
                     {isActive && (
-                      <span className="absolute right-3 top-1/2 -translate-y-1/2 transform bg-black text-white rounded-full w-15 h-15 flex items-center justify-center">
+                      <span className="absolute right-3 top-1/2 -translate-y-1/2 transform bg-black text-white rounded-full w-13 h-13 flex items-center justify-center">
                         <FaArrowRight size={18} />
                       </span>
                     )}

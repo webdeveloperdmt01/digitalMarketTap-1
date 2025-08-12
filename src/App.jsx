@@ -45,6 +45,9 @@ import AmazonAD from "./pages/AmazonAD";
 import Error from "./pages/Error";
 import DigitalMarketing from "./pages/DigitalMarketing";
 import ComingSoon from "./pages/ComingSoon";
+import MetaAD from "./pages/MetaAD";
+import LinkedinAD from "./pages/LinkedinAD";
+import YoutubeAD from "./pages/YoutubeAD";
 
 
 
@@ -97,6 +100,9 @@ function App() {
         <Route path="/404-error" element={<Layout><Error/></Layout>} />
         <Route path="/digital-marketing" element={<Layout><DigitalMarketing/></Layout>} />
         <Route path="/coming-soon" element={<Layout><ComingSoon/></Layout>} />
+        <Route path="/meta-ads" element={<Layout><MetaAD/></Layout>} />
+        <Route path="/linkedin-ads" element={<Layout><MetaAD/></Layout>} />
+        <Route path="/youtube-ads" element={<Layout><MetaAD/></Layout>} />
       </Routes>
     </Router>
   );

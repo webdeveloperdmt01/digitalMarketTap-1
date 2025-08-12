@@ -263,11 +263,11 @@ const DigitalMarketing = () => {
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
           What is included in our paid search <br /> marketing services?{" "}
         </h1>
-        <p className="text-center text-md font-base text-gray-500 pb-4">
+        <h6 className="text-center text-md font-light text-gray-500 pb-4">
           When you partner with Numerique, you'll gain access to our full range
           of paid SEM services. These services are designed to <br /> optimize
           every facet of your paid advertising, including:
-        </p>
+        </h6>
       </div>
 
       <div className="max-w-7xl mx-auto pt-8 md:pt-12 px-0 md:px-4">

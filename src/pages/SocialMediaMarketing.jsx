@@ -81,7 +81,7 @@ const tabs = [
         "Customized audience",
         "Cross-Platform Reach",
       ],
-      link: "/digital-marketing",
+      link: "/meta-ads",
       percentage: "93%",
       percentageNote:
         "Of customers reported that their online experience begins with search",
@@ -103,7 +103,7 @@ const tabs = [
         "Great for brand awareness campaigns.",
         "Great for targeting professionals & businesses.",
       ],
-      link: "/email-marketing",
+      link: "/linkedin-ads",
       percentage: "82%",
       percentageNote:
         "Clients saw immediate uplift in lead generation from paid campaigns",
@@ -125,7 +125,7 @@ const tabs = [
         "Great for vast audience",
         "Great for brand visibility",
       ],
-      link: "/email-marketing",
+      link: "/youtube-ads",
       percentage: "82%",
       percentageNote:
         "Clients saw immediate uplift in lead generation from paid campaigns",
