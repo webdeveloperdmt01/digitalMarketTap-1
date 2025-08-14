@@ -210,7 +210,7 @@ const AmazonAD = () => {
         </div>
       </div>
 
-      <div className="pb-4 pt-2 md:pt-8 lg:pt-18">
+      <div className="pb-4 pt-12 md:pt-8 lg:pt-18">
         <p className="text-center text-md font-semibold uppercase pb-4">
           what you get
         </p>
@@ -319,11 +319,11 @@ const AmazonAD = () => {
         </div>
       </div>
 
-      <div className="pb-8 pt-18">
+      <div className="pb-8 pt-10 md:pt-18">
         <p className="text-center text-md font-semibold uppercase pb-3">
           Creating Success
         </p>
-        <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">
+        <h1 className="text-xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">
           What makes our Amazon Ads <br /> services so effective?
         </h1>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -371,20 +371,20 @@ const AmazonAD = () => {
               className="w-full h-full object-cover"
             />
 
-            <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center bg-white bg-opacity-90 px-8 py-6 rounded-tl-[40px] md:rounded-tl-[60px]">
+            <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center bg-white bg-opacity-90 px-6 md:px-8 py-4 md:py-6 rounded-tl-[35px] md:rounded-tl-[60px]">
               <div className="flex flex-col items-start">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
                     <FaStar key={i} className="text-yellow-500 text-lg" />
                   ))}
                 </div>
-                <span className="font-syne font-semibold text-sm mt-1">
+                <span className="font-syne font-semibold text-xs md:text-sm mt-1">
                   5000+ Client reviews
                 </span>
               </div>
               <a
                 href="/about"
-                className=" font-syne inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase"
+                className=" font-syne inline-block text-xs md:text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase"
               >
                 View all reviews
               </a>

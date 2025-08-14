@@ -546,7 +546,7 @@ const Footer = () => {
               {["Blog"].map((text, index) => (
                 <li key={index} className="w-fit relative group">
                   <a
-                    href="#"
+                    href="/blog"
                     className="font-syne inline-block text-white group-hover:text-white transition-colors duration-300"
                   >
                     {text}

@@ -251,7 +251,7 @@ const Marketing = () => {
           </div>
         </div>
 
-        <div className="pb-8 pt-18">
+        <div className="pb-8 pt-8 md:pt-18">
           <p className="text-center text-md font-semibold uppercase pb-3">
             Creating Success
           </p>
