@@ -29,27 +29,20 @@ import PowerEliteIcon from "../assets/vamtam-elite-WD.png";
 import ElementorIcon from "../assets/Elementor-Logo-Full-WD.png";
 import TabletPic from "../assets/Tablets-WD.png";
 import PhonePic from "../assets/Phone-WD.png";
+import html from "../assets/html.png";
+import css from "../assets/css.jpg";
+import js from "../assets/js.png";
+import react from "../assets/react.png";
+import tailwind from "../assets/tailwind.png";
+import php from "../assets/php.png";
+import node from "../assets/node.png";
+import mongodb from "../assets/mongodb.png";
+import express from "../assets/express.png";
+import wordpress from "../assets/wp.png";
+import shopify from "../assets/shopify2.png";
+import angular from "../assets/angular.png";
 
-const iconList = [
-  FaBullhorn,
-  FaChartLine,
-  FaBullseye,
-  FaLightbulb,
-  FaRocket,
-  FaEnvelope,
-  FaUserFriends,
-  FaCertificate,
-  FaChartBar,
-  FaDollarSign,
-  FaSearch,
-  FaComments,
-  FaUserFriends,
-  FaQuoteRight,
-  FaMapMarkerAlt,
-  FaAmazon,
-  FaGoogle,
-  FaCheckCircle,
-];
+
 
 const tabs = [
   {
@@ -61,15 +54,13 @@ const tabs = [
     ),
     content: {
       heading:
-        "We design your website very carefully, especially when it comes to Ecommerce websites. It took so much effort to create, design ideas, and creativity to deliver an Ecommerce website which is as unique as your business. Following are the key points which we add in Ecommerce website to increase its performance",
+        "We design your website very carefully, especially when it comes to Ecommerce websites..",
       features: [
         "Add Social Media Integration.",
-        "Add content management system.",
         "Effective Search Functionality.",
         "Add high quality product images.",
         "Focus on SEO and mobile optimization.",
-        "Check securities and speed of page loads.",
-        "We ensure your website is accessible for users.",
+        "Check securities and speed of page loads.", ,
       ],
       link: "/e-commerce-website-development",
       percentage: "93%",
@@ -87,15 +78,13 @@ const tabs = [
     ),
     content: {
       heading:
-        "We create a high-performing SEO optimized Blog News Website which effortlessly delivers news and blogs perfect for today's generation. Want to level-up your blogs, journalist, content creation journey to the next level you're at the right place we present you the best Blog News Website with following key points",
+        "We create a high-performing SEO optimized Blog News Website which effortlessly delivers news and blogs...",
       features: [
         "Ad & Affiliate Ready.",
         "Category & Tag Management.",
         "Multi-Author Functionality.",
         "Social Sharing Integration.",
-        "SEO and Mobile optimized website.",
         "Tailored High-performing Blog News Website.",
-        "Customized designs and latest technologies.",
       ],
       link: "blog-news-website",
       percentage: "93%",
@@ -111,15 +100,13 @@ const tabs = [
     ),
     content: {
       heading:
-        "Digital Market Tap presents you the best high-performing 100% customized Educational website yet at the most affordable rates to transform every institute, school, tuition classes, and e-learning platforms digital presence. Our customized educational website helps you deliver your knowledge and values more efficiently",
+        "Digital Market Tap presents you the best high-performing 100% customized Educational website..",
       features: [
-        "Fast page load.",
         "Fees payment & admission form.",
         "100 % SEO and mobile optimized.",
         "Detailed updated course listing.",
         "Latest designs and technologies.",
         "Specially customized for learning.",
-        "Latest technologies for security check.",
       ],
       link: "/education-website",
       percentage: "93%",
@@ -135,15 +122,13 @@ const tabs = [
     ),
     content: {
       heading:
-        "Looking for 100% customized latest UI and UX design business website service in Delhi? Which wouldn't hurt your pocket and increase your business, digital performance, and reflect and maintain your strong business presence. Following are key points we added to your website to attract customers and generate leads.",
+        "Looking for 100% customized latest UI and UX design business website service in Delhi?",
       features: [
         "Talore made designs.",
         "High-quality graphics.",
         "SSL-secured and GDPR-compliant.",
         "Latest technologies and designs.",
         "Logo design for your unique brand.",
-        "100% SEO Friendly and Mobile optimized.",
-        "Fast performing and personalized support.",
       ],
       link: "/buisness-website",
       percentage: "93%",
@@ -154,23 +139,20 @@ const tabs = [
 ];
 
 const plugins = [
-  { name: "WP101 Video Tutorials", img: "GroupLogo-Wd.png" },
-  { name: "Elementor Page Builder", img: "ElementorLogo-WD.png" },
-  { name: "Elementor PRO Page Builder", img: "ElementorLogo-pro-WD.png" },
-  { name: "WooCommerce", img: "woocommerce-logo-WD.png" },
-  { name: "Yoast SEO", img: "yoastLogo-WD.png" },
-  { name: "Contact Form WPForms", img: "WPForms-icon-Wd.png" },
-  { name: "UpdraftPlus Backup Plugin", img: "udp-logo-WD.png" },
-  { name: "Wordfence Security WooCommerce", img: "wordfence-security-WD.png" },
-  { name: "Translate Multilingual Sites", img: "icon-WD(2).png" },
-  { name: "Really Simple SSL", img: "really-simple-WD.png" },
-  { name: "Loco Translate", img: "loco-WD.png" },
-  { name: "Limit Login Attempts Reloaded", img: "Limit-login-WD.png" },
-  { name: "Monsterinsights", img: "Monsterlights-WD.png" },
-  { name: "Advanced Custom Fields", img: "acf-Wd.png" },
-  { name: "Cookie Notice for GDPR & CCPA", img: "icon-WD.png" },
-  { name: "LiteSpeed Cache", img: "Rectangle-4-WD.png" },
+  { name: "HTML5", img: html },
+  { name: "CSS3", img: css },
+  { name: "JavaScript", img: js },
+  { name: "React.js", img: react },
+  { name: "Tailwind CSS", img: tailwind },
+  { name: "PHP", img: php },
+  { name: "Node.js", img: node },
+  { name: "MongoDB", img: mongodb },
+  { name: "Express.js", img: express },
+  { name: "WordPress", img: wordpress },
+  { name: "Shopify", img: shopify },
+  { name: "Angular", img: angular },
 ];
+
 
 const faqs = [
   {
@@ -246,18 +228,13 @@ const WebsiteDesign = () => {
                 Searching for the best website development company in Delhi,
                 your search ends here.{" "}
                 <span className="font-semibold text-gray-500">
-                  Digital Marketing Tap
-                </span>
+                  Digital Marketing Tap </span>
                 provides the best website development and designing services all
                 across Delhi. With the help of your expert website developers
                 and graphic designers, we never fail to deliver high-performing
                 websites, we use the latest UI, UX designs to evaluate the
                 overall look of the website, our websites are 100% mobile
-                optimized and SEO friendly so don't have to be worried about
-                website ranking and performance, we use all the latest
-                technologies, designs, and animations to increase overall look
-                and performance of our website. That's what makes us the best
-                website development agency in Delhi.
+                optimized and SEO friendly.
               </h6>
 
               <NavLink
@@ -342,8 +319,8 @@ const WebsiteDesign = () => {
         </div>
 
         <div className="bg-black pb-10 md:pb-24 lg:pb-42 pt-6 md:pt-8 lg:pt-24 px-5 md:px-10 lg:px-30 text-white space-y-6">
-          <h1 className="font-semibold text-2xl md:text-3xl lg:text-6xl pb-3 md:pb-8">
-            Compatible plugins
+          <h1 className="font-semibold text-2xl md:text-3xl lg:text-5xl pb-3 md:pb-8">
+            From Frontend to Backend: Our Languages
           </h1>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -353,9 +330,9 @@ const WebsiteDesign = () => {
                 className="bg-[#111] hover:bg-[#1a1a1a] rounded-lg p-4 flex flex-col items-center justify-center text-center shadow-lg transition duration-300 ease-in-out"
               >
                 <img
-                  src={`/src/assets/${plugin.img}`}
+                  src={plugin.img}
                   alt={plugin.name}
-                  className="w-16 h-16 object-contain mb-4"
+                  className="w-18 h-18 object-fill mb-4"
                 />
                 <p className="text-sm font-semibold">{plugin.name}</p>
               </div>
@@ -369,7 +346,7 @@ const WebsiteDesign = () => {
               <img
                 src={PhonePic}
                 alt=""
-                className="absolute -top-148 left-[52.5rem] h-40 w-40 object-contain md:h-[25.5rem] md:w-[25.5rem]"
+                className="absolute -top-128 left-[52.5rem] h-40 w-40 object-contain md:h-[25.5rem] md:w-[25.5rem]"
                 style={{
                   transform: isLaptopScreen
                     ? `translateY(${offsetY * 0.2}px)`
@@ -397,62 +374,8 @@ const WebsiteDesign = () => {
           </div>
         </div>
 
-        <div className="px-5 md:px-10 lg:px-30">
-          <div className="mt-10 md:mt-16 lg:mt-20 max-w-8xl mx-auto">
-            <div className="relative flex justify-between items-center border-t border-dashed border-gray-300">
-              {[...Array(4)].map((_, i) => (
-                <div
-                  key={i}
-                  className="w-4 h-4 rounded-full bg-[#f89e1b] relative -top-2"
-                />
-              ))}
-            </div>
-            <div className="flex justify-between mt-3 md:mt-5 max-w-8xl mx-auto text-sm font-semibold text-black font-syne">
-              <span className="text-xs md:text-sm">
-                Our customers have raised <br /> over $350mn in Funding
-              </span>
-              <span className="text-xs md:text-sm">
-                In over 2 years, we've <br />
-                never lost a customer
-              </span>
-              <span className="text-xs md:text-sm">
-                We work with the world's <br /> fastest growing startups
-              </span>
-              <span className="text-xs md:text-sm">
-                Distributed team of over 20 of <br /> the worlds best marketers,{" "}
-                <br />
-                podcasters and copywriters
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div className="w-full px-5 py-10 lg:py-16">
-          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10">
-            <div className="max-w-xs text-left">
-              <h2 className="text-3xl lg:text-5xl font-bold text-black mb-4">
-                Icons
-              </h2>
-              <p className="text-lg text-black">
-                Custom created icons crafted for your personal needs.
-              </p>
-            </div>
-            <div className="w-full md:flex-1 p-8 md:p-12 lg:p-16 rounded-md bg-[#ffeacd]">
-              <div className="grid grid-cols-5 gap-8 md:gap-18">
-                {iconList.map((Icon, idx) => (
-                  <Icon
-                    key={idx}
-                    className="text-black hover:text-[#f89e1b] text-2xl md:text-4xl"
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
-
         <section className="max-w-7xl mx-auto py-6 md:py-12 lg:py-24 px-5 md:px-10 lg:px-15 xl:px-0">
-           <p className="text-center text-md font-semibold uppercase pb-4">
+          <p className="text-center text-md font-semibold uppercase pb-4">
             what you get
           </p>
           <h1 className="text-2xl md:text-4xl lg:text-5xl max-w-5xl mx-auto text-center pb-6 font-medium md:font-semibold">
@@ -471,11 +394,10 @@ const WebsiteDesign = () => {
                     key={index}
                     onClick={() => setActiveTabIndex(index)}
                     className={`font-syne !w-[160%] relative cursor-pointer transition-all duration-300 pl-12 pr-16 py-4 text-left text-lg md:text-2xl font-medium leading-tight -ml-8
-                          ${
-                            isActive
-                              ? "bg-[#f89e1b] text-white rounded-full z-10"
-                              : "text-white hover:text-black hover:bg-white rounded-full z-0"
-                          }`}
+                          ${isActive
+                        ? "bg-[#f89e1b] text-white rounded-full z-10"
+                        : "text-white hover:text-black hover:bg-white rounded-full z-0"
+                      }`}
                   >
                     {tab.title}
                     {isActive && (
@@ -541,9 +463,8 @@ const WebsiteDesign = () => {
                 >
                   <button
                     onClick={() => handleAccordionToggle(index)}
-                    className={`w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-white ${
-                      isOpen ? "bg-[#f89e1b]" : "bg-black"
-                    }`}
+                    className={`w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-white ${isOpen ? "bg-[#f89e1b]" : "bg-black"
+                      }`}
                   >
                     <span>{tab.title}</span>
                     <span>{isOpen ? <FaMinus /> : <FaPlus />}</span>

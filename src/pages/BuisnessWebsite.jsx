@@ -52,7 +52,7 @@ const BuisnessWebsite = () => {
               </p>
               <NavLink
                 to="/"
-                className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9] uppercase"
+                className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#f89e1b] uppercase"
               >
                view open positions <FaArrowRight />
                 <span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span>
@@ -64,29 +64,6 @@ const BuisnessWebsite = () => {
                 alt="Marketing Visual"
                 className="w-full h-full object-cover"
               />
-            </div>
-          </div>
-        </div>
-
-        <div className="py-8 md:py-16">
-          <div className="bg-[#f7f7fa] rounded-2xl p-5 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-            <div className="items-start gap-4 max-w-xl">
-              <div className="text-[#f89e1b] text-3xl md:text-5xl">
-                <FaCrown />
-              </div>
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold pt-6 text-black">
-                  Get $245 Worth of Premium Stock Images FREE with Your Package!
-                </h2>
-              </div>
-            </div>
-            <div className="max-w-sm">
-              <p className="font-bold text-black text-right">
-                Premium<br /><span className="font-normal text-sm">Stock images</span>
-              </p>
-              <p className="text-sm text-black pt-10 text-left">
-                All images shown on the demo website come with the demo content, and can be used in your next project, without the need to buy any additional licences.
-              </p>
             </div>
           </div>
         </div>
@@ -114,7 +91,6 @@ const BuisnessWebsite = () => {
           <h3 className="text-xl font-semibold mb-4 text-left">{service.title}</h3>
           <p className="text-md text-[#57595b] text-left">{service.description}</p>
         </div>
-       <NavLink to={service.link} className="mt-6 group text-black py-2 text-md font-semibold transition duration-300 relative overflow-hidden inline-flex items-center"><span className="relative z-10">LEARN MORE<span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span></span></NavLink>
       </div>
     ))}
   </div>
@@ -143,7 +119,7 @@ const BuisnessWebsite = () => {
                   key={index}
                   className="flex items-start gap-3 text-md text-[#444] pt-3 md:pt-6 lg:pt-8"
                 >
-                  <FaCheckCircle className="text-[#6754E9] text-2xl mt-1 shrink-0" />
+                  <FaCheckCircle className="text-[#f89e1b] text-2xl mt-1 shrink-0" />
                   <p>{text}</p>
                 </div>
               ))}
@@ -159,32 +135,32 @@ const BuisnessWebsite = () => {
                     <input
                       type="text"
                       placeholder="Name"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                       required
                     />
                     <input
                       type="email"
                       placeholder="Email"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                       required
                     />
                     <input
                       type="text"
                       placeholder="Company name"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                     />
                     <input
                       type="tel"
                       placeholder="Phone number"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                     />
                     <textarea
                       placeholder="What can we help you with?"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none resize-none h-28"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none resize-none h-28"
                     ></textarea>
                     <button
                       type="submit"
-                      className="relative w-full bg-black text-white font-semibold py-3 rounded-2xl hover:bg-[#6754E9] transition duration-300 group"
+                      className="relative w-full bg-black text-white font-semibold py-3 rounded-2xl hover:bg-[#f89e1b] transition duration-300 group"
                     >
                       <span className="relative inline-block">
                         SEND ME A PROPOSAL →

@@ -91,33 +91,6 @@ const EcommerceWebsiteDevelopment = () => {
         </div>
       </div>
 
-      <div className="py-8 md:py-16">
-        <div className="bg-[#f7f7fa] rounded-2xl p-5 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-          <div className="items-start gap-4 max-w-xl">
-            <div className="text-[#f89e1b] text-3xl md:text-5xl">
-              <FaCrown />
-            </div>
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold pt-6 text-black">
-                Get $245 Worth of Premium Stock Images FREE with Your Package!
-              </h2>
-            </div>
-          </div>
-          <div className="max-w-sm">
-            <p className="font-bold text-black text-right">
-              Premium
-              <br />
-              <span className="font-normal text-sm">Stock images</span>
-            </p>
-            <p className="text-sm text-black pt-10 text-left">
-              All images shown on the demo website come with the demo content,
-              and can be used in your next project, without the need to buy any
-              additional licences.
-            </p>
-          </div>
-        </div>
-      </div>
-
       <div className="pt-5 pb-10">
         <div className="max-w-7xl mx-auto rounded-[40px] overflow-hidden mb-8 md:mb-12">
           <img
@@ -164,15 +137,6 @@ const EcommerceWebsiteDevelopment = () => {
                   {service.description}
                 </p>
               </div>
-              <NavLink
-                to={service.link}
-                className="mt-6 group text-black py-2 text-md font-semibold transition duration-300 relative overflow-hidden inline-flex items-center"
-              >
-                <span className="font-syne relative z-10">
-                  LEARN MORE
-                  <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f89e1b] group-hover:w-full transition-all duration-300"></span>
-                </span>
-              </NavLink>
             </div>
           ))}
         </div>

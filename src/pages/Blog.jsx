@@ -150,7 +150,7 @@ const Blog = () => {
           <div className="mt-10">
             <button
               onClick={handleLoadMore}
-              className="font-syne bg-black dark:bg-white text-white dark:text-black font-semibold px-8 py-3 rounded-[20px] shadow-md hover:bg-[#8E81FA] dark:hover:bg-[#6754E9] transition"
+              className="font-syne bg-black dark:bg-white text-white dark:text-black font-semibold px-8 py-3 rounded-[20px] shadow-md hover:bg-[#f89e1b] dark:hover:bg-[#f89e1b] transition"
               disabled={loading}
               aria-label="Load more blog posts"
             >

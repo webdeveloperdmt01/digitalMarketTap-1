@@ -191,10 +191,10 @@ const Marketing = () => {
             </h6>
             <NavLink
               to="/free-audit"
-              className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
+              className="group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 inline-block relative overflow-hidden"
             >
-              <span className="relative z-10">
-                GET A FREE AUDIT →
+              <span className="relative z-10 flex items-center justify-center gap-1">
+                GET A FREE AUDIT <FaArrowRight />
                 <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300" />
               </span>
             </NavLink>
@@ -298,11 +298,10 @@ const Marketing = () => {
                     key={index}
                     onClick={() => setActiveIndex(index)}
                     className={`font-syne !w-[160%] relative cursor-pointer transition-all duration-300 pl-10 pr-16 py-4 text-left text-lg md:text-xl font-medium leading-tight -ml-8
-                    ${
-                      isActive
+                    ${isActive
                         ? "bg-[#f89e1b] text-white rounded-full z-10"
                         : "text-white hover:text-black hover:bg-white rounded-full z-0"
-                    }`}
+                      }`}
                   >
                     {tab.title}
                     {isActive && (
@@ -368,9 +367,8 @@ const Marketing = () => {
                 >
                   <button
                     onClick={() => handleAccordionToggle(index)}
-                    className={`w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-white ${
-                      isOpen ? "bg-[#f89e1b]" : "bg-black"
-                    }`}
+                    className={`w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-white ${isOpen ? "bg-[#f89e1b]" : "bg-black"
+                      }`}
                   >
                     <span>{tab.title}</span>
                     <span>{isOpen ? <FaMinus /> : <FaPlus />}</span>
@@ -389,8 +387,8 @@ const Marketing = () => {
                       </ul>
                       <div className="mt-6 text-left">
                         <a
-                           href={tabs[activeIndex]?.content.link}
-                          className="text-sm font-semibold text-orange-500 border-b-2 border-orange-300 hover:border-orange-500"
+                          href={tabs[activeIndex]?.content.link}
+                          className="text-sm font-semibold text-black border-b-2 border-orange-300 hover:border-orange-500"
                         >
                           LEARN MORE →
                         </a>

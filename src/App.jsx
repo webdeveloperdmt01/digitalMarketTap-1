@@ -101,8 +101,8 @@ function App() {
         <Route path="/digital-marketing" element={<Layout><DigitalMarketing/></Layout>} />
         <Route path="/coming-soon" element={<Layout><ComingSoon/></Layout>} />
         <Route path="/meta-ads" element={<Layout><MetaAD/></Layout>} />
-        <Route path="/linkedin-ads" element={<Layout><MetaAD/></Layout>} />
-        <Route path="/youtube-ads" element={<Layout><MetaAD/></Layout>} />
+        <Route path="/linkedin-ads" element={<Layout><LinkedinAD/></Layout>} />
+        <Route path="/youtube-ads" element={<Layout><YoutubeAD/></Layout>} />
       </Routes>
     </Router>
   );

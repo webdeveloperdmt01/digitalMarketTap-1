@@ -94,15 +94,15 @@ key to business success. The ad platform for Facebook, Instagram, Messenger, and
 Audience Network provides a powerful means of engaging with customers.
 
           </h6>
-          <NavLink
-            to="/free-audit"
-            className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"
-          >
-            <span className="relative z-10">
-              GET A FREE AUDIT →
-              <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300" />
-            </span>
-          </NavLink>
+             <NavLink
+                     to="/free-audit"
+                     className="group bg-black text-white mt-6 px-6 sm:px-8 md:px-10 py-3 rounded-2xl text-xs sm:text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 inline-block relative overflow-hidden"
+                   >
+                     <span className="relative z-10 flex items-center justify-center gap-1">
+                       GET A FREE AUDIT <FaArrowRight />
+                       <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300" />
+                     </span>
+                   </NavLink>
         </div>
         <div className="flex lg:justify-end pt-2.5 pr-2.5 pb-2.5 pl-0 lg:p-0">
           <img
