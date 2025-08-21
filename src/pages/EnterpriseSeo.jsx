@@ -11,40 +11,70 @@ const EnterpriseSeoPage = () => {
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+  
+
+const faqs = [
+  {
+    question: "What is Enterprise SEO?",
+    answer:
+      "Enterprise SEO is optimizing large websites to gain visibility, rankings, and organic traffic. High-level techniques, automation, and technical SEO best practices that are enterprise-friendly are employed.",
+  },
+  {
+    question: "How does Enterprise SEO differ from normal SEO?",
+    answer:
+      "Unlike conventional SEO, taken care of by small sites, Enterprise SEO deals with complex site structure, multiple stakeholders, intense competition levels, automations, and scalability. It requires stronger tools, a data-driven strategy, and inter-departmental collaboration.",
+  },
+  {
+    question: "Why do big companies require Enterprise SEO?",
+    answer:
+      "For business companies, visibility for even a small fraction can generate millions in revenue. Enterprise SEO provides brand consistency, takes ownership of competitive terms, leverages reputation management, and enables scalable growth.",
+  },
+{
+  question: "What are the key ingredients of Enterprise SEO?",
+  answerPoints: [
+    "Advanced keyword targeting (short-tail + long-tail at scale)",
+    "Large-site technical SEO (site performance, crawlability, indexation)",
+    "Content strategy for many categories/pages",
+    "Automation and AI-driven SEO tools",
+    "Internal linking and site architecture optimization",
+  ],
+}
+];
+
 
   const services = [
     {
-      icon: <FaHeartbeat className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+      icon: <FaHeartbeat className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
       title: "Enhanced Search Engine Visibility on a Large Scale",
       description:
         "Enterprise SEO is best for large and complex websites with larger page sizes and multiple keyword targets. Enterprise SEO helps you to get ranked higher globally for multiple keywords. It not only increases traffic but is also great for overall website visibility, more visibility; means more traffic and leads.",
     },
     {
-      icon: <FaPiggyBank className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+      icon: <FaPiggyBank className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
       title: "Sophisticated Technical Enhancement",
       description:
         "Enterprise SEO encompasses comprehensive technical audits, the implementation of schema, enhancements to site architecture, and the optimization of core web vitals — we guarantee you that your website will reach more users  and improves website overall performance",
     },
     {
-      icon: <FaBalanceScale className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+      icon: <FaBalanceScale className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
       title: "Increase Local & International Reach",
       description:
         "Enterprise SEO focuses on both multi-local and international reach, through international SEO techniques and high-Keyword research your website will reach more audience locally and globally. It's not just increasing website traffic but it's also helping in brand awareness both locally and globally",
     },
     {
-      icon: <FaHome className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+      icon: <FaHome className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
       title: "Stronger Website Structure for Large-Scale Operations",
       description:
         "Enterprise SEO helps in website overall structure for Larger-scale operations, proper url placement, proper taxonomy, it helps us to run 100 pages to function smoothly and effortlessly. It upgrades your overall website structure and makes the website more user friendly and crawlable.",
     },
     {
-      icon: <FaBus className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+      icon: <FaBus className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
       title: "Customer support and strategies",
       description:
         "We provide 100% expert customer support in case you want any help or assistance. We also provide 100% free service or business related counseling so you can get our expert services according to your issues. We provide regular reports, and strategies for better results and growth.",
     },
     {
-      icon: <FaGamepad className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+      icon: <FaGamepad className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
       title: "The Integration of AI and Automation",
       description:
         "Enterprise SEO utilizes AI technologies, automation, and machine learning to enhance workflows, oversee content on a large scale, and quickly pinpoint ranking opportunities like never before. We Use all the latest AI tools to refine your content so your business could be up-to-date.",
@@ -67,7 +97,7 @@ const EnterpriseSeoPage = () => {
               Enterprise SEO
             </h5>
             <h1 className='text-2xl md:text-4xl lg:text-6xl font-semibold pt-3 md:pt-8'>Scaling Your Digital Reach with Enterprise SEO</h1>
-            <h6 className="text-sm font-light lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">Digital Market Tap presents you with The Best Enterprise SEO service in Delhi. Our expert SEO specialists will make sure to deliver the Best SEO Service so you can get long term results and meet all your expectations. Let us synchronize your business objectives with effective SEO strategies that yield results.</h6>
+            <h6 className="text-sm font-light lg:text-[18px] text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">Digital Market Tap presents you with The Best Enterprise SEO service in Delhi. Our expert SEO specialists will make sure to deliver the Best SEO Service so you can get long term results and meet all your expectations. Let us synchronize your business objectives with effective SEO strategies that yield results.</h6>
             <NavLink to="/" className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#f89e1b]">VIEW OPEN POSITIONS <FaArrowRight /><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
           </div>
           <div className="flex lg:justify-end">
@@ -303,6 +333,53 @@ const EnterpriseSeoPage = () => {
             </div>
           </div>
     </div>
+
+    <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+              <p className="font-kanit text-center text-md font-semibold uppercase pb-4">FAQ</p>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+                FAQs about Enterprise
+                <br />
+                Seo
+              </h1>
+              <h6 className="text-center text-md md:text-lg font-light text-gray-500 pb-4">
+                Looking to learn more about Enterprise Seo for your business?
+                Browse our FAQs
+              </h6>
+            </div>
+            <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-12 xl:pb-22 space-y-2 md:space-y-4">
+  {faqs.map((faq, index) => (
+    <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+      <button
+        onClick={() => toggleFAQ(index)}
+        className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
+      >
+        <span className="flex-1">{faq.question}</span>
+        <span className="ml-3 flex items-center justify-center">
+          {openIndex === index ? (
+            <FaMinus className="text-[18px] text-black" />
+          ) : (
+            <FaPlus className="text-[18px] text-[#f89e1b]" />
+          )}
+        </span>
+      </button>
+
+      {openIndex === index && (
+        <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
+          {faq.answerPoints && Array.isArray(faq.answerPoints) ? (
+            <ul className="list-disc ml-5 mt-2 space-y-1">
+              {faq.answerPoints.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{faq.answer}</p>
+          )}
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
 
     </main>
   );

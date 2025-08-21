@@ -15,6 +15,8 @@ import {
   FaSearch,
   FaEnvelope,
   FaCrown,
+  FaMinus, 
+  FaPlus,
   FaCheckCircle,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -25,6 +27,52 @@ const HyperLocalSeo = () => {
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
+  const faqs = [
+    {
+  question: "Why is Hyperlocal SEO essential?",
+  answerPoints: [
+    "Hyperlocal SEO benefits businesses by:",
+    "Attracting local customers actively looking for your offerings",
+    "Showing up in \"near me\" searches",
+    "Driving foot traffic to physical locations",
+    "Competing favorably with local rivals",
+  ],
+},
+    {
+      question: "How does Hyperlocal SEO operate?",
+      answerPoints: [
+        "Hyperlocal SEO operates through:",
+    "Utilizing location-based keywords",
+    "Optimizing your Google Business Profile",
+    "Getting listed in local directory sites",
+    "Producing hyper-targeted content",
+    "Inviting customer reviews to increase trust and visibility",
+  ],
+    },
+    {
+      question: "What's the difference between Local SEO and Hyperlocal SEO?",
+      answerPoints: [
+    "Local SEO targets a wider city or regions",
+    "Hyperlocal SEO targets a neighborhood, street, or landmark",
+    "This is why hyperlocal SEO is most effective for physical businesses."
+  ],
+    },
+    {
+      question: "Who benefits most from Hyperlocal SEO?",
+   answerPoints: [
+  "Businesses such as:",
+  "Restaurants & cafes",
+  "Salons & spas",
+  "Pharmacies & clinics",
+  "Gyms & fitness centers",
+  "Grocery stores",
+  "Home services (plumbers, electricians, cleaners) … benefit most, as they depend on local walk-ins and proximate customers",
+],
+
+    },
+  ];
+
 
   const services = [
     {
@@ -308,6 +356,52 @@ company's secret weapon is hyperlocal SEO. It helps you show up in Google's loca
             className="h-16 md:h-20 object-contain"
           />
         </div>
+      </div>
+
+      <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+                    <p className="font-kanit text-center text-md font-semibold uppercase pb-4">FAQ</p>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+                      FAQs about HyperLocal
+                      <br />
+                      Seo
+                    </h1>
+                    <h6 className="text-center text-md md:text-lg font-light text-gray-500 pb-4">
+                      Looking to learn more about HyperLocal Seo for your business?
+                      Browse our FAQs
+                    </h6>
+                  </div>
+                  <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-12 xl:pb-22 space-y-2 md:space-y-4">
+        {faqs.map((faq, index) => (
+          <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+            <button
+              onClick={() => toggleFAQ(index)}
+              className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
+            >
+              <span className="flex-1">{faq.question}</span>
+              <span className="ml-3 flex items-center justify-center">
+                {openIndex === index ? (
+                  <FaMinus className="text-[18px] text-black" />
+                ) : (
+                  <FaPlus className="text-[18px] text-[#f89e1b]" />
+                )}
+              </span>
+            </button>
+      
+            {openIndex === index && (
+              <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
+                {faq.answerPoints && Array.isArray(faq.answerPoints) ? (
+                  <ul className="list-disc ml-5 mt-2 space-y-1">
+                    {faq.answerPoints.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{faq.answer}</p>
+                )}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
     </main>
   );

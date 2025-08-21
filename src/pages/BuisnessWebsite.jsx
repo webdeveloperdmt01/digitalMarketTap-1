@@ -47,9 +47,9 @@ const BuisnessWebsite = () => {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold pr-5 md:pr-0 lg:pr-0">
             Where Service <br /> Meets Excellence
               </h1>
-              <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
+              <h6 className="text-sm lg:text-[18px] font-light text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
                Join us and become the trusted expert relied upon by the world’s biggest brands, venues, and entertainers to solve their most complex challenges.
-              </p>
+              </h6>
               <NavLink
                 to="/"
                 className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#f89e1b] uppercase"
@@ -68,17 +68,13 @@ const BuisnessWebsite = () => {
           </div>
         </div>
 
-  <div className="pt-5 pb-10">
+  <div className="pt-5 pb-2">
            <div className="max-w-7xl mx-auto rounded-[40px] overflow-hidden mb-8 md:mb-12">
              <img src={BuisnessWebsite2} alt="Team Collaboration" className="w-full h-[155px] md:h-[285px] lg:h-[520px] object-fit" />
            </div>
    
            <div className="max-w-2xl text-left px-0 md:px-5 lg:px-2">
-             <p className="text-sm font-bold uppercase tracking-widest mb-5">
-               Our Best Services
-             </p>
              <h2 className="text-2xl md:text-5xl font-bold text-black mb-6 leading-tight"> Smart digital marketing Solutions centred on data and your audience</h2>
-             <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"><span className="relative z-10"> View All Solutions<FaArrowRight className="inline ml-2 items-center"/><span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span></span></button>
            </div>
     </div>
 

@@ -18,37 +18,37 @@ const EcommerceSeoPage= () => {
 
   const services = [
     {
-      icon: <FaHeartbeat className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+      icon: <FaHeartbeat className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
       title: "Increase online traffic. ",
       description:
         "e-commerce SEO-optimized categories and products help your store get higher in search engines and attract more traffic and customers. SEO is the most organic way to get more leads and traffic. If you want to get more visible without paying extra on ads, get SEO service now—save your money and get max results.",
     },
     {
-      icon: <FaPiggyBank className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+      icon: <FaPiggyBank className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
       title: "Better product visibility. ",
       description:
         "When you get e-commerce SEO done, customers are more likely to come into your store when your products show up in search results. SEO improves brand and product discoverability by making your product listings prominent for both long-tail and short-tail keywords, so increase your online visibility now.",
     },
     {
-      icon: <FaBalanceScale className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+      icon: <FaBalanceScale className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
       title: "Higher conversion rate.",
       description:
         "e-commerce SEO increases website traffic, which means you will get higher conversions. Will search for a particular product, and you have already done SEO on your website. Your website will be shown in a higher rank, which increases chances of getting more leads, so you will get a higher conversion rate.",
     },
     {
-      icon: <FaHome className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+      icon: <FaHome className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
       title: "Magnify product page performance.",
       description:
         "In e-commerce SEO, we focus on meta tags, schema markup, and product descriptions that are optimized for search engines to make your products easier for search engines to understand and more clickable in search results. It also increases your overall website performance.",
     },
     {
-      icon: <FaBus className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+      icon: <FaBus className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
       title: "Experienced SEO expert",
       description:
         "Our team has experienced SEO experts who have years of experience in this field and deliver the best service. From improving your site’s architecture and navigation to load speed, we make sure to deliver the best possible service in the given time—we focus on providing long-term results. ",
     },
     {
-      icon: <FaGamepad className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
+      icon: <FaGamepad className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
       title: "Improve site structure & user experience. ",
       description:
         "e-commerce: optimize your website, improve page-loading time and overall website structure, provide a better user experience, lower bounce rates, and improve customer satisfaction. reduced bounce rates, along with enhanced customer satisfaction. reduced bounce rates, along with enhanced customer satisfaction.",
@@ -57,21 +57,23 @@ const EcommerceSeoPage= () => {
 
   const faqs = [
     {
-      question: "What is paid search management?",
-      answer: "Paid search management involves creating, managing, and optimizing pay-per-click (PPC) advertising campaigns on search engines like Google and Bing to drive targeted traffic to your website."
+      question: "What is E-Commerce SEO?",
+      answer: "E-Commerce SEO is optimizing a web store such that its categories and products come up higher on search engines like Google. It inclines to bring more quality visitors who are actively searching for products that you offer."
     },
     {
-      question: "How much does paid search management cost?",
-      answer: "The cost varies depending on your budget, industry, and campaign complexity. We offer flexible pricing models to suit different business needs and budgets."
+      question: "Why is SEO important for e-commerce websites?",
+      answer: "SEO drives free, constant, and high-intent traffic. SEO is distinct from paid advertisement because SEO drives long-term results and creates brand authority, resulting in increased sales and reduced customer acquisition costs."
     },
     {
-      question: "How long does it take to see results?",
-      answer: "You can start seeing traffic immediately once campaigns are live, but meaningful results and optimization typically occur within 2-4 weeks of continuous management."
-    },
-    {
-      question: "Do you provide reporting and analytics?",
-      answer: "Yes, we provide detailed monthly reports showing campaign performance, key metrics, and recommendations for improvement."
-    }
+        question: "What is E-Commerce SEO compared to normal SEO??",
+  answerPoints: [
+    "Whilst normal SEO works with content & service sites, E-Commerce SEO works with:",
+    "Product & category page optimization",
+    "Handling duplicate content for SKUs",
+    "Site speed and UX optimization for conversion",
+    "Schema for rich snippets & structured data",
+  ],
+}
   ];
 
   const stats = [
@@ -117,7 +119,7 @@ const EcommerceSeoPage= () => {
   };
 
   return (
-    <main className='bg-gradient-to-b from-[#fdf1e7] to-white px-5 md:px-15 lg:px-30'>
+    <main className='!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-15 lg:px-30'>
       <div className="pt-4 md:pt-8 lg:pt-12 pb-4">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
           <div>
@@ -125,8 +127,8 @@ const EcommerceSeoPage= () => {
         Ecommerce SEO
             </h5>
             <h1 className='text-2xl md:text-4xl lg:text-5xl font-semibold pt-3 md:pt-8 leading-tight'>Boost Your Online Store <br />Visibility with Expert <br /> E-Commerce SEO</h1>
-            <h6 className="text-sm font-light lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">Digital Market Tap provides the best SEO service in Delhi. We will help you to boost your online store visibility with our best e-commerce SEO service. Which is personally created for e-commerce platforms.</h6>
-            <NavLink to="/" className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#6754E9]">VIEW OPEN POSITIONS <FaArrowRight /><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
+            <h6 className="text-sm font-light lg:text-[18px] text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8">Digital Market Tap provides the best SEO service in Delhi. We will help you to boost your online store visibility with our best e-commerce SEO service. Which is personally created for e-commerce platforms.</h6>
+            <NavLink to="/" className="text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#f89e1b]">VIEW OPEN POSITIONS <FaArrowRight /><span className="absolute bottom-1.5 left-6 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-[calc(100%-3rem)]"></span></NavLink>
           </div>
           <div className="flex lg:justify-end">
             <img
@@ -165,7 +167,7 @@ const EcommerceSeoPage= () => {
               Why You Need e-Commerce SEO
               </h1>
             </div>
-            <div className="text-gray-700 pl-0 md:pl-16 lg:pl-22">
+            <div className="text-gray-700 pl-0 md:pl-16 lg:pl-22 font-light">
               <h6>
               Just having an e-commerce website is not enough for leads and traffic. There are thousands of e-commerce websites listed online; SEO plays a crucial role in standing out among e-commerce websites. It not only generates leads but also increases website traffic, which is good for brand awareness. It's very beneficial for higher rankings for product-related keywords, driving more conversions with SEO-focused content, and driving more traffic to category and product pages. But for that, you must need an expert SEO specialist company, and we are the best SEO service provider in Delhi.
               </h6>
@@ -246,7 +248,7 @@ const EcommerceSeoPage= () => {
                   key={index}
                   className="flex items-start gap-3 text-md text-[#444] pt-3 md:pt-6 lg:pt-8"
                 >
-                  <FaCheckCircle className="text-[#6754E9] text-2xl mt-1 shrink-0" />
+                  <FaCheckCircle className="text-[#f89e1b] text-2xl mt-1 shrink-0" />
                   <p>{text}</p>
                 </div>
               ))}
@@ -262,32 +264,32 @@ const EcommerceSeoPage= () => {
                     <input
                       type="text"
                       placeholder="Name"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[[#f89e1b] rounded-2xl outline-none"
                       required
                     />
                     <input
                       type="email"
                       placeholder="Email"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                       required
                     />
                     <input
                       type="text"
                       placeholder="Company name"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                     />
                     <input
                       type="tel"
                       placeholder="Phone number"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none"
                     />
                     <textarea
                       placeholder="What can we help you with?"
-                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#6754E9] rounded-2xl outline-none resize-none h-28"
+                      className="w-full px-4 py-3 border border-[#ababab] hover:border-[#f89e1b] rounded-2xl outline-none resize-none h-28"
                     ></textarea>
                     <button
                       type="submit"
-                      className="relative w-full bg-black text-white font-semibold py-3 rounded-2xl hover:bg-[#6754E9] transition duration-300 group"
+                      className="relative w-full bg-black text-white font-semibold py-3 rounded-2xl hover:bg-[#f89e1b] transition duration-300 group"
                     >
                       <span className="relative inline-block">
                         SEND ME A PROPOSAL →
@@ -300,6 +302,52 @@ const EcommerceSeoPage= () => {
             </div>
           </div>
     </div>
+
+<div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+              <p className="font-kanit text-center text-md font-semibold uppercase pb-4">FAQ</p>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+                FAQs about Enterprise
+                <br />
+                Seo
+              </h1>
+              <h6 className="text-center text-md md:text-lg font-light text-gray-500 pb-4">
+                Looking to learn more about Enterprise Seo for your business?
+                Browse our FAQs
+              </h6>
+            </div>
+            <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-12 xl:pb-22 space-y-2 md:space-y-4">
+  {faqs.map((faq, index) => (
+    <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+      <button
+        onClick={() => toggleFAQ(index)}
+        className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
+      >
+        <span className="flex-1">{faq.question}</span>
+        <span className="ml-3 flex items-center justify-center">
+          {openIndex === index ? (
+            <FaMinus className="text-[18px] text-black" />
+          ) : (
+            <FaPlus className="text-[18px] text-[#f89e1b]" />
+          )}
+        </span>
+      </button>
+
+      {openIndex === index && (
+        <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
+          {faq.answerPoints && Array.isArray(faq.answerPoints) ? (
+            <ul className="list-disc ml-5 mt-2 space-y-1">
+              {faq.answerPoints.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{faq.answer}</p>
+          )}
+        </div>
+      )}
+    </div>
+  ))}
+</div>
 
     </main>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import EcommerceWebsiteDevelopment1 from "../assets/ecommercedevelopment1.png";
 import EcommerceWebsiteDevelopment2 from "../assets/ecommercedevelopment2.png";
@@ -15,49 +15,66 @@ import {
   FaBullseye,
   FaSearchengin,
   FaCheckCircle,
+  FaMinus,
+  FaPlus
 } from "react-icons/fa";
+
+
+const faqs = [
+    {
+      question: "Define an e-commerce website.",
+      answer: "An e-commerce website is a web-based platform that enables businesses to present products and shoppers to shop, pay, and receive doorstep delivery with ease."
+    },
+    {
+      question: "Why does my business require an e-commerce website?",
+      answer: "An e-commerce site assists you in reaching more people, generating more sales, and offering 24/7 shopping convenience to customers."
+    },
+    {
+      question: "Is my e-commerce website secure?",
+      answer: "Yes, with SSL certificates, secure hosting, and safe payment gateways, your website will protect customer data and transactions."
+    },
+  ];
 
 const services = [
   {
     icon: (
-      <FaSearchengin className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />
+      <FaSearchengin className="text-[#f89e1b] text-2xl hover:text-[#000]" />
     ),
-    title: "Paid search marketing",
+    title: "100% customized website",
     description:
-      "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
-    link: "/content-writing-service",
+      "Our websites are 100% custom-built; we will work on your vision and your values so that your website can be as unique as your business. Our team checks small details like product description, review section, call to action, and so on.",
   },
   {
     icon: (
-      <FaBullseye className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />
+      <FaBullseye className="text-[#f89e1b] text-2xl hover:text-[#000]" />
     ),
-    title: "Search engine optimization",
+    title: "100% SEO friendly ",
     description:
-      "Maintain your best spot on the search results page, so you can find new customers and re-engage loyal ones.",
+      "Our websites are 100% SEO optimized and mobile friendly because 70% of Indians use mobile for shopping and all. We also provide the best SEO service in Delhi so that your website can rank higher in the Google search engine. ",
     link: "/search-engine-optimization",
   },
   {
     icon: (
-      <FaEnvelope className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />
+      <FaEnvelope className="text-[#f89e1b] text-2xl hover:text-[#000]" />
     ),
-    title: "Email marketing",
+    title: "High-performing website ",
     description:
-      "When it comes to reaching your target audience, you can’t get much closer than direct to their inboxes.",
+      "By using the latest UI and UX technology, our website turns out high-performing. Our latest technology and design will help your website to grow and improve its business's online presence and establish a strong online presence.",
     link: "/email-marketing",
-  },
-  {
-    icon: <FaRocket className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-    title: "Conversion rate optimization",
-    description:
-      "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
-    link: "/social-media-optimisation",
-  },
+  }
 ];
 
 const EcommerceWebsiteDevelopment = () => {
+const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+
   return (
     <div className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30">
-      <div className="pb-4 pt-22">
+      <div className="pb-4 pt-12 md:pt-16 lg:pt-22">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30">
           <div>
             <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-3 md:mb-6 lg:mb-8">
@@ -66,13 +83,13 @@ const EcommerceWebsiteDevelopment = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold pr-5 md:pr-0 lg:pr-0">
               e-Commerce <br /> platform
             </h1>
-            <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
+            <h6 className="text-sm lg:text-[18px] font-light text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
               We design your website very carefully, especially when it comes to
               Ecommerce websites. It took so much effort to create, design
               ideas, and creativity to deliver an Ecommerce website which is as
               unique as your business. Following are the key points which we add
               in Ecommerce website to increase its performance
-            </p>
+            </h6>
             <NavLink
               to="/"
               className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#f89e1b] uppercase"
@@ -91,36 +108,24 @@ const EcommerceWebsiteDevelopment = () => {
         </div>
       </div>
 
-      <div className="pt-5 pb-10">
-        <div className="max-w-7xl mx-auto rounded-[40px] overflow-hidden mb-8 md:mb-12">
+      <div className="pt-2 pb-4 md:pb-8 lg:pb-10">
+        <div className="rounded-[40px] overflow-hidden mb-8 md:mb-12">
           <img
             src={EcommerceWebsiteDevelopment2}
             alt="Team Collaboration"
             className="w-full h-[155px] md:h-[285px] lg:h-[520px] object-fit"
           />
         </div>
-
-        <div className="max-w-2xl text-left px-0 md:px-5 lg:px-2">
-          <p className="text-sm font-bold uppercase tracking-widest mb-5">
-            Our Best Services
-          </p>
-          <h2 className="text-2xl md:text-5xl font-bold text-black mb-6 leading-tight">
+        <div className="max-w-2xl text-center md:text-left px-0 md:px-5 lg:px-2">
+          <h2 className="text-2xl md:text-5xl font-bold text-black mt-12 mb-4">
             {" "}
-            Smart digital marketing Solutions centred on data and your audience
+  Why choose us for your e-commerce website? 
           </h2>
-          <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
-            <span className="font-syne relative z-10">
-              {" "}
-              View All Solutions
-              <FaArrowRight className="inline ml-2 items-center" />
-              <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
-            </span>
-          </button>
         </div>
       </div>
 
-      <div className="py-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="py-4 md:py-6 lg:py-8">
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {services.map((service, index) => (
             <div
               key={index}
@@ -257,6 +262,51 @@ const EcommerceWebsiteDevelopment = () => {
             className="h-16 md:h-20 object-contain"
           />
         </div>
+      </div>
+        <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+        <p className="font-kanit text-center text-md font-semibold uppercase pb-4">FAQ</p>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+          FAQs about E-commerce
+          <br />
+          Website
+        </h1>
+        <h6 className="text-center text-md md:text-lg font-light text-gray-500 pb-4">
+          Looking to learn more about E-commerce Website for your business?
+          Browse our FAQs
+        </h6>
+      </div>
+      <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-12 xl:pb-22 space-y-2 md:space-y-4">
+        {faqs.map((faq, index) => (
+          <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+            <button
+              onClick={() => toggleFAQ(index)}
+              className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
+            >
+              <span className="flex-1">{faq.question}</span>
+              <span className="ml-3 flex items-center justify-center">
+                {openIndex === index ? (
+                  <FaMinus className="text-[18px] text-black" />
+                ) : (
+                  <FaPlus className="text-[18px] text-[#f89e1b]" />
+                )}
+              </span>
+            </button>
+
+            {openIndex === index && (
+              <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
+                <h6>{faq.answer}</h6>
+
+                {faq.answerPoints && Array.isArray(faq.answerPoints) && (
+                  <ul className="list-disc ml-5 mt-2 space-y-1">
+                    {faq.answerPoints.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );

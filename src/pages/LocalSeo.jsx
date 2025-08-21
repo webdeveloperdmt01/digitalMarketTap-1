@@ -165,28 +165,56 @@ export default function LocalSeoPage() {
     },
   ];
 
-  const faqs = [
-    {
-      question: "What is paid search management?",
-      answer:
-        "Paid search management involves creating, managing, and optimizing pay-per-click (PPC) advertising campaigns on search engines like Google and Bing to drive targeted traffic to your website.",
-    },
-    {
-      question: "How much does paid search management cost?",
-      answer:
-        "The cost varies depending on your budget, industry, and campaign complexity. We offer flexible pricing models to suit different business needs and budgets.",
-    },
-    {
-      question: "How long does it take to see results?",
-      answer:
-        "You can start seeing traffic immediately once campaigns are live, but meaningful results and optimization typically occur within 2-4 weeks of continuous management.",
-    },
-    {
-      question: "Do you provide reporting and analytics?",
-      answer:
-        "Yes, we provide detailed monthly reports showing campaign performance, key metrics, and recommendations for improvement.",
-    },
-  ];
+ const faqs = [
+  {
+    question: "What is Local SEO?",
+    answer:
+      "Local SEO is the process of optimizing your business's online presence to get more customers through relevant local searches. It makes businesses show up in Google's Local Pack, Maps, and organic results when individuals look for services nearby.",
+  },
+  {
+    question: "Why is Local SEO significant for small and medium enterprises?",
+    answer:
+      "Local SEO puts your business in front of local consumers at the very moment they're looking for your products or services. This results in foot traffic, calls, and leads directly from your local market.",
+  },
+  {
+    question: "What are the core components of Local SEO?",
+    answerPoints: [
+      "Google Business Profile (Google My Business) optimization",
+      "NAP consistency (Name, Address, Phone) in directories",
+      "Local keyword targeting and content optimization",
+      "Customer reviews and ratings management",
+      "Citations from quality local directories",
+      "Mobile-friendly and fast-loading website",
+      "Local backlinks and geo-targeted link building",
+    ],
+  },
+  {
+    question: "How long does it take to notice results from Local SEO?",
+    answer:
+      "Most companies start to see improvements in 2–3 months, but solid results typically emerge in 4–6 months, depending on the level of competition and optimization.",
+  },
+  {
+    question: "Does Local SEO help in getting more calls and walk-ins?",
+    answer:
+      "Yes. A well-optimized local listing can directly drive phone calls, map directions, and store visits, as customers often search for businesses 'near me' with high purchase intent.",
+  },
+  {
+    question: "Can Local SEO work for multi-location businesses?",
+    answer:
+      "Yes. Each business can be optimized with its own Google Business Profile, local landing pages, and citations to appear in various regions or cities.",
+  },
+  {
+    question: "How is Local SEO different from regular SEO?",
+    answer:
+      "Classic SEO is designed to boost visibility nationally or globally, while Local SEO targets location-based searches primarily with map listings and local intent keywords.",
+  },
+  {
+    question: "Do online reviews affect Local SEO rankings?",
+    answer:
+      "Yes. Positive customer reviews improve trust and influence Google’s local ranking algorithm. More reviews with high ratings often lead to better visibility in the local pack.",
+  },
+];
+
 
   return (
     <main className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30">
@@ -450,6 +478,52 @@ export default function LocalSeoPage() {
           </div>
         </div>
       </div>
+<div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+              <p className="font-kanit text-center text-md font-semibold uppercase pb-4">FAQ</p>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+                FAQs about Local
+                <br />
+                Seo
+              </h1>
+              <h6 className="text-center text-md md:text-lg font-light text-gray-500 pb-4">
+                Looking to learn more about Local Seo for your business?
+                Browse our FAQs
+              </h6>
+            </div>
+            <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-12 xl:pb-22 space-y-2 md:space-y-4">
+  {faqs.map((faq, index) => (
+    <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+      <button
+        onClick={() => toggleFAQ(index)}
+        className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
+      >
+        <span className="flex-1">{faq.question}</span>
+        <span className="ml-3 flex items-center justify-center">
+          {openIndex === index ? (
+            <FaMinus className="text-[18px] text-black" />
+          ) : (
+            <FaPlus className="text-[18px] text-[#f89e1b]" />
+          )}
+        </span>
+      </button>
+
+      {openIndex === index && (
+        <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
+          {faq.answerPoints && Array.isArray(faq.answerPoints) ? (
+            <ul className="list-disc ml-5 mt-2 space-y-1">
+              {faq.answerPoints.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{faq.answer}</p>
+          )}
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
     </main>
   );
 }

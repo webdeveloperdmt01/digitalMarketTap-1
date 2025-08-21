@@ -8,11 +8,54 @@ import Badge2 from "../assets/new-badge2.png";
 import Badge3 from "../assets/new-badge3.png";
 import Badge4 from "../assets/logo_hubspot.png";
 import SparklingStar from '../assets/sparklingStarBlack.png';
-import { FaArrowRight, FaRocket, FaBullseye, FaSearch, FaEnvelope, FaCrown, FaCheckCircle  } from "react-icons/fa";
+import { FaArrowRight, FaRocket, FaBullseye, FaSearch, FaEnvelope, FaMinus , FaPlus, FaCheckCircle  } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
 const VernacularSeo = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+ const [openIndex, setOpenIndex] = useState(null);
+ 
+   const toggleFAQ = (index) => {
+     setOpenIndex(openIndex === index ? null : index);
+   };
+
+const faqs = [
+    {
+  question: "How is Vernacular SEO different from Traditional SEO?",
+  answerPoints: [
+    "Traditional SEO is centered around optimizing content in a single, predominantly global language such as English, while Vernacular SEO adapts your strategy for local languages, reaching a wider and more diverse crowd.",
+  ],
+},
+    {
+      question: "Why is Vernacular SEO important?",
+      answerPoints: [
+        "As more and more internet users browse in regional languages, Vernacular SEO enables companies to:",
+    "Extend their reach",
+    "Gain the trust of local audiences",
+    "Boost conversions by providing content in a user's preferred language"
+  ],
+    },
+    {
+      question: "What is Vernacular SEO?",
+      answerPoints: [
+    "Vernacular SEO entails:",
+    "Translating or generating content in native languages",
+    "Applying region-based keywords",
+    "Optimizing meta tags, titles, and URLs",
+    "Taking advantage of local directories and citations",
+    "Maintaining multilingual SEO-friendly website architecture",
+  ],
+    },
+    {
+      question: "What are the advantages of Vernacular SEO?",
+      answerPoints: [
+    "Boosts organic traffic from regional searches",
+    "Boosts customer engagement",
+    "Establishes brand credibility with local users",
+    "Boosts voice search optimization in local languages",
+    "Provides you with a competitive advantage in untapped markets",
+  ],
+    },
+  ];
 
 
    const services = [
@@ -87,43 +130,13 @@ better connection when they read their native language.</h6>
           </div>
         </div>
       </div>
-<div className='py-8 md:py-16'>
-    <div className="bg-[#f7f7fa] rounded-2xl p-5 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-      <div className="items-start gap-4 max-w-xl">
-        <div className="text-[#f89e1b] text-3xl md:text-5xl">
-          <FaCrown />
-        </div>
-        <div>
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold pt-6 text-black">
-           Vernacular SEO Services – Speak the Language of Your Local
-Audience
 
-          </h2>
-        </div>
-      </div>
-      <div className="max-w-md">
-        <p className=" font-bold text-black text-right">Premium<br /><span className="font-normal text-sm">Stock images</span></p>
-        <h6 className="text-sm text-black font-light pt-10 text-left">Build Trust with Customers Through Native Language Content. Getting
-vernacular SEO and speaking your customer's language helps create an
-emotional connection and boosts conversion rates. Because local users
-don't consume content in English.
-</h6>
-      </div>
-    </div>
-</div>
-
-<div className=" pt-5">
+<div className=" pt-5 md:pt-12 lg:pt-18">
   <div className="max-w-7xl mx-auto rounded-[40px] overflow-hidden mb-8 md:mb-12">
     <img src={AISeo2} alt="Team Collaboration" className="w-full object-cover" />
   </div>  
   <div className="max-w-2xl text-left">
-    <p className="text-sm font-semibold uppercase tracking-widest mb-3"> Our Capabilities</p>
     <h2 className="text-2xl md:text-5xl font-semibold text-black mb-6 leading-tight">Why choose Digital Market Tap for vernacular SEO?</h2>
-    <button className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
-      <span className="relative z-10 flex items-baseline gap-2">View All Solutions <FaArrowRight/>
-      <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
-      </span>
-    </button>
   </div>
 </div>
 
@@ -245,6 +258,52 @@ don't consume content in English.
                 <img src={Badge4} alt="Badge 4" className="h-16 md:h-20 object-contain" />
             </div>
           </div>
+<div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+              <p className="font-kanit text-center text-md font-semibold uppercase pb-4">FAQ</p>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+                FAQs about Vernacular
+                <br />
+                Seo
+              </h1>
+              <h6 className="text-center text-md md:text-lg font-light text-gray-500 pb-4">
+                Looking to learn more about Vernacular Seo for your business?
+                Browse our FAQs
+              </h6>
+            </div>
+            <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-12 xl:pb-22 space-y-2 md:space-y-4">
+  {faqs.map((faq, index) => (
+    <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+      <button
+        onClick={() => toggleFAQ(index)}
+        className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
+      >
+        <span className="flex-1">{faq.question}</span>
+        <span className="ml-3 flex items-center justify-center">
+          {openIndex === index ? (
+            <FaMinus className="text-[18px] text-black" />
+          ) : (
+            <FaPlus className="text-[18px] text-[#f89e1b]" />
+          )}
+        </span>
+      </button>
+
+      {openIndex === index && (
+        <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
+          {faq.answerPoints && Array.isArray(faq.answerPoints) ? (
+            <ul className="list-disc ml-5 mt-2 space-y-1">
+              {faq.answerPoints.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{faq.answer}</p>
+          )}
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
     </main>
   );
 };

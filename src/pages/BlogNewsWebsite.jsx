@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import BlogImgg1 from "../assets/blogNews1.png";
 import BlogImgg2 from "../assets/blogNews2.png";
@@ -7,35 +7,51 @@ import Badge1 from "../assets/new-badge.png";
 import Badge2 from "../assets/new-badge2.png";
 import Badge3 from "../assets/new-badge3.png";
 import Badge4 from "../assets/logo_hubspot.png";
-import { FaArrowRight, FaCrown, FaEnvelope, FaRocket, FaBullseye, FaSearchengin ,FaCheckCircle } from "react-icons/fa";
+import { FaArrowRight, FaCrown, FaEnvelope, FaRocket, FaPlus , FaMinus , FaBullseye, FaSearchengin ,FaCheckCircle } from "react-icons/fa";
+
+const faqs = [
+    {
+      question: "Why do I need a blog or news site for my company?",
+      answer: "A blog or news site assists with creating authority, enhancing SEO ranks, driving organic traffic, and engaging your audience with new, useful content."
+    },
+    {
+      question: "What are the must-have features for a professional news website?",
+      answer: "Key elements are category-oriented articles, author profiles, SEO-optimized structure, quick page loading time, social sharing buttons, comment boxes, and advertisement placement for monetization."
+    },
+    {
+      question: "Will my news blog website be SEO-optimized?",
+      answer: "Yes. We make sure of on-page SEO, keyword optimization, schema implementation, and speed optimization so your content is ranked higher on search engines."
+    },
+  ];
 
 const services = [
   {
-    icon: <FaSearchengin className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-    title: "Paid search marketing",
-    description: "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
+    icon: <FaSearchengin className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
+    title: "Experienced & Experts",
+    description: "Looking for the best website design agency in Delhi? We got you. Get your dream website today. And take blogging to the next level.You're at the right place. We have years of experience in this field, which makes us experts.",
     link: "/content-writing-service",
   },
   {
-    icon: <FaBullseye className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-    title: "Search engine optimization",
-    description: "Maintain your best spot on the search results page, so you can find new customers and re-engage loyal ones.",
+    icon: <FaBullseye className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
+    title: "Custom-built websites",
+    description: "We create a 100% customized Blog News website in Delhi, which not only performs great but also looks beautiful. We use all the latest UI & UX to increase website performance and visuals. Get your custom-built website now.",
     link: "/search-engine-optimization",
   },
   {
-    icon: <FaEnvelope className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-    title: "Email marketing",
-    description: "When it comes to reaching your target audience, you can’t get much closer than direct to their inboxes.",
+    icon: <FaEnvelope className="text-[#f89e1b] text-2xl hover:text-[#000]" />,
+    title: "Latest technologies",
+    description: "We use the latest technologies so that your website can run smoothly without any errors. Take your blogs to the next level with the help of our experienced and professional website developer so Get your dream website today.",
     link: "/email-marketing",
-  },
-  {
-    icon: <FaRocket className="text-[#f89e1b] text-2xl hover:text-[#6754E9]" />,
-    title: "Conversion rate optimization",
-    description: "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
-    link: "/social-media-optimisation",
   },
 ];
 const BlogNewsWebsite = () => {
+const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+
   return (
    <div className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] px-5 md:px-10 lg:px-15 xl:px-30">
        <div className="pb-4 pt-22">
@@ -43,11 +59,11 @@ const BlogNewsWebsite = () => {
             <div>
                <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-3 md:mb-6 lg:mb-8">Blog Website</h3>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold pr-5 md:pr-0 lg:pr-0">
-             Day to Day <br /> Updates of <br /> through Blogs
+             Blog Website
               </h1>
-              <p className="text-sm lg:text-[16px] font-base text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
-               Join us and become the trusted expert relied upon by the world’s biggest brands, venues, and entertainers to solve their most complex challenges.
-              </p>
+              <h6 className="text-sm lg:text-[18px] font-light text-[#545e5b] pt-4 md:pt-8 pb-6 md:pb-8 pr-5 md:pr-0 lg:pr-0">
+             We create a high-performing SEO-optimized blog news website that effortlessly delivers news and blogs perfect for today's generation. Want to level up your blogs, journalists, and content creation journey to the next level? You're at the right place. We present you the best blog news website with the following key points.
+             </h6>
               <NavLink
                 to="/"
                 className="font-syne text-sm group relative inline-flex items-center gap-2 rounded-[15px] bg-black px-8 py-3 text-white transition duration-300 hover:bg-[#f89e1b] uppercase"
@@ -73,16 +89,12 @@ const BlogNewsWebsite = () => {
            </div>
    
            <div className="max-w-2xl text-left px-0 md:px-5 lg:px-2">
-             <p className="text-sm font-bold uppercase tracking-widest mb-5">
-               Our Best Services
-             </p>
-             <h2 className="text-2xl md:text-5xl font-bold text-black mb-6 leading-tight"> Smart digital marketing Solutions centred on data and your audience</h2>
-             <button className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden"><span className="relative z-10"> View All Solutions<FaArrowRight className="inline ml-2 items-center"/><span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span></span></button>
+             <h2 className="text-2xl md:text-5xl font-bold text-black mb-6 leading-tight"> Why choose us for your blog news website?</h2>
            </div>
     </div>
 
   <div className="py-8">
-  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     {services.map((service, index) => (
       <div key={index} className="bg-white rounded-3xl p-8 text-black flex flex-col h-full border border-gray-100">
         <div className="flex-grow">
@@ -183,6 +195,51 @@ const BlogNewsWebsite = () => {
         <img src={Badge4} alt="Badge 4" className="h-16 md:h-20 object-contain" />
     </div>
   </div>
+     <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+          <p className="font-kanit text-center text-md font-semibold uppercase pb-4">FAQ</p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+            FAQs about Blog News
+            <br />
+            Website
+          </h1>
+          <h6 className="text-center text-md md:text-lg font-light text-gray-500 pb-4">
+            Looking to learn more about Blog News Website for your business?
+            Browse our FAQs
+          </h6>
+        </div>
+        <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-12 xl:pb-22 space-y-2 md:space-y-4">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+              <button
+                onClick={() => toggleFAQ(index)}
+                className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
+              >
+                <span className="flex-1">{faq.question}</span>
+                <span className="ml-3 flex items-center justify-center">
+                  {openIndex === index ? (
+                    <FaMinus className="text-[18px] text-black" />
+                  ) : (
+                    <FaPlus className="text-[18px] text-[#f89e1b]" />
+                  )}
+                </span>
+              </button>
+  
+              {openIndex === index && (
+                <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
+                  <h6>{faq.answer}</h6>
+  
+                  {faq.answerPoints && Array.isArray(faq.answerPoints) && (
+                    <ul className="list-disc ml-5 mt-2 space-y-1">
+                      {faq.answerPoints.map((point, idx) => (
+                        <li key={idx}>{point}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
 
     </div>
   );

@@ -64,7 +64,7 @@ const QuoraMarketing = () => {
       <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-30">
         <div>
           <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">Quora Marketing</h3>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mt-2 leading-tight">Quora marketing</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mt-2 leading-tight">Quora marketing</h2>
           <h6 className="text-md text-gray-500 mt-5 mb-10 font-light">Quora is one space that is still on the rise in terms of power but underutilized by most
             companies. With more than 300 million monthly active users, Quora is not merely a
             Q&A site, it is a goldmine waiting to be tapped for brand creation, lead capture, and
@@ -123,7 +123,7 @@ const QuoraMarketing = () => {
             />
           </div>
           <div className="pl-2 md:pl-8 lg:pl-20">
-            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">Here’s why Quora marketing is crucial in 2025:s</h3>
+            <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">Here’s why Quora marketing is crucial in 2025:</h3>
             <h6 className="text-sm lg:text-[16px] font-light text-gray-500 mt-2">
               Quora is a great platform for organic traffic with more than 300 million active users. It
               became great for organic traffic because questions and answers from Quora often
@@ -181,7 +181,7 @@ const QuoraMarketing = () => {
       <div className="w-full pt-8 md:pt-14 lg:pt-24">
         <div className="flex flex-col md:flex-row items-center bg-[#f7f7fa] rounded-[25px] md:rounded-[50px] overflow-hidden">
           <div className="md:w-1/2 px-6 md:px-12 lg:px-18 py-8">
-            <FaQuoteLeft className="text-orange-400 text-3xl mb-4" />
+            <FaQuoteLeft className="text-[#F89E1B] text-3xl mb-4" />
             <p className="text-md md:text-xl lg:text-2xl italic mb-6">
               “DMT PPC service is light years ahead of the competition because of their intelligent, specialized and courteous account managers.”
             </p>
@@ -194,16 +194,16 @@ const QuoraMarketing = () => {
           <div className="md:w-1/2 relative">
             <img src={womanTalking} alt="Testimonial video" className="w-full h-full object-cover" />
 
-            <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center bg-white bg-opacity-90 px-8 py-6 rounded-tl-[40px] md:rounded-tl-[60px]">
+            <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center bg-white bg-opacity-90 px-6 md:px-8 py-4 md:py-6 rounded-tl-[40px] md:rounded-tl-[60px]">
               <div className="flex flex-col items-start">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
                     <FaStar key={i} className="text-yellow-500 text-lg" />
                   ))}
                 </div>
-                <span className="font-syne font-semibold text-sm mt-1">5000+ Client reviews</span>
+                <span className="font-syne font-semibold text-xs md:text-sm mt-1">5000+ Client reviews</span>
               </div>
-              <a href="/about" className="font-syne inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase">View all reviews</a>
+              <a href="/about" className="font-syne inline-block text-xs md:text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase">View all reviews</a>
             </div>
           </div>
         </div>
@@ -219,7 +219,7 @@ const QuoraMarketing = () => {
               <div className="flex items-center gap-4 mb-6 justify-between">
                 <h3 className="text-5xl font-bold text-black leading-tight">90%</h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-[#F89E1B] text-2xl" />
+                  <FaChartLine className="text-[#F89E1B]  hover:text-black text-2xl" />
                 </div>
               </div>
               <h6 className="text-[#5c5f61] font-light">more growth in organic traffic for those who get our Quora marketing service.</h6>
@@ -228,7 +228,7 @@ const QuoraMarketing = () => {
               <div className="flex items-center gap-4 mb-6 justify-between">
                 <h3 className="text-5xl font-bold text-black leading-tight">95%</h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-[#F89E1B] text-2xl" />
+                  <FaChartLine className="text-[#F89E1B]  hover:text-black text-2xl" />
                 </div>
               </div>
               <h6 className="text-[#5c5f61] font-light"> more growth in organic reach for those who get our Quora marketing service.</h6>
@@ -237,7 +237,7 @@ const QuoraMarketing = () => {
               <div className="flex items-center gap-4 mb-6 justify-between">
                 <h3 className="text-5xl font-bold text-black leading-tight">90%</h3>
                 <div className="bg-[#f6f5f9] rounded-full w-16 h-16 flex items-center justify-center">
-                  <FaChartLine className="text-[#F89E1B] text-2xl" />
+                  <FaChartLine className="text-[#F89E1B] hover:text-black text-2xl" />
                 </div>
               </div>
               <h6 className="text-[#5c5f61] font-light">more growth in brand visibility for those who get our Quora marketing service.</h6>

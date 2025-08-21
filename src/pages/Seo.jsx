@@ -54,7 +54,7 @@ const tabs = [
         "Technical SEO and accurate on-page SEO",
         "Avoid duplicate content.",
       ],
-      link: "/e-commerce-seo",
+      link: "/ecommerce-seo",
       percentage: "93%",
       percentageNote:
         "Of customers reported that their online experience begins with search",

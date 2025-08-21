@@ -8,7 +8,7 @@ import Badge3 from "../assets/new-badge3.png";
 import Badge4 from "../assets/logo_hubspot.png";
 import rocket from "../assets/rocket.png";
 import SparklingStar from '../assets/sparklingStarBlack.png';;
-import { FaArrowRight, FaRocket, FaBullseye, FaSearch, FaEnvelope, FaCrown, FaCheckCircle  } from "react-icons/fa";
+import { FaArrowRight, FaRocket, FaBullseye, FaSearch, FaEnvelope, FaMinus , FaPlus, FaCheckCircle  } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
 const AISeoPage = () => {
@@ -17,6 +17,36 @@ const AISeoPage = () => {
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
+    const faqs = [
+    {
+  question: "What is AI SEO?",
+  answer: 
+    "AI SEO (Artificial Intelligence Search Engine Optimization) employs machine learning and AI tools to enhance site ranking, content optimization, search intent analysis, and user experience better than conventional SEO techniques.",
+},
+    {
+      question: "How does AI assist in SEO?",
+      answer:
+        "AI assists SEO in analyzing huge data volumes, forecasting search behavior, keyword optimization, on-page SEO enhancement, voice search optimization, and personalizing content to align with user intent quicker and more accurately.",
+    },
+    {
+      question: "What are the top AI tools for SEO?",
+      answerPoints: [
+    "These are some of the most used AI SEO tools:",
+    "SurferSEO – Content optimization",
+    "Frase – Topic research & content briefs",
+    "Jasper AI – AI-powered content creation",
+    "MarketMuse – Keyword insights",
+    "Clearscope – For enhancing content salience",
+  ],
+    },
+    {
+      question: "Is AI SEO superior to conventional SEO?",
+      answer:
+    "AI SEO is not a substitute, but an evolution of conventional SEO. While conventional SEO depends on manual keyword research and optimization, AI SEO leverages automation, predictive analytics, and machine learning to deliver quicker and more precise outcomes.",
+    },
+  ];
+
 
    const services = [
       {
@@ -92,28 +122,6 @@ level. Get AI SEO now.
           </div>
         </div>
       </div>
-<div className='py-8 md:py-16'>
-    <div className="bg-[#f7f7fa] rounded-2xl p-5 md:p-12 md:block lg:flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-      <div className="items-start gap-4 max-w-xl">
-        <div className="text-[#f89e1b] text-3xl md:text-5xl">
-          <FaCrown />
-        </div>
-        <div>
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold pt-6 text-black">
-           Smarter, Faster, Data-Driven Optimization with AI SEO Services
-          </h2>
-        </div>
-      </div>
-      <div className="max-w-md">
-        <p className=" md:hidden font-bold text-black text-right">Premium<br /><span className="font-normal text-sm">Stock images</span></p>
-        <h6 className="text-sm text-black font-light pt-10 text-left">Artificial Intelligence Search Engine Optimization, commonly referred to as AI SEO,
-involves the utilization of AI tools and algorithms to automate technical SEO tasks,
-analyze data, predict search trends, and enhance content. This approach improves
-conventional SEO by rendering it more intelligent, scalable, and precise.</h6>
-      </div>
-    </div>
-</div>
-
 <div className=" pt-5">
   <div className="max-w-7xl mx-auto rounded-[40px] overflow-hidden mb-8 md:mb-12">
     <img src={AISeo2} alt="Team Collaboration" className="w-full object-cover" />
@@ -247,6 +255,53 @@ conventional SEO by rendering it more intelligent, scalable, and precise.</h6>
             <img src={Badge4} alt="Badge 4" className="h-16 md:h-20 object-contain" />
         </div>
       </div>
+
+<div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+              <p className="font-kanit text-center text-md font-semibold uppercase pb-4">FAQ</p>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+                FAQs about A.I.
+                <br />
+                Seo
+              </h1>
+              <h6 className="text-center text-md md:text-lg font-light text-gray-500 pb-4">
+                Looking to learn more about A.I. Seo for your business?
+                Browse our FAQs
+              </h6>
+            </div>
+            <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-12 xl:pb-22 space-y-2 md:space-y-4">
+  {faqs.map((faq, index) => (
+    <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+      <button
+        onClick={() => toggleFAQ(index)}
+        className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
+      >
+        <span className="flex-1">{faq.question}</span>
+        <span className="ml-3 flex items-center justify-center">
+          {openIndex === index ? (
+            <FaMinus className="text-[18px] text-black" />
+          ) : (
+            <FaPlus className="text-[18px] text-[#f89e1b]" />
+          )}
+        </span>
+      </button>
+
+      {openIndex === index && (
+        <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
+          {faq.answerPoints && Array.isArray(faq.answerPoints) ? (
+            <ul className="list-disc ml-5 mt-2 space-y-1">
+              {faq.answerPoints.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{faq.answer}</p>
+          )}
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
     </main>
   );
 };

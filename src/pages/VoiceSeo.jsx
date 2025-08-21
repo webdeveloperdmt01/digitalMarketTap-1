@@ -14,7 +14,8 @@ import {
   FaBullseye,
   FaSearch,
   FaEnvelope,
-  FaCrown,
+  FaPlus,
+  FaMinus,
   FaCheckCircle,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -55,24 +56,41 @@ const VoiceSeo = () => {
 
   const faqs = [
     {
-      question: "What is paid search management?",
-      answer:
-        "Paid search management involves creating, managing, and optimizing pay-per-click (PPC) advertising campaigns on search engines like Google and Bing to drive targeted traffic to your website.",
+  question: "How is Voice SEO affecting local businesses?",
+  answerPoints: [
+    "The majority of voice searches are location-based queries, such as \"best pizza near me\" or \"salon near Dwarka Mor.\" Voice SEO + local SEO optimization benefits your business:",
+    "Showing up in \"near me\" searches",
+    "Capturing high-intent customers",
+    "Enhancing foot traffic and local visibility",
+  ],
+},
+    {
+      question: "Why is Voice SEO so essential?",
+      answerPoints: [
+        "As voice-enabled searches grow in popularity, users are moving from typing to speaking queries. Voice SEO benefits companies by:",
+    "Showing up in voice search results",
+    "Attract mobile and smart speaker users",
+    "Enhance local SEO performance",
+    "Get ahead of the competition",
+  ],
     },
     {
-      question: "How much does paid search management cost?",
-      answer:
-        "The cost varies depending on your budget, industry, and campaign complexity. We offer flexible pricing models to suit different business needs and budgets.",
+      question: "How does Voice SEO function?",
+      answerPoints: [
+    "Utilizing long-tail and question-based keywords",
+    "Optimizing for featured snippets",
+    "Enhancing page speed and mobile-friendliness",
+    "Offering clear, concise user answers",
+  ],
     },
     {
-      question: "How long does it take to see results?",
-      answer:
-        "You can start seeing traffic immediately once campaigns are live, but meaningful results and optimization typically occur within 2-4 weeks of continuous management.",
-    },
-    {
-      question: "Do you provide reporting and analytics?",
-      answer:
-        "Yes, we provide detailed monthly reports showing campaign performance, key metrics, and recommendations for improvement.",
+      question: "What's the difference between Voice SEO and Traditional SEO?",
+      answerPoints: [
+    "Traditional SEO prioritizes typed keywords",
+    "Voice SEO is optimized around spoken queries, which tend to be longer and more conversational Example:",
+    "Typed search: \" Best restaurants Delhi\" ",
+    "Voice search: \"Which are the best restaurants near me in Delhi?\"",
+  ],
     },
   ];
 
@@ -107,34 +125,6 @@ const VoiceSeo = () => {
               alt="Marketing Visual"
               className="w-full h-[250px] md:h-[440px] object-cover rounded-[30px] md:rounded-[60px]"
             />
-          </div>
-        </div>
-      </div>
-      <div className="py-8 md:py-16">
-        <div className="bg-[#f7f7fa] rounded-2xl p-5 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-          <div className="items-start gap-4 max-w-xl">
-            <div className="text-[#f89e1b] text-3xl md:text-5xl">
-              <FaCrown />
-            </div>
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold pt-6 text-black">
-                Voice SEO: Preparing Your Brand for Search's Future
-              </h2>
-            </div>
-          </div>
-          <div className="max-w-md">
-            <p className="font-bold text-black text-right">
-              Premium
-              <br />
-              <span className="font-normal text-sm">Stock images</span>
-            </p>
-            <h6 className="text-sm text-black pt-10 text-left font-light">
-              We prepare your brand for future ready because we provide the best
-              SEO service in Delhi, and now more than 60% of users use voice
-              assistants, so it's important that your content is voice search
-              optimized. And if your business isn’t voice search ready, you're
-              missing out on something
-            </h6>
           </div>
         </div>
       </div>
@@ -321,6 +311,52 @@ const VoiceSeo = () => {
           />
         </div>
       </div>
+<div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+              <p className="font-kanit text-center text-md font-semibold uppercase pb-4">FAQ</p>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+                FAQs about Voice
+                <br />
+                Seo
+              </h1>
+              <h6 className="text-center text-md md:text-lg font-light text-gray-500 pb-4">
+                Looking to learn more about Voice Seo for your business?
+                Browse our FAQs
+              </h6>
+            </div>
+            <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-12 xl:pb-22 space-y-2 md:space-y-4">
+  {faqs.map((faq, index) => (
+    <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+      <button
+        onClick={() => toggleFAQ(index)}
+        className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
+      >
+        <span className="flex-1">{faq.question}</span>
+        <span className="ml-3 flex items-center justify-center">
+          {openIndex === index ? (
+            <FaMinus className="text-[18px] text-black" />
+          ) : (
+            <FaPlus className="text-[18px] text-[#f89e1b]" />
+          )}
+        </span>
+      </button>
+
+      {openIndex === index && (
+        <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
+          {faq.answerPoints && Array.isArray(faq.answerPoints) ? (
+            <ul className="list-disc ml-5 mt-2 space-y-1">
+              {faq.answerPoints.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{faq.answer}</p>
+          )}
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
     </main>
   );
 };

@@ -73,13 +73,12 @@ const tabs = [
     title: <>Meta ads</>,
     content: {
       heading:
-        "Meta Ads are digital ads controlled by Meta's platforms, mainly Facebook, Instagram, Messenger, and Audience Network. They enable companies to target particular groups with precise demographics, interests, and behaviors.",
+        "Meta Ads are digital ads controlled by Meta's platforms, mainly Facebook, Instagram...",
       features: [
         "Great for online visibility",
         "Connect with the digital world",
         "Great for engagement",
         "Customized audience",
-        "Cross-Platform Reach",
       ],
       link: "/meta-ads",
       percentage: "93%",
@@ -95,9 +94,8 @@ const tabs = [
     ),
     content: {
       heading:
-        "Through linkedin ads we can run advertisements on linkedin, targeting professionals and businesses. They help brands reach the right audience and help your profile get more noticed. There are different types of ads you can create like posts, small texts, messages. Get 100x more impressions on your linkedin posts with the help of linkedin ads.",
+        "Through linkedin ads we can run advertisements on linkedin, targeting professionals and businesses. They help...",
       features: [
-        "Get more impressions.",
         "Reach the right people",
         "Great for B2B marketing.",
         "Great for brand awareness campaigns.",
@@ -117,9 +115,8 @@ const tabs = [
     ),
     content: {
       heading:
-        "YouTube Ads are paid video commercials that play on YouTube prior to, during, or after videos, or as display advertisements. They assist companies in reaching many people according to interests, place, age, and so on. Ad formats encompass skippable ads, non-skippable ads, bumper ads, and video discovery ads for brand awareness.",
+        "YouTube Ads are paid video commercials that play on YouTube prior to, during...",
       features: [
-        "Get massive reach.",
         "Google integration.",
         "Great for engagement.",
         "Great for vast audience",

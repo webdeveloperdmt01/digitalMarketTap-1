@@ -5,7 +5,9 @@ import {
   FaUserTie,
   FaGoogle,
   FaQuoteLeft,
-  FaStar,
+  FaStar , 
+  FaMinus, 
+  FaPlus,
   FaChartLine,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -15,6 +17,7 @@ import Stats from "../assets/Stats.png";
 import Stats2 from "../assets/Stats2.png";
 import PeopleDiscuss from "../assets/peopleDiscussOnTopic.png";
 import womanTalking from "../assets/womanTaking-Seo.jpg";
+import InfoTabs from "../components/InfoTabs";
 
 const services = [
   {
@@ -67,24 +70,52 @@ const MultilingualSeo = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const faqs = [
+  {
+    question: "What is Multilingual SEO?",
+    answer:
+      "Multilingual SEO is the process of optimizing your website in various languages to allow it to become searchable by search engines in various countries and regions.",
+  },
+  {
+    question: "Why is Multilingual SEO important?",
+    answer:
+      "It helps global businesses reach a wider audience, build trust with local users, and increase conversions by delivering content in the audience’s native language.",
+  },
+  {
+    question: "What are the key elements of Multilingual SEO?",
+    answerPoints: [
+      "Hreflang tag implementation for correct language targeting",
+      "Localized keyword research and content creation",
+      "Metadata and on-page SEO optimization for each language",
+      "Correct site structuring (ccTLDs, subdomains, or subfolders)",
+    ],
+  },
+  {
+    question: "How is Multilingual SEO different from normal SEO?",
+    answer:
+      "Just as with regular SEO, results will appear in 3–6 months, depending on competition, content quality, and technical implementation.",
+  },
+];
+
+
   return (
     <section
       aria-labelledby="seo-heading"
-      className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-6 md:pb-8 px-5 md:px-10 lg:px-15 xl:px-30"
+      className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] pt-10 md:pt-18 pb-6 md:pb-8"
     >
-      <div>
+      <div className="px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-gray-600 text-sm md:text-md font-bold uppercase text-center">
           Create your own
         </p>
-        <h3 className="text-2xl md:text-5xl font-semibold text-black mb-2 md:mb-6 text-center">
+        <h3 className="font-semibold text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-black mb-2 md:mb-6 text-center">
           Various Countries various Language{" "}
           <span className="hover:text-[#f89e1b] cursor-pointer"> Barriers</span>
         </h3>
-        <p className="text-gray-600 text-sm md:text-md text-center">
+        <h6 className="text-gray-600 text-sm md:text-md text-center font-light">
           A small river named Duden flows by their place and supplies it with
           the necessary regelialia. <br />
           It is a paradisematic country, in which...
-        </p>
+        </h6>
         <div className="max-w-md mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
           <NavLink
             to="/"
@@ -102,7 +133,7 @@ const MultilingualSeo = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto pt-12 md:pt-32 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-28 items-start">
+      <div className="px-5 md:px-10 lg:px-15 xl:px-30 pt-12 md:pt-32 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-28 items-start">
         <div>
           <h3 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-black leading-tight mb-2 md:mb-6">
             Reach Global Audiences with Local Precision
@@ -130,7 +161,7 @@ const MultilingualSeo = () => {
         </div>
       </div>
 
-      <div className="pt-8 md:pt-14 lg:pt-24">
+      <div className="pt-8 md:pt-14 lg:pt-24 px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-center text-md font-semibold uppercase pb-4">
           {" "}
           Multilingual SEO
@@ -166,7 +197,7 @@ const MultilingualSeo = () => {
         </div>
       </div>
 
-      <div className="pt-8 md:pt-14 lg:pt-24">
+      <div className="pt-8 md:pt-14 lg:pt-24 px-5 md:px-10 lg:px-15 xl:px-30">
         <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-30 items-center">
           <div>
             <h3 className="text-xl md:text-3xl lg:text-4xl font-semibold text-black mb-2 md:mb-6 lg:mb-8">
@@ -189,7 +220,7 @@ const MultilingualSeo = () => {
         </div>
       </div>
 
-      <div className="py-8">
+      <div className="py-8 px-5 md:px-10 lg:px-15 xl:px-30">
         <h6 className="text-center font-light text-sm uppercase pb-3">
           Get global recognition—Digital Market Tap
         </h6>
@@ -218,7 +249,7 @@ const MultilingualSeo = () => {
         </div>
       </div>
 
-      <div className="pb-4 pt-2 md:pt-8 lg:pt-18">
+      <div className="pb-4 pt-2 md:pt-8 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-center text-md font-semibold uppercase pb-4">
           what you get
         </p>
@@ -232,66 +263,9 @@ const MultilingualSeo = () => {
         </p>
       </div>
 
-      <div className="w-full pt-4 md:pt-14 lg:pt-24">
-        <div className="flex justify-start mb-4 md:mb-8">
-          <div className="inline-flex rounded-full bg-orange-100 p-2 md:p-1">
-            {Object.keys(contentData).map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`text-xs md:text-base font-semibold px-3 py-1 md:px-5 md:py-2 transition-all duration-200 rounded-full ${
-                  activeTab === tab
-                    ? "bg-black text-white"
-                    : "text-black/60 hover:text-orange-500"
-                }`}
-              >
-                {tab.toUpperCase()}
-              </button>
-            ))}
-          </div>
-        </div>
+       <InfoTabs />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-32 items-start">
-          <div className="bg-[#ffdfbe] py-4 px-2 md:py-10 md:px-8 rounded-3xl w-full order-1 md:order-1">
-            <h2 className="text-xl md:text-2xl font-bold mb-2">
-              {contentData[activeTab].title}
-            </h2>
-            <p className="text-gray-700 mb-4 text-sm leading-relaxed">
-              {contentData[activeTab].description}
-            </p>
-            <div className="bg-white rounded-xl">
-              <img
-                src={contentData[activeTab].image}
-                alt={`${activeTab} chart`}
-                className="w-full rounded-lg"
-              />
-            </div>
-          </div>
-
-          <div className="max-w-xl order-2 md:order-2">
-            <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold leading-tight mb-3 md:mb-6 text-left">
-              Why digital market <br /> tap is your top- <br /> choice
-            </h2>
-            <h6 className="text-gray-700 text-sm md:text-base leading-relaxed mb-6 text-left font-light">
-              We are a five-star rated holistic full-service digital marketing
-              agency, serving thousands of clients. Our digital agency covers
-              all aspects of internet marketing: SEO, social media, and PPC
-              management, all the way to email marketing, website design, and
-              web development.
-            </h6>
-            <div className="flex justify-start">
-              <button className="font-syne group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
-                <span className="relative z-10">
-                  Get Proposal →
-                  <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="w-full pt-8 md:pt-14 lg:pt-24">
+      <div className="w-full pt-8 md:pt-14 lg:pt-24 px-5 md:px-10 lg:px-15 xl:px-30">
         <div className="flex flex-col md:flex-row items-center bg-[#f7f7fa] rounded-[25px] md:rounded-[50px] overflow-hidden">
           <div className="md:w-1/2 px-6 md:px-12 lg:px-18 py-8">
             <FaQuoteLeft className="text-orange-400 text-3xl mb-4" />
@@ -336,7 +310,7 @@ const MultilingualSeo = () => {
         </div>
       </div>
 
-      <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
+      <div className="pb-4 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-center text-md font-semibold uppercase pb-4">
           The proof is in the results
         </p>
@@ -391,7 +365,7 @@ const MultilingualSeo = () => {
         </div>
       </div>
 
-      <div className="py-4 md:py-6 lg:py-8">
+      <div className="py-4 md:py-6 lg:py-8 px-5 md:px-10 lg:px-15 xl:px-30">
         <h5 className="text-md font-medium pb-4 uppercase">Multilingual SEO</h5>
         <h1 className="font-bold text-2xl md:text-3xl lg:text-6xl pb-4 md:pb-8">
           Elevating Enterprise SEO Services
@@ -472,6 +446,52 @@ const MultilingualSeo = () => {
           </div>
         </div>
       </div>
+<div className="pb-4 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
+              <p className="font-kanit text-center text-md font-semibold uppercase pb-4">FAQ</p>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+                FAQs about Multilingual
+                <br />
+                Seo
+              </h1>
+              <h6 className="text-center text-md md:text-lg font-light text-gray-500 pb-4">
+                Looking to learn more about Multilingual Seo for your business?
+                Browse our FAQs
+              </h6>
+            </div>
+            <div className="pt-8 pb-16 md:pb-12 xl:pb-22 space-y-2 md:space-y-4 px-5 md:px-10 lg:px-15 xl:px-30">
+  {faqs.map((faq, index) => (
+    <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+      <button
+        onClick={() => toggleFAQ(index)}
+        className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
+      >
+        <span className="flex-1">{faq.question}</span>
+        <span className="ml-3 flex items-center justify-center">
+          {openIndex === index ? (
+            <FaMinus className="text-[18px] text-black" />
+          ) : (
+            <FaPlus className="text-[18px] text-[#f89e1b]" />
+          )}
+        </span>
+      </button>
+
+      {openIndex === index && (
+        <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
+          {faq.answerPoints && Array.isArray(faq.answerPoints) ? (
+            <ul className="list-disc ml-5 mt-2 space-y-1">
+              {faq.answerPoints.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{faq.answer}</p>
+          )}
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
     </section>
   );
 };
