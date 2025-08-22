@@ -183,7 +183,7 @@ const Marketing = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mt-2 leading-tight">
               Marketing Solution in every Platform of Social Media
             </h2>
-            <h6 className="font-light text-sm md:text-md lg:text-lg text-gray-500 mt-5 mb-10">
+            <h6 className="font-light text-sm md:text-md lg:text-lg text-gray-500 mt-5 mb-4 md:mb-10">
               In today's fast-moving digital world, where trends change so fast
               that what works today has no guarantee of working tomorrow. In
               this case, having an experienced and expert digital marketing
@@ -211,7 +211,7 @@ const Marketing = () => {
 
         {/* <img src={BorderBottom} alt="border-bottom-line" className="w-full absolute bottom-0 right-0 object-contain pt-22 px-5 md:px-10 lg:px-30"/> */}
 
-        <div className="pt-6 md:pt-14 lg:pt-24 pb-10">
+        <div className="pt-6 md:pt-14 lg:pt-24 pb-4 md:pb-10">
           <div className="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15">
             <div className="flex lg:justify-end">
               <img

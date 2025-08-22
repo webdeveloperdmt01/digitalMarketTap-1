@@ -80,41 +80,6 @@ const services = [
   },
 ];
 
-const tabs = [
-  {
-    title: "1.PPC audit service",
-    content: {
-      heading: "PPC audit services",
-      about:
-        "One of the first things we'll do for your business is provide you with a full PPC audit. In the audit, we'll evaluate every significant element of your existing PPC campaign and compile a report of what's working and what isn't. The report will break down every aspect of your PPC strategy and determine what you could improve. In addition, we'll offer recommendations on how to improve them. In fact, if your business has over four employees and spends more than $1000 per month on PPC, you qualify for a free PPC audit! Just get in touch with us to get started.",
-    },
-  },
-  {
-    title: "2.Remarketing services",
-    content: {
-      heading: "Remarketing services",
-      about:
-        "At Numerique, we specialize in helping you harness the full potential of remarketing, particularly through platforms like Google Ads. With Google Ads, you gain the ability to track the traffic to specific pages on your website and deliver targeted ads to those users who have visited those pages. Our team is dedicated to assisting you in setting up the necessary tracking mechanisms and creating captivating remarketing ads that effectively capture the attention and interest of your target audience.",
-    },
-  },
-  {
-    title: "3.Geofencing ad services",
-    content: {
-      heading: "Geofencing ad services",
-      about:
-        "Numerique is here to provide you with comprehensive support in harnessing the potential of geofencing, ensuring that your ad campaigns are optimized for maximum impact. Our team of experts will assist you in identifying the ideal outer limits for your geofences and seamlessly integrate them into your Google Ads strategy. Using this information, we will assist in setting up geofences that precisely align with your objectives, reaching the right people at the right time and maximizing the efficiency of your advertising efforts.",
-    },
-  },
-  {
-    title: "4.Social media ad services",
-    content: {
-      heading: "Social media ad services",
-      about:
-        "While Google Ads is undoubtedly a powerful advertising platform, it's important to recognize that there are various other avenues to effectively display ads and engage with your target audience. Social media platforms, in particular, offer compelling paid advertising options that shouldn't be overlooked. With users spending approximately 28% of their Internet time on social media, these platforms present a fantastic opportunity to connect with your audience.",
-    },
-  },
-];
-
 const SocialMediaOptimisation = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const [activeTab, setActiveTab] = useState("Transparency");
@@ -138,9 +103,9 @@ const SocialMediaOptimisation = () => {
           <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">
             Social Media Optimization
           </h3>
-          <h2 className="text-4xl lg:text-6xl font-bold text-black mt-2 leading-tight">
+          <h2 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mt-2 leading-tight">
             {" "}
-            Social Media <br />
+            Social Media 
             Optimization
           </h2>
           <h6 className="text-md text-gray-500 mt-5 mb-10 font-light">
@@ -261,114 +226,6 @@ const SocialMediaOptimisation = () => {
         </div>
       </div>
 
-      <div className="pb-4 pt-10 md:pt-8 lg:pt-18">
-        <p className="text-center text-md font-semibold uppercase pb-4">
-          what you get
-        </p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
-          What is included in our paid search <br /> marketing services?{" "}
-        </h1>
-        <p className="text-center text-md font-base text-gray-500 pb-4">
-          When you partner with Numerique, you'll gain access to our full range
-          of paid SEM services. These services are designed to <br /> optimize
-          every facet of your paid advertising, including:
-        </p>
-      </div>
-
-      <div className="max-w-7xl mx-auto pt-8 md:pt-12 px-0 md:px-4">
-        <div className="hidden lg:flex rounded-[60px] overflow-hidden bg-black">
-          <div className="w-1/3 p-12 flex flex-col gap-6 text-white relative">
-            {tabs.map((tab, index) => {
-              const isActive = index === activeTabIndex;
-              return (
-                <div
-                  key={index}
-                  onClick={() => setActiveTabIndex(index)}
-                  className={`font-syne !w-[160%] relative cursor-pointer transition-all duration-300 pl-6 pr-16 py-5 text-left text-lg md:text-xl font-medium leading-tight -ml-8
-            ${
-              isActive
-                ? "bg-[#f89e1b] text-white rounded-full z-10"
-                : "text-white hover:text-black hover:bg-white rounded-full z-0"
-            }`}
-                >
-                  {tab.title}
-                  {isActive && (
-                    <span className="absolute right-3 top-1/2 -translate-y-1/2 transform bg-black text-white rounded-full w-10 h-10 flex items-center justify-center">
-                      <FaArrowRight size={18} />
-                    </span>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-          <div className="w-3/3 bg-[#f7f7fa] py-20 pl-38 pr-22 flex items-center rounded-[60px]">
-            <div className="flex-1">
-              <h2 className="text-3xl font-bold mb-6 leading-snug text-left text-black">
-                {tabs[activeTabIndex]?.content.heading}
-              </h2>
-              <h6 className="text-gray-600 text-base mb-8 leading-relaxed font-light">
-                {tabs[activeTabIndex]?.content.about}
-              </h6>
-              <div className="text-left">
-                <NavLink
-                  to="/free-audit"
-                  className="font-syne hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
-                >
-                  <span className="relative z-10 flex items-center gap-2">
-                    Get A Free Audit <FaArrowRight />
-                    <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-orange-400 group-hover:w-full transition-all duration-300"></span>
-                  </span>
-                </NavLink>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="lg:hidden">
-          {tabs.map((tab, index) => {
-            const isOpen = activeTabIndex === index;
-            const { heading, about } = tab.content;
-
-            return (
-              <div
-                key={index}
-                className="mb-6 border border-gray-200 rounded-3xl overflow-hidden"
-              >
-                <button
-                  onClick={() => handleAccordionToggle(index)}
-                  className={`w-full flex justify-between items-center px-6 py-4 font-semibold text-left text-white ${
-                    isOpen ? "bg-[#f89e1b]" : "bg-black"
-                  }`}
-                >
-                  <span>{tab.title}</span>
-                  <span>{isOpen ? <FaMinus /> : <FaPlus />}</span>
-                </button>
-                {isOpen && (
-                  <div className="bg-[#f7f7fa] px-6 py-8">
-                    <h2 className="text-2xl font-bold mb-4 text-black">
-                      {heading}
-                    </h2>
-                    <p className="text-gray-600 text-sm mb-6 leading-relaxed">
-                      {about}
-                    </p>
-                    <div className="text-left">
-                      <NavLink
-                        to="/free-audit"
-                        className="hidden xl:inline-block group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#6754E9] transition duration-300 relative overflow-hidden"
-                      >
-                        <span className="relative z-10 flex items-center gap-2">
-                          Get A Free Audit <FaArrowRight />
-                          <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-orange-400 group-hover:w-full transition-all duration-300"></span>
-                        </span>
-                      </NavLink>
-                    </div>
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      </div>
 
       <div className="pb-8 pt-8 md:pt-18">
         <p className="text-center text-md font-semibold uppercase pb-3">
@@ -399,7 +256,7 @@ const SocialMediaOptimisation = () => {
         </div>
       </div>
 
-      <div className="w-full pt-8 md:pt-14 lg:pt-24">
+      <div className="w-full pt-8 md:pt-14 lg:pt-18">
         <div className="flex flex-col md:flex-row items-center bg-[#f7f7fa] rounded-[25px] md:rounded-[50px] overflow-hidden">
           <div className="md:w-1/2 px-6 md:px-12 lg:px-18 py-8">
             <FaQuoteLeft className="text-orange-400 text-3xl mb-4" />

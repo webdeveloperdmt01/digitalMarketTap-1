@@ -7,7 +7,12 @@ import PaidMarketing2 from "../assets/PaidMarketing2.png";
 import PaidMarketing3 from "../assets/PaidMarketing3.png";
 import PaidMarketing4 from "../assets/PaidMarketing4.png";
 // import PaidMarketing5 from '../assets/PaidMarketing5.png';
-import Brand1 from "../assets/google-partner-1.png";
+import Brand1 from "../assets/weaves-logo.webp";
+import Brand2 from "../assets/shreya-logo.webp";
+import Brand3 from "../assets/sehaj-bg.webp";
+import Brand4 from "../assets/dd-logo.webp";
+import Brand5 from "../assets/pw-logo.webp";
+import Brand6 from "../assets/craftorium-bg.webp";
 import GoogleAdImg from "../assets/GoogleAds.png";
 import AmazonAdImg from "../assets/AmazonAds.png";
 import teamImage from "../assets/many-guys-discuss-on-laptop.webp";
@@ -40,10 +45,11 @@ const faqs = [
 
 const brandLogos = [
   { id: 1, name: "Brand1", src: Brand1 },
-  { id: 2, name: "Brand2", src: Brand1 },
-  { id: 3, name: "Brand3", src: Brand1 },
-  { id: 4, name: "Brand4", src: Brand1 },
-  { id: 5, name: "Brand5", src: Brand1 },
+  { id: 2, name: "Brand2", src: Brand2 },
+  { id: 3, name: "Brand3", src: Brand3 },
+  { id: 4, name: "Brand4", src: Brand4 },
+  { id: 5, name: "Brand5", src: Brand5 },
+  { id: 6, name: "Brand6", src: Brand6 },
 ];
 
 const PaidMarketing = () => {
@@ -88,29 +94,19 @@ const PaidMarketing = () => {
           </div>
         </div>
 
-        <div className="bg-[#f6f6f6] relative md:py-12 lg:py-16">
+        <div className="bg-[#f6f6f6] relative md:pt-2 md:pb-12 lg:pt-4 lg:pb-14">
           <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-            {/* <svg
-          className="relative block w-full"
-          viewBox="0 0 1440 60"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,0 C480,60 960,0 1440,60 L1440,0 L0,0 Z"
-            fill="#fff"
-          ></path>
-        </svg> */}
           </div>
 
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 pt-6 md:mb-6 lg:mb-12">
+          <div className="px-5 md:px-10 lg:px-15 xl:px-30 text-center">
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 pt-6 md:pt-8 md:mb-6 lg:mb-12">
               Supported by over 5,000 companies
             </h2>
-            <div className="flex flex-wrap justify-center items-center gap-8">
+            <div className="flex flex-wrap justify-around items-center gap-8 md:gap-18">
               {brandLogos.map((logo) => (
                 <div
                   key={logo.id}
-                  className="w-26 h-26 grayscale opacity-70 hover:opacity-100 transition-opacity"
+                  className="w-26 h-26 opacity-40 hover:opacity-100 transition-opacity"
                 >
                   <img
                     src={logo.src}
@@ -123,7 +119,7 @@ const PaidMarketing = () => {
           </div>
         </div>
 
-        <div className="py-16 px-5 md:px-0 lg:px-15 bg-white text-center">
+        <div className="py-12 px-5 md:px-0 lg:px-15 bg-white text-center">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-18 md:mb-16 lg:mb-24">
             Here are our Major Paid <br /> Marketing Services
           </h2>

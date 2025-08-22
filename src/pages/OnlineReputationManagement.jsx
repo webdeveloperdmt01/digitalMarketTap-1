@@ -104,7 +104,7 @@ const OnlineReputationManagement = () => {
           <h3 className="uppercase text-xs md:text-sm font-bold tracking-widest text-black mb-8 md:mb-10 lg:mb-18">
             ONLINE REPUTATION MANAGEMENT
           </h3>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mt-2 leading-tight">
+          <h2 className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-black mt-2 leading-tight">
             {" "}
             Online Reputation <br />
             Management
@@ -223,8 +223,8 @@ social media
         </div>
       </div>
 
-      <div className="py-8 px-5 md:px-10 lg:px-15 xl:px-30">
-        <p className="text-center text-md font-semibold uppercase pb-3">
+      <div className="pt-10 md:pt-12 pb-8 px-5 md:px-10 lg:px-15 xl:px-30">
+        <p className="text-center text-md font-semibold uppercase pb-1 md:pb-3">
           Creating Success
         </p>
         <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4 lg:pb-14">
@@ -253,10 +253,10 @@ social media
       </div>
 
       <div className="pb-4 pt-2 md:pt-8 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
-        <p className="text-center text-md font-semibold uppercase pb-4">
+        <p className="text-center text-md font-semibold uppercase pb-2 md:pb-4">
           what you get
         </p>
-        <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-semibold pb-2 md:pb-4">
           What is included in our paid search marketing services?{" "}
         </h1>
         <p className="text-center text-md font-base text-gray-500 pb-4">
@@ -265,68 +265,9 @@ social media
           every facet of your paid advertising, including:
         </p>
       </div>
-
-      {/* <div className="w-full pt-4 md:pt-14 lg:pt-24">
-        <div className="flex justify-start mb-4 md:mb-8">
-          <div className="inline-flex rounded-full bg-orange-100 p-2 md:p-1">
-            {Object.keys(contentData).map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`text-xs md:text-base font-semibold px-3 py-1 md:px-5 md:py-2 transition-all duration-200 rounded-full ${
-                  activeTab === tab
-                    ? "bg-black text-white"
-                    : "text-black/60 hover:text-orange-500"
-                }`}
-              >
-                {tab.toUpperCase()}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-32 items-start">
-          <div className="bg-[#ffdfbe] py-4 px-2 md:py-10 md:px-8 rounded-3xl w-full order-1 md:order-1">
-            <h2 className="text-xl md:text-2xl font-bold mb-2">
-              {contentData[activeTab].title}
-            </h2>
-            <p className="text-gray-700 mb-4 text-sm leading-relaxed">
-              {contentData[activeTab].description}
-            </p>
-            <div className="bg-white rounded-xl">
-              <img
-                src={contentData[activeTab].image}
-                alt={`${activeTab} chart`}
-                className="w-full rounded-lg"
-              />
-            </div>
-          </div>
-
-          <div className="max-w-xl order-2 md:order-2">
-            <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold leading-tight mb-3 md:mb-6 text-left">
-              Why digital market <br /> tap is your top- <br /> choice
-            </h2>
-            <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-6 text-left">
-              We are a five-star rated holistic full-service digital marketing
-              agency, serving thousands of clients. Our digital agency covers
-              all aspects of internet marketing: SEO, social media, and PPC
-              management, all the way to email marketing, website design, and
-              web development.
-            </p>
-            <div className="flex justify-start">
-              <button className="group bg-black text-white px-8 py-3 rounded-2xl text-sm font-semibold hover:bg-[#f89e1b] transition duration-300 relative overflow-hidden">
-                <span className="relative z-10">
-                  Get Proposal →
-                  <span className="block absolute left-0 -bottom-1 h-[2px] w-0 bg-white group-hover:w-full transition-all duration-300"></span>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> */}
        <InfoTabs/>
 
-      <div className="w-full pt-8 md:pt-14 lg:pt-24 px-5 md:px-10 lg:px-15 xl:px-30">
+      <div className="w-full pt-4 md:pt-14 lg:pt-24 px-5 md:px-10 lg:px-15 xl:px-30">
         <div className="flex flex-col md:flex-row items-center bg-[#f7f7fa] rounded-[25px] md:rounded-[50px] overflow-hidden">
           <div className="md:w-1/2 px-6 md:px-12 lg:px-18 py-8">
             <FaQuoteLeft className="text-orange-400 text-3xl mb-4" />
@@ -371,7 +312,7 @@ social media
         </div>
       </div>
 
-      <div className="pb-4 pt-8 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
+      <div className="pb-4 pt-10 md:pt-12 lg:pt-18 px-5 md:px-10 lg:px-15 xl:px-30">
         <p className="text-center text-md font-semibold upperca se pb-4">
           The proof is in the numbers
         </p>
@@ -427,7 +368,7 @@ the numbers?{" "}
       </div>
 
       <div className="py-5 md:py-0 px-5 md:px-10 lg:px-15 xl:px-30 relative">
-        <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12  overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
+        <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
           <img
             src={RocketBlue}
             alt="Custom"
@@ -459,19 +400,19 @@ the numbers?{" "}
       <div className="pb-16 md:pb-18 lg:pb-22 pt-8 md:pt-12 lg:pt-18 px-0 md:px-10 lg:px-30">
         <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
-          FAQs about Online Reputation <br /> Management
+          FAQs about Online Reputation Management
         </h1>
         <h6 className="text-center font-light text-md md:text-lg text-gray-500 pb-4">
           Looking to learn more about Online Reputation Management for your
           business? Browse our FAQs
         </h6>
 
-        <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4 px-5 md:px-0">
+        <div className="max-w-5xl mx-auto pt-2 md:pt-8 space-y-2 md:space-y-4 px-5 md:px-0">
   {faqs.map((faq, index) => (
-    <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+    <div key={index} className="border-t border-gray-300 pb-0 md:pb-4">
       <button
         onClick={() => toggleFAQ(index)}
-        className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
+        className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-2 md:pt-5"
       >
         <span className="flex-1">{faq.question}</span>
         <div className="flex-none w-7 h-7 md:w-8 md:h-8 flex justify-center items-center">
