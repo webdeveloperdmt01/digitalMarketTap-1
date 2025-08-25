@@ -224,18 +224,20 @@ const EmailMarketing = () => {
       </div>
 
       <div className="pb-4 pt-2 md:pt-8 lg:pt-18">
-        <p className="text-center text-md font-semibold uppercase pb-4">
-          what you get
-        </p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
-          What is included in our paid search <br /> marketing services?{" "}
-        </h1>
-        <p className="text-center text-md font-base text-gray-500 pb-4">
-          When you partner with Numerique, you’ll gain access to our full range
-          of paid SEM services. These services are designed to <br /> optimize
-          every facet of your paid advertising, including:
-        </p>
-      </div>
+  <p className="text-center text-md font-semibold uppercase pb-4">
+    what you get
+  </p>
+  <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
+    What is included in our Email Marketing Services?{" "}
+  </h1>
+  <h6 className="text-center text-lg font-light text-gray-500 pb-4">
+    When you partner with <span className="font-semibold text-gray-800 text-md">Digital Market Tap</span>, 
+    you’ll gain access to our comprehensive suite of email marketing solutions. 
+    These services are crafted to nurture your leads, strengthen customer relationships, 
+    and drive measurable business growth through personalized campaigns.
+  </h6>
+</div>
+
 
       <div className="w-full pt-8 md:pt-14 lg:pt-24">
         <div className="flex flex-col md:flex-row items-center bg-[#f7f7fa] rounded-[25px] md:rounded-[50px] overflow-hidden">
@@ -346,28 +348,39 @@ const EmailMarketing = () => {
           Browse our FAQs
         </p>
       </div>
-      <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4">
-        {faqs.map((faq, index) => (
-          <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
-            >
-              {faq.question}
-              {openIndex === index ? (
-                <FaMinus className="text-[#000000]" />
-              ) : (
-                <FaPlus className="text-[#f89e1b]" />
-              )}
-            </button>
-            {openIndex === index && (
-              <p className="mt-3 text-gray-500 text-xs font-semibold md:text-md">
-                {faq.answer}
-              </p>
-            )}
-          </div>
-        ))}
-      </div>
+                <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-12 xl:pb-22 space-y-2 md:space-y-4">
+  {faqs.map((faq, index) => (
+    <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
+      <button
+        onClick={() => toggleFAQ(index)}
+        className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
+      >
+        <span className="flex-1">{faq.question}</span>
+        <span className="ml-3 flex items-center justify-center">
+          {openIndex === index ? (
+            <FaMinus className="text-[18px] text-black" />
+          ) : (
+            <FaPlus className="text-[18px] text-[#f89e1b]" />
+          )}
+        </span>
+      </button>
+
+      {openIndex === index && (
+        <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
+          {faq.answerPoints && Array.isArray(faq.answerPoints) ? (
+            <ul className="list-disc ml-5 mt-2 space-y-1">
+              {faq.answerPoints.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{faq.answer}</p>
+          )}
+        </div>
+      )}
+    </div>
+  ))}
+</div>
       <div className="p-5 md:p-0 relative">
         <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
           <img

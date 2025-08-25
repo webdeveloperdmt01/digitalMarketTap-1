@@ -121,7 +121,7 @@ const AmazonAD = () => {
 
       <div className="max-w-7xl mx-auto pt-8 md:pt-22 lg:pt-28 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-28 items-start">
         <div>
-          <h3 className="text-2xl md:text-5xl font-semibold text-black leading-tight mb-2 md:mb-6">
+          <h3 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-black leading-tight mb-2 md:mb-6">
             Why amazon ads is beneficial
           </h3>
           <h6 className="text-gray-500 text-sm md:text-md lg:text-md font-light">

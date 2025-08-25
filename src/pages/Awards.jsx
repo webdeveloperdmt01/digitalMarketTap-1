@@ -8,47 +8,47 @@ import award5 from "../assets/winnerAward5.png";
 import award6 from "../assets/winnerAward6.png";
 import googlePartner from "../assets/google-partner-1.png";
 import Rocket1 from "../assets/rocket.png";
-import { StringConstants } from "../utilities/StringConstants";
 
 function Awards() {
   const awards = [
     {
-      year: "2022",
-      title: "Digital BIMA awards",
-      subtitle: StringConstants.digitalMediaAndAdvertising,
+      year: "2023",
+      title: "Best Digital Marketing Agency",
+      subtitle: "Recognized for Outstanding Digital Media & Advertising",
       image: award1,
     },
     {
       year: "2022",
-      title: "RAR digital awards",
-      subtitle: "Digital Marketing Feedback",
+      title: "Digital BIMA Awards",
+      subtitle: "Excellence in Digital Marketing & Advertising",
       image: award2,
     },
     {
-      year: "2021",
-      title: "Clutch top B2B company",
-      subtitle:StringConstants.digitalMediaAndAdvertising,
+      year: "2022",
+      title: "RAR Digital Awards",
+      subtitle: "Top Rated for Client Feedback & Performance",
       image: award3,
     },
     {
       year: "2021",
-      title: "UPCITY best of marketing & advertising",
-      subtitle: "Digital Media and Advertising",
+      title: "Clutch Top B2B Company",
+      subtitle: "Leader in Digital Media and Advertising",
       image: award4,
     },
     {
       year: "2021",
-      title: "Clutch top marketing agencie",
-      subtitle: "Digital Media and Advertising",
+      title: "UpCity Best of Marketing & Advertising",
+      subtitle: "Trusted Agency for Growth-Focused Strategies",
       image: award5,
     },
     {
       year: "2020",
-      title: "UPCITY top ad agencie",
-      subtitle: "Digital Marketing Feedback",
+      title: "UpCity Top Ad Agency",
+      subtitle: "Recognized for Client Success in Digital Marketing",
       image: award6,
     },
   ];
+
 
   const itemRefs = useRef([]);
   const [dotPosition, setDotPosition] = useState(0);

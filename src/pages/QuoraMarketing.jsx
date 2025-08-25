@@ -201,9 +201,9 @@ const QuoraMarketing = () => {
                     <FaStar key={i} className="text-yellow-500 text-lg" />
                   ))}
                 </div>
-                <span className="font-syne font-semibold text-xs md:text-sm mt-1">5000+ Client reviews</span>
+                <span className="font-syne font-semibold text-xs lg:text-sm mt-1">5000+ Client reviews</span>
               </div>
-              <a href="/about" className="font-syne inline-block text-xs md:text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase">View all reviews</a>
+              <a href="/about" className="font-syne inline-block text-xs lg:text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase">View all reviews</a>
             </div>
           </div>
         </div>
@@ -291,7 +291,7 @@ const QuoraMarketing = () => {
           </div>
         ))}
       </div>
-      <div className="p-5 md:p-0 relative">
+      <div className=" md:p-0 relative">
         <section className="bg-[#f8f8fb] rounded-[30px] md:rounded-[60px] py-12 px-4 sm:px-6 md:px-12 overflow-hidden max-w-7xl mx-auto my-12 text-center shadow-sm">
           <img
             src={RocketBlue}

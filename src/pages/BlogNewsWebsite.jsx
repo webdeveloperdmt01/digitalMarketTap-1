@@ -7,7 +7,7 @@ import Badge1 from "../assets/new-badge.png";
 import Badge2 from "../assets/new-badge2.png";
 import Badge3 from "../assets/new-badge3.png";
 import Badge4 from "../assets/logo_hubspot.png";
-import { FaArrowRight, FaCrown, FaEnvelope, FaRocket, FaPlus , FaMinus , FaBullseye, FaSearchengin ,FaCheckCircle } from "react-icons/fa";
+import { FaArrowRight, FaEnvelope, FaPlus , FaMinus , FaBullseye, FaSearchengin ,FaCheckCircle } from "react-icons/fa";
 
 const faqs = [
     {
@@ -184,7 +184,7 @@ const [openIndex, setOpenIndex] = useState(null);
     </div>
 
   <div className="flex flex-col lg:flex-row items-center justify-center gap-8 pt-8 md:pt-12 pb-8 md:pb-10 lg:pt-16 text-center lg:text-left">
-    <div className="w-full lg:w-1/3 flex justify-end">
+    <div className="w-full lg:w-1/3 flex md:justify-start lg:justify-end">
       <p className="text-xl font-semibold text-gray-800 pr-10">Credentials & <br className="hidden md:block" /> Recognition:</p>
     </div>
     <div className="w-full lg:w-2/3 flex justify-center lg:justify-start flex-wrap items-center gap-4 md:gap-6 py-2">
@@ -199,7 +199,6 @@ const [openIndex, setOpenIndex] = useState(null);
           <p className="font-kanit text-center text-md font-semibold uppercase pb-4">FAQ</p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
             FAQs about Blog News
-            <br />
             Website
           </h1>
           <h6 className="text-center text-md md:text-lg font-light text-gray-500 pb-4">
@@ -207,7 +206,7 @@ const [openIndex, setOpenIndex] = useState(null);
             Browse our FAQs
           </h6>
         </div>
-        <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-12 xl:pb-22 space-y-2 md:space-y-4">
+        <div className="max-w-5xl mx-auto pt-2 pb-16 md:pb-12 xl:pb-22 space-y-2 md:space-y-4">
           {faqs.map((faq, index) => (
             <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
               <button

@@ -14,7 +14,7 @@ function FreeAudit() {
     company: "",
     phone: "",
     message: "",
-    service: "", 
+    service: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -45,7 +45,7 @@ function FreeAudit() {
     if (Object.keys(validationErrors).length === 0) {
       console.log("Form Submitted:", formData);
       setShowSuccess(true);
-      setTimeout(() => setShowSuccess(false), 3000); // Hide message after 3s
+      setTimeout(() => setShowSuccess(false), 3000);
       setFormData({
         name: "",
         email: "",
@@ -66,7 +66,6 @@ function FreeAudit() {
     <section className="!bg-gradient-to-b from-[#fff7ee] to-[#FFFFFF] py-8 lg:py-10 px-5 md:px-10 lg:px-15 xl:px-30">
       <div className="py-4 md:py-6 lg:py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-15 lg:gap-40">
-          {/* LEFT SECTION */}
           <div>
             <h5 className="text-md font-medium pb-8 uppercase">Free Audit</h5>
             <h1 className="font-bold text-2xl md:text-3xl lg:text-5xl pb-4 md:pb-8">
@@ -94,8 +93,6 @@ function FreeAudit() {
               </div>
             ))}
           </div>
-
-          {/* RIGHT FORM SECTION */}
           <div className="flex lg:justify-end justify-center pt-2.5 pr-2.5 pb-2.5 pl-0 lg:p-0">
             <div className="bg-white rounded-4xl shadow-[12px_12px_0_0_black] px-2 lg:px-5 pt-14 lg:pt-20 pb-5 lg:pb-10 relative max-w-[490px] w-full">
               {showSuccess && (
@@ -120,9 +117,8 @@ function FreeAudit() {
                   placeholder="Enter Full Name"
                   value={formData.name}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 border ${
-                    errors.name ? "border-red-500" : "border-[#ababab]"
-                  } hover:border-[#f89e1b] rounded-[8px] outline-none`}
+                  className={`w-full px-4 py-3 border ${errors.name ? "border-red-500" : "border-[#ababab]"
+                    } hover:border-[#f89e1b] rounded-xl outline-none`}
                 />
                 {errors.name && (
                   <p className="text-red-500 text-sm -mt-2">{errors.name}</p>
@@ -134,9 +130,8 @@ function FreeAudit() {
                   placeholder="Enter Your Email"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 border ${
-                    errors.email ? "border-red-500" : "border-[#ababab]"
-                  } hover:border-[#f89e1b] rounded-[8px] outline-none`}
+                  className={`w-full px-4 py-3 border ${errors.email ? "border-red-500" : "border-[#ababab]"
+                    } hover:border-[#f89e1b] rounded-xl outline-none`}
                 />
                 {errors.email && (
                   <p className="text-red-500 text-sm -mt-2">{errors.email}</p>
@@ -148,9 +143,8 @@ function FreeAudit() {
                   placeholder="Company name"
                   value={formData.company}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 border ${
-                    errors.company ? "border-red-500" : "border-[#ababab]"
-                  } hover:border-[#f89e1b] rounded-[8px] outline-none`}
+                  className={`w-full px-4 py-3 border ${errors.company ? "border-red-500" : "border-[#ababab]"
+                    } hover:border-[#f89e1b] rounded-xl outline-none`}
                 />
 
                 <input
@@ -161,9 +155,8 @@ function FreeAudit() {
                   onChange={handleChange}
                   maxLength="10"
                   inputMode="numeric"
-                  className={`w-full px-4 py-3 border ${
-                    errors.phone ? "border-red-500" : "border-[#ababab]"
-                  } hover:border-[#f89e1b] rounded-[8px] outline-none`}
+                  className={`w-full px-4 py-3 border ${errors.phone ? "border-red-500" : "border-[#ababab]"
+                    } hover:border-[#f89e1b] rounded-xl outline-none`}
                 />
                 {errors.phone && (
                   <p className="text-red-500 text-sm -mt-2">{errors.phone}</p>
@@ -173,9 +166,8 @@ function FreeAudit() {
                   name="service"
                   value={formData.service}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 border ${
-                    errors.service ? "border-red-500" : "border-[#ababab]"
-                  } hover:border-[#f89e1b] rounded-[8px] outline-none`}
+                  className={`w-full px-4 py-3 border ${errors.service ? "border-red-500" : "border-[#ababab]"
+                    } hover:border-[#f89e1b] rounded-xl outline-none`}
                 >
                   <option value="">Services We Provide</option>
                   <option value="Website Development">Website Development</option>
@@ -202,9 +194,8 @@ function FreeAudit() {
                   placeholder="What can we help you with?"
                   value={formData.message}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 border ${
-                    errors.message ? "border-red-500" : "border-[#ababab]"
-                  } hover:border-[#f89e1b] rounded-[8px] outline-none resize-none h-28`}
+                  className={`w-full px-4 py-3 border ${errors.message ? "border-red-500" : "border-[#ababab]"
+                    } hover:border-[#f89e1b] rounded-xl outline-none resize-none h-28`}
                 ></textarea>
                 {errors.message && (
                   <p className="text-red-500 text-sm -mt-2">{errors.message}</p>
@@ -220,8 +211,6 @@ function FreeAudit() {
             </div>
           </div>
         </div>
-
-        {/* BADGES */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 pt-8 md:pt-12 pb-8 md:pb-10 lg:pt-16 text-center lg:text-left">
           <div className="w-full lg:w-1/3 flex justify-end">
             <p className="text-xl font-semibold text-gray-800 pr-10">

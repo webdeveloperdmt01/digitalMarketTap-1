@@ -100,7 +100,7 @@ const PaidMarketing = () => {
 
           <div className="px-5 md:px-10 lg:px-15 xl:px-30 text-center">
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 pt-6 md:pt-8 md:mb-6 lg:mb-12">
-              Supported by over 5,000 companies
+              Supported by over several companies
             </h2>
             <div className="flex flex-wrap justify-around items-center gap-8 md:gap-18">
               {brandLogos.map((logo) => (
@@ -119,7 +119,7 @@ const PaidMarketing = () => {
           </div>
         </div>
 
-        <div className="py-12 px-5 md:px-0 lg:px-15 bg-white text-center">
+        <div className="py-12 px-5 lg:px-15 bg-white text-center">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-18 md:mb-16 lg:mb-24">
             Here are our Major Paid <br /> Marketing Services
           </h2>
@@ -203,7 +203,7 @@ const PaidMarketing = () => {
             <p className="text-sm font-bold uppercase tracking-widest mb-5">
               Our Best Services
             </p>
-            <h2 className="text-2xl md:text-5xl font-bold text-black mb-6 leading-tight">
+            <h2 className="text-2xl md:text-5xl font-bold text-black mb-0 md:mb-6 leading-tight">
               {" "}
               Why Choose Digital Market Tap for Paid Advertising?
             </h2>

@@ -22,26 +22,27 @@ import RocketBlue from "../assets/blueRocket.png";
 
 const faqs = [
   {
-    question: "What is paid search?",
+    question: "What is content writing?",
     answer:
-      "Paid search is a digital marketing strategy that involves online ads that appear at the top of search engine results pages (SERPs). Paid search ads typically look similar to organic search listings but have a label that distinguishes them as ads.",
+      "Content writing is the art of producing engaging, informative, and valuable written content for websites, blogs, social media, and other mediums to attract and retain your target audience.",
   },
   {
-    question: "What are paid search management services?",
+    question: "Why does my business need content writing services?",
     answer:
-      "With paid search management services, you can expect a dedicated team of experts who will meticulously review and analyze your campaigns, ensuring that they align with your business objectives. Through continuous optimization, they will fine-tune your advertisements to maximize their effectiveness, reaching the right audience at the right time.",
+      "Professional content writing builds trust, boosts SEO rankings, and attracts potential customers. It makes your brand message clear, consistent, and optimized for traffic and conversions.",
   },
   {
-    question: "How does paid search work?",
+    question: "What type of content do you provide?",
     answer:
-      "When it comes to paid search ads, Google Ads serves as a prime example of how the process works. Google Ads allows advertisers to bid on specific keywords they want their ads to appear for. When a user conducts a search on Google, the platform uses various factors such as keywords, ad settings, bids, and ad quality score to determine which ads to display.",
+      "We write blog posts, website copy, product descriptions, social media posts, newsletters, case studies, and more — all tailored to your brand and audience.",
   },
   {
-    question: "When should you use paid search?",
+    question: "How is the content SEO-optimized?",
     answer:
-      "Paid search can indeed be a valuable addition to your marketing strategy for several reasons: Audience Research, Precise Targeting, Quick Results, Bottom-of-the-Funnel Leads, Supplementing Organic Search Results. By leveraging the advantages of paid search, businesses can effectively target their audience, generate qualified leads, achieve faster results, and enhance their overall online visibility and conversion rates",
+      "Content is thoughtfully optimized with the correct keywords, appealing headlines, meta descriptions, and formatting to rank at the top of search engines while still being useful to readers.",
   },
 ];
+
 
 const services = [
   {
@@ -87,7 +88,7 @@ const ContentWritingService = () => {
           <h3 className="uppercase text-sm font-bold tracking-widest text-black mb-5 md:mb-10 lg:mb-18">
             Content writing service
           </h3>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mt-2 leading-tight">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black mt-2">
             {" "}
             Content Writing Service{" "}
           </h2>
@@ -259,20 +260,20 @@ const ContentWritingService = () => {
               className="w-full h-full object-cover"
             />
 
-            <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center bg-white bg-opacity-90 px-8 py-6 rounded-tl-[40px] md:rounded-tl-[60px]">
+            <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center bg-white bg-opacity-90 px-6 md:px-8 py-4 md:py-6 rounded-tl-[35px] md:rounded-tl-[60px]">
               <div className="flex flex-col items-start">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
                     <FaStar key={i} className="text-yellow-500 text-lg" />
                   ))}
                 </div>
-                <span className="font-syne font-semibold text-sm mt-1">
+                <span className="font-syne font-semibold text-xs md:text-sm mt-1">
                   5000+ Client reviews
                 </span>
               </div>
               <a
                 href="/about"
-                className="font-syne inline-block text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase"
+                className="font-syne inline-block text-xs md:text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase"
               >
                 View all reviews
               </a>
@@ -337,32 +338,43 @@ const ContentWritingService = () => {
       <div className="pb-4 pt-8 md:pt-12 lg:pt-18">
         <p className="text-center text-md font-semibold uppercase pb-4">FAQ</p>
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold pb-4">
-          FAQs about paid search <br /> management
+          FAQs about Content Writing Service
         </h1>
         <p className="text-center text-md font-base text-gray-500 pb-4">
-          Looking to learn more about paid search management for your business?
+          Looking to learn more about Content Writing Service for your business?
           Browse our FAQs
         </p>
       </div>
 
-      <div className="max-w-5xl mx-auto pt-8 space-y-2 md:space-y-4 font-syne">
+                <div className="max-w-5xl mx-auto pt-8 pb-16 md:pb-12 xl:pb-22 space-y-2 md:space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border-t border-gray-300 pb-2 md:pb-4">
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left font-bold text-sm md:text-lg lg:text-xl md:font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
+              className="w-full font-syne flex justify-between items-center text-left text-lg md:text-xl font-medium hover:text-[#f89e1b] focus:outline-none pt-5"
             >
-              {faq.question}
-              {openIndex === index ? (
-                <FaMinus className="text-[#000000]" />
-              ) : (
-                <FaPlus className="text-[#f89e1b]" />
-              )}
+              <span className="flex-1">{faq.question}</span>
+              <span className="ml-3 flex items-center justify-center">
+                {openIndex === index ? (
+                  <FaMinus className="text-[18px] text-black" />
+                ) : (
+                  <FaPlus className="text-[18px] text-[#f89e1b]" />
+                )}
+              </span>
             </button>
+      
             {openIndex === index && (
-              <p className="mt-3 text-gray-500 text-xs font-semibold md:text-md">
-                {faq.answer}
-              </p>
+              <div className="mt-3 text-gray-500 text-md md:text-xl lg:text-lg font-light md:text-md font-kanit">
+                {faq.answerPoints && Array.isArray(faq.answerPoints) ? (
+                  <ul className="list-disc ml-5 mt-2 space-y-1">
+                    {faq.answerPoints.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{faq.answer}</p>
+                )}
+              </div>
             )}
           </div>
         ))}

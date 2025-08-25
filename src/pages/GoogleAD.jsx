@@ -139,7 +139,7 @@ const GoogleAD = () => {
 
       <div className="max-w-7xl mx-auto pt-8 md:pt-22 lg:pt-42 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 lg:gap-28 items-start">
         <div>
-          <h3 className="text-2xl md:text-5xl font-semibold text-black leading-tight mb-2 md:mb-6">
+          <h3 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-black leading-tight mb-2 md:mb-6">
             Why Choose Google Ads for Your Business?
           </h3>
           <h6 className="text-gray-600 font-light text-sm md:text-md max-w-2xl">
@@ -151,7 +151,6 @@ const GoogleAD = () => {
         <div className="font-syne border-l-1 border-gray-300 pl-4 md:pl-16 lg:pl-26 space-y-4">
           {[
             "Gives immediate results.",
-            "Great for targeting potential customers.",
             "Flexible budgeting.",
             "Gives measurable ROI.",
             "Great for brand visibility.",
@@ -393,13 +392,13 @@ const GoogleAD = () => {
                     <FaStar key={i} className="text-yellow-500 text-lg" />
                   ))}
                 </div>
-                <span className="font-syne font-semibold text-xs md:text-sm mt-1">
+                <span className="font-syne font-semibold text-xs lg:text-sm mt-1">
                   5000+ Client reviews
                 </span>
               </div>
               <a
                 href="/about"
-                className="font-syne inline-block text-xs md:text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase"
+                className="font-syne inline-block text-xs lg:text-sm font-bold text-black border-b-2 border-indigo-600 hover:border-[#F89E1B] transition duration-200 uppercase"
               >
                 View all reviews
               </a>
