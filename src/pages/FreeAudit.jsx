@@ -97,7 +97,7 @@ function FreeAudit() {
             <div className="bg-white rounded-4xl shadow-[12px_12px_0_0_black] px-2 lg:px-5 pt-14 lg:pt-20 pb-5 lg:pb-10 relative max-w-[490px] w-full">
               {showSuccess && (
                 <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-[#6754E9] text-white px-6 py-3 rounded-xl shadow-lg z-50 text-sm font-medium">
-                  ContactUs Form Submitted!
+                Success! 🎉🎉 We’ve received your message and will respond as soon as possible.
                 </div>
               )}
 
@@ -229,3 +229,4 @@ function FreeAudit() {
 }
 
 export default FreeAudit;
+  
